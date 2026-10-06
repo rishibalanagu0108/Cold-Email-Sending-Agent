@@ -1,0 +1,30 @@
+{
+  "task": "MVP-1",
+  "gate": "foundation-tests",
+  "kind": "command",
+  "attempt": "f9cc3606-68d9-4153-b35c-02fab0cbe854",
+  "command": "pytest -q tests/test_profile.py tests/test_dedup.py tests/test_schema.py",
+  "started_at": "2026-10-06T13:56:15.856Z",
+  "observed_at": "2026-10-06T13:56:16.004Z",
+  "exit_code": 127,
+  "signal": null,
+  "stdout": "",
+  "stderr": "/bin/sh: 1: pytest: not found\n",
+  "failure": "command-failed",
+  "receipt": null,
+  "revision": {
+    "commit": "7853935b55547358268ceffa944960e728be52b1",
+    "dirty": true
+  },
+  "source_hash": "8166f74da87b80a9310b91c19f9fe3ba3414e7624abc1690d71d89a488f50970",
+  "before_hash": "8166f74da87b80a9310b91c19f9fe3ba3414e7624abc1690d71d89a488f50970",
+  "config_hash": "73a0ab3a57e9a0eeaea9480fa9c699660178811c9952d7da7204252b544c5ec9",
+  "environment": {
+    "node": "v24.13.0",
+    "platform": "linux",
+    "arch": "x64",
+    "verifier": "358371454f03eb4fdfd3eda3cb1d18cb1dd8fe9445404bb3d3047267b3977eb9",
+    "variables": {}
+  },
+  "hash": "44b80924c05432db6aefa8d56a25cbd8ac0ac2511e25a65c2d0776ea98055e4a"
+}
