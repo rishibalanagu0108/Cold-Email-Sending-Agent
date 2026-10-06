@@ -34,15 +34,15 @@
 
 ### MVP-4 — Build the local dashboard for evidence-backed drafts, filtering, editing, approval invalidation, and accessible review workflows.
 
-- state/risk: active / medium
+- state/risk: done / medium
 - requirements: FR-32, FR-33, FR-34, FR-35, FR-36, FR-37, FR-38, FR-39, FR-40, FR-41, FR-42, FR-43, FR-44, FR-55, NFR-7, NFR-9, NFR-11, AC-15, AC-24
 - scope: not bounded
-- gates: dashboard-tests: pytest -q tests/test_drafts.py tests/test_approval.py tests/test_dashboard.py, independent-review: pending
+- gates: dashboard-tests: pytest -q tests/test_drafts.py tests/test_approval.py tests/test_dashboard.py, independent-review: pass
 - next: Run the task pre-flight.
 
 ### MVP-5 — Implement explicitly initiated Gmail batch delivery, durable send idempotency, ambiguous-outcome recovery, reply sync, and suppression.
 
-- state/risk: queued / high
+- state/risk: active / high
 - requirements: FR-45, FR-46, FR-47, FR-48, FR-49, FR-50, NFR-1, NFR-2, NFR-4, AC-16, AC-17, AC-18, AC-19, AC-20, AC-21, AC-23
 - scope: not bounded
 - gates: mail-tests: pytest -q tests/test_send_gate.py tests/test_mailer.py tests/test_replies.py tests/test_secrets.py, independent-review: pending
