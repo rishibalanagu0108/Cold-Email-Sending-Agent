@@ -9,7 +9,7 @@
     "non_goals": [],
     "trust_boundary": "local repository",
     "created_at": "2026-10-06T09:40:47.262Z",
-    "updated_at": "2026-10-06T15:12:04.186Z"
+    "updated_at": "2026-10-06T15:16:22.138Z"
   },
   "policy": {
     "ponytail": "full",
@@ -692,8 +692,14 @@
           "kind": "command",
           "command": "pytest -q tests/test_drafts.py tests/test_approval.py tests/test_dashboard.py",
           "mandatory": true,
-          "status": "pending",
-          "evidence": null
+          "status": "pass",
+          "evidence": {
+            "path": ".genesis/evidence/MVP-4-dashboard-tests-6015f7d9-93fd-4d21-ae7b-0b230257300c.json",
+            "hash": "afa7f1f8980da0019c3ee22a782ac399571a7276ebe3a20d1d85669e6efd64d7",
+            "source_hash": "f57719d78147e0b81b8792b91c8052494ffcd9393f1943c312d55f3d10b43023",
+            "config_hash": "8410ec730d1b36d0ebcc68f919a2f5b4d4a77f7470d8033a81ee85aef1c14cb1",
+            "observed_at": "2026-10-06T15:16:22.118Z"
+          }
         },
         {
           "id": "independent-review",
@@ -977,6 +983,30 @@
       "cost": null,
       "stop_reason": null,
       "ended_at": "2026-10-06T14:37:15.824Z"
+    },
+    {
+      "id": "6015f7d9-93fd-4d21-ae7b-0b230257300c",
+      "task": "MVP-4",
+      "kind": "gate",
+      "command": "pytest -q tests/test_drafts.py tests/test_approval.py tests/test_dashboard.py",
+      "timeout": 120000,
+      "authorization": null,
+      "pid": 129215,
+      "child_pid": 129265,
+      "started_at": "2026-10-06T15:16:19.401Z",
+      "status": "passed",
+      "before_hash": "f57719d78147e0b81b8792b91c8052494ffcd9393f1943c312d55f3d10b43023",
+      "config_hash": "8410ec730d1b36d0ebcc68f919a2f5b4d4a77f7470d8033a81ee85aef1c14cb1",
+      "environment": {
+        "node": "v24.13.0",
+        "platform": "linux",
+        "arch": "x64",
+        "verifier": "358371454f03eb4fdfd3eda3cb1d18cb1dd8fe9445404bb3d3047267b3977eb9",
+        "variables": {}
+      },
+      "cost": null,
+      "stop_reason": null,
+      "ended_at": "2026-10-06T15:16:22.118Z"
     }
   ],
   "authorizations": [],

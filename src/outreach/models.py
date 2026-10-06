@@ -178,6 +178,7 @@ class MatchEvidence(TimestampMixin, Base):
     job_match_id: Mapped[str] = mapped_column(
         ForeignKey("job_matches.id", ondelete="CASCADE"), nullable=False, index=True
     )
+    evidence_key: Mapped[str] = mapped_column(String(100), nullable=False)
     evidence_type: Mapped[str] = mapped_column(String(40), nullable=False)
     claim: Mapped[str] = mapped_column(Text, nullable=False)
     source_url: Mapped[str | None] = mapped_column(Text)

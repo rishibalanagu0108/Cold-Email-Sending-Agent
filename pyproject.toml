@@ -39,3 +39,6 @@ testpaths = ["tests"]
 [tool.ruff]
 line-length = 100
 target-version = "py312"
+
+[tool.ruff.lint.per-file-ignores]
+"src/outreach/web.py" = ["B008"]

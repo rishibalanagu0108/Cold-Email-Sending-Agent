@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block title %}Setup · AI Job Outreach{% endblock %}
+{% block content %}
+<h1>Setup</h1>
+<div class="grid">
+  <section>
+    <h2>Connections</h2>
+    <dl>
+      <dt>Database</dt><dd>Configured</dd>
+      <dt>Gmail</dt><dd>{{ "Configured" if settings.gmail_address and settings.gmail_app_password else "Needs configuration" }}</dd>
+      <dt>Host</dt><dd>{{ settings.app_host }}:{{ settings.app_port }}</dd>
+    </dl>
+  </section>
+  <section>
+    <h2>Resume</h2>
+    <form action="/setup/resume" method="post" enctype="multipart/form-data">
+      <label for="resume_file">PDF resume</label>
+      <input id="resume_file" name="resume_file" type="file" accept="application/pdf" required>
+      <button type="submit">Import resume</button>
+    </form>
+    {% if resume %}
+      <p><strong>{{ resume.original_filename }}</strong> · {{ "Confirmed" if resume.confirmed else "Needs confirmation" }}</p>
+      <ul>{% for fact in facts %}<li>{{ fact.category }} · {{ fact.key }}: {{ fact.value }}</li>{% endfor %}</ul>
+      <form action="/setup/resume/{{ resume.id }}/facts" method="post" class="stack">
+        <label>Category <input name="category" required></label>
+        <label>Key <input name="key" required></label>
+        <label>Value <input name="value" required></label>
+        <label>Evidence <textarea name="evidence_text" required></textarea></label>
+        <label>Page <input name="page_number" type="number" min="1"></label>
+        <button type="submit">Add profile fact</button>
+      </form>
+      <form action="/setup/resume/{{ resume.id }}/confirm" method="post">
+        <button type="submit">Confirm profile facts</button>
+      </form>
+    {% endif %}
+  </section>
+</div>
+{% endblock %}
+

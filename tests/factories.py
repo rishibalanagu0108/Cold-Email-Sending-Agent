@@ -16,6 +16,19 @@ def candidate_payload(
     rejection_reason: str | None = None,
 ) -> dict:
     now = datetime.now(UTC)
+    body = (
+        "Hello Ada, I am reaching out about the Agentic AI Engineer opening at Example AI. "
+        "Your focus on reliable AI products closely matches the systems work described in my "
+        "resume. I have built Python services, evaluation pipelines, retrieval workflows, and "
+        "tool-using agents with careful monitoring and measurable delivery outcomes. I would "
+        "bring that practical engineering approach to the role, especially where dependable "
+        "automation and clear quality checks matter. My background also includes collaborating "
+        "across product and engineering teams, translating ambiguous requirements into tested "
+        "features, and improving existing workflows without unnecessary infrastructure. I have "
+        "included my resume and portfolio for context. If the position is still active, I would "
+        "welcome a short conversation about the problems your team is solving and how my "
+        "experience could contribute. Thank you for considering my note. Best regards, Candidate"
+    )
     return {
         "company_name": company,
         "company_domain": domain,
@@ -82,6 +95,21 @@ def candidate_payload(
                 "evidence_url": f"https://{domain}/team",
                 "evidence_excerpt": f"Contact Ada at ada@{domain}",
             },
+        },
+        "draft": {
+            "subject": "Agentic AI Engineer — practical production experience",
+            "body": body,
+            "professional_links": ["https://github.com/candidate"],
+            "claims": [
+                {
+                    "claim_text": "I have built Python services.",
+                    "evidence_ids": ["resume-1"],
+                },
+                {
+                    "claim_text": "Your team is hiring an Agentic AI Engineer.",
+                    "evidence_ids": ["job-1", "company-1"],
+                },
+            ],
         },
     }
 

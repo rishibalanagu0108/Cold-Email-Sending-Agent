@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}Review queue · AI Job Outreach{% endblock %}
+{% block content %}
+<h1>Review queue</h1>
+<p>Every message requires your approval. Importing a Codex bundle never sends email.</p>
+<div class="cards">
+{% for draft, match, job, company, contact in rows %}
+  <article>
+    <p class="eyebrow">{{ draft.status }} · {{ match.fit_score }}/100</p>
+    <h2><a href="/review/{{ draft.id }}">{{ company.name }}</a></h2>
+    <p>{{ job.title }} · {{ job.location }}</p>
+    <p>To {{ contact.name }}, {{ contact.role }}</p>
+  </article>
+{% else %}<p>No drafts are waiting for review.</p>{% endfor %}
+</div>
+{% endblock %}
+

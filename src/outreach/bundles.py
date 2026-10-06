@@ -11,10 +11,18 @@ from sqlalchemy.orm import Session
 
 from outreach.contacts import ContactInput as ContactRecordInput
 from outreach.contacts import store_verified_contact
+from outreach.drafts import draft_revision_hash, validate_draft_text
 from outreach.foundation import company_eligibility, get_or_create_company, get_or_create_job
 from outreach.identity import job_fingerprint, normalize_domain
 from outreach.matching import AI_ROLE_FAMILIES
-from outreach.models import DiscoveryRun, JobMatch, MatchEvidence, ResumeVersion
+from outreach.models import (
+    DiscoveryRun,
+    Draft,
+    DraftClaim,
+    JobMatch,
+    MatchEvidence,
+    ResumeVersion,
+)
 from outreach.verification import VerificationEvidence
 
 
@@ -73,6 +81,23 @@ class ContactInput(StrictModel):
     verification: VerificationInput
 
 
+class DraftClaimInput(StrictModel):
+    claim_text: str = Field(min_length=1)
+    evidence_ids: list[str] = Field(min_length=1)
+
+
+class DraftInput(StrictModel):
+    subject: str = Field(min_length=1, max_length=255)
+    body: str
+    professional_links: list[HttpUrl] = Field(min_length=1)
+    claims: list[DraftClaimInput] = Field(min_length=1)
+
+    @model_validator(mode="after")
+    def valid_length(self) -> DraftInput:
+        validate_draft_text(self.subject, self.body)
+        return self
+
+
 class CandidateInput(StrictModel):
     company_name: str = Field(min_length=1, max_length=255)
     company_domain: str = Field(min_length=3, max_length=255)
@@ -95,6 +120,7 @@ class CandidateInput(StrictModel):
     score: ScoreInput
     evidence: list[EvidenceInput] = Field(min_length=1)
     contact: ContactInput | None = None
+    draft: DraftInput | None = None
 
     @model_validator(mode="after")
     def eligibility_is_supported(self) -> CandidateInput:
@@ -120,12 +146,26 @@ class CandidateInput(StrictModel):
             problems.append("fit score is below 70")
         if self.contact is None:
             problems.append("verified contact is required")
+        if self.draft is None:
+            problems.append("draft is required")
         evidence_types = {item.evidence_type for item in self.evidence}
         if "job" not in evidence_types or "company" not in evidence_types:
             problems.append("job and company evidence are required")
         evidence_ids = [item.id for item in self.evidence]
         if len(evidence_ids) != len(set(evidence_ids)):
             problems.append("evidence IDs must be unique")
+        if self.draft:
+            missing_references = {
+                evidence_id
+                for claim in self.draft.claims
+                for evidence_id in claim.evidence_ids
+                if evidence_id not in evidence_ids
+            }
+            if missing_references:
+                problems.append(
+                    "draft claims reference missing evidence: "
+                    + ", ".join(sorted(missing_references))
+                )
         if problems:
             raise ValueError("; ".join(problems))
         return self
@@ -233,9 +273,10 @@ def import_bundle(session: Session, bundle: PreparationBundle) -> ImportResult:
             )
             session.add(match)
             session.flush()
+            contact = None
             if status == "eligible" and candidate.contact:
                 verification = candidate.contact.verification
-                store_verified_contact(
+                contact = store_verified_contact(
                     session,
                     company,
                     ContactRecordInput(
@@ -264,10 +305,37 @@ def import_bundle(session: Session, bundle: PreparationBundle) -> ImportResult:
                         ),
                     ),
                 )
+            if status == "eligible" and candidate.draft and contact:
+                draft = Draft(
+                    job_match_id=match.id,
+                    contact_id=contact.id,
+                    resume_version_id=resume.id,
+                    subject=candidate.draft.subject.strip(),
+                    body=candidate.draft.body.strip(),
+                    revision_hash=draft_revision_hash(
+                        contact.normalized_email,
+                        candidate.draft.subject,
+                        candidate.draft.body,
+                        resume.id,
+                    ),
+                    status="pending_review",
+                )
+                session.add(draft)
+                session.flush()
+                for claim in candidate.draft.claims:
+                    session.add(
+                        DraftClaim(
+                            draft_id=draft.id,
+                            claim_text=claim.claim_text,
+                            evidence_type="bundle",
+                            evidence_reference=",".join(claim.evidence_ids),
+                        )
+                    )
             for evidence in candidate.evidence:
                 session.add(
                     MatchEvidence(
                         job_match_id=match.id,
+                        evidence_key=evidence.id,
                         evidence_type=evidence.evidence_type,
                         claim=evidence.claim,
                         source_url=str(evidence.source_url) if evidence.source_url else None,

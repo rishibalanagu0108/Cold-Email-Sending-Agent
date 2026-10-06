@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}AI Job Outreach{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', path='/app.css') }}">
+  </head>
+  <body>
+    <header>
+      <a class="brand" href="/review">AI Job Outreach</a>
+      <nav aria-label="Primary navigation">
+        <a href="/review">Review</a>
+        <a href="/opportunities">Opportunities</a>
+        <a href="/history">History</a>
+        <a href="/suppressions">Suppressions</a>
+        <a href="/setup">Setup</a>
+      </nav>
+    </header>
+    <main>{% block content %}{% endblock %}</main>
+  </body>
+</html>
+

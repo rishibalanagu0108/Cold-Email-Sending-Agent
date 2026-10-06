@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}Opportunities · AI Job Outreach{% endblock %}
+{% block content %}
+<h1>Opportunities</h1>
+<form method="get" class="filters">
+  <label>Status <input name="status_filter"></label>
+  <label>Minimum score <input name="minimum_score" type="number" min="0" max="100" value="0"></label>
+  <label>Role <input name="role"></label>
+  <label>Company <input name="company"></label>
+  <button type="submit">Filter</button>
+</form>
+<table>
+  <thead><tr><th>Company</th><th>Role</th><th>Score</th><th>Status</th><th>Source</th></tr></thead>
+  <tbody>
+  {% for match, job, company in rows %}
+    <tr><td>{{ company.name }}</td><td>{{ job.title }}</td><td>{{ match.fit_score }}</td><td>{{ match.status }}</td><td>{% if job.canonical_url %}<a href="{{ job.canonical_url }}" rel="noopener noreferrer">Open</a>{% endif %}</td></tr>
+  {% else %}<tr><td colspan="5">No opportunities found.</td></tr>{% endfor %}
+  </tbody>
+</table>
+{% endblock %}
+

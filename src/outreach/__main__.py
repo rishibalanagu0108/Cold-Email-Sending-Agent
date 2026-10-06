@@ -4,6 +4,7 @@ import argparse
 import json
 from pathlib import Path
 
+import uvicorn
 from sqlalchemy.orm import Session
 
 from outreach.bundles import import_bundle, load_bundle
@@ -11,12 +12,14 @@ from outreach.config import get_settings
 from outreach.context import build_preparation_context
 from outreach.db import create_database_engine
 from outreach.resume import import_resume
+from outreach.web import create_app
 
 
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(prog="outreach")
     commands = parser.add_subparsers(dest="command", required=True)
     commands.add_parser("status")
+    commands.add_parser("serve")
 
     resume = commands.add_parser("resume")
     resume_commands = resume.add_subparsers(dest="resume_command", required=True)
@@ -45,6 +48,10 @@ def main() -> None:
         print(f"host={settings.app_host}:{settings.app_port}")
         print(f"resume_configured={bool(settings.resume_path)}")
         print(f"gmail_configured={bool(settings.gmail_address and settings.gmail_app_password)}")
+        return
+
+    if args.command == "serve":
+        uvicorn.run(create_app(engine, settings), host=settings.app_host, port=settings.app_port)
         return
 
     with Session(engine) as session:

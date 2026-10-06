@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
   "project": "ai-job-outreach",
-  "revision": "1f0030d7df49cf59e98ce18374f1be1311ac98c7",
-  "sourceHash": "2b9fccfa1ee5c85210f6cc05d0ae6caa8bf9c5a31df3ec966337c44d169375da",
+  "revision": "ddd0e51443bcfa16b276456307bc13a4fc702bbf",
+  "sourceHash": "9123635d839e615ff690a98f11240a9101154fec85916d1d7c2cda326c5d6cda",
   "provenance": {
     "tool": "genesis-graphizer",
     "method": "static-analysis",
@@ -57,7 +57,7 @@
       "language": "python",
       "confidence": 1,
       "extractor": "filesystem",
-      "contentHash": "9e0200f41f2fb751e19a33a49b2c37a7b44d43975f53e1ec26c7608e91875039"
+      "contentHash": "56f29f63ab7812e97988d9703ba3c931cdae9721e898be095ad38a377d85759e"
     },
     {
       "id": "file:src/outreach/config.py",
@@ -68,6 +68,16 @@
       "confidence": 1,
       "extractor": "filesystem",
       "contentHash": "9783f2f1531fddba27c0eb05093dd2d03ad5abb1891213191e22eabd7ed6f111"
+    },
+    {
+      "id": "file:src/outreach/contacts.py",
+      "type": "file",
+      "label": "src/outreach/contacts.py",
+      "path": "src/outreach/contacts.py",
+      "language": "python",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "2c0778fba2347c11cec536c3c93b64010cc5aaebcb670f657b124fbe5f65ab7f"
     },
     {
       "id": "file:src/outreach/context.py",
@@ -140,6 +150,16 @@
       "contentHash": "370d484898aece47a26a6d738804261e149731a974f058c2eb7543b32ad73b3f"
     },
     {
+      "id": "file:src/outreach/verification.py",
+      "type": "file",
+      "label": "src/outreach/verification.py",
+      "path": "src/outreach/verification.py",
+      "language": "python",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "59c2e002daf544ae46764ded3a617151da0407aae6a9c83dff25e9d71b2d26d5"
+    },
+    {
       "id": "file:tests/__init__.py",
       "type": "file",
       "label": "tests/__init__.py",
@@ -167,7 +187,7 @@
       "language": "python",
       "confidence": 1,
       "extractor": "filesystem",
-      "contentHash": "f189d8195a19ac1951207ed18c83d27e4683b2936b505ff3b8a7d1bfdf87fcff"
+      "contentHash": "f0f9b78bbc06ba6fcc9179551ddf811897b4854af42a5e4160a56f1aef29f2ba"
     },
     {
       "id": "file:tests/test_bundle.py",
@@ -188,6 +208,16 @@
       "confidence": 1,
       "extractor": "filesystem",
       "contentHash": "5000ced3c0d1753ab1406cc3e7e57500036b205c6452944d3d84e57c5eb5042d"
+    },
+    {
+      "id": "file:tests/test_contacts.py",
+      "type": "file",
+      "label": "tests/test_contacts.py",
+      "path": "tests/test_contacts.py",
+      "language": "python",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "0e7d92955a2eb0ef67ff57e6a37204bc42ab3dcf19fc7e6fab284bbd054c3f7d"
     },
     {
       "id": "file:tests/test_dedup.py",
@@ -230,6 +260,16 @@
       "contentHash": "6951cb7bc0ec2e742f51abf23c40722e929f3c7a8179ef8ad58505667037029c"
     },
     {
+      "id": "file:tests/test_verification.py",
+      "type": "file",
+      "label": "tests/test_verification.py",
+      "path": "tests/test_verification.py",
+      "language": "python",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "38c51c14930026086b5728fc1011c6eb38fff0735c9228bd6d6bd75fcd690b2f"
+    },
+    {
       "id": "package:pypi:alembic",
       "type": "package",
       "label": "alembic",
@@ -264,6 +304,15 @@
       "confidence": 0.85,
       "extractor": "import",
       "contentHash": "4e8006fb871d21afbd5f676d22d6a65fc165c0f99af9e106d4c2b8a3f03e4073"
+    },
+    {
+      "id": "package:pypi:outreach.contacts",
+      "type": "package",
+      "label": "outreach.contacts",
+      "ecosystem": "pypi",
+      "confidence": 0.85,
+      "extractor": "import",
+      "contentHash": "1098ce01d6400a6353a9c48a27544cea1f8fd2d6e9df95568d6737c0fd45ecff"
     },
     {
       "id": "package:pypi:outreach.context",
@@ -327,6 +376,15 @@
       "confidence": 0.85,
       "extractor": "import",
       "contentHash": "f4f569c2b7f8b4a2112fba4f34e45efa6ebaa61d76f52ba64af2446c7e11f146"
+    },
+    {
+      "id": "package:pypi:outreach.verification",
+      "type": "package",
+      "label": "outreach.verification",
+      "ecosystem": "pypi",
+      "confidence": 0.85,
+      "extractor": "import",
+      "contentHash": "ef850f3a202312cfad40f6be6a411d095b5ca24588e7a8023df0a2540b1cf944"
     },
     {
       "id": "package:pypi:pydantic",
@@ -605,10 +663,22 @@
       "name": "CandidateInput",
       "label": "CandidateInput",
       "path": "src/outreach/bundles.py",
-      "line": 51,
+      "line": 76,
       "confidence": 1,
       "extractor": "python-stdlib-ast",
       "contentHash": "e06eb67bce9251ef10679c438b243e512efa9c7f4085861a3ba19c2ca8ae4b41"
+    },
+    {
+      "id": "symbol:src/outreach/bundles.py#class:ContactInput",
+      "type": "symbol",
+      "kind": "class",
+      "name": "ContactInput",
+      "label": "ContactInput",
+      "path": "src/outreach/bundles.py",
+      "line": 66,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "d1afc3f107d6da28c42c0bbb942628a528e9f9d4a17ea6059353343880019482"
     },
     {
       "id": "symbol:src/outreach/bundles.py#class:EvidenceInput",
@@ -617,7 +687,7 @@
       "name": "EvidenceInput",
       "label": "EvidenceInput",
       "path": "src/outreach/bundles.py",
-      "line": 34,
+      "line": 37,
       "confidence": 1,
       "extractor": "python-stdlib-ast",
       "contentHash": "08f68e61109ac932c28e36ea225980f82dd6229bde5ba313a4ab82ca55c311f5"
@@ -629,7 +699,7 @@
       "name": "ImportResult",
       "label": "ImportResult",
       "path": "src/outreach/bundles.py",
-      "line": 131,
+      "line": 159,
       "confidence": 1,
       "extractor": "python-stdlib-ast",
       "contentHash": "90d5c24e5a68e784797bc16a5fe094c8c0a007d278a790f6253423e3f6780acc"
@@ -641,7 +711,7 @@
       "name": "PreparationBundle",
       "label": "PreparationBundle",
       "path": "src/outreach/bundles.py",
-      "line": 106,
+      "line": 134,
       "confidence": 1,
       "extractor": "python-stdlib-ast",
       "contentHash": "d5211f7357629a3b7b46b5aeaa42d13a7f4a4ec813f69a8dc5acdb601630efdc"
@@ -653,7 +723,7 @@
       "name": "ScoreInput",
       "label": "ScoreInput",
       "path": "src/outreach/bundles.py",
-      "line": 22,
+      "line": 25,
       "confidence": 1,
       "extractor": "python-stdlib-ast",
       "contentHash": "94e41cefc28d25d74070346903e26e322f1cbbdddaeb09d53f13a5d3c51e3424"
@@ -665,10 +735,22 @@
       "name": "StrictModel",
       "label": "StrictModel",
       "path": "src/outreach/bundles.py",
-      "line": 18,
+      "line": 21,
       "confidence": 1,
       "extractor": "python-stdlib-ast",
       "contentHash": "a00ba5f034e2c91deba94ea4505280d649e53154bc25ff7eb850860e322c8cd2"
+    },
+    {
+      "id": "symbol:src/outreach/bundles.py#class:VerificationInput",
+      "type": "symbol",
+      "kind": "class",
+      "name": "VerificationInput",
+      "label": "VerificationInput",
+      "path": "src/outreach/bundles.py",
+      "line": 54,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "8098af51e9e59f5f8566cbb0706617f62b37e9dc7e8285ac5c58d6d27556d6bd"
     },
     {
       "id": "symbol:src/outreach/bundles.py#function:_aware",
@@ -677,7 +759,7 @@
       "name": "_aware",
       "label": "_aware",
       "path": "src/outreach/bundles.py",
-      "line": 228,
+      "line": 287,
       "confidence": 1,
       "extractor": "python-stdlib-ast",
       "contentHash": "971602a7cd306358ab1d324781bc30add4366c2e0c2e8ae6dc7e0e45028523e1"
@@ -689,7 +771,7 @@
       "name": "CandidateInput.eligibility_is_supported",
       "label": "CandidateInput.eligibility_is_supported",
       "path": "src/outreach/bundles.py",
-      "line": 74,
+      "line": 100,
       "confidence": 1,
       "extractor": "python-stdlib-ast",
       "contentHash": "0bea57abba1e1f3ef1872607d33e75e2d76b86c884a4f8d2591fb7016972af0f"
@@ -701,7 +783,7 @@
       "name": "EvidenceInput.external_evidence_has_source",
       "label": "EvidenceInput.external_evidence_has_source",
       "path": "src/outreach/bundles.py",
-      "line": 43,
+      "line": 46,
       "confidence": 1,
       "extractor": "python-stdlib-ast",
       "contentHash": "3eaa6e4a9767cfede1c4a294165552c91215484a9fe772a14b97c7094d31d352"
@@ -713,7 +795,7 @@
       "name": "import_bundle",
       "label": "import_bundle",
       "path": "src/outreach/bundles.py",
-      "line": 147,
+      "line": 175,
       "confidence": 1,
       "extractor": "python-stdlib-ast",
       "contentHash": "167eba515c7c78603379dd7e353a0bb723e44164eda9b649bec5dd213b4a17bd"
@@ -725,7 +807,7 @@
       "name": "load_bundle",
       "label": "load_bundle",
       "path": "src/outreach/bundles.py",
-      "line": 139,
+      "line": 167,
       "confidence": 1,
       "extractor": "python-stdlib-ast",
       "contentHash": "18b4e91d99e5f2c0fbd030f5092a087b7289588b2b3759d8b88ea910f9aab869"
@@ -737,7 +819,7 @@
       "name": "PreparationBundle.validate_batch",
       "label": "PreparationBundle.validate_batch",
       "path": "src/outreach/bundles.py",
-      "line": 114,
+      "line": 142,
       "confidence": 1,
       "extractor": "python-stdlib-ast",
       "contentHash": "fbfb2bf2305a65dd2e1ed772d105f62b2159a8a213a3d9c379e515f3c3afb8eb"
@@ -749,7 +831,7 @@
       "name": "ScoreInput.total",
       "label": "ScoreInput.total",
       "path": "src/outreach/bundles.py",
-      "line": 30,
+      "line": 33,
       "confidence": 1,
       "extractor": "python-stdlib-ast",
       "contentHash": "16caa2dbd7d7fa12967e2da61fb03fd625883745bbadfdb857589c83ef88a8ba"
@@ -801,6 +883,42 @@
       "confidence": 1,
       "extractor": "python-stdlib-ast",
       "contentHash": "9ff72deefd277cba9c2f0c6826f5f61976a8d0e4126794f2791bc401c51fe2cf"
+    },
+    {
+      "id": "symbol:src/outreach/contacts.py#class:ContactInput",
+      "type": "symbol",
+      "kind": "class",
+      "name": "ContactInput",
+      "label": "ContactInput",
+      "path": "src/outreach/contacts.py",
+      "line": 36,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "d1afc3f107d6da28c42c0bbb942628a528e9f9d4a17ea6059353343880019482"
+    },
+    {
+      "id": "symbol:src/outreach/contacts.py#function:contact_role_matches",
+      "type": "symbol",
+      "kind": "function",
+      "name": "contact_role_matches",
+      "label": "contact_role_matches",
+      "path": "src/outreach/contacts.py",
+      "line": 44,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "e4c21d8d9bde8722af0a63d32abf76a01dc29a1e5133a6559963dfdd236aed50"
+    },
+    {
+      "id": "symbol:src/outreach/contacts.py#function:store_verified_contact",
+      "type": "symbol",
+      "kind": "function",
+      "name": "store_verified_contact",
+      "label": "store_verified_contact",
+      "path": "src/outreach/contacts.py",
+      "line": 52,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "a79d26c2c94c6b024d7c00d35005e3580c41191d1035ceda0cc50af4328c8b6a"
     },
     {
       "id": "symbol:src/outreach/context.py#function:build_preparation_context",
@@ -1355,6 +1473,54 @@
       "contentHash": "f33a0587990a2f4605a2c3f2f32a214ea8bb21831c435b9b719ec158bc3cd9ba"
     },
     {
+      "id": "symbol:src/outreach/verification.py#class:VerificationEvidence",
+      "type": "symbol",
+      "kind": "class",
+      "name": "VerificationEvidence",
+      "label": "VerificationEvidence",
+      "path": "src/outreach/verification.py",
+      "line": 20,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "f0b442181a16ca4322d17cbd117ab25dafbab52753563b2f348dee3ec78f422c"
+    },
+    {
+      "id": "symbol:src/outreach/verification.py#function:_aware",
+      "type": "symbol",
+      "kind": "function",
+      "name": "_aware",
+      "label": "_aware",
+      "path": "src/outreach/verification.py",
+      "line": 81,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "971602a7cd306358ab1d324781bc30add4366c2e0c2e8ae6dc7e0e45028523e1"
+    },
+    {
+      "id": "symbol:src/outreach/verification.py#function:normalize_email",
+      "type": "symbol",
+      "kind": "function",
+      "name": "normalize_email",
+      "label": "normalize_email",
+      "path": "src/outreach/verification.py",
+      "line": 36,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "ece1b634258aab36fd09625642867e0b5553a97ab5680f3742463b2e22075cd9"
+    },
+    {
+      "id": "symbol:src/outreach/verification.py#function:verify_evidence",
+      "type": "symbol",
+      "kind": "function",
+      "name": "verify_evidence",
+      "label": "verify_evidence",
+      "path": "src/outreach/verification.py",
+      "line": 40,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "28e52630cd1f2c52a34f0fd93f56a76d9362cb39a4071c24b01cfcdd1ad78677"
+    },
+    {
       "id": "symbol:tests/conftest.py#function:session",
       "type": "symbol",
       "kind": "function",
@@ -1373,7 +1539,7 @@
       "name": "bundle_payload",
       "label": "bundle_payload",
       "path": "tests/factories.py",
-      "line": 72,
+      "line": 89,
       "confidence": 1,
       "extractor": "python-stdlib-ast",
       "contentHash": "0670ee746b7f5b14f2a410bfbcc8b1a40bf0e18b08a5b162cf2d99ab3bb146b8"
@@ -1397,7 +1563,7 @@
       "name": "make_bundle",
       "label": "make_bundle",
       "path": "tests/factories.py",
-      "line": 82,
+      "line": 99,
       "confidence": 1,
       "extractor": "python-stdlib-ast",
       "contentHash": "82e7c61bcff62c66e09c537dfb8da6a1a00f9baff934ca184f94d7a0cbcc6748"
@@ -1509,6 +1675,54 @@
       "confidence": 1,
       "extractor": "python-stdlib-ast",
       "contentHash": "fb254b1f2b9e3d03ccd5c1d83092a4206c087123cb2c3a1e97803d9c9c6d4a1e"
+    },
+    {
+      "id": "symbol:tests/test_contacts.py#function:test_bundle_import_persists_only_verified_contact",
+      "type": "symbol",
+      "kind": "function",
+      "name": "test_bundle_import_persists_only_verified_contact",
+      "label": "test_bundle_import_persists_only_verified_contact",
+      "path": "tests/test_contacts.py",
+      "line": 65,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "461ae49cd9cd7cfc3ba3988c1b7ed6ca51e34c8255d601c64c2bb5c0cf8bf438"
+    },
+    {
+      "id": "symbol:tests/test_contacts.py#function:test_contact_role_follows_company_stage",
+      "type": "symbol",
+      "kind": "function",
+      "name": "test_contact_role_follows_company_stage",
+      "label": "test_contact_role_follows_company_stage",
+      "path": "tests/test_contacts.py",
+      "line": 28,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "103b623a07e461c7140c71222c5fbd63acf1af88ab14549cc361231c9e8809d1"
+    },
+    {
+      "id": "symbol:tests/test_contacts.py#function:test_store_verified_professional_contact",
+      "type": "symbol",
+      "kind": "function",
+      "name": "test_store_verified_professional_contact",
+      "label": "test_store_verified_professional_contact",
+      "path": "tests/test_contacts.py",
+      "line": 32,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "464249c65903835b5108a5ad2bea88dd357b8e9b0ca9b3de40d507eb404aaee5"
+    },
+    {
+      "id": "symbol:tests/test_contacts.py#function:test_wrong_stage_contact_rolls_back_import",
+      "type": "symbol",
+      "kind": "function",
+      "name": "test_wrong_stage_contact_rolls_back_import",
+      "label": "test_wrong_stage_contact_rolls_back_import",
+      "path": "tests/test_contacts.py",
+      "line": 82,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "36a507328b57eb11955295226e165278d8ef80f6549684b6c626b7d156d764e8"
     },
     {
       "id": "symbol:tests/test_dedup.py#function:_sent_outreach",
@@ -1701,6 +1915,66 @@
       "confidence": 1,
       "extractor": "python-stdlib-ast",
       "contentHash": "6b5b1d71f4c194225f14d7ab14d0d4a8a68da88bd0109142527cfa0875c1b0a0"
+    },
+    {
+      "id": "symbol:tests/test_verification.py#function:_official",
+      "type": "symbol",
+      "kind": "function",
+      "name": "_official",
+      "label": "_official",
+      "path": "tests/test_verification.py",
+      "line": 11,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "88be5793cace8872643ff02c9538238a1e29155c8339e0dea9c3ce7a05c56781"
+    },
+    {
+      "id": "symbol:tests/test_verification.py#function:test_consumer_email_requires_explicit_professional_publication",
+      "type": "symbol",
+      "kind": "function",
+      "name": "test_consumer_email_requires_explicit_professional_publication",
+      "label": "test_consumer_email_requires_explicit_professional_publication",
+      "path": "tests/test_verification.py",
+      "line": 51,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "ff3d40a47db8ec83f6bcd981df194889c8495f53a30e9c93a76939f63a0a64b8"
+    },
+    {
+      "id": "symbol:tests/test_verification.py#function:test_free_provider_must_return_valid_and_match_company",
+      "type": "symbol",
+      "kind": "function",
+      "name": "test_free_provider_must_return_valid_and_match_company",
+      "label": "test_free_provider_must_return_valid_and_match_company",
+      "path": "tests/test_verification.py",
+      "line": 60,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "b4a7e86c3bd6500c73b1a51a5af54636a96b7646967135da0f47b3a3ad723ed1"
+    },
+    {
+      "id": "symbol:tests/test_verification.py#function:test_publicly_listed_company_email_is_verified",
+      "type": "symbol",
+      "kind": "function",
+      "name": "test_publicly_listed_company_email_is_verified",
+      "label": "test_publicly_listed_company_email_is_verified",
+      "path": "tests/test_verification.py",
+      "line": 28,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "8d9370afdf2396c848ca077c005e706057276fa17e60fd1fa3da59bdc8a3b494"
+    },
+    {
+      "id": "symbol:tests/test_verification.py#function:test_unsafe_verification_fails_closed",
+      "type": "symbol",
+      "kind": "function",
+      "name": "test_unsafe_verification_fails_closed",
+      "label": "test_unsafe_verification_fails_closed",
+      "path": "tests/test_verification.py",
+      "line": 47,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "c773fe61dc0ebc93530ff1247dcd8218b0c557910b6cecf19dd939b29a9a9b5a"
     }
   ],
   "edges": [
@@ -1797,6 +2071,18 @@
     {
       "type": "calls",
       "source": "symbol:src/outreach/bundles.py#function:import_bundle",
+      "target": "symbol:src/outreach/contacts.py#function:store_verified_contact",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/contacts.py#function:store_verified_contact"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:src/outreach/bundles.py#function:import_bundle",
       "target": "symbol:src/outreach/foundation.py#function:company_eligibility",
       "tier": "ambiguous",
       "candidates": [
@@ -1880,6 +2166,18 @@
     },
     {
       "type": "calls",
+      "source": "symbol:src/outreach/bundles.py#function:import_bundle",
+      "target": "symbol:src/outreach/verification.py#class:VerificationEvidence",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/verification.py#class:VerificationEvidence"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
       "source": "symbol:src/outreach/bundles.py#function:PreparationBundle.validate_batch",
       "target": "symbol:src/outreach/bundles.py#function:_aware",
       "tier": "proven",
@@ -1906,6 +2204,63 @@
       "tier": "proven",
       "resolved": true,
       "confidence": 1,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:src/outreach/contacts.py#function:store_verified_contact",
+      "target": "symbol:src/outreach/contacts.py#function:contact_role_matches",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:src/outreach/contacts.py#function:store_verified_contact",
+      "target": "symbol:src/outreach/models.py#class:Contact",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/models.py#class:Contact"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:src/outreach/contacts.py#function:store_verified_contact",
+      "target": "symbol:src/outreach/models.py#class:ContactVerification",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/models.py#class:ContactVerification"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:src/outreach/contacts.py#function:store_verified_contact",
+      "target": "symbol:src/outreach/verification.py#function:normalize_email",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/verification.py#function:normalize_email"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:src/outreach/contacts.py#function:store_verified_contact",
+      "target": "symbol:src/outreach/verification.py#function:verify_evidence",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/verification.py#function:verify_evidence"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
       "extractor": "python-stdlib-ast-calls"
     },
     {
@@ -2141,6 +2496,24 @@
     },
     {
       "type": "calls",
+      "source": "symbol:src/outreach/verification.py#function:verify_evidence",
+      "target": "symbol:src/outreach/verification.py#function:_aware",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:src/outreach/verification.py#function:verify_evidence",
+      "target": "symbol:src/outreach/verification.py#function:normalize_email",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
       "source": "symbol:tests/conftest.py#function:session",
       "target": "symbol:src/outreach/db.py#function:create_database_engine",
       "tier": "ambiguous",
@@ -2362,6 +2735,133 @@
       ],
       "resolved": false,
       "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_contacts.py#function:test_bundle_import_persists_only_verified_contact",
+      "target": "symbol:src/outreach/bundles.py#function:import_bundle",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/bundles.py#function:import_bundle"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_contacts.py#function:test_bundle_import_persists_only_verified_contact",
+      "target": "symbol:src/outreach/models.py#class:ResumeVersion",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/models.py#class:ResumeVersion"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_contacts.py#function:test_bundle_import_persists_only_verified_contact",
+      "target": "symbol:tests/factories.py#function:make_bundle",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 0.7,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_contacts.py#function:test_contact_role_follows_company_stage",
+      "target": "symbol:src/outreach/contacts.py#function:contact_role_matches",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/contacts.py#function:contact_role_matches"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_contacts.py#function:test_store_verified_professional_contact",
+      "target": "symbol:src/outreach/bundles.py#class:ContactInput",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/bundles.py#class:ContactInput",
+        "symbol:src/outreach/contacts.py#class:ContactInput"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_contacts.py#function:test_store_verified_professional_contact",
+      "target": "symbol:src/outreach/contacts.py#function:store_verified_contact",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/contacts.py#function:store_verified_contact"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_contacts.py#function:test_store_verified_professional_contact",
+      "target": "symbol:src/outreach/foundation.py#function:get_or_create_company",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/foundation.py#function:get_or_create_company"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_contacts.py#function:test_store_verified_professional_contact",
+      "target": "symbol:src/outreach/verification.py#class:VerificationEvidence",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/verification.py#class:VerificationEvidence"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_contacts.py#function:test_wrong_stage_contact_rolls_back_import",
+      "target": "symbol:src/outreach/bundles.py#function:import_bundle",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/bundles.py#function:import_bundle"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_contacts.py#function:test_wrong_stage_contact_rolls_back_import",
+      "target": "symbol:src/outreach/models.py#class:ResumeVersion",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/models.py#class:ResumeVersion"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_contacts.py#function:test_wrong_stage_contact_rolls_back_import",
+      "target": "symbol:tests/factories.py#function:make_bundle",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 0.7,
       "extractor": "python-stdlib-ast-calls"
     },
     {
@@ -2830,6 +3330,114 @@
       "extractor": "python-stdlib-ast-calls"
     },
     {
+      "type": "calls",
+      "source": "symbol:tests/test_verification.py#function:_official",
+      "target": "symbol:src/outreach/verification.py#class:VerificationEvidence",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/verification.py#class:VerificationEvidence"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_verification.py#function:test_consumer_email_requires_explicit_professional_publication",
+      "target": "symbol:src/outreach/verification.py#function:verify_evidence",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/verification.py#function:verify_evidence"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_verification.py#function:test_consumer_email_requires_explicit_professional_publication",
+      "target": "symbol:tests/test_verification.py#function:_official",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_verification.py#function:test_free_provider_must_return_valid_and_match_company",
+      "target": "symbol:src/outreach/verification.py#function:verify_evidence",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/verification.py#function:verify_evidence"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_verification.py#function:test_free_provider_must_return_valid_and_match_company",
+      "target": "symbol:tests/test_verification.py#function:_official",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_verification.py#function:test_publicly_listed_company_email_is_verified",
+      "target": "symbol:src/outreach/verification.py#function:normalize_email",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/verification.py#function:normalize_email"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_verification.py#function:test_publicly_listed_company_email_is_verified",
+      "target": "symbol:src/outreach/verification.py#function:verify_evidence",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/verification.py#function:verify_evidence"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_verification.py#function:test_publicly_listed_company_email_is_verified",
+      "target": "symbol:tests/test_verification.py#function:_official",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_verification.py#function:test_unsafe_verification_fails_closed",
+      "target": "symbol:src/outreach/verification.py#function:verify_evidence",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/verification.py#function:verify_evidence"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_verification.py#function:test_unsafe_verification_fails_closed",
+      "target": "symbol:tests/test_verification.py#function:_official",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
       "type": "defines",
       "source": "file:migrations/env.py",
       "target": "symbol:migrations/env.py#function:run_migrations_offline",
@@ -2887,7 +3495,16 @@
       "type": "defines",
       "source": "file:src/outreach/bundles.py",
       "target": "symbol:src/outreach/bundles.py#class:CandidateInput",
-      "line": 51,
+      "line": 76,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/outreach/bundles.py",
+      "target": "symbol:src/outreach/bundles.py#class:ContactInput",
+      "line": 66,
       "resolved": true,
       "confidence": 1,
       "extractor": "python-stdlib-ast"
@@ -2896,7 +3513,7 @@
       "type": "defines",
       "source": "file:src/outreach/bundles.py",
       "target": "symbol:src/outreach/bundles.py#class:EvidenceInput",
-      "line": 34,
+      "line": 37,
       "resolved": true,
       "confidence": 1,
       "extractor": "python-stdlib-ast"
@@ -2905,7 +3522,7 @@
       "type": "defines",
       "source": "file:src/outreach/bundles.py",
       "target": "symbol:src/outreach/bundles.py#class:ImportResult",
-      "line": 131,
+      "line": 159,
       "resolved": true,
       "confidence": 1,
       "extractor": "python-stdlib-ast"
@@ -2914,7 +3531,7 @@
       "type": "defines",
       "source": "file:src/outreach/bundles.py",
       "target": "symbol:src/outreach/bundles.py#class:PreparationBundle",
-      "line": 106,
+      "line": 134,
       "resolved": true,
       "confidence": 1,
       "extractor": "python-stdlib-ast"
@@ -2923,7 +3540,7 @@
       "type": "defines",
       "source": "file:src/outreach/bundles.py",
       "target": "symbol:src/outreach/bundles.py#class:ScoreInput",
-      "line": 22,
+      "line": 25,
       "resolved": true,
       "confidence": 1,
       "extractor": "python-stdlib-ast"
@@ -2932,7 +3549,16 @@
       "type": "defines",
       "source": "file:src/outreach/bundles.py",
       "target": "symbol:src/outreach/bundles.py#class:StrictModel",
-      "line": 18,
+      "line": 21,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/outreach/bundles.py",
+      "target": "symbol:src/outreach/bundles.py#class:VerificationInput",
+      "line": 54,
       "resolved": true,
       "confidence": 1,
       "extractor": "python-stdlib-ast"
@@ -2941,7 +3567,7 @@
       "type": "defines",
       "source": "file:src/outreach/bundles.py",
       "target": "symbol:src/outreach/bundles.py#function:_aware",
-      "line": 228,
+      "line": 287,
       "resolved": true,
       "confidence": 1,
       "extractor": "python-stdlib-ast"
@@ -2950,7 +3576,7 @@
       "type": "defines",
       "source": "file:src/outreach/bundles.py",
       "target": "symbol:src/outreach/bundles.py#function:CandidateInput.eligibility_is_supported",
-      "line": 74,
+      "line": 100,
       "resolved": true,
       "confidence": 1,
       "extractor": "python-stdlib-ast"
@@ -2959,7 +3585,7 @@
       "type": "defines",
       "source": "file:src/outreach/bundles.py",
       "target": "symbol:src/outreach/bundles.py#function:EvidenceInput.external_evidence_has_source",
-      "line": 43,
+      "line": 46,
       "resolved": true,
       "confidence": 1,
       "extractor": "python-stdlib-ast"
@@ -2968,7 +3594,7 @@
       "type": "defines",
       "source": "file:src/outreach/bundles.py",
       "target": "symbol:src/outreach/bundles.py#function:import_bundle",
-      "line": 147,
+      "line": 175,
       "resolved": true,
       "confidence": 1,
       "extractor": "python-stdlib-ast"
@@ -2977,7 +3603,7 @@
       "type": "defines",
       "source": "file:src/outreach/bundles.py",
       "target": "symbol:src/outreach/bundles.py#function:load_bundle",
-      "line": 139,
+      "line": 167,
       "resolved": true,
       "confidence": 1,
       "extractor": "python-stdlib-ast"
@@ -2986,7 +3612,7 @@
       "type": "defines",
       "source": "file:src/outreach/bundles.py",
       "target": "symbol:src/outreach/bundles.py#function:PreparationBundle.validate_batch",
-      "line": 114,
+      "line": 142,
       "resolved": true,
       "confidence": 1,
       "extractor": "python-stdlib-ast"
@@ -2995,7 +3621,7 @@
       "type": "defines",
       "source": "file:src/outreach/bundles.py",
       "target": "symbol:src/outreach/bundles.py#function:ScoreInput.total",
-      "line": 30,
+      "line": 33,
       "resolved": true,
       "confidence": 1,
       "extractor": "python-stdlib-ast"
@@ -3032,6 +3658,33 @@
       "source": "file:src/outreach/config.py",
       "target": "symbol:src/outreach/config.py#function:Settings.use_psycopg_driver",
       "line": 24,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/outreach/contacts.py",
+      "target": "symbol:src/outreach/contacts.py#class:ContactInput",
+      "line": 36,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/outreach/contacts.py",
+      "target": "symbol:src/outreach/contacts.py#function:contact_role_matches",
+      "line": 44,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/outreach/contacts.py",
+      "target": "symbol:src/outreach/contacts.py#function:store_verified_contact",
+      "line": 52,
       "resolved": true,
       "confidence": 1,
       "extractor": "python-stdlib-ast"
@@ -3452,6 +4105,42 @@
     },
     {
       "type": "defines",
+      "source": "file:src/outreach/verification.py",
+      "target": "symbol:src/outreach/verification.py#class:VerificationEvidence",
+      "line": 20,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/outreach/verification.py",
+      "target": "symbol:src/outreach/verification.py#function:_aware",
+      "line": 81,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/outreach/verification.py",
+      "target": "symbol:src/outreach/verification.py#function:normalize_email",
+      "line": 36,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/outreach/verification.py",
+      "target": "symbol:src/outreach/verification.py#function:verify_evidence",
+      "line": 40,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
       "source": "file:tests/conftest.py",
       "target": "symbol:tests/conftest.py#function:session",
       "line": 12,
@@ -3463,7 +4152,7 @@
       "type": "defines",
       "source": "file:tests/factories.py",
       "target": "symbol:tests/factories.py#function:bundle_payload",
-      "line": 72,
+      "line": 89,
       "resolved": true,
       "confidence": 1,
       "extractor": "python-stdlib-ast"
@@ -3481,7 +4170,7 @@
       "type": "defines",
       "source": "file:tests/factories.py",
       "target": "symbol:tests/factories.py#function:make_bundle",
-      "line": 82,
+      "line": 99,
       "resolved": true,
       "confidence": 1,
       "extractor": "python-stdlib-ast"
@@ -3563,6 +4252,42 @@
       "source": "file:tests/test_codex_contract.py",
       "target": "symbol:tests/test_codex_contract.py#function:test_runbook_preserves_manual_approval_boundary",
       "line": 56,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:tests/test_contacts.py",
+      "target": "symbol:tests/test_contacts.py#function:test_bundle_import_persists_only_verified_contact",
+      "line": 65,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:tests/test_contacts.py",
+      "target": "symbol:tests/test_contacts.py#function:test_contact_role_follows_company_stage",
+      "line": 28,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:tests/test_contacts.py",
+      "target": "symbol:tests/test_contacts.py#function:test_store_verified_professional_contact",
+      "line": 32,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:tests/test_contacts.py",
+      "target": "symbol:tests/test_contacts.py#function:test_wrong_stage_contact_rolls_back_import",
+      "line": 82,
       "resolved": true,
       "confidence": 1,
       "extractor": "python-stdlib-ast"
@@ -3707,6 +4432,51 @@
       "source": "file:tests/test_schema.py",
       "target": "symbol:tests/test_schema.py#function:test_database_enforces_unique_company_domain",
       "line": 41,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:tests/test_verification.py",
+      "target": "symbol:tests/test_verification.py#function:_official",
+      "line": 11,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:tests/test_verification.py",
+      "target": "symbol:tests/test_verification.py#function:test_consumer_email_requires_explicit_professional_publication",
+      "line": 51,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:tests/test_verification.py",
+      "target": "symbol:tests/test_verification.py#function:test_free_provider_must_return_valid_and_match_company",
+      "line": 60,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:tests/test_verification.py",
+      "target": "symbol:tests/test_verification.py#function:test_publicly_listed_company_email_is_verified",
+      "line": 28,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:tests/test_verification.py",
+      "target": "symbol:tests/test_verification.py#function:test_unsafe_verification_fails_closed",
+      "line": 47,
       "resolved": true,
       "confidence": 1,
       "extractor": "python-stdlib-ast"
@@ -3904,9 +4674,19 @@
     {
       "type": "imports",
       "source": "file:src/outreach/bundles.py",
+      "target": "package:pypi:outreach.contacts",
+      "specifier": "outreach.contacts",
+      "line": 13,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/bundles.py",
       "target": "package:pypi:outreach.foundation",
       "specifier": "outreach.foundation",
-      "line": 12,
+      "line": 14,
       "resolved": false,
       "confidence": 0.5,
       "extractor": "python-imports"
@@ -3916,7 +4696,7 @@
       "source": "file:src/outreach/bundles.py",
       "target": "package:pypi:outreach.identity",
       "specifier": "outreach.identity",
-      "line": 13,
+      "line": 15,
       "resolved": false,
       "confidence": 0.5,
       "extractor": "python-imports"
@@ -3926,7 +4706,7 @@
       "source": "file:src/outreach/bundles.py",
       "target": "package:pypi:outreach.matching",
       "specifier": "outreach.matching",
-      "line": 14,
+      "line": 16,
       "resolved": false,
       "confidence": 0.5,
       "extractor": "python-imports"
@@ -3936,7 +4716,17 @@
       "source": "file:src/outreach/bundles.py",
       "target": "package:pypi:outreach.models",
       "specifier": "outreach.models",
-      "line": 15,
+      "line": 17,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/bundles.py",
+      "target": "package:pypi:outreach.verification",
+      "specifier": "outreach.verification",
+      "line": 18,
       "resolved": false,
       "confidence": 0.5,
       "extractor": "python-imports"
@@ -4067,6 +4857,76 @@
       "target": "runtime:python:pathlib",
       "specifier": "pathlib",
       "line": 4,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/contacts.py",
+      "target": "package:pypi:outreach.models",
+      "specifier": "outreach.models",
+      "line": 9,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/contacts.py",
+      "target": "package:pypi:outreach.verification",
+      "specifier": "outreach.verification",
+      "line": 10,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/contacts.py",
+      "target": "package:pypi:sqlalchemy",
+      "specifier": "sqlalchemy",
+      "line": 6,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/contacts.py",
+      "target": "package:pypi:sqlalchemy.orm",
+      "specifier": "sqlalchemy.orm",
+      "line": 7,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/contacts.py",
+      "target": "runtime:python:__future__",
+      "specifier": "__future__",
+      "line": 1,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/contacts.py",
+      "target": "runtime:python:dataclasses",
+      "specifier": "dataclasses",
+      "line": 4,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/contacts.py",
+      "target": "runtime:python:re",
+      "specifier": "re",
+      "line": 3,
       "resolved": true,
       "confidence": 0.85,
       "extractor": "python-imports"
@@ -4463,6 +5323,36 @@
     },
     {
       "type": "imports",
+      "source": "file:src/outreach/verification.py",
+      "target": "runtime:python:__future__",
+      "specifier": "__future__",
+      "line": 1,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/verification.py",
+      "target": "runtime:python:dataclasses",
+      "specifier": "dataclasses",
+      "line": 3,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/verification.py",
+      "target": "runtime:python:datetime",
+      "specifier": "datetime",
+      "line": 4,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
       "source": "file:tests/conftest.py",
       "target": "package:pypi:outreach.db",
       "specifier": "outreach.db",
@@ -4697,6 +5587,116 @@
       "target": "runtime:python:pathlib",
       "specifier": "pathlib",
       "line": 4,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/test_contacts.py",
+      "target": "file:tests/factories.py",
+      "specifier": "tests.factories",
+      "line": 14,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/test_contacts.py",
+      "target": "package:pypi:outreach.bundles",
+      "specifier": "outreach.bundles",
+      "line": 9,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/test_contacts.py",
+      "target": "package:pypi:outreach.contacts",
+      "specifier": "outreach.contacts",
+      "line": 10,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/test_contacts.py",
+      "target": "package:pypi:outreach.foundation",
+      "specifier": "outreach.foundation",
+      "line": 11,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/test_contacts.py",
+      "target": "package:pypi:outreach.models",
+      "specifier": "outreach.models",
+      "line": 12,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/test_contacts.py",
+      "target": "package:pypi:outreach.verification",
+      "specifier": "outreach.verification",
+      "line": 13,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/test_contacts.py",
+      "target": "package:pypi:pytest",
+      "specifier": "pytest",
+      "line": 5,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/test_contacts.py",
+      "target": "package:pypi:sqlalchemy",
+      "specifier": "sqlalchemy",
+      "line": 6,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/test_contacts.py",
+      "target": "package:pypi:sqlalchemy.orm",
+      "specifier": "sqlalchemy.orm",
+      "line": 7,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/test_contacts.py",
+      "target": "runtime:python:__future__",
+      "specifier": "__future__",
+      "line": 1,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/test_contacts.py",
+      "target": "runtime:python:datetime",
+      "specifier": "datetime",
+      "line": 3,
       "resolved": true,
       "confidence": 0.85,
       "extractor": "python-imports"
@@ -5002,8 +6002,67 @@
       "extractor": "python-imports"
     },
     {
+      "type": "imports",
+      "source": "file:tests/test_verification.py",
+      "target": "package:pypi:outreach.verification",
+      "specifier": "outreach.verification",
+      "line": 8,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/test_verification.py",
+      "target": "package:pypi:pytest",
+      "specifier": "pytest",
+      "line": 6,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/test_verification.py",
+      "target": "runtime:python:__future__",
+      "specifier": "__future__",
+      "line": 1,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/test_verification.py",
+      "target": "runtime:python:dataclasses",
+      "specifier": "dataclasses",
+      "line": 3,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/test_verification.py",
+      "target": "runtime:python:datetime",
+      "specifier": "datetime",
+      "line": 4,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
       "type": "inherits",
       "source": "symbol:src/outreach/bundles.py#class:CandidateInput",
+      "target": "symbol:src/outreach/bundles.py#class:StrictModel",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "inherits",
+      "source": "symbol:src/outreach/bundles.py#class:ContactInput",
       "target": "symbol:src/outreach/bundles.py#class:StrictModel",
       "tier": "proven",
       "resolved": true,
@@ -5040,6 +6099,15 @@
     {
       "type": "inherits",
       "source": "symbol:src/outreach/bundles.py#class:ScoreInput",
+      "target": "symbol:src/outreach/bundles.py#class:StrictModel",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "inherits",
+      "source": "symbol:src/outreach/bundles.py#class:VerificationInput",
       "target": "symbol:src/outreach/bundles.py#class:StrictModel",
       "tier": "proven",
       "resolved": true,
@@ -5211,6 +6279,6 @@
   ],
   "warnings": [],
   "stats": {
-    "unresolvedCalls": 391
+    "unresolvedCalls": 446
   }
 }

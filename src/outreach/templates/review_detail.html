@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block title %}Review {{ company.name }} · AI Job Outreach{% endblock %}
+{% block content %}
+<p class="eyebrow">{{ draft.status }} · {{ match.fit_score }}/100 fit</p>
+<h1>{{ company.name }} — {{ job.title }}</h1>
+<div class="grid">
+  <section>
+    <h2>Email draft</h2>
+    <p>Recipient: {{ contact.name }} · {{ contact.role }} · {{ contact.email }}</p>
+    <p>Verification: {{ verification.status if verification else "missing" }}</p>
+    <form action="/drafts/{{ draft.id }}/edit" method="post" class="stack">
+      <label>Subject <input name="subject" value="{{ draft.subject }}" maxlength="255" required></label>
+      <label>Body <textarea name="body" rows="14" required>{{ draft.body }}</textarea></label>
+      <button type="submit">Save changes</button>
+    </form>
+    <div class="actions">
+      <form action="/drafts/{{ draft.id }}/approve" method="post"><button type="submit">Approve</button></form>
+      <form action="/drafts/{{ draft.id }}/deferred" method="post"><button class="secondary" type="submit">Defer</button></form>
+      <form action="/drafts/{{ draft.id }}/rejected" method="post"><button class="danger" type="submit">Reject</button></form>
+    </div>
+  </section>
+  <section>
+    <h2>Evidence</h2>
+    <h3>Score breakdown</h3>
+    <pre>{{ match.score_breakdown }}</pre>
+    <h3>Research</h3>
+    <ul>{% for item in evidence %}<li><strong>{{ item.evidence_type }}</strong>: {{ item.claim }}{% if item.source_url %} · <a href="{{ item.source_url }}" rel="noopener noreferrer">source</a>{% endif %}</li>{% endfor %}</ul>
+    <h3>Draft claims</h3>
+    <ul>{% for claim in claims %}<li>{{ claim.claim_text }} <small>({{ claim.evidence_reference }})</small></li>{% endfor %}</ul>
+  </section>
+</div>
+{% endblock %}
+

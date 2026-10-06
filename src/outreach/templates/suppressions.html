@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title %}Suppressions · AI Job Outreach{% endblock %}
+{% block content %}
+<h1>Suppressions</h1>
+<table><thead><tr><th>Company ID</th><th>Email</th><th>Reason</th><th>Permanent</th></tr></thead><tbody>
+{% for item in rows %}<tr><td>{{ item.company_id or "—" }}</td><td>{{ item.normalized_email or "—" }}</td><td>{{ item.reason }}</td><td>{{ "Yes" if item.permanent else "No" }}</td></tr>
+{% else %}<tr><td colspan="4">No suppressions recorded.</td></tr>{% endfor %}
+</tbody></table>
+{% endblock %}
+

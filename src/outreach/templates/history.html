@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title %}History · AI Job Outreach{% endblock %}
+{% block content %}
+<h1>Outreach history</h1>
+<table><thead><tr><th>Status</th><th>Sent</th><th>Message ID</th></tr></thead><tbody>
+{% for message in messages %}<tr><td>{{ message.status }}</td><td>{{ message.sent_at or "—" }}</td><td>{{ message.gmail_message_id or "—" }}</td></tr>
+{% else %}<tr><td colspan="3">No emails have been sent.</td></tr>{% endfor %}
+</tbody></table>
+{% endblock %}
+
