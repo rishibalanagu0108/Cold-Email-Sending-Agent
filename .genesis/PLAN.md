@@ -10,15 +10,15 @@
 
 ### MVP-1 — Establish the Python application, Neon schema, resume profile versioning, canonical identities, deduplication, suppression, and audit foundations.
 
-- state/risk: active / medium
+- state/risk: done / medium
 - requirements: FR-1, FR-2, FR-3, FR-4, FR-19, FR-20, FR-22, FR-23, FR-24, FR-25, FR-51, NFR-3, NFR-5, NFR-10, AC-1, AC-3, AC-4, AC-6, AC-7, AC-8, AC-25
 - scope: not bounded
-- gates: foundation-tests: pytest -q tests/test_profile.py tests/test_dedup.py tests/test_schema.py, independent-review: pending
+- gates: foundation-tests: pytest -q tests/test_profile.py tests/test_dedup.py tests/test_schema.py, independent-review: pass
 - next: Run the task pre-flight.
 
 ### MVP-2 — Implement the manual Codex preparation contract, eligibility scoring, company research evidence, bundle validation, and atomic import for at most 20 companies.
 
-- state/risk: queued / medium
+- state/risk: active / medium
 - requirements: FR-5, FR-6, FR-7, FR-8, FR-9, FR-10, FR-11, FR-12, FR-13, FR-14, FR-15, FR-16, FR-17, FR-18, FR-21, FR-56, FR-57, FR-58, FR-59, FR-60, NFR-6, NFR-8, AC-2, AC-5, AC-9, AC-10, AC-11, AC-12, AC-26
 - scope: not bounded
 - gates: preparation-tests: pytest -q tests/test_bundle.py tests/test_matching.py tests/test_codex_contract.py, independent-review: pending

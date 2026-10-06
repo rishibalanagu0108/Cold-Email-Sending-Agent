@@ -9,7 +9,7 @@
     "non_goals": [],
     "trust_boundary": "local repository",
     "created_at": "2026-10-06T09:40:47.262Z",
-    "updated_at": "2026-10-06T13:56:27.792Z"
+    "updated_at": "2026-10-06T14:19:53.992Z"
   },
   "policy": {
     "ponytail": "full",
@@ -25,7 +25,7 @@
   "lifecycle": {
     "phase": "build",
     "status": "active",
-    "active_task": "MVP-1",
+    "active_task": "MVP-2",
     "blocker": null,
     "next_action": "Run the task pre-flight."
   },
@@ -372,7 +372,7 @@
     {
       "id": "MVP-1",
       "outcome": "Establish the Python application, Neon schema, resume profile versioning, canonical identities, deduplication, suppression, and audit foundations.",
-      "state": "active",
+      "state": "done",
       "risk": "medium",
       "owner": null,
       "scope": [],
@@ -423,8 +423,14 @@
           "kind": "review",
           "command": "",
           "mandatory": true,
-          "status": "pending",
-          "evidence": null
+          "status": "pass",
+          "evidence": {
+            "path": ".genesis/evidence/MVP-1-independent-review-bfea3be4-5989-437a-ac3e-1ade49a7a896.json",
+            "hash": "765d1d7a68bac30a0865d4eb13e6bb3cdb7de2016d6b6c782798ed41804047ce",
+            "source_hash": "8166f74da87b80a9310b91c19f9fe3ba3414e7624abc1690d71d89a488f50970",
+            "config_hash": "73a0ab3a57e9a0eeaea9480fa9c699660178811c9952d7da7204252b544c5ec9",
+            "observed_at": "2026-10-06T14:19:53.595Z"
+          }
         }
       ],
       "next_action": "Run the task pre-flight.",
@@ -433,7 +439,7 @@
       "failures": [],
       "limitations": [],
       "created_at": "2026-10-06T13:39:21.545Z",
-      "updated_at": "2026-10-06T13:39:21.545Z",
+      "updated_at": "2026-10-06T14:19:53.981Z",
       "base_manifest": {
         "AGENTS.md": "a67615d8ed1ed3dd1b0d2cbf874ceb8d4a285c3335cdfc2d785ec80a06daecc1",
         "ARCHITECTURE.md": "0baca8b06de1feb15c0cb117f1e3508dab1d32f1b190ade571c8512b486f8ae4",
@@ -446,7 +452,7 @@
     {
       "id": "MVP-2",
       "outcome": "Implement the manual Codex preparation contract, eligibility scoring, company research evidence, bundle validation, and atomic import for at most 20 companies.",
-      "state": "queued",
+      "state": "active",
       "risk": "medium",
       "owner": null,
       "scope": [],
@@ -509,7 +515,36 @@
       "failures": [],
       "limitations": [],
       "created_at": "2026-10-06T13:39:21.712Z",
-      "updated_at": "2026-10-06T13:39:21.712Z"
+      "updated_at": "2026-10-06T13:39:21.712Z",
+      "base_manifest": {
+        ".env.example": "f0624d9726a09ea0eef08d8f3da5371a818f0732a252259f3f772786052649a5",
+        ".gitignore": "c3b006eebc1b3c4fedbeeb04490d47e1d856c170be079520792e39683a27771c",
+        "AGENTS.md": "a67615d8ed1ed3dd1b0d2cbf874ceb8d4a285c3335cdfc2d785ec80a06daecc1",
+        "ARCHITECTURE.md": "0baca8b06de1feb15c0cb117f1e3508dab1d32f1b190ade571c8512b486f8ae4",
+        "CODEX_BUILD_PROMPT.md": "55c345db99219592516157b90e7952e8974d51d45acd49171de30a70a6084991",
+        "CODEX_RUNBOOK.md": "30f59a6e1b42f8a9f13bff87c737728eac6bc2932850bd6052a7e275580bcb6a",
+        "README.md": "66cd27df1ca782aecd30ba6b35a8c17cd1d43274c94dd942f612f589b06c4a2e",
+        "SPEC.md": "837dde97de07a64e3c2736837a93c07029bd1cedfa67f61825d651e1baef68f2",
+        "alembic.ini": "123c994d1446cdc3dcb2ad6d33c69901e0e3e21e74c4e9b155e1069332dbb15e",
+        "migrations/README": "fe59122c077f3461bae8462aae75c1a07513a96438e9034d4383925128e567b7",
+        "migrations/env.py": "bb9dffe28e1b8ff70609636258620e0c78137cc8062e910e41191bf9bbc139ee",
+        "migrations/script.py.mako": "4068908a2d04f8779209a1026b8f387741e399c42f1f8f1aecd51499e2855755",
+        "migrations/versions/e3cb32e9cf04_initial_schema.py": "90a2caaa54df35755e3445e97ee3b42b8fa08e293bb9ed8c51ea57f0f47f4226",
+        "pyproject.toml": "fcd39a1a8a252de61bc577aba40fd20d89628649886e63a8716b76c1d782ad65",
+        "src/outreach/__init__.py": "9fc71feda32a4ff8a3eb0661191468e3c5f9c3085e1cf4629232ac8112142d9e",
+        "src/outreach/__main__.py": "90967db7d03ba6c001e5eb9e89491922ab1b0a2a24ea68130148a05b225bc3d3",
+        "src/outreach/config.py": "72c982efa77fe9fa1ac92e455e3384dcc01aac54ea5694f22d7aa06ce8998384",
+        "src/outreach/db.py": "4a4c4b91d83d563a2bd90958f7c171ceb495e62047892dfb6e98b10aaaccf019",
+        "src/outreach/foundation.py": "25c4062a013473176155bd093a0301cd6c7a004b745fa357b18637201b3b0d06",
+        "src/outreach/identity.py": "f58ddc75311b527da76a9c3becefe1461097f95f3461555abf048daae091dab5",
+        "src/outreach/models.py": "961497473206a15905643a283f0fc22167da36135bbd483d4e922e91e3ff9d3b",
+        "src/outreach/resume.py": "9340c2489d3a91199f8ce9635ad0c538478b4fee2d1342b91ea005fb2213939e",
+        "tests/conftest.py": "00bc43c0ae91d06b542bbc021cb95224b64fc37b88d9658953362b63d3b9525b",
+        "tests/test_dedup.py": "6dd1bc7548cbb2b8ac3f7b4cba26871ab1b2c03538d5edc87296622fe11497bf",
+        "tests/test_profile.py": "a2978174564e8d9f60804cfb2c024377b819f5c820fc0a57a67f657f9008f92c",
+        "tests/test_schema.py": "166ab6a1c7ab214fb6727669fb927be2b3f0f7c13e2fb364ff14ebabde570cc9",
+        "uv.lock": "6764ccac7a8c5cc40962e75680b871b67d5fada25bd600da57a62bee71c07e62"
+      }
     },
     {
       "id": "MVP-3",
@@ -715,7 +750,17 @@
   ],
   "learning_proposals": [],
   "cleanup_proposals": [],
-  "controls": [],
+  "controls": [
+    {
+      "id": "bfea3be4-5989-437a-ac3e-1ade49a7a896",
+      "at": "2026-10-06T14:19:53.595Z",
+      "action": "approve",
+      "task": "MVP-1",
+      "human": "Project owner",
+      "reason": "User reviewed and explicitly approved MVP-1.",
+      "revision": null
+    }
+  ],
   "attempts": [
     {
       "id": "f9cc3606-68d9-4153-b35c-02fab0cbe854",

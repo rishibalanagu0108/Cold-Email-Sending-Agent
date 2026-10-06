@@ -1,0 +1,13 @@
+{
+  "task": "MVP-1",
+  "gate": "independent-review",
+  "kind": "review",
+  "attempt": "bfea3be4-5989-437a-ac3e-1ade49a7a896",
+  "human": "Project owner",
+  "reason": "User reviewed and explicitly approved MVP-1.",
+  "observed_at": "2026-10-06T14:19:53.595Z",
+  "source_hash": "8166f74da87b80a9310b91c19f9fe3ba3414e7624abc1690d71d89a488f50970",
+  "config_hash": "73a0ab3a57e9a0eeaea9480fa9c699660178811c9952d7da7204252b544c5ec9",
+  "reviewed_proofs": "3baef905dd2f4735f647e4a302987d5eaa32e4a282baeed6557422c392f8ebd1",
+  "hash": "765d1d7a68bac30a0865d4eb13e6bb3cdb7de2016d6b6c782798ed41804047ce"
+}

@@ -4,11 +4,11 @@
 
 - objective: Specify a local approval-first cold-email outreach platform for matching AI roles to the user's resume, researching companies and verified professional contacts, generating evidence-grounded personalized drafts through Codex CLI, deduplicating outreach in Neon PostgreSQL, exporting jobs to CSV, and sending user-approved batches through Gmail.
 - phase/status: build/active
-- active task: MVP-1 — Establish the Python application, Neon schema, resume profile versioning, canonical identities, deduplication, suppression, and audit foundations.
+- active task: MVP-2 — Implement the manual Codex preparation contract, eligibility scoring, company research evidence, bundle validation, and atomic import for at most 20 companies.
 - blocker: none
 - next action: Run the task pre-flight.
 - phase instruction: Implement only the active task and prove it against current sources. Check `genesis query . impact PATH` before editing shared code.
-- gates: foundation-tests:pass, independent-review:pending
+- gates: preparation-tests:pending, independent-review:pending
 - recent failures: none
 
 ## Resume
@@ -17,8 +17,8 @@ Load Genesis and official Ponytail full, then run `genesis brief .` for the curr
 Fetch full records with `genesis context . --id ID` only when needed. Do not load project.json or historical proof wholesale.
 Ask the index before reading code: `genesis query . search|scope|callers|callees|impact|path` (`--json` for parsing). Run `genesis query . impact PATH` before editing shared code. Answers are advisory static analysis; `ambiguous` means candidates were not ruled out, so confirm in source.
 Run `genesis serve .` for a live map of the repository when structure is unclear; it reindexes on save and is read-only. Run `genesis index .` if the index is stale and nothing is watching.
-Context fingerprint: cc44ce2225c0607b133a24f3915e14e4f50434f2141f01b1ea5c94dd3e8ae9da. Use --since only after receiving that full packet; kickoff is not the packet.
-- DECISION-2cf39834: Storage and interface without CSV
+Context fingerprint: d68ff3116eac9d06eab2c69f2bbc064ef068b393954dc226058b261fefe9a17c. Use --since only after receiving that full packet; kickoff is not the packet.
+- DECISION-3c040385: MVP operating model
 - DECISION-18862c53: Verification and deduplication
 - DECISION-ee081748: Targeting and contact hierarchy
 Applicable invariants, active rules, authorization and proof references are in the packet. Truncated summaries are retrieval pointers, not the full evidence.
