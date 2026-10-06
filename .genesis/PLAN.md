@@ -42,15 +42,15 @@
 
 ### MVP-5 — Implement explicitly initiated Gmail batch delivery, durable send idempotency, ambiguous-outcome recovery, reply sync, and suppression.
 
-- state/risk: active / high
+- state/risk: done / high
 - requirements: FR-45, FR-46, FR-47, FR-48, FR-49, FR-50, NFR-1, NFR-2, NFR-4, AC-16, AC-17, AC-18, AC-19, AC-20, AC-21, AC-23
 - scope: not bounded
-- gates: mail-tests: pytest -q tests/test_send_gate.py tests/test_mailer.py tests/test_replies.py tests/test_secrets.py, independent-review: pending
+- gates: mail-tests: pytest -q tests/test_send_gate.py tests/test_mailer.py tests/test_replies.py tests/test_secrets.py, independent-review: pass
 - next: Run the task pre-flight.
 
 ### MVP-0 — Confirm the resume-aligned Python stack, bootstrap the local application, and enforce the boundary that resume files and secrets remain local while Neon stores only permitted structured data.
 
-- state/risk: queued / medium
+- state/risk: active / medium
 - requirements: FR-52, NFR-12
 - scope: not bounded
 - gates: bootstrap-tests: pytest -q tests/test_config.py tests/test_local_data_boundary.py, independent-review: pending

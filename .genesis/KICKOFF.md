@@ -4,11 +4,11 @@
 
 - objective: Specify a local approval-first cold-email outreach platform for matching AI roles to the user's resume, researching companies and verified professional contacts, generating evidence-grounded personalized drafts through Codex CLI, deduplicating outreach in Neon PostgreSQL, exporting jobs to CSV, and sending user-approved batches through Gmail.
 - phase/status: build/active
-- active task: MVP-5 — Implement explicitly initiated Gmail batch delivery, durable send idempotency, ambiguous-outcome recovery, reply sync, and suppression.
+- active task: MVP-0 — Confirm the resume-aligned Python stack, bootstrap the local application, and enforce the boundary that resume files and secrets remain local while Neon stores only permitted structured data.
 - blocker: none
 - next action: Run the task pre-flight.
 - phase instruction: Implement only the active task and prove it against current sources. Check `genesis query . impact PATH` before editing shared code.
-- gates: mail-tests:pass, independent-review:pending
+- gates: bootstrap-tests:pending, independent-review:pending
 - recent failures: none
 
 ## Resume
@@ -17,9 +17,9 @@ Load Genesis and official Ponytail full, then run `genesis brief .` for the curr
 Fetch full records with `genesis context . --id ID` only when needed. Do not load project.json or historical proof wholesale.
 Ask the index before reading code: `genesis query . search|scope|callers|callees|impact|path` (`--json` for parsing). Run `genesis query . impact PATH` before editing shared code. Answers are advisory static analysis; `ambiguous` means candidates were not ruled out, so confirm in source.
 Run `genesis serve .` for a live map of the repository when structure is unclear; it reindexes on save and is read-only. Run `genesis index .` if the index is stale and nothing is watching.
-Context fingerprint: 77f7ba1aaceaa576598d016f7bf829485869d005268473d80409a664eb5214c0. Use --since only after receiving that full packet; kickoff is not the packet.
-- DECISION-282d4901: Approval and sending boundary
-- DECISION-18862c53: Verification and deduplication
+Context fingerprint: bee4b1e7f006e42ac4127f3af26bf473167d426bda7ef21ff6710d0f84141023. Use --since only after receiving that full packet; kickoff is not the packet.
 - DECISION-2cf39834: Storage and interface without CSV
+- DECISION-18862c53: Verification and deduplication
+- DECISION-282d4901: Approval and sending boundary
 Applicable invariants, active rules, authorization and proof references are in the packet. Truncated summaries are retrieval pointers, not the full evidence.
 Reuse fresh gates with --reuse. Reconcile interrupted attempts before replaying commands. Report state → evidence → blocker → next action; checkpoint before stopping.
