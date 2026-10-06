@@ -1,7 +1,6 @@
 from __future__ import annotations
 
 import hashlib
-import shutil
 from dataclasses import dataclass
 from pathlib import Path
 
@@ -9,6 +8,7 @@ from pypdf import PdfReader
 from sqlalchemy import select
 from sqlalchemy.orm import Session
 
+from outreach.local_files import ensure_private_directory, write_private_bytes
 from outreach.models import AuditEvent, ProfileFact, ResumeVersion
 
 
@@ -34,11 +34,10 @@ def import_resume(session: Session, source: Path, data_dir: Path) -> ResumeVersi
     if existing:
         return existing
 
-    resume_dir = data_dir.expanduser().resolve() / "resumes"
-    resume_dir.mkdir(parents=True, exist_ok=True)
+    resume_dir = ensure_private_directory(data_dir.expanduser().resolve() / "resumes")
     destination = resume_dir / f"{digest}.pdf"
     if not destination.exists():
-        shutil.copyfile(source, destination)
+        write_private_bytes(destination, content)
 
     try:
         reader = PdfReader(destination)

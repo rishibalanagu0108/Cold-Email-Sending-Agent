@@ -1,6 +1,5 @@
 from __future__ import annotations
 
-import shutil
 from collections.abc import Generator
 from pathlib import Path
 from uuid import uuid4
@@ -15,6 +14,7 @@ from sqlalchemy.orm import Session
 from outreach.config import Settings, get_settings
 from outreach.db import create_database_engine
 from outreach.drafts import approve_draft, edit_draft, set_draft_status
+from outreach.local_files import write_private_bytes
 from outreach.mail import GmailSMTPTransport, send_approved_batch
 from outreach.models import (
     Company,
@@ -117,10 +117,11 @@ def create_app(
         if not resume_file.filename or not resume_file.filename.lower().endswith(".pdf"):
             raise HTTPException(400, "A PDF resume is required")
         upload_dir = request.app.state.settings.local_data_dir / "uploads"
-        upload_dir.mkdir(parents=True, exist_ok=True)
         temporary = upload_dir / "resume-upload.pdf"
-        with temporary.open("wb") as stream:
-            shutil.copyfileobj(resume_file.file, stream)
+        content = resume_file.file.read(10 * 1024 * 1024 + 1)
+        if len(content) > 10 * 1024 * 1024:
+            raise HTTPException(413, "Resume must be 10 MB or smaller")
+        write_private_bytes(temporary, content)
         try:
             import_resume(session, temporary, request.app.state.settings.local_data_dir)
             session.commit()

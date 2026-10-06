@@ -35,7 +35,13 @@ def _client_with_draft(tmp_path: Path) -> tuple[TestClient, object, str]:
         session.commit()
         import_bundle(session, make_bundle(resume.id))
         draft_id = session.scalar(select(Draft.id))
-    app = create_app(engine, Settings(local_data_dir=tmp_path / "local"))
+    app = create_app(
+        engine,
+        Settings(
+            database_url="sqlite+pysqlite:///:memory:",
+            local_data_dir=tmp_path / "local",
+        ),
+    )
     return TestClient(app), engine, str(draft_id)
 
 

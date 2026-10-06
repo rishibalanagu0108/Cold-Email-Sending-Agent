@@ -9,7 +9,7 @@
     "non_goals": [],
     "trust_boundary": "local repository",
     "created_at": "2026-10-06T09:40:47.262Z",
-    "updated_at": "2026-10-06T15:31:40.408Z"
+    "updated_at": "2026-10-06T15:36:32.155Z"
   },
   "policy": {
     "ponytail": "full",
@@ -908,8 +908,14 @@
           "kind": "command",
           "command": "pytest -q tests/test_config.py tests/test_local_data_boundary.py",
           "mandatory": true,
-          "status": "pending",
-          "evidence": null
+          "status": "pass",
+          "evidence": {
+            "path": ".genesis/evidence/MVP-0-bootstrap-tests-9ba07f2d-2951-4597-bc0e-9c2eef373147.json",
+            "hash": "4df1020606a2c47c17f779a693818ec216b600d3bd4213d3efedf2fd37ef8ef2",
+            "source_hash": "3f25ed3044dbe3167015f5e7579d65065913c86d8a5ee7c953c0c31e78e2936a",
+            "config_hash": "5abb3a0e03f931a0e722016146f857dd72d81e2bb2ed5cfa4105b6593615467e",
+            "observed_at": "2026-10-06T15:36:32.132Z"
+          }
         },
         {
           "id": "independent-review",
@@ -1184,6 +1190,102 @@
       "cost": null,
       "stop_reason": null,
       "ended_at": "2026-10-06T15:29:42.180Z"
+    },
+    {
+      "id": "ed95394f-a4a3-4ba7-84ca-4d290dde5584",
+      "task": "MVP-0",
+      "kind": "gate",
+      "command": "pytest -q tests/test_config.py tests/test_local_data_boundary.py",
+      "timeout": 120000,
+      "authorization": null,
+      "pid": 131508,
+      "child_pid": 131581,
+      "started_at": "2026-10-06T15:33:54.453Z",
+      "status": "passed",
+      "before_hash": "9078942c5d5108e8ddccb43dc9b5f5c7d7a18f2f659a564fbf22ae7c269c3ae7",
+      "config_hash": "5abb3a0e03f931a0e722016146f857dd72d81e2bb2ed5cfa4105b6593615467e",
+      "environment": {
+        "node": "v24.13.0",
+        "platform": "linux",
+        "arch": "x64",
+        "verifier": "358371454f03eb4fdfd3eda3cb1d18cb1dd8fe9445404bb3d3047267b3977eb9",
+        "variables": {}
+      },
+      "cost": null,
+      "stop_reason": null,
+      "ended_at": "2026-10-06T15:33:56.846Z"
+    },
+    {
+      "id": "192cbe67-f6c7-40c6-8f1b-6717ba86b8ca",
+      "task": "MVP-0",
+      "kind": "gate",
+      "command": "pytest -q tests/test_config.py tests/test_local_data_boundary.py",
+      "timeout": 120000,
+      "authorization": null,
+      "pid": 131636,
+      "child_pid": 131705,
+      "started_at": "2026-10-06T15:34:36.487Z",
+      "status": "passed",
+      "before_hash": "aacc5a640b8bc9af78e4eb5755b0988f7d0b511f435f7aed2eeff26bdf14b156",
+      "config_hash": "5abb3a0e03f931a0e722016146f857dd72d81e2bb2ed5cfa4105b6593615467e",
+      "environment": {
+        "node": "v24.13.0",
+        "platform": "linux",
+        "arch": "x64",
+        "verifier": "358371454f03eb4fdfd3eda3cb1d18cb1dd8fe9445404bb3d3047267b3977eb9",
+        "variables": {}
+      },
+      "cost": null,
+      "stop_reason": null,
+      "ended_at": "2026-10-06T15:34:38.965Z"
+    },
+    {
+      "id": "0bc9fc13-f716-4aa9-a5f6-49d72be288cf",
+      "task": "MVP-0",
+      "kind": "gate",
+      "command": "pytest -q tests/test_config.py tests/test_local_data_boundary.py",
+      "timeout": 120000,
+      "authorization": null,
+      "pid": 131889,
+      "child_pid": 131979,
+      "started_at": "2026-10-06T15:35:51.298Z",
+      "status": "failed",
+      "before_hash": "3adf31eaf87ee01e0a833bbd59e721265cb7c398615d05d634ebc3401f26a8db",
+      "config_hash": "5abb3a0e03f931a0e722016146f857dd72d81e2bb2ed5cfa4105b6593615467e",
+      "environment": {
+        "node": "v24.13.0",
+        "platform": "linux",
+        "arch": "x64",
+        "verifier": "358371454f03eb4fdfd3eda3cb1d18cb1dd8fe9445404bb3d3047267b3977eb9",
+        "variables": {}
+      },
+      "cost": null,
+      "stop_reason": "command-failed",
+      "ended_at": "2026-10-06T15:35:53.787Z"
+    },
+    {
+      "id": "9ba07f2d-2951-4597-bc0e-9c2eef373147",
+      "task": "MVP-0",
+      "kind": "gate",
+      "command": "pytest -q tests/test_config.py tests/test_local_data_boundary.py",
+      "timeout": 120000,
+      "authorization": null,
+      "pid": 132058,
+      "child_pid": 132143,
+      "started_at": "2026-10-06T15:36:29.552Z",
+      "status": "passed",
+      "before_hash": "3f25ed3044dbe3167015f5e7579d65065913c86d8a5ee7c953c0c31e78e2936a",
+      "config_hash": "5abb3a0e03f931a0e722016146f857dd72d81e2bb2ed5cfa4105b6593615467e",
+      "environment": {
+        "node": "v24.13.0",
+        "platform": "linux",
+        "arch": "x64",
+        "verifier": "358371454f03eb4fdfd3eda3cb1d18cb1dd8fe9445404bb3d3047267b3977eb9",
+        "variables": {}
+      },
+      "cost": null,
+      "stop_reason": null,
+      "ended_at": "2026-10-06T15:36:32.132Z"
     }
   ],
   "authorizations": [],

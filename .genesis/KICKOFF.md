@@ -8,7 +8,7 @@
 - blocker: none
 - next action: Run the task pre-flight.
 - phase instruction: Implement only the active task and prove it against current sources. Check `genesis query . impact PATH` before editing shared code.
-- gates: bootstrap-tests:pending, independent-review:pending
+- gates: bootstrap-tests:pass, independent-review:pending
 - recent failures: none
 
 ## Resume
@@ -17,7 +17,7 @@ Load Genesis and official Ponytail full, then run `genesis brief .` for the curr
 Fetch full records with `genesis context . --id ID` only when needed. Do not load project.json or historical proof wholesale.
 Ask the index before reading code: `genesis query . search|scope|callers|callees|impact|path` (`--json` for parsing). Run `genesis query . impact PATH` before editing shared code. Answers are advisory static analysis; `ambiguous` means candidates were not ruled out, so confirm in source.
 Run `genesis serve .` for a live map of the repository when structure is unclear; it reindexes on save and is read-only. Run `genesis index .` if the index is stale and nothing is watching.
-Context fingerprint: bee4b1e7f006e42ac4127f3af26bf473167d426bda7ef21ff6710d0f84141023. Use --since only after receiving that full packet; kickoff is not the packet.
+Context fingerprint: 9c4c443c5867833a842f21c2f4c852abe1f2e56e49bd39e256c402d36eaf698b. Use --since only after receiving that full packet; kickoff is not the packet.
 - DECISION-2cf39834: Storage and interface without CSV
 - DECISION-18862c53: Verification and deduplication
 - DECISION-282d4901: Approval and sending boundary

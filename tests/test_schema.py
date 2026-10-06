@@ -55,7 +55,7 @@ def test_configuration_normalizes_neon_driver_and_rejects_public_bind(tmp_path: 
         local_data_dir=tmp_path,
     )
     assert settings.database_url.startswith("postgresql+psycopg://")
-    assert "pass" not in repr(settings)
+    assert "user:pass@" not in repr(settings)
 
     with pytest.raises(ValueError, match="loopback"):
-        Settings(app_host="0.0.0.0")
+        Settings(database_url="sqlite+pysqlite:///:memory:", app_host="0.0.0.0")

@@ -64,7 +64,7 @@ class GmailSMTPTransport:
     def from_settings(cls, settings: Settings) -> GmailSMTPTransport:
         if not settings.gmail_address or not settings.gmail_app_password:
             raise ValueError("Gmail address and app password are required")
-        return cls(settings.gmail_address, settings.gmail_app_password)
+        return cls(settings.gmail_address, settings.gmail_app_password.get_secret_value())
 
     def send(self, outgoing: OutgoingEmail) -> str:
         message_id = make_msgid(domain=self.address.rsplit("@", 1)[-1])

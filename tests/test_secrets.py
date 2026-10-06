@@ -7,7 +7,7 @@ from outreach.config import Settings
 
 def test_secrets_are_hidden_from_configuration_representation() -> None:
     settings = Settings(
-        database_url="postgresql://user:database-secret@example.neon.tech/db",
+        database_url=("postgresql://user:database-secret@example.neon.tech/db?sslmode=require"),
         gmail_address="candidate@gmail.com",
         gmail_app_password="gmail-secret",
     )

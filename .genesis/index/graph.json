@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
   "project": "ai-job-outreach",
-  "revision": "b30b32d8d3f6a5b076c3a58bb401c964a6c342b5",
-  "sourceHash": "a02266c1e7b011af5b876cb4722a0818a0178dea5b3839514f6e1a5025fcb74a",
+  "revision": "34c48942e90a04fb395e5cf86e3cea2fba20a6b1",
+  "sourceHash": "078bc6d2c87a5f35faf3535be5a302d8fbf86e7f11567dbb14c798b2b8e163b6",
   "provenance": {
     "tool": "genesis-graphizer",
     "method": "static-analysis",
@@ -117,7 +117,7 @@
       "language": "python",
       "confidence": 1,
       "extractor": "filesystem",
-      "contentHash": "e6f8477f2821e4320ea217285cbd7b214d56b1bc6bf642665ac27cfeaa8d7ef6"
+      "contentHash": "6bc66efa680a36a6e8515e5e11a11ae24aa224bf85d690f0b8e5df2637abe13e"
     },
     {
       "id": "file:src/outreach/foundation.py",
@@ -140,6 +140,16 @@
       "contentHash": "4a036b423b12387862680e9b39209905b91c9ce10d92967d81a4bd6168081ee1"
     },
     {
+      "id": "file:src/outreach/mail.py",
+      "type": "file",
+      "label": "src/outreach/mail.py",
+      "path": "src/outreach/mail.py",
+      "language": "python",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "db122aa872fd0359de8d597789686cbd653c6b70a468b37c3e31e46c774e08b3"
+    },
+    {
       "id": "file:src/outreach/matching.py",
       "type": "file",
       "label": "src/outreach/matching.py",
@@ -158,6 +168,16 @@
       "confidence": 1,
       "extractor": "filesystem",
       "contentHash": "8d49aa44a1fed69f9291ec1b170eaa7a415e806f68e0d1b6ee06176357364b31"
+    },
+    {
+      "id": "file:src/outreach/replies.py",
+      "type": "file",
+      "label": "src/outreach/replies.py",
+      "path": "src/outreach/replies.py",
+      "language": "python",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "c82d8a418435c24add4f956c90b8e714e4dfa80bb28ebe63c42ecfc5aab25843"
     },
     {
       "id": "file:src/outreach/resume.py",
@@ -187,7 +207,7 @@
       "language": "python",
       "confidence": 1,
       "extractor": "filesystem",
-      "contentHash": "688ec5b127719bf6fe96af4ef994640aaaafda1c30d2f32518a1a4f1a4090b4c"
+      "contentHash": "3740b4b78f16c69abdbd777ee202544545b4299bf0353e42ff12d6654d739711"
     },
     {
       "id": "file:tests/__init__.py",
@@ -218,6 +238,16 @@
       "confidence": 1,
       "extractor": "filesystem",
       "contentHash": "03a479a4da1e1c5b115fa53ae4e97869a9019fb845e23160d28ab9e2dfaba8b8"
+    },
+    {
+      "id": "file:tests/mail_fixtures.py",
+      "type": "file",
+      "label": "tests/mail_fixtures.py",
+      "path": "tests/mail_fixtures.py",
+      "language": "python",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "a64abe1ecedcfa6790fa7a378137cb80fcc0c98abc0775f478816403f22223fb"
     },
     {
       "id": "file:tests/test_approval.py",
@@ -290,6 +320,16 @@
       "contentHash": "c905013fb566c677d89d2ea6c1f71fc1edaf943c685ff6c057c40a4e9981e3fa"
     },
     {
+      "id": "file:tests/test_mailer.py",
+      "type": "file",
+      "label": "tests/test_mailer.py",
+      "path": "tests/test_mailer.py",
+      "language": "python",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "48fce8e7a491f87ffdc732b6402af631ffbbfc39a3301e75288107c525751b40"
+    },
+    {
       "id": "file:tests/test_matching.py",
       "type": "file",
       "label": "tests/test_matching.py",
@@ -310,6 +350,16 @@
       "contentHash": "f3b4b4f4505ae08d61c04e089b5f0862729fc8c57a8a8409e10fca372d9c83c4"
     },
     {
+      "id": "file:tests/test_replies.py",
+      "type": "file",
+      "label": "tests/test_replies.py",
+      "path": "tests/test_replies.py",
+      "language": "python",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "d4795dcf7d4bf2ea081412de50dc7f0ecd253064de02d675fdad45859dd9ec0b"
+    },
+    {
       "id": "file:tests/test_schema.py",
       "type": "file",
       "label": "tests/test_schema.py",
@@ -318,6 +368,26 @@
       "confidence": 1,
       "extractor": "filesystem",
       "contentHash": "6951cb7bc0ec2e742f51abf23c40722e929f3c7a8179ef8ad58505667037029c"
+    },
+    {
+      "id": "file:tests/test_secrets.py",
+      "type": "file",
+      "label": "tests/test_secrets.py",
+      "path": "tests/test_secrets.py",
+      "language": "python",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "157c6fa2b21c21ac7bc3299ff5a9065bbf26cf207c42d3c105dcaad13c5fe014"
+    },
+    {
+      "id": "file:tests/test_send_gate.py",
+      "type": "file",
+      "label": "tests/test_send_gate.py",
+      "path": "tests/test_send_gate.py",
+      "language": "python",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "3aeddfde02bd95b160ce09f9ec67c460e1d10cad0b53d18ca84955d6a8f83cdd"
     },
     {
       "id": "file:tests/test_verification.py",
@@ -465,6 +535,15 @@
       "contentHash": "21f21233c237fd1414b7216096bd431457a341aff4008d2adacffa278cebe23f"
     },
     {
+      "id": "package:pypi:outreach.mail",
+      "type": "package",
+      "label": "outreach.mail",
+      "ecosystem": "pypi",
+      "confidence": 0.85,
+      "extractor": "import",
+      "contentHash": "820a354c7089f1e4b731a9d1e923d3c51f8d414afad3893a7011c4a95c7495bf"
+    },
+    {
       "id": "package:pypi:outreach.matching",
       "type": "package",
       "label": "outreach.matching",
@@ -481,6 +560,15 @@
       "confidence": 0.85,
       "extractor": "import",
       "contentHash": "79c6faba232e513f1d7d5ad0d34159e6034b73a6bf1273aeb4f78619e850101c"
+    },
+    {
+      "id": "package:pypi:outreach.replies",
+      "type": "package",
+      "label": "outreach.replies",
+      "ecosystem": "pypi",
+      "confidence": 0.85,
+      "extractor": "import",
+      "contentHash": "51eff00ebdc769336c53fd72b512c199785e9e22ef53692e24691e417cae5e50"
     },
     {
       "id": "package:pypi:outreach.resume",
@@ -636,6 +724,33 @@
       "contentHash": "4686554b9c3e1fb149a0e7e021505618c951f789cfec438f14e8947c05848d41"
     },
     {
+      "id": "runtime:python:email",
+      "type": "runtime",
+      "label": "email",
+      "language": "python",
+      "confidence": 0.85,
+      "extractor": "standard-library",
+      "contentHash": "2df844fe6eb011a4e74249c9ce0c8a12c2d9cba5f35fa2c71c89eab7bc18d6e3"
+    },
+    {
+      "id": "runtime:python:email.message",
+      "type": "runtime",
+      "label": "email.message",
+      "language": "python",
+      "confidence": 0.85,
+      "extractor": "standard-library",
+      "contentHash": "4b1d0c618bda1b6b3c397c0dde8e76b05d69c5a13198fca6d0e0ee56c08e582f"
+    },
+    {
+      "id": "runtime:python:email.utils",
+      "type": "runtime",
+      "label": "email.utils",
+      "language": "python",
+      "confidence": 0.85,
+      "extractor": "standard-library",
+      "contentHash": "aad50bbbf84ba31fe782be1f607862a938e5ff68131875caa28f7e9c0dfe93e0"
+    },
+    {
       "id": "runtime:python:functools",
       "type": "runtime",
       "label": "functools",
@@ -652,6 +767,15 @@
       "confidence": 0.85,
       "extractor": "standard-library",
       "contentHash": "77c0573ae65199003c1e54971c9c5faaa5fb7b2bf90715c1741b45eca6560e6c"
+    },
+    {
+      "id": "runtime:python:imaplib",
+      "type": "runtime",
+      "label": "imaplib",
+      "language": "python",
+      "confidence": 0.85,
+      "extractor": "standard-library",
+      "contentHash": "93f9fc41e3c96fb8b21b4a14112d44ebfe666eae172d99b63f55569090c3fb97"
     },
     {
       "id": "runtime:python:json",
@@ -697,6 +821,33 @@
       "confidence": 0.85,
       "extractor": "standard-library",
       "contentHash": "1f9c5b117bbaaa778431662f82c57f794f31f93c6cfe9d39cb1352cb0312ed70"
+    },
+    {
+      "id": "runtime:python:smtplib",
+      "type": "runtime",
+      "label": "smtplib",
+      "language": "python",
+      "confidence": 0.85,
+      "extractor": "standard-library",
+      "contentHash": "e744936f3231c0a567c1a08999b27773dceeb9e33ad8e4b4d312e4e356df904d"
+    },
+    {
+      "id": "runtime:python:ssl",
+      "type": "runtime",
+      "label": "ssl",
+      "language": "python",
+      "confidence": 0.85,
+      "extractor": "standard-library",
+      "contentHash": "be44643c3b2ec4836898e2a6d7d604f665a0a3efb7e27af39bfea4b46a033e5a"
+    },
+    {
+      "id": "runtime:python:time",
+      "type": "runtime",
+      "label": "time",
+      "language": "python",
+      "confidence": 0.85,
+      "extractor": "standard-library",
+      "contentHash": "014bbce4aa7affa7de55baf15d181f67d84d520282e7128ba1b00ed7e33f1025"
     },
     {
       "id": "runtime:python:typing",
@@ -1200,7 +1351,7 @@
       "name": "_aware",
       "label": "_aware",
       "path": "src/outreach/drafts.py",
-      "line": 118,
+      "line": 127,
       "confidence": 1,
       "extractor": "python-stdlib-ast",
       "contentHash": "971602a7cd306358ab1d324781bc30add4366c2e0c2e8ae6dc7e0e45028523e1"
@@ -1248,7 +1399,7 @@
       "name": "set_draft_status",
       "label": "set_draft_status",
       "path": "src/outreach/drafts.py",
-      "line": 107,
+      "line": 116,
       "confidence": 1,
       "extractor": "python-stdlib-ast",
       "contentHash": "f117b80f3cf0c84062f6d7bfedd0bb2e85eafdbe1b942ddf7d1120480a00118f"
@@ -1384,6 +1535,186 @@
       "confidence": 1,
       "extractor": "python-stdlib-ast",
       "contentHash": "4518979205abdb442cff79374d80904a86557f776f23af46e0618443f64d5ae3"
+    },
+    {
+      "id": "symbol:src/outreach/mail.py#class:AmbiguousDeliveryError",
+      "type": "symbol",
+      "kind": "class",
+      "name": "AmbiguousDeliveryError",
+      "label": "AmbiguousDeliveryError",
+      "path": "src/outreach/mail.py",
+      "line": 40,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "f9450a3e65975db3686ab31153ef02cc431f01ece9b5fa89b2166a82c39e31f9"
+    },
+    {
+      "id": "symbol:src/outreach/mail.py#class:DefiniteDeliveryError",
+      "type": "symbol",
+      "kind": "class",
+      "name": "DefiniteDeliveryError",
+      "label": "DefiniteDeliveryError",
+      "path": "src/outreach/mail.py",
+      "line": 36,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "893cf9c9207983e11df572d43c5709930fc5f42b21528d080522615e12738588"
+    },
+    {
+      "id": "symbol:src/outreach/mail.py#class:DeliveryError",
+      "type": "symbol",
+      "kind": "class",
+      "name": "DeliveryError",
+      "label": "DeliveryError",
+      "path": "src/outreach/mail.py",
+      "line": 32,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "6a226781eb78c7ec931b6a4f3d0fa45c699ccc1beb4e9cbd4608e62e9f0ecdf3"
+    },
+    {
+      "id": "symbol:src/outreach/mail.py#class:GmailSMTPTransport",
+      "type": "symbol",
+      "kind": "class",
+      "name": "GmailSMTPTransport",
+      "label": "GmailSMTPTransport",
+      "path": "src/outreach/mail.py",
+      "line": 57,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "2bece08b5385c674b05ea0f968f320b539bb38835b7306f93f20550724e92704"
+    },
+    {
+      "id": "symbol:src/outreach/mail.py#class:MailTransport",
+      "type": "symbol",
+      "kind": "class",
+      "name": "MailTransport",
+      "label": "MailTransport",
+      "path": "src/outreach/mail.py",
+      "line": 53,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "c4a04294f8ca6b232c3feff9b251d225a2c300b8ae778b5dad8e425b46b1510e"
+    },
+    {
+      "id": "symbol:src/outreach/mail.py#class:OutgoingEmail",
+      "type": "symbol",
+      "kind": "class",
+      "name": "OutgoingEmail",
+      "label": "OutgoingEmail",
+      "path": "src/outreach/mail.py",
+      "line": 45,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "304e086a11cc2708445fc2856675940fd2e3483fec8b7fcb537c5c7b3087bdf4"
+    },
+    {
+      "id": "symbol:src/outreach/mail.py#class:SendResult",
+      "type": "symbol",
+      "kind": "class",
+      "name": "SendResult",
+      "label": "SendResult",
+      "path": "src/outreach/mail.py",
+      "line": 103,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "f6f3c1be8ea81a5ae23a9beb85e306026216a0d6309b2a34ae230c81598d980d"
+    },
+    {
+      "id": "symbol:src/outreach/mail.py#function:_aware",
+      "type": "symbol",
+      "kind": "function",
+      "name": "_aware",
+      "label": "_aware",
+      "path": "src/outreach/mail.py",
+      "line": 260,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "971602a7cd306358ab1d324781bc30add4366c2e0c2e8ae6dc7e0e45028523e1"
+    },
+    {
+      "id": "symbol:src/outreach/mail.py#function:_sendable",
+      "type": "symbol",
+      "kind": "function",
+      "name": "_sendable",
+      "label": "_sendable",
+      "path": "src/outreach/mail.py",
+      "line": 210,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "0fd05f14e37999f45654da47d8851078d414ebc04f636ca52e537b7d522d038b"
+    },
+    {
+      "id": "symbol:src/outreach/mail.py#function:_summarize_batch",
+      "type": "symbol",
+      "kind": "function",
+      "name": "_summarize_batch",
+      "label": "_summarize_batch",
+      "path": "src/outreach/mail.py",
+      "line": 249,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "0b744cb3e959f3a84595eaa9b0dba7b98cb899f1db21445f0c3743ffba181c10"
+    },
+    {
+      "id": "symbol:src/outreach/mail.py#function:GmailSMTPTransport.__init__",
+      "type": "symbol",
+      "kind": "function",
+      "name": "GmailSMTPTransport.__init__",
+      "label": "GmailSMTPTransport.__init__",
+      "path": "src/outreach/mail.py",
+      "line": 58,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "02cc2d4770fa2bfebe576b94fa38c357fd2df3f9e5c9b1a674f48ed20337c3c8"
+    },
+    {
+      "id": "symbol:src/outreach/mail.py#function:GmailSMTPTransport.from_settings",
+      "type": "symbol",
+      "kind": "function",
+      "name": "GmailSMTPTransport.from_settings",
+      "label": "GmailSMTPTransport.from_settings",
+      "path": "src/outreach/mail.py",
+      "line": 64,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "6ddf642f07474bb015777e2f1f32a03e8470e885feff109cc7267d4e74ac74cb"
+    },
+    {
+      "id": "symbol:src/outreach/mail.py#function:GmailSMTPTransport.send",
+      "type": "symbol",
+      "kind": "function",
+      "name": "GmailSMTPTransport.send",
+      "label": "GmailSMTPTransport.send",
+      "path": "src/outreach/mail.py",
+      "line": 69,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "9f4633e95656bf887243ce5ec90c05bbe7ef97c81572c94b7ff7a1288a70e28a"
+    },
+    {
+      "id": "symbol:src/outreach/mail.py#function:MailTransport.send",
+      "type": "symbol",
+      "kind": "function",
+      "name": "MailTransport.send",
+      "label": "MailTransport.send",
+      "path": "src/outreach/mail.py",
+      "line": 54,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "83b34a9eb7a5ef68e73f7a57210eb0f3284851361c3870ea017c8a9663672eef"
+    },
+    {
+      "id": "symbol:src/outreach/mail.py#function:send_approved_batch",
+      "type": "symbol",
+      "kind": "function",
+      "name": "send_approved_batch",
+      "label": "send_approved_batch",
+      "path": "src/outreach/mail.py",
+      "line": 111,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "2dad0acb6dc8a38a58f3c710258494f593dba58580163bf6537844ae297cc448"
     },
     {
       "id": "symbol:src/outreach/matching.py#class:ScoreBreakdown",
@@ -1698,6 +2029,114 @@
       "contentHash": "7570bd2018447a05d9bc8ec87588c842fc22df31fcb59bc425ba835a9021c86c"
     },
     {
+      "id": "symbol:src/outreach/replies.py#class:GmailIMAPReader",
+      "type": "symbol",
+      "kind": "class",
+      "name": "GmailIMAPReader",
+      "label": "GmailIMAPReader",
+      "path": "src/outreach/replies.py",
+      "line": 45,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "e65eb2652644b589785444010eebb753ce7188fab5ae480e7a41ac6d653aefe3"
+    },
+    {
+      "id": "symbol:src/outreach/replies.py#class:InboundReply",
+      "type": "symbol",
+      "kind": "class",
+      "name": "InboundReply",
+      "label": "InboundReply",
+      "path": "src/outreach/replies.py",
+      "line": 35,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "8214c49a05828d2ab68d494d68beb8fb17ff78b1db500468d395c1677ce0465b"
+    },
+    {
+      "id": "symbol:src/outreach/replies.py#function:_plain_body",
+      "type": "symbol",
+      "kind": "function",
+      "name": "_plain_body",
+      "label": "_plain_body",
+      "path": "src/outreach/replies.py",
+      "line": 164,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "ab222d30f6955697c28ea60b9bfde1d39c771889fa9a7b9f60d0fe8cb6969944"
+    },
+    {
+      "id": "symbol:src/outreach/replies.py#function:_to_inbound",
+      "type": "symbol",
+      "kind": "function",
+      "name": "_to_inbound",
+      "label": "_to_inbound",
+      "path": "src/outreach/replies.py",
+      "line": 140,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "422704b16ccf3ad2fe67c8bf0a3f94240ce24a77509ff30dce36bc96abd134cc"
+    },
+    {
+      "id": "symbol:src/outreach/replies.py#function:classify_reply",
+      "type": "symbol",
+      "kind": "function",
+      "name": "classify_reply",
+      "label": "classify_reply",
+      "path": "src/outreach/replies.py",
+      "line": 78,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "b8df8917e41860e0bdb688bfc2a441b0d958fae671899c2d6a2110ab82bcbb6c"
+    },
+    {
+      "id": "symbol:src/outreach/replies.py#function:GmailIMAPReader.__init__",
+      "type": "symbol",
+      "kind": "function",
+      "name": "GmailIMAPReader.__init__",
+      "label": "GmailIMAPReader.__init__",
+      "path": "src/outreach/replies.py",
+      "line": 46,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "a2d8a0c137b5fe26c562e4ffaa4308c7b54eb5484a04b5e00be53c3253c953b6"
+    },
+    {
+      "id": "symbol:src/outreach/replies.py#function:GmailIMAPReader.fetch",
+      "type": "symbol",
+      "kind": "function",
+      "name": "GmailIMAPReader.fetch",
+      "label": "GmailIMAPReader.fetch",
+      "path": "src/outreach/replies.py",
+      "line": 57,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "09672f835e6c26082545d1c0725c36ea087cecad396cb5d7f21aaa450af80359"
+    },
+    {
+      "id": "symbol:src/outreach/replies.py#function:GmailIMAPReader.from_settings",
+      "type": "symbol",
+      "kind": "function",
+      "name": "GmailIMAPReader.from_settings",
+      "label": "GmailIMAPReader.from_settings",
+      "path": "src/outreach/replies.py",
+      "line": 52,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "e4870f626cc66f8114d192d8244915ac887b6baa3d7ed146a382f74233431a32"
+    },
+    {
+      "id": "symbol:src/outreach/replies.py#function:sync_replies",
+      "type": "symbol",
+      "kind": "function",
+      "name": "sync_replies",
+      "label": "sync_replies",
+      "path": "src/outreach/replies.py",
+      "line": 87,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "3d2a9c83ce91fd72a481dfd5f27481ad75ddc700a3f40fe7d0460aae35642663"
+    },
+    {
       "id": "symbol:src/outreach/resume.py#class:FactInput",
       "type": "symbol",
       "kind": "class",
@@ -1800,7 +2239,7 @@
       "name": "create_app",
       "label": "create_app",
       "path": "src/outreach/web.py",
-      "line": 37,
+      "line": 40,
       "confidence": 1,
       "extractor": "python-stdlib-ast",
       "contentHash": "afa04afda8b62c8b5ff01b15f595010827452e61a3ae6d5ab6b67c7ef55e1fb7"
@@ -1812,7 +2251,7 @@
       "name": "create_app.add_fact",
       "label": "create_app.add_fact",
       "path": "src/outreach/web.py",
-      "line": 118,
+      "line": 132,
       "confidence": 1,
       "extractor": "python-stdlib-ast",
       "contentHash": "f69b28ff2e64361a2de9907827e3bd3ba310ac06a0df45d466eb91a156665843"
@@ -1824,7 +2263,7 @@
       "name": "create_app.approve",
       "label": "create_app.approve",
       "path": "src/outreach/web.py",
-      "line": 245,
+      "line": 259,
       "confidence": 1,
       "extractor": "python-stdlib-ast",
       "contentHash": "245dc666bc4f6e628ef31af508a4d51f2f2219c0c07fe43ead8ec4001f7b724f"
@@ -1836,7 +2275,7 @@
       "name": "create_app.change_status",
       "label": "create_app.change_status",
       "path": "src/outreach/web.py",
-      "line": 253,
+      "line": 267,
       "confidence": 1,
       "extractor": "python-stdlib-ast",
       "contentHash": "8dead82eef14b4611e2cd0798dee76349ddc0d1436cf9bad4d8aad7603bf56d8"
@@ -1848,7 +2287,7 @@
       "name": "create_app.confirm_resume",
       "label": "create_app.confirm_resume",
       "path": "src/outreach/web.py",
-      "line": 145,
+      "line": 159,
       "confidence": 1,
       "extractor": "python-stdlib-ast",
       "contentHash": "a5e7711392f6245e2c73ed3c95cd6eb9d989c5a49538ba0da44d78e13c72da1a"
@@ -1860,7 +2299,7 @@
       "name": "create_app.database",
       "label": "create_app.database",
       "path": "src/outreach/web.py",
-      "line": 44,
+      "line": 58,
       "confidence": 1,
       "extractor": "python-stdlib-ast",
       "contentHash": "61a99355ad940e574633e92bcd0b106df64775730229e0360b5df4417fa738d1"
@@ -1872,7 +2311,7 @@
       "name": "create_app.history",
       "label": "create_app.history",
       "path": "src/outreach/web.py",
-      "line": 263,
+      "line": 277,
       "confidence": 1,
       "extractor": "python-stdlib-ast",
       "contentHash": "80a1e46fb2e8b7b4d6223ee8a8e3bc159baeba8697a14c81d388e5eb60479201"
@@ -1884,7 +2323,7 @@
       "name": "create_app.index",
       "label": "create_app.index",
       "path": "src/outreach/web.py",
-      "line": 59,
+      "line": 73,
       "confidence": 1,
       "extractor": "python-stdlib-ast",
       "contentHash": "20890ca260abab5c6d928aa5a013dcec5a253b2605be78cff6ec191cac79d534"
@@ -1896,7 +2335,7 @@
       "name": "create_app.opportunities",
       "label": "create_app.opportunities",
       "path": "src/outreach/web.py",
-      "line": 154,
+      "line": 168,
       "confidence": 1,
       "extractor": "python-stdlib-ast",
       "contentHash": "04b7062fe85aca31be9f5c93dc5e573e674e71542d348fecda1a201700ad6672"
@@ -1908,7 +2347,7 @@
       "name": "create_app.reject_cross_origin_posts",
       "label": "create_app.reject_cross_origin_posts",
       "path": "src/outreach/web.py",
-      "line": 49,
+      "line": 63,
       "confidence": 1,
       "extractor": "python-stdlib-ast",
       "contentHash": "152fe94a4a2e5c7d2b8c8d0a1c1ad947837bf1b741d03f587cef7fe73ed23e6e"
@@ -1920,7 +2359,7 @@
       "name": "create_app.review_detail",
       "label": "create_app.review_detail",
       "path": "src/outreach/web.py",
-      "line": 192,
+      "line": 206,
       "confidence": 1,
       "extractor": "python-stdlib-ast",
       "contentHash": "833c9856be0fa63c00ac7e03bdc890e3eb65e25f36264d6fee33e75e04402966"
@@ -1932,10 +2371,22 @@
       "name": "create_app.review_queue",
       "label": "create_app.review_queue",
       "path": "src/outreach/web.py",
-      "line": 179,
+      "line": 193,
       "confidence": 1,
       "extractor": "python-stdlib-ast",
       "contentHash": "58fe44ddb2c3985b2eaddd3acbe06ab3f77c34e0e85a7e746ad9aee7ee609873"
+    },
+    {
+      "id": "symbol:src/outreach/web.py#function:create_app.send_batch",
+      "type": "symbol",
+      "kind": "function",
+      "name": "create_app.send_batch",
+      "label": "create_app.send_batch",
+      "path": "src/outreach/web.py",
+      "line": 284,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "e7acf70ac441752ebe7962292b2d9e87bf4520be1a196ba9c4423f52c5e03c44"
     },
     {
       "id": "symbol:src/outreach/web.py#function:create_app.setup",
@@ -1944,7 +2395,7 @@
       "name": "create_app.setup",
       "label": "create_app.setup",
       "path": "src/outreach/web.py",
-      "line": 80,
+      "line": 94,
       "confidence": 1,
       "extractor": "python-stdlib-ast",
       "contentHash": "917307e3376b283bf9c11a498fb32af0b017d0910bbcf76925c10d87c054d193"
@@ -1956,7 +2407,7 @@
       "name": "create_app.status",
       "label": "create_app.status",
       "path": "src/outreach/web.py",
-      "line": 63,
+      "line": 77,
       "confidence": 1,
       "extractor": "python-stdlib-ast",
       "contentHash": "fbd042e62041e6b140ccba21d8cfb49ba7c4a6ef76fe1a3024968174177f64de"
@@ -1968,10 +2419,22 @@
       "name": "create_app.suppressions",
       "label": "create_app.suppressions",
       "path": "src/outreach/web.py",
-      "line": 270,
+      "line": 316,
       "confidence": 1,
       "extractor": "python-stdlib-ast",
       "contentHash": "d5564bbb70eb16b1cfdfc18b5c58cfd198646028c6fa276fa3958f485b36645a"
+    },
+    {
+      "id": "symbol:src/outreach/web.py#function:create_app.synchronize_replies",
+      "type": "symbol",
+      "kind": "function",
+      "name": "create_app.synchronize_replies",
+      "label": "create_app.synchronize_replies",
+      "path": "src/outreach/web.py",
+      "line": 305,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "06fb3c83ab24bcb742276ac5570bdf3f10e64bd4335430a9e97177e88d17f45f"
     },
     {
       "id": "symbol:src/outreach/web.py#function:create_app.update_draft",
@@ -1980,7 +2443,7 @@
       "name": "create_app.update_draft",
       "label": "create_app.update_draft",
       "path": "src/outreach/web.py",
-      "line": 232,
+      "line": 246,
       "confidence": 1,
       "extractor": "python-stdlib-ast",
       "contentHash": "3e809524c40f16c3f7924d8731a5645424ef1ddcdc090ab5cfc523a3d081456a"
@@ -1992,7 +2455,7 @@
       "name": "create_app.upload_resume",
       "label": "create_app.upload_resume",
       "path": "src/outreach/web.py",
-      "line": 98,
+      "line": 112,
       "confidence": 1,
       "extractor": "python-stdlib-ast",
       "contentHash": "edcf30383c096853efe48dfec4a00aedfefda0811bd8320fdc67a726012d07f7"
@@ -2044,6 +2507,18 @@
       "confidence": 1,
       "extractor": "python-stdlib-ast",
       "contentHash": "82e7c61bcff62c66e09c537dfb8da6a1a00f9baff934ca184f94d7a0cbcc6748"
+    },
+    {
+      "id": "symbol:tests/mail_fixtures.py#function:approved_draft",
+      "type": "symbol",
+      "kind": "function",
+      "name": "approved_draft",
+      "label": "approved_draft",
+      "path": "tests/mail_fixtures.py",
+      "line": 14,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "4f08cb7e0c2aa6f3c2aa5ee5b9fbfecec0eb5164e6ace4ad395007fe3286a9f2"
     },
     {
       "id": "symbol:tests/test_approval.py#function:_prepared_draft",
@@ -2442,6 +2917,102 @@
       "contentHash": "1f3f1923f01f9b8008653df3130409556bb150531e11fa8400e093fce2805cc4"
     },
     {
+      "id": "symbol:tests/test_mailer.py#class:FakeSMTP",
+      "type": "symbol",
+      "kind": "class",
+      "name": "FakeSMTP",
+      "label": "FakeSMTP",
+      "path": "tests/test_mailer.py",
+      "line": 11,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "03304641738146f40b4ae0f8ecefb6258a16ac7aaed06b6da73d6b79c2f75013"
+    },
+    {
+      "id": "symbol:tests/test_mailer.py#function:FakeSMTP.__enter__",
+      "type": "symbol",
+      "kind": "function",
+      "name": "FakeSMTP.__enter__",
+      "label": "FakeSMTP.__enter__",
+      "path": "tests/test_mailer.py",
+      "line": 20,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "71d67a12fb789c68b8877dbef97ac39522e98be7c3d359fdbfa91421134b2789"
+    },
+    {
+      "id": "symbol:tests/test_mailer.py#function:FakeSMTP.__exit__",
+      "type": "symbol",
+      "kind": "function",
+      "name": "FakeSMTP.__exit__",
+      "label": "FakeSMTP.__exit__",
+      "path": "tests/test_mailer.py",
+      "line": 23,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "68cc6c4927a5ea6833ffede1243bbf0b38ef8352f264a077c85b42f3f54e403c"
+    },
+    {
+      "id": "symbol:tests/test_mailer.py#function:FakeSMTP.__init__",
+      "type": "symbol",
+      "kind": "function",
+      "name": "FakeSMTP.__init__",
+      "label": "FakeSMTP.__init__",
+      "path": "tests/test_mailer.py",
+      "line": 15,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "24df6f2a6aa3913ead4aef7671a1481a02c412154f1294dece47bf1fa6ee944f"
+    },
+    {
+      "id": "symbol:tests/test_mailer.py#function:FakeSMTP.login",
+      "type": "symbol",
+      "kind": "function",
+      "name": "FakeSMTP.login",
+      "label": "FakeSMTP.login",
+      "path": "tests/test_mailer.py",
+      "line": 26,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "0b2bbf124799a2c2149e4431c75e397be13157aeb4bff4ea8ff1298e8cc22b3f"
+    },
+    {
+      "id": "symbol:tests/test_mailer.py#function:FakeSMTP.send_message",
+      "type": "symbol",
+      "kind": "function",
+      "name": "FakeSMTP.send_message",
+      "label": "FakeSMTP.send_message",
+      "path": "tests/test_mailer.py",
+      "line": 29,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "9363b2b6f185eda68440b2449331a229a359c53719a16f36cd26240252b02da0"
+    },
+    {
+      "id": "symbol:tests/test_mailer.py#function:test_gmail_transport_builds_plain_text_message_with_pdf",
+      "type": "symbol",
+      "kind": "function",
+      "name": "test_gmail_transport_builds_plain_text_message_with_pdf",
+      "label": "test_gmail_transport_builds_plain_text_message_with_pdf",
+      "path": "tests/test_mailer.py",
+      "line": 34,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "5fe325ce66d4931ac1cec80ac88f8b2c6c6319f3d94b46b1c1cc0ef5d8236b69"
+    },
+    {
+      "id": "symbol:tests/test_mailer.py#function:test_recipient_refusal_is_definite",
+      "type": "symbol",
+      "kind": "function",
+      "name": "test_recipient_refusal_is_definite",
+      "label": "test_recipient_refusal_is_definite",
+      "path": "tests/test_mailer.py",
+      "line": 59,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "a48b4f16f849c0d4443ea1045f9fe4426fc98c1d201e8d885b2b1599ac925d50"
+    },
+    {
       "id": "symbol:tests/test_matching.py#function:test_eligible_candidate_requires_job_and_company_evidence",
       "type": "symbol",
       "kind": "function",
@@ -2538,6 +3109,54 @@
       "contentHash": "706ad1d6e669efb6c80339afacf5c555fbaebc33fad22d9bbf0a5d252e9b07ea"
     },
     {
+      "id": "symbol:tests/test_replies.py#class:SuccessfulTransport",
+      "type": "symbol",
+      "kind": "class",
+      "name": "SuccessfulTransport",
+      "label": "SuccessfulTransport",
+      "path": "tests/test_replies.py",
+      "line": 15,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "52bf937b8fe45217371035aeedb76b5883d768000ba675ec222e8bbf4a4568ff"
+    },
+    {
+      "id": "symbol:tests/test_replies.py#function:SuccessfulTransport.send",
+      "type": "symbol",
+      "kind": "function",
+      "name": "SuccessfulTransport.send",
+      "label": "SuccessfulTransport.send",
+      "path": "tests/test_replies.py",
+      "line": 16,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "0fa2bc4118d32f21f93bf57bdc276f4c5f044268744fefd2f66efc35d803b299"
+    },
+    {
+      "id": "symbol:tests/test_replies.py#function:test_duplicate_and_unmatched_replies_are_safe",
+      "type": "symbol",
+      "kind": "function",
+      "name": "test_duplicate_and_unmatched_replies_are_safe",
+      "label": "test_duplicate_and_unmatched_replies_are_safe",
+      "path": "tests/test_replies.py",
+      "line": 53,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "a356bf7043cdc8bd35f46a3c3bf46b81e733842b331985d80378e7ac50c15775"
+    },
+    {
+      "id": "symbol:tests/test_replies.py#function:test_reply_is_matched_and_rejection_suppresses_company",
+      "type": "symbol",
+      "kind": "function",
+      "name": "test_reply_is_matched_and_rejection_suppresses_company",
+      "label": "test_reply_is_matched_and_rejection_suppresses_company",
+      "path": "tests/test_replies.py",
+      "line": 20,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "35a941e31158a071b529efc378c7ad147e93ad885bc41d14f4b7e39d29bce1ba"
+    },
+    {
       "id": "symbol:tests/test_schema.py#function:test_all_required_foundation_tables_exist",
       "type": "symbol",
       "kind": "function",
@@ -2572,6 +3191,126 @@
       "confidence": 1,
       "extractor": "python-stdlib-ast",
       "contentHash": "6b5b1d71f4c194225f14d7ab14d0d4a8a68da88bd0109142527cfa0875c1b0a0"
+    },
+    {
+      "id": "symbol:tests/test_secrets.py#function:test_secrets_are_hidden_from_configuration_representation",
+      "type": "symbol",
+      "kind": "function",
+      "name": "test_secrets_are_hidden_from_configuration_representation",
+      "label": "test_secrets_are_hidden_from_configuration_representation",
+      "path": "tests/test_secrets.py",
+      "line": 8,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "8063e66165dcfe815c7ba871f9c3cad1bbc8fe5f6aca9dab090de9e0ce570a6c"
+    },
+    {
+      "id": "symbol:tests/test_secrets.py#function:test_sensitive_local_files_are_gitignored",
+      "type": "symbol",
+      "kind": "function",
+      "name": "test_sensitive_local_files_are_gitignored",
+      "label": "test_sensitive_local_files_are_gitignored",
+      "path": "tests/test_secrets.py",
+      "line": 19,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "ffeb375154ccd645c25e872517e2d7410116384993ebfe005d45cc548ec5908b"
+    },
+    {
+      "id": "symbol:tests/test_send_gate.py#class:FakeTransport",
+      "type": "symbol",
+      "kind": "class",
+      "name": "FakeTransport",
+      "label": "FakeTransport",
+      "path": "tests/test_send_gate.py",
+      "line": 14,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "34f78a1da10808614320e99ffd904e99e572578b624e2616facb0ddd4a60655b"
+    },
+    {
+      "id": "symbol:tests/test_send_gate.py#function:FakeTransport.__init__",
+      "type": "symbol",
+      "kind": "function",
+      "name": "FakeTransport.__init__",
+      "label": "FakeTransport.__init__",
+      "path": "tests/test_send_gate.py",
+      "line": 15,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "fde1d5a183bdb0c1091416904c763deebcfe47d4059d8ab91675f32439160417"
+    },
+    {
+      "id": "symbol:tests/test_send_gate.py#function:FakeTransport.send",
+      "type": "symbol",
+      "kind": "function",
+      "name": "FakeTransport.send",
+      "label": "FakeTransport.send",
+      "path": "tests/test_send_gate.py",
+      "line": 19,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "5580f2e4705f05a424f6d80bf1a5c43a43dd2eb617d165a2850b0f1b4bd30990"
+    },
+    {
+      "id": "symbol:tests/test_send_gate.py#function:test_ambiguous_delivery_is_never_retried",
+      "type": "symbol",
+      "kind": "function",
+      "name": "test_ambiguous_delivery_is_never_retried",
+      "label": "test_ambiguous_delivery_is_never_retried",
+      "path": "tests/test_send_gate.py",
+      "line": 94,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "b6ed10094a616fed81a006cf5663702f0804d3287351b8e3f28a37d0815c07eb"
+    },
+    {
+      "id": "symbol:tests/test_send_gate.py#function:test_only_approved_current_revision_is_sent",
+      "type": "symbol",
+      "kind": "function",
+      "name": "test_only_approved_current_revision_is_sent",
+      "label": "test_only_approved_current_revision_is_sent",
+      "path": "tests/test_send_gate.py",
+      "line": 26,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "083ffe95c7fb84ea7e2290712844584d1151f59dafb3c8b9d92639adf1c93427"
+    },
+    {
+      "id": "symbol:tests/test_send_gate.py#function:test_same_batch_and_revision_are_idempotent",
+      "type": "symbol",
+      "kind": "function",
+      "name": "test_same_batch_and_revision_are_idempotent",
+      "label": "test_same_batch_and_revision_are_idempotent",
+      "path": "tests/test_send_gate.py",
+      "line": 69,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "e6979b6f7b692c62d6a555546e0a29891152a0a7a942e523af263cd0f9065eb2"
+    },
+    {
+      "id": "symbol:tests/test_send_gate.py#function:test_send_batch_rejects_more_than_twenty",
+      "type": "symbol",
+      "kind": "function",
+      "name": "test_send_batch_rejects_more_than_twenty",
+      "label": "test_send_batch_rejects_more_than_twenty",
+      "path": "tests/test_send_gate.py",
+      "line": 119,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "fd9679dc0dd15eb531eb5f97a98832a6d8567527c56d96798adf58de3bc9d565"
+    },
+    {
+      "id": "symbol:tests/test_send_gate.py#function:test_unapproved_or_unverified_draft_never_calls_transport",
+      "type": "symbol",
+      "kind": "function",
+      "name": "test_unapproved_or_unverified_draft_never_calls_transport",
+      "label": "test_unapproved_or_unverified_draft_never_calls_transport",
+      "path": "tests/test_send_gate.py",
+      "line": 45,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "8e6dde3ee5dbbabc465e07f890bee061c5714e616bbd855671eaadc0f92c6324"
     },
     {
       "id": "symbol:tests/test_verification.py#function:_official",
@@ -3216,6 +3955,156 @@
     },
     {
       "type": "calls",
+      "source": "symbol:src/outreach/mail.py#function:_sendable",
+      "target": "symbol:src/outreach/foundation.py#function:company_eligibility",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/foundation.py#function:company_eligibility"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:src/outreach/mail.py#function:_sendable",
+      "target": "symbol:src/outreach/mail.py#function:_aware",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:src/outreach/mail.py#function:_summarize_batch",
+      "target": "symbol:src/outreach/mail.py#class:SendResult",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:src/outreach/mail.py#function:GmailSMTPTransport.send",
+      "target": "symbol:src/outreach/mail.py#class:AmbiguousDeliveryError",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:src/outreach/mail.py#function:GmailSMTPTransport.send",
+      "target": "symbol:src/outreach/mail.py#class:DefiniteDeliveryError",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:src/outreach/mail.py#function:GmailSMTPTransport.send",
+      "target": "symbol:tests/test_mailer.py#function:FakeSMTP.login",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:tests/test_mailer.py#function:FakeSMTP.login"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:src/outreach/mail.py#function:GmailSMTPTransport.send",
+      "target": "symbol:tests/test_mailer.py#function:FakeSMTP.send_message",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:tests/test_mailer.py#function:FakeSMTP.send_message"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:src/outreach/mail.py#function:send_approved_batch",
+      "target": "symbol:src/outreach/mail.py#class:OutgoingEmail",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:src/outreach/mail.py#function:send_approved_batch",
+      "target": "symbol:src/outreach/mail.py#class:SendResult",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:src/outreach/mail.py#function:send_approved_batch",
+      "target": "symbol:src/outreach/mail.py#function:_aware",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:src/outreach/mail.py#function:send_approved_batch",
+      "target": "symbol:src/outreach/mail.py#function:_sendable",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:src/outreach/mail.py#function:send_approved_batch",
+      "target": "symbol:src/outreach/mail.py#function:_summarize_batch",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:src/outreach/mail.py#function:send_approved_batch",
+      "target": "symbol:src/outreach/mail.py#function:MailTransport.send",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:src/outreach/mail.py#function:send_approved_batch",
+      "target": "symbol:src/outreach/models.py#class:OutreachMessage",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/models.py#class:OutreachMessage"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:src/outreach/mail.py#function:send_approved_batch",
+      "target": "symbol:src/outreach/models.py#class:SendBatch",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/models.py#class:SendBatch"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
       "source": "symbol:src/outreach/matching.py#function:ScoreBreakdown.as_dict",
       "target": "symbol:src/outreach/matching.py#function:ScoreBreakdown.validate",
       "tier": "proven",
@@ -3227,6 +4116,99 @@
       "type": "calls",
       "source": "symbol:src/outreach/matching.py#function:ScoreBreakdown.total",
       "target": "symbol:src/outreach/matching.py#function:ScoreBreakdown.validate",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:src/outreach/replies.py#function:_to_inbound",
+      "target": "symbol:src/outreach/replies.py#class:InboundReply",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:src/outreach/replies.py#function:_to_inbound",
+      "target": "symbol:src/outreach/replies.py#function:_plain_body",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:src/outreach/replies.py#function:_to_inbound",
+      "target": "symbol:src/outreach/verification.py#function:normalize_email",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/verification.py#function:normalize_email"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:src/outreach/replies.py#function:GmailIMAPReader.fetch",
+      "target": "symbol:src/outreach/replies.py#function:_to_inbound",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:src/outreach/replies.py#function:GmailIMAPReader.fetch",
+      "target": "symbol:src/outreach/replies.py#function:GmailIMAPReader.fetch",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:src/outreach/replies.py#function:GmailIMAPReader.fetch",
+      "target": "symbol:tests/test_mailer.py#function:FakeSMTP.login",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:tests/test_mailer.py#function:FakeSMTP.login"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:src/outreach/replies.py#function:sync_replies",
+      "target": "symbol:src/outreach/models.py#class:Reply",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/models.py#class:Reply"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:src/outreach/replies.py#function:sync_replies",
+      "target": "symbol:src/outreach/models.py#class:Suppression",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/models.py#class:Suppression"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:src/outreach/replies.py#function:sync_replies",
+      "target": "symbol:src/outreach/replies.py#function:classify_reply",
       "tier": "proven",
       "resolved": true,
       "confidence": 1,
@@ -3324,6 +4306,19 @@
     },
     {
       "type": "calls",
+      "source": "symbol:src/outreach/web.py#function:create_app",
+      "target": "symbol:src/outreach/mail.py#function:GmailSMTPTransport.from_settings",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/mail.py#function:GmailSMTPTransport.from_settings",
+        "symbol:src/outreach/replies.py#function:GmailIMAPReader.from_settings"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
       "source": "symbol:src/outreach/web.py#function:create_app.add_fact",
       "target": "symbol:src/outreach/models.py#class:ProfileFact",
       "tier": "ambiguous",
@@ -3384,6 +4379,42 @@
     },
     {
       "type": "calls",
+      "source": "symbol:src/outreach/web.py#function:create_app.send_batch",
+      "target": "symbol:src/outreach/mail.py#function:send_approved_batch",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/mail.py#function:send_approved_batch"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:src/outreach/web.py#function:create_app.synchronize_replies",
+      "target": "symbol:src/outreach/replies.py#function:GmailIMAPReader.fetch",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/replies.py#function:GmailIMAPReader.fetch"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:src/outreach/web.py#function:create_app.synchronize_replies",
+      "target": "symbol:src/outreach/replies.py#function:sync_replies",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/replies.py#function:sync_replies"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
       "source": "symbol:src/outreach/web.py#function:create_app.update_draft",
       "target": "symbol:src/outreach/drafts.py#function:edit_draft",
       "tier": "ambiguous",
@@ -3434,6 +4465,51 @@
       "tier": "proven",
       "resolved": true,
       "confidence": 1,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/mail_fixtures.py#function:approved_draft",
+      "target": "symbol:src/outreach/bundles.py#function:import_bundle",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/bundles.py#function:import_bundle"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/mail_fixtures.py#function:approved_draft",
+      "target": "symbol:src/outreach/drafts.py#function:approve_draft",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/drafts.py#function:approve_draft"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/mail_fixtures.py#function:approved_draft",
+      "target": "symbol:src/outreach/models.py#class:ResumeVersion",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/models.py#class:ResumeVersion"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/mail_fixtures.py#function:approved_draft",
+      "target": "symbol:tests/factories.py#function:bundle_payload",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 0.7,
       "extractor": "python-stdlib-ast-calls"
     },
     {
@@ -3838,11 +4914,11 @@
     {
       "type": "calls",
       "source": "symbol:tests/test_contacts.py#function:test_store_verified_professional_contact",
-      "target": "symbol:src/outreach/contacts.py#class:ContactInput",
+      "target": "symbol:src/outreach/bundles.py#class:ContactInput",
       "tier": "ambiguous",
       "candidates": [
-        "symbol:src/outreach/contacts.py#class:ContactInput",
-        "symbol:src/outreach/bundles.py#class:ContactInput"
+        "symbol:src/outreach/bundles.py#class:ContactInput",
+        "symbol:src/outreach/contacts.py#class:ContactInput"
       ],
       "resolved": false,
       "confidence": 0.3,
@@ -4348,6 +5424,84 @@
     },
     {
       "type": "calls",
+      "source": "symbol:tests/test_mailer.py#function:test_gmail_transport_builds_plain_text_message_with_pdf",
+      "target": "symbol:src/outreach/mail.py#class:GmailSMTPTransport",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/mail.py#class:GmailSMTPTransport"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_mailer.py#function:test_gmail_transport_builds_plain_text_message_with_pdf",
+      "target": "symbol:src/outreach/mail.py#class:OutgoingEmail",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/mail.py#class:OutgoingEmail"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_mailer.py#function:test_gmail_transport_builds_plain_text_message_with_pdf",
+      "target": "symbol:src/outreach/mail.py#function:MailTransport.send",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/mail.py#function:MailTransport.send",
+        "symbol:src/outreach/mail.py#function:GmailSMTPTransport.send",
+        "symbol:tests/test_replies.py#function:SuccessfulTransport.send",
+        "symbol:tests/test_send_gate.py#function:FakeTransport.send"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_mailer.py#function:test_recipient_refusal_is_definite",
+      "target": "symbol:src/outreach/mail.py#class:GmailSMTPTransport",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/mail.py#class:GmailSMTPTransport"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_mailer.py#function:test_recipient_refusal_is_definite",
+      "target": "symbol:src/outreach/mail.py#class:OutgoingEmail",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/mail.py#class:OutgoingEmail"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_mailer.py#function:test_recipient_refusal_is_definite",
+      "target": "symbol:src/outreach/mail.py#function:MailTransport.send",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/mail.py#function:MailTransport.send",
+        "symbol:src/outreach/mail.py#function:GmailSMTPTransport.send",
+        "symbol:tests/test_replies.py#function:SuccessfulTransport.send",
+        "symbol:tests/test_send_gate.py#function:FakeTransport.send"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
       "source": "symbol:tests/test_matching.py#function:test_eligible_candidate_requires_job_and_company_evidence",
       "target": "symbol:tests/factories.py#function:bundle_payload",
       "tier": "proven",
@@ -4528,6 +5682,96 @@
     },
     {
       "type": "calls",
+      "source": "symbol:tests/test_replies.py#function:test_duplicate_and_unmatched_replies_are_safe",
+      "target": "symbol:src/outreach/replies.py#class:InboundReply",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/replies.py#class:InboundReply"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_replies.py#function:test_duplicate_and_unmatched_replies_are_safe",
+      "target": "symbol:src/outreach/replies.py#function:classify_reply",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/replies.py#function:classify_reply"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_replies.py#function:test_duplicate_and_unmatched_replies_are_safe",
+      "target": "symbol:src/outreach/replies.py#function:sync_replies",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/replies.py#function:sync_replies"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_replies.py#function:test_reply_is_matched_and_rejection_suppresses_company",
+      "target": "symbol:src/outreach/mail.py#function:send_approved_batch",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/mail.py#function:send_approved_batch"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_replies.py#function:test_reply_is_matched_and_rejection_suppresses_company",
+      "target": "symbol:src/outreach/replies.py#class:InboundReply",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/replies.py#class:InboundReply"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_replies.py#function:test_reply_is_matched_and_rejection_suppresses_company",
+      "target": "symbol:src/outreach/replies.py#function:sync_replies",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/replies.py#function:sync_replies"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_replies.py#function:test_reply_is_matched_and_rejection_suppresses_company",
+      "target": "symbol:tests/mail_fixtures.py#function:approved_draft",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 0.7,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_replies.py#function:test_reply_is_matched_and_rejection_suppresses_company",
+      "target": "symbol:tests/test_replies.py#class:SuccessfulTransport",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
       "source": "symbol:tests/test_schema.py#function:test_all_required_foundation_tables_exist",
       "target": "symbol:src/outreach/db.py#function:create_database_engine",
       "tier": "ambiguous",
@@ -4560,6 +5804,171 @@
       ],
       "resolved": false,
       "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_secrets.py#function:test_secrets_are_hidden_from_configuration_representation",
+      "target": "symbol:src/outreach/config.py#class:Settings",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/config.py#class:Settings"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_send_gate.py#function:test_ambiguous_delivery_is_never_retried",
+      "target": "symbol:src/outreach/mail.py#class:AmbiguousDeliveryError",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/mail.py#class:AmbiguousDeliveryError"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_send_gate.py#function:test_ambiguous_delivery_is_never_retried",
+      "target": "symbol:src/outreach/mail.py#function:send_approved_batch",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/mail.py#function:send_approved_batch"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_send_gate.py#function:test_ambiguous_delivery_is_never_retried",
+      "target": "symbol:tests/mail_fixtures.py#function:approved_draft",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 0.7,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_send_gate.py#function:test_ambiguous_delivery_is_never_retried",
+      "target": "symbol:tests/test_send_gate.py#class:FakeTransport",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_send_gate.py#function:test_only_approved_current_revision_is_sent",
+      "target": "symbol:src/outreach/mail.py#function:send_approved_batch",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/mail.py#function:send_approved_batch"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_send_gate.py#function:test_only_approved_current_revision_is_sent",
+      "target": "symbol:tests/mail_fixtures.py#function:approved_draft",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 0.7,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_send_gate.py#function:test_only_approved_current_revision_is_sent",
+      "target": "symbol:tests/test_send_gate.py#class:FakeTransport",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_send_gate.py#function:test_same_batch_and_revision_are_idempotent",
+      "target": "symbol:src/outreach/mail.py#function:send_approved_batch",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/mail.py#function:send_approved_batch"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_send_gate.py#function:test_same_batch_and_revision_are_idempotent",
+      "target": "symbol:tests/mail_fixtures.py#function:approved_draft",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 0.7,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_send_gate.py#function:test_same_batch_and_revision_are_idempotent",
+      "target": "symbol:tests/test_send_gate.py#class:FakeTransport",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_send_gate.py#function:test_send_batch_rejects_more_than_twenty",
+      "target": "symbol:src/outreach/mail.py#function:send_approved_batch",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/mail.py#function:send_approved_batch"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_send_gate.py#function:test_send_batch_rejects_more_than_twenty",
+      "target": "symbol:tests/test_send_gate.py#class:FakeTransport",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_send_gate.py#function:test_unapproved_or_unverified_draft_never_calls_transport",
+      "target": "symbol:src/outreach/mail.py#function:send_approved_batch",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/mail.py#function:send_approved_batch"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_send_gate.py#function:test_unapproved_or_unverified_draft_never_calls_transport",
+      "target": "symbol:tests/mail_fixtures.py#function:approved_draft",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 0.7,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_send_gate.py#function:test_unapproved_or_unverified_draft_never_calls_transport",
+      "target": "symbol:tests/test_send_gate.py#class:FakeTransport",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 1,
       "extractor": "python-stdlib-ast-calls"
     },
     {
@@ -5025,7 +6434,7 @@
       "type": "defines",
       "source": "file:src/outreach/drafts.py",
       "target": "symbol:src/outreach/drafts.py#function:_aware",
-      "line": 118,
+      "line": 127,
       "resolved": true,
       "confidence": 1,
       "extractor": "python-stdlib-ast"
@@ -5061,7 +6470,7 @@
       "type": "defines",
       "source": "file:src/outreach/drafts.py",
       "target": "symbol:src/outreach/drafts.py#function:set_draft_status",
-      "line": 107,
+      "line": 116,
       "resolved": true,
       "confidence": 1,
       "extractor": "python-stdlib-ast"
@@ -5161,6 +6570,141 @@
       "source": "file:src/outreach/identity.py",
       "target": "symbol:src/outreach/identity.py#function:normalize_text",
       "line": 38,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/outreach/mail.py",
+      "target": "symbol:src/outreach/mail.py#class:AmbiguousDeliveryError",
+      "line": 40,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/outreach/mail.py",
+      "target": "symbol:src/outreach/mail.py#class:DefiniteDeliveryError",
+      "line": 36,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/outreach/mail.py",
+      "target": "symbol:src/outreach/mail.py#class:DeliveryError",
+      "line": 32,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/outreach/mail.py",
+      "target": "symbol:src/outreach/mail.py#class:GmailSMTPTransport",
+      "line": 57,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/outreach/mail.py",
+      "target": "symbol:src/outreach/mail.py#class:MailTransport",
+      "line": 53,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/outreach/mail.py",
+      "target": "symbol:src/outreach/mail.py#class:OutgoingEmail",
+      "line": 45,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/outreach/mail.py",
+      "target": "symbol:src/outreach/mail.py#class:SendResult",
+      "line": 103,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/outreach/mail.py",
+      "target": "symbol:src/outreach/mail.py#function:_aware",
+      "line": 260,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/outreach/mail.py",
+      "target": "symbol:src/outreach/mail.py#function:_sendable",
+      "line": 210,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/outreach/mail.py",
+      "target": "symbol:src/outreach/mail.py#function:_summarize_batch",
+      "line": 249,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/outreach/mail.py",
+      "target": "symbol:src/outreach/mail.py#function:GmailSMTPTransport.__init__",
+      "line": 58,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/outreach/mail.py",
+      "target": "symbol:src/outreach/mail.py#function:GmailSMTPTransport.from_settings",
+      "line": 64,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/outreach/mail.py",
+      "target": "symbol:src/outreach/mail.py#function:GmailSMTPTransport.send",
+      "line": 69,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/outreach/mail.py",
+      "target": "symbol:src/outreach/mail.py#function:MailTransport.send",
+      "line": 54,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/outreach/mail.py",
+      "target": "symbol:src/outreach/mail.py#function:send_approved_batch",
+      "line": 111,
       "resolved": true,
       "confidence": 1,
       "extractor": "python-stdlib-ast"
@@ -5401,6 +6945,87 @@
     },
     {
       "type": "defines",
+      "source": "file:src/outreach/replies.py",
+      "target": "symbol:src/outreach/replies.py#class:GmailIMAPReader",
+      "line": 45,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/outreach/replies.py",
+      "target": "symbol:src/outreach/replies.py#class:InboundReply",
+      "line": 35,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/outreach/replies.py",
+      "target": "symbol:src/outreach/replies.py#function:_plain_body",
+      "line": 164,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/outreach/replies.py",
+      "target": "symbol:src/outreach/replies.py#function:_to_inbound",
+      "line": 140,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/outreach/replies.py",
+      "target": "symbol:src/outreach/replies.py#function:classify_reply",
+      "line": 78,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/outreach/replies.py",
+      "target": "symbol:src/outreach/replies.py#function:GmailIMAPReader.__init__",
+      "line": 46,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/outreach/replies.py",
+      "target": "symbol:src/outreach/replies.py#function:GmailIMAPReader.fetch",
+      "line": 57,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/outreach/replies.py",
+      "target": "symbol:src/outreach/replies.py#function:GmailIMAPReader.from_settings",
+      "line": 52,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/outreach/replies.py",
+      "target": "symbol:src/outreach/replies.py#function:sync_replies",
+      "line": 87,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
       "source": "file:src/outreach/resume.py",
       "target": "symbol:src/outreach/resume.py#class:FactInput",
       "line": 16,
@@ -5475,7 +7100,7 @@
       "type": "defines",
       "source": "file:src/outreach/web.py",
       "target": "symbol:src/outreach/web.py#function:create_app",
-      "line": 37,
+      "line": 40,
       "resolved": true,
       "confidence": 1,
       "extractor": "python-stdlib-ast"
@@ -5484,7 +7109,7 @@
       "type": "defines",
       "source": "file:src/outreach/web.py",
       "target": "symbol:src/outreach/web.py#function:create_app.add_fact",
-      "line": 118,
+      "line": 132,
       "resolved": true,
       "confidence": 1,
       "extractor": "python-stdlib-ast"
@@ -5493,7 +7118,7 @@
       "type": "defines",
       "source": "file:src/outreach/web.py",
       "target": "symbol:src/outreach/web.py#function:create_app.approve",
-      "line": 245,
+      "line": 259,
       "resolved": true,
       "confidence": 1,
       "extractor": "python-stdlib-ast"
@@ -5502,7 +7127,7 @@
       "type": "defines",
       "source": "file:src/outreach/web.py",
       "target": "symbol:src/outreach/web.py#function:create_app.change_status",
-      "line": 253,
+      "line": 267,
       "resolved": true,
       "confidence": 1,
       "extractor": "python-stdlib-ast"
@@ -5511,7 +7136,7 @@
       "type": "defines",
       "source": "file:src/outreach/web.py",
       "target": "symbol:src/outreach/web.py#function:create_app.confirm_resume",
-      "line": 145,
+      "line": 159,
       "resolved": true,
       "confidence": 1,
       "extractor": "python-stdlib-ast"
@@ -5520,7 +7145,7 @@
       "type": "defines",
       "source": "file:src/outreach/web.py",
       "target": "symbol:src/outreach/web.py#function:create_app.database",
-      "line": 44,
+      "line": 58,
       "resolved": true,
       "confidence": 1,
       "extractor": "python-stdlib-ast"
@@ -5529,7 +7154,7 @@
       "type": "defines",
       "source": "file:src/outreach/web.py",
       "target": "symbol:src/outreach/web.py#function:create_app.history",
-      "line": 263,
+      "line": 277,
       "resolved": true,
       "confidence": 1,
       "extractor": "python-stdlib-ast"
@@ -5538,7 +7163,7 @@
       "type": "defines",
       "source": "file:src/outreach/web.py",
       "target": "symbol:src/outreach/web.py#function:create_app.index",
-      "line": 59,
+      "line": 73,
       "resolved": true,
       "confidence": 1,
       "extractor": "python-stdlib-ast"
@@ -5547,7 +7172,7 @@
       "type": "defines",
       "source": "file:src/outreach/web.py",
       "target": "symbol:src/outreach/web.py#function:create_app.opportunities",
-      "line": 154,
+      "line": 168,
       "resolved": true,
       "confidence": 1,
       "extractor": "python-stdlib-ast"
@@ -5556,42 +7181,6 @@
       "type": "defines",
       "source": "file:src/outreach/web.py",
       "target": "symbol:src/outreach/web.py#function:create_app.reject_cross_origin_posts",
-      "line": 49,
-      "resolved": true,
-      "confidence": 1,
-      "extractor": "python-stdlib-ast"
-    },
-    {
-      "type": "defines",
-      "source": "file:src/outreach/web.py",
-      "target": "symbol:src/outreach/web.py#function:create_app.review_detail",
-      "line": 192,
-      "resolved": true,
-      "confidence": 1,
-      "extractor": "python-stdlib-ast"
-    },
-    {
-      "type": "defines",
-      "source": "file:src/outreach/web.py",
-      "target": "symbol:src/outreach/web.py#function:create_app.review_queue",
-      "line": 179,
-      "resolved": true,
-      "confidence": 1,
-      "extractor": "python-stdlib-ast"
-    },
-    {
-      "type": "defines",
-      "source": "file:src/outreach/web.py",
-      "target": "symbol:src/outreach/web.py#function:create_app.setup",
-      "line": 80,
-      "resolved": true,
-      "confidence": 1,
-      "extractor": "python-stdlib-ast"
-    },
-    {
-      "type": "defines",
-      "source": "file:src/outreach/web.py",
-      "target": "symbol:src/outreach/web.py#function:create_app.status",
       "line": 63,
       "resolved": true,
       "confidence": 1,
@@ -5600,8 +7189,62 @@
     {
       "type": "defines",
       "source": "file:src/outreach/web.py",
+      "target": "symbol:src/outreach/web.py#function:create_app.review_detail",
+      "line": 206,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/outreach/web.py",
+      "target": "symbol:src/outreach/web.py#function:create_app.review_queue",
+      "line": 193,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/outreach/web.py",
+      "target": "symbol:src/outreach/web.py#function:create_app.send_batch",
+      "line": 284,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/outreach/web.py",
+      "target": "symbol:src/outreach/web.py#function:create_app.setup",
+      "line": 94,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/outreach/web.py",
+      "target": "symbol:src/outreach/web.py#function:create_app.status",
+      "line": 77,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/outreach/web.py",
       "target": "symbol:src/outreach/web.py#function:create_app.suppressions",
-      "line": 270,
+      "line": 316,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/outreach/web.py",
+      "target": "symbol:src/outreach/web.py#function:create_app.synchronize_replies",
+      "line": 305,
       "resolved": true,
       "confidence": 1,
       "extractor": "python-stdlib-ast"
@@ -5610,7 +7253,7 @@
       "type": "defines",
       "source": "file:src/outreach/web.py",
       "target": "symbol:src/outreach/web.py#function:create_app.update_draft",
-      "line": 232,
+      "line": 246,
       "resolved": true,
       "confidence": 1,
       "extractor": "python-stdlib-ast"
@@ -5619,7 +7262,7 @@
       "type": "defines",
       "source": "file:src/outreach/web.py",
       "target": "symbol:src/outreach/web.py#function:create_app.upload_resume",
-      "line": 98,
+      "line": 112,
       "resolved": true,
       "confidence": 1,
       "extractor": "python-stdlib-ast"
@@ -5656,6 +7299,15 @@
       "source": "file:tests/factories.py",
       "target": "symbol:tests/factories.py#function:make_bundle",
       "line": 127,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:tests/mail_fixtures.py",
+      "target": "symbol:tests/mail_fixtures.py#function:approved_draft",
+      "line": 14,
       "resolved": true,
       "confidence": 1,
       "extractor": "python-stdlib-ast"
@@ -5959,6 +7611,78 @@
     },
     {
       "type": "defines",
+      "source": "file:tests/test_mailer.py",
+      "target": "symbol:tests/test_mailer.py#class:FakeSMTP",
+      "line": 11,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:tests/test_mailer.py",
+      "target": "symbol:tests/test_mailer.py#function:FakeSMTP.__enter__",
+      "line": 20,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:tests/test_mailer.py",
+      "target": "symbol:tests/test_mailer.py#function:FakeSMTP.__exit__",
+      "line": 23,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:tests/test_mailer.py",
+      "target": "symbol:tests/test_mailer.py#function:FakeSMTP.__init__",
+      "line": 15,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:tests/test_mailer.py",
+      "target": "symbol:tests/test_mailer.py#function:FakeSMTP.login",
+      "line": 26,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:tests/test_mailer.py",
+      "target": "symbol:tests/test_mailer.py#function:FakeSMTP.send_message",
+      "line": 29,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:tests/test_mailer.py",
+      "target": "symbol:tests/test_mailer.py#function:test_gmail_transport_builds_plain_text_message_with_pdf",
+      "line": 34,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:tests/test_mailer.py",
+      "target": "symbol:tests/test_mailer.py#function:test_recipient_refusal_is_definite",
+      "line": 59,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
       "source": "file:tests/test_matching.py",
       "target": "symbol:tests/test_matching.py#function:test_eligible_candidate_requires_job_and_company_evidence",
       "line": 50,
@@ -6031,6 +7755,42 @@
     },
     {
       "type": "defines",
+      "source": "file:tests/test_replies.py",
+      "target": "symbol:tests/test_replies.py#class:SuccessfulTransport",
+      "line": 15,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:tests/test_replies.py",
+      "target": "symbol:tests/test_replies.py#function:SuccessfulTransport.send",
+      "line": 16,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:tests/test_replies.py",
+      "target": "symbol:tests/test_replies.py#function:test_duplicate_and_unmatched_replies_are_safe",
+      "line": 53,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:tests/test_replies.py",
+      "target": "symbol:tests/test_replies.py#function:test_reply_is_matched_and_rejection_suppresses_company",
+      "line": 20,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
       "source": "file:tests/test_schema.py",
       "target": "symbol:tests/test_schema.py#function:test_all_required_foundation_tables_exist",
       "line": 15,
@@ -6052,6 +7812,96 @@
       "source": "file:tests/test_schema.py",
       "target": "symbol:tests/test_schema.py#function:test_database_enforces_unique_company_domain",
       "line": 41,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:tests/test_secrets.py",
+      "target": "symbol:tests/test_secrets.py#function:test_secrets_are_hidden_from_configuration_representation",
+      "line": 8,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:tests/test_secrets.py",
+      "target": "symbol:tests/test_secrets.py#function:test_sensitive_local_files_are_gitignored",
+      "line": 19,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:tests/test_send_gate.py",
+      "target": "symbol:tests/test_send_gate.py#class:FakeTransport",
+      "line": 14,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:tests/test_send_gate.py",
+      "target": "symbol:tests/test_send_gate.py#function:FakeTransport.__init__",
+      "line": 15,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:tests/test_send_gate.py",
+      "target": "symbol:tests/test_send_gate.py#function:FakeTransport.send",
+      "line": 19,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:tests/test_send_gate.py",
+      "target": "symbol:tests/test_send_gate.py#function:test_ambiguous_delivery_is_never_retried",
+      "line": 94,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:tests/test_send_gate.py",
+      "target": "symbol:tests/test_send_gate.py#function:test_only_approved_current_revision_is_sent",
+      "line": 26,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:tests/test_send_gate.py",
+      "target": "symbol:tests/test_send_gate.py#function:test_same_batch_and_revision_are_idempotent",
+      "line": 69,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:tests/test_send_gate.py",
+      "target": "symbol:tests/test_send_gate.py#function:test_send_batch_rejects_more_than_twenty",
+      "line": 119,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:tests/test_send_gate.py",
+      "target": "symbol:tests/test_send_gate.py#function:test_unapproved_or_unverified_draft_never_calls_transport",
+      "line": 45,
       "resolved": true,
       "confidence": 1,
       "extractor": "python-stdlib-ast"
@@ -6903,6 +8753,166 @@
     },
     {
       "type": "imports",
+      "source": "file:src/outreach/mail.py",
+      "target": "package:pypi:outreach.config",
+      "specifier": "outreach.config",
+      "line": 17,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/mail.py",
+      "target": "package:pypi:outreach.foundation",
+      "specifier": "outreach.foundation",
+      "line": 18,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/mail.py",
+      "target": "package:pypi:outreach.models",
+      "specifier": "outreach.models",
+      "line": 19,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/mail.py",
+      "target": "package:pypi:sqlalchemy",
+      "specifier": "sqlalchemy",
+      "line": 14,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/mail.py",
+      "target": "package:pypi:sqlalchemy.orm",
+      "specifier": "sqlalchemy.orm",
+      "line": 15,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/mail.py",
+      "target": "runtime:python:__future__",
+      "specifier": "__future__",
+      "line": 1,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/mail.py",
+      "target": "runtime:python:dataclasses",
+      "specifier": "dataclasses",
+      "line": 7,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/mail.py",
+      "target": "runtime:python:datetime",
+      "specifier": "datetime",
+      "line": 8,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/mail.py",
+      "target": "runtime:python:email.message",
+      "specifier": "email.message",
+      "line": 9,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/mail.py",
+      "target": "runtime:python:email.utils",
+      "specifier": "email.utils",
+      "line": 10,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/mail.py",
+      "target": "runtime:python:hashlib",
+      "specifier": "hashlib",
+      "line": 3,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/mail.py",
+      "target": "runtime:python:pathlib",
+      "specifier": "pathlib",
+      "line": 11,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/mail.py",
+      "target": "runtime:python:smtplib",
+      "specifier": "smtplib",
+      "line": 4,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/mail.py",
+      "target": "runtime:python:ssl",
+      "specifier": "ssl",
+      "line": 5,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/mail.py",
+      "target": "runtime:python:time",
+      "specifier": "time",
+      "line": 6,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/mail.py",
+      "target": "runtime:python:typing",
+      "specifier": "typing",
+      "line": 12,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
       "source": "file:src/outreach/matching.py",
       "target": "runtime:python:__future__",
       "specifier": "__future__",
@@ -6986,6 +8996,136 @@
       "source": "file:src/outreach/models.py",
       "target": "runtime:python:uuid",
       "specifier": "uuid",
+      "line": 3,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/replies.py",
+      "target": "package:pypi:outreach.config",
+      "specifier": "outreach.config",
+      "line": 14,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/replies.py",
+      "target": "package:pypi:outreach.models",
+      "specifier": "outreach.models",
+      "line": 15,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/replies.py",
+      "target": "package:pypi:outreach.verification",
+      "specifier": "outreach.verification",
+      "line": 16,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/replies.py",
+      "target": "package:pypi:sqlalchemy",
+      "specifier": "sqlalchemy",
+      "line": 11,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/replies.py",
+      "target": "package:pypi:sqlalchemy.orm",
+      "specifier": "sqlalchemy.orm",
+      "line": 12,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/replies.py",
+      "target": "runtime:python:__future__",
+      "specifier": "__future__",
+      "line": 1,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/replies.py",
+      "target": "runtime:python:collections.abc",
+      "specifier": "collections.abc",
+      "line": 4,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/replies.py",
+      "target": "runtime:python:dataclasses",
+      "specifier": "dataclasses",
+      "line": 5,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/replies.py",
+      "target": "runtime:python:datetime",
+      "specifier": "datetime",
+      "line": 6,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/replies.py",
+      "target": "runtime:python:email",
+      "specifier": "email",
+      "line": 7,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/replies.py",
+      "target": "runtime:python:email.message",
+      "specifier": "email.message",
+      "line": 8,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/replies.py",
+      "target": "runtime:python:email.utils",
+      "specifier": "email.utils",
+      "line": 9,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/replies.py",
+      "target": "runtime:python:imaplib",
+      "specifier": "imaplib",
       "line": 3,
       "resolved": true,
       "confidence": 0.85,
@@ -7116,7 +9256,7 @@
       "source": "file:src/outreach/web.py",
       "target": "package:pypi:fastapi",
       "specifier": "fastapi",
-      "line": 7,
+      "line": 8,
       "resolved": false,
       "confidence": 0.5,
       "extractor": "python-imports"
@@ -7126,7 +9266,7 @@
       "source": "file:src/outreach/web.py",
       "target": "package:pypi:fastapi.responses",
       "specifier": "fastapi.responses",
-      "line": 8,
+      "line": 9,
       "resolved": false,
       "confidence": 0.5,
       "extractor": "python-imports"
@@ -7136,7 +9276,7 @@
       "source": "file:src/outreach/web.py",
       "target": "package:pypi:fastapi.staticfiles",
       "specifier": "fastapi.staticfiles",
-      "line": 9,
+      "line": 10,
       "resolved": false,
       "confidence": 0.5,
       "extractor": "python-imports"
@@ -7146,7 +9286,7 @@
       "source": "file:src/outreach/web.py",
       "target": "package:pypi:fastapi.templating",
       "specifier": "fastapi.templating",
-      "line": 10,
+      "line": 11,
       "resolved": false,
       "confidence": 0.5,
       "extractor": "python-imports"
@@ -7156,7 +9296,7 @@
       "source": "file:src/outreach/web.py",
       "target": "package:pypi:outreach.config",
       "specifier": "outreach.config",
-      "line": 14,
+      "line": 15,
       "resolved": false,
       "confidence": 0.5,
       "extractor": "python-imports"
@@ -7166,7 +9306,7 @@
       "source": "file:src/outreach/web.py",
       "target": "package:pypi:outreach.db",
       "specifier": "outreach.db",
-      "line": 15,
+      "line": 16,
       "resolved": false,
       "confidence": 0.5,
       "extractor": "python-imports"
@@ -7176,7 +9316,17 @@
       "source": "file:src/outreach/web.py",
       "target": "package:pypi:outreach.drafts",
       "specifier": "outreach.drafts",
-      "line": 16,
+      "line": 17,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/web.py",
+      "target": "package:pypi:outreach.mail",
+      "specifier": "outreach.mail",
+      "line": 18,
       "resolved": false,
       "confidence": 0.5,
       "extractor": "python-imports"
@@ -7186,7 +9336,17 @@
       "source": "file:src/outreach/web.py",
       "target": "package:pypi:outreach.models",
       "specifier": "outreach.models",
-      "line": 17,
+      "line": 19,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/web.py",
+      "target": "package:pypi:outreach.replies",
+      "specifier": "outreach.replies",
+      "line": 33,
       "resolved": false,
       "confidence": 0.5,
       "extractor": "python-imports"
@@ -7196,7 +9356,7 @@
       "source": "file:src/outreach/web.py",
       "target": "package:pypi:outreach.resume",
       "specifier": "outreach.resume",
-      "line": 31,
+      "line": 34,
       "resolved": false,
       "confidence": 0.5,
       "extractor": "python-imports"
@@ -7206,7 +9366,7 @@
       "source": "file:src/outreach/web.py",
       "target": "package:pypi:sqlalchemy",
       "specifier": "sqlalchemy",
-      "line": 11,
+      "line": 12,
       "resolved": false,
       "confidence": 0.5,
       "extractor": "python-imports"
@@ -7216,7 +9376,7 @@
       "source": "file:src/outreach/web.py",
       "target": "package:pypi:sqlalchemy.orm",
       "specifier": "sqlalchemy.orm",
-      "line": 12,
+      "line": 13,
       "resolved": false,
       "confidence": 0.5,
       "extractor": "python-imports"
@@ -7257,6 +9417,16 @@
       "target": "runtime:python:shutil",
       "specifier": "shutil",
       "line": 3,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/web.py",
+      "target": "runtime:python:uuid",
+      "specifier": "uuid",
+      "line": 6,
       "resolved": true,
       "confidence": 0.85,
       "extractor": "python-imports"
@@ -7336,6 +9506,86 @@
       "source": "file:tests/factories.py",
       "target": "runtime:python:datetime",
       "specifier": "datetime",
+      "line": 3,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/mail_fixtures.py",
+      "target": "file:tests/factories.py",
+      "specifier": "tests.factories",
+      "line": 11,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/mail_fixtures.py",
+      "target": "package:pypi:outreach.bundles",
+      "specifier": "outreach.bundles",
+      "line": 8,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/mail_fixtures.py",
+      "target": "package:pypi:outreach.drafts",
+      "specifier": "outreach.drafts",
+      "line": 9,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/mail_fixtures.py",
+      "target": "package:pypi:outreach.models",
+      "specifier": "outreach.models",
+      "line": 10,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/mail_fixtures.py",
+      "target": "package:pypi:sqlalchemy",
+      "specifier": "sqlalchemy",
+      "line": 5,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/mail_fixtures.py",
+      "target": "package:pypi:sqlalchemy.orm",
+      "specifier": "sqlalchemy.orm",
+      "line": 6,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/mail_fixtures.py",
+      "target": "runtime:python:__future__",
+      "specifier": "__future__",
+      "line": 1,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/mail_fixtures.py",
+      "target": "runtime:python:pathlib",
+      "specifier": "pathlib",
       "line": 3,
       "resolved": true,
       "confidence": 0.85,
@@ -7983,6 +10233,56 @@
     },
     {
       "type": "imports",
+      "source": "file:tests/test_mailer.py",
+      "target": "package:pypi:outreach.mail",
+      "specifier": "outreach.mail",
+      "line": 8,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/test_mailer.py",
+      "target": "package:pypi:pytest",
+      "specifier": "pytest",
+      "line": 6,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/test_mailer.py",
+      "target": "runtime:python:__future__",
+      "specifier": "__future__",
+      "line": 1,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/test_mailer.py",
+      "target": "runtime:python:pathlib",
+      "specifier": "pathlib",
+      "line": 3,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/test_mailer.py",
+      "target": "runtime:python:typing",
+      "specifier": "typing",
+      "line": 4,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
       "source": "file:tests/test_matching.py",
       "target": "file:tests/factories.py",
       "specifier": "tests.factories",
@@ -8133,6 +10433,96 @@
     },
     {
       "type": "imports",
+      "source": "file:tests/test_replies.py",
+      "target": "file:tests/mail_fixtures.py",
+      "specifier": "tests.mail_fixtures",
+      "line": 12,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/test_replies.py",
+      "target": "package:pypi:outreach.mail",
+      "specifier": "outreach.mail",
+      "line": 9,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/test_replies.py",
+      "target": "package:pypi:outreach.models",
+      "specifier": "outreach.models",
+      "line": 10,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/test_replies.py",
+      "target": "package:pypi:outreach.replies",
+      "specifier": "outreach.replies",
+      "line": 11,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/test_replies.py",
+      "target": "package:pypi:sqlalchemy",
+      "specifier": "sqlalchemy",
+      "line": 6,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/test_replies.py",
+      "target": "package:pypi:sqlalchemy.orm",
+      "specifier": "sqlalchemy.orm",
+      "line": 7,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/test_replies.py",
+      "target": "runtime:python:__future__",
+      "specifier": "__future__",
+      "line": 1,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/test_replies.py",
+      "target": "runtime:python:datetime",
+      "specifier": "datetime",
+      "line": 3,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/test_replies.py",
+      "target": "runtime:python:pathlib",
+      "specifier": "pathlib",
+      "line": 4,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
       "source": "file:tests/test_schema.py",
       "target": "package:pypi:outreach.config",
       "specifier": "outreach.config",
@@ -8214,6 +10604,116 @@
     {
       "type": "imports",
       "source": "file:tests/test_schema.py",
+      "target": "runtime:python:pathlib",
+      "specifier": "pathlib",
+      "line": 3,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/test_secrets.py",
+      "target": "package:pypi:outreach.config",
+      "specifier": "outreach.config",
+      "line": 5,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/test_secrets.py",
+      "target": "runtime:python:__future__",
+      "specifier": "__future__",
+      "line": 1,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/test_secrets.py",
+      "target": "runtime:python:pathlib",
+      "specifier": "pathlib",
+      "line": 3,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/test_send_gate.py",
+      "target": "file:tests/mail_fixtures.py",
+      "specifier": "tests.mail_fixtures",
+      "line": 11,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/test_send_gate.py",
+      "target": "package:pypi:outreach.mail",
+      "specifier": "outreach.mail",
+      "line": 9,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/test_send_gate.py",
+      "target": "package:pypi:outreach.models",
+      "specifier": "outreach.models",
+      "line": 10,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/test_send_gate.py",
+      "target": "package:pypi:pytest",
+      "specifier": "pytest",
+      "line": 5,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/test_send_gate.py",
+      "target": "package:pypi:sqlalchemy",
+      "specifier": "sqlalchemy",
+      "line": 6,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/test_send_gate.py",
+      "target": "package:pypi:sqlalchemy.orm",
+      "specifier": "sqlalchemy.orm",
+      "line": 7,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/test_send_gate.py",
+      "target": "runtime:python:__future__",
+      "specifier": "__future__",
+      "line": 1,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/test_send_gate.py",
       "target": "runtime:python:pathlib",
       "specifier": "pathlib",
       "line": 3,
@@ -8347,6 +10847,24 @@
       "type": "inherits",
       "source": "symbol:src/outreach/bundles.py#class:VerificationInput",
       "target": "symbol:src/outreach/bundles.py#class:StrictModel",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "inherits",
+      "source": "symbol:src/outreach/mail.py#class:AmbiguousDeliveryError",
+      "target": "symbol:src/outreach/mail.py#class:DeliveryError",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "inherits",
+      "source": "symbol:src/outreach/mail.py#class:DefiniteDeliveryError",
+      "target": "symbol:src/outreach/mail.py#class:DeliveryError",
       "tier": "proven",
       "resolved": true,
       "confidence": 1,
@@ -8517,6 +11035,6 @@
   ],
   "warnings": [],
   "stats": {
-    "unresolvedCalls": 679
+    "unresolvedCalls": 828
   }
 }

@@ -1,0 +1,30 @@
+{
+  "task": "MVP-0",
+  "gate": "bootstrap-tests",
+  "kind": "command",
+  "attempt": "ed95394f-a4a3-4ba7-84ca-4d290dde5584",
+  "command": "pytest -q tests/test_config.py tests/test_local_data_boundary.py",
+  "started_at": "2026-10-06T15:33:54.453Z",
+  "observed_at": "2026-10-06T15:33:56.846Z",
+  "exit_code": 0,
+  "signal": null,
+  "stdout": "......                                                                   [100%]\n6 passed in 0.36s\n",
+  "stderr": "",
+  "failure": null,
+  "receipt": null,
+  "revision": {
+    "commit": "34c48942e90a04fb395e5cf86e3cea2fba20a6b1",
+    "dirty": true
+  },
+  "source_hash": "9078942c5d5108e8ddccb43dc9b5f5c7d7a18f2f659a564fbf22ae7c269c3ae7",
+  "before_hash": "9078942c5d5108e8ddccb43dc9b5f5c7d7a18f2f659a564fbf22ae7c269c3ae7",
+  "config_hash": "5abb3a0e03f931a0e722016146f857dd72d81e2bb2ed5cfa4105b6593615467e",
+  "environment": {
+    "node": "v24.13.0",
+    "platform": "linux",
+    "arch": "x64",
+    "verifier": "358371454f03eb4fdfd3eda3cb1d18cb1dd8fe9445404bb3d3047267b3977eb9",
+    "variables": {}
+  },
+  "hash": "385afb14a6a3ee64394270a594e193725189b0bdcb3ea6264d17f6b4ed0804d2"
+}

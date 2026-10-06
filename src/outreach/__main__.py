@@ -11,6 +11,7 @@ from outreach.bundles import import_bundle, load_bundle
 from outreach.config import get_settings
 from outreach.context import build_preparation_context
 from outreach.db import create_database_engine
+from outreach.local_files import write_private_text
 from outreach.resume import import_resume
 from outreach.web import create_app
 
@@ -64,8 +65,7 @@ def main() -> None:
         if args.command == "prepare-context":
             payload = build_preparation_context(session, args.limit)
             output = args.output.resolve()
-            output.parent.mkdir(parents=True, exist_ok=True)
-            output.write_text(json.dumps(payload, indent=2), encoding="utf-8")
+            write_private_text(output, json.dumps(payload, indent=2))
             print(json.dumps({"output": str(output), "limit": args.limit}))
             return
 
