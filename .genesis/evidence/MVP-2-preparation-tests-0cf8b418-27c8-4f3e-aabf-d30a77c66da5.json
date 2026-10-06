@@ -1,0 +1,30 @@
+{
+  "task": "MVP-2",
+  "gate": "preparation-tests",
+  "kind": "command",
+  "attempt": "0cf8b418-27c8-4f3e-aabf-d30a77c66da5",
+  "command": "pytest -q tests/test_bundle.py tests/test_matching.py tests/test_codex_contract.py",
+  "started_at": "2026-10-06T14:22:42.044Z",
+  "observed_at": "2026-10-06T14:22:44.434Z",
+  "exit_code": 0,
+  "signal": null,
+  "stdout": "................                                                         [100%]\n16 passed in 0.31s\n",
+  "stderr": "",
+  "failure": null,
+  "receipt": null,
+  "revision": {
+    "commit": "c525f007ebe30b4391753157bf1a29a7a60db94d",
+    "dirty": true
+  },
+  "source_hash": "f394e08a242ca0504c99b0ef8b5bf87b5f4c6f4e5623dd46a10c91893095197b",
+  "before_hash": "f394e08a242ca0504c99b0ef8b5bf87b5f4c6f4e5623dd46a10c91893095197b",
+  "config_hash": "d49eb91edf1d72ecf46e7104f63e8501815ce48400def04b34fd9369a7688b84",
+  "environment": {
+    "node": "v24.13.0",
+    "platform": "linux",
+    "arch": "x64",
+    "verifier": "358371454f03eb4fdfd3eda3cb1d18cb1dd8fe9445404bb3d3047267b3977eb9",
+    "variables": {}
+  },
+  "hash": "55da44d59e3b3c3cf26db6dbe4c9589f7516071bb7056ae20a3d724012193557"
+}

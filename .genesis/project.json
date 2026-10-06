@@ -9,7 +9,7 @@
     "non_goals": [],
     "trust_boundary": "local repository",
     "created_at": "2026-10-06T09:40:47.262Z",
-    "updated_at": "2026-10-06T14:19:53.992Z"
+    "updated_at": "2026-10-06T14:22:44.462Z"
   },
   "policy": {
     "ponytail": "full",
@@ -497,8 +497,14 @@
           "kind": "command",
           "command": "pytest -q tests/test_bundle.py tests/test_matching.py tests/test_codex_contract.py",
           "mandatory": true,
-          "status": "pending",
-          "evidence": null
+          "status": "pass",
+          "evidence": {
+            "path": ".genesis/evidence/MVP-2-preparation-tests-0cf8b418-27c8-4f3e-aabf-d30a77c66da5.json",
+            "hash": "55da44d59e3b3c3cf26db6dbe4c9589f7516071bb7056ae20a3d724012193557",
+            "source_hash": "f394e08a242ca0504c99b0ef8b5bf87b5f4c6f4e5623dd46a10c91893095197b",
+            "config_hash": "d49eb91edf1d72ecf46e7104f63e8501815ce48400def04b34fd9369a7688b84",
+            "observed_at": "2026-10-06T14:22:44.434Z"
+          }
         },
         {
           "id": "independent-review",
@@ -809,6 +815,30 @@
       "cost": null,
       "stop_reason": null,
       "ended_at": "2026-10-06T13:56:27.774Z"
+    },
+    {
+      "id": "0cf8b418-27c8-4f3e-aabf-d30a77c66da5",
+      "task": "MVP-2",
+      "kind": "gate",
+      "command": "pytest -q tests/test_bundle.py tests/test_matching.py tests/test_codex_contract.py",
+      "timeout": 120000,
+      "authorization": null,
+      "pid": 124533,
+      "child_pid": 124576,
+      "started_at": "2026-10-06T14:22:42.044Z",
+      "status": "passed",
+      "before_hash": "f394e08a242ca0504c99b0ef8b5bf87b5f4c6f4e5623dd46a10c91893095197b",
+      "config_hash": "d49eb91edf1d72ecf46e7104f63e8501815ce48400def04b34fd9369a7688b84",
+      "environment": {
+        "node": "v24.13.0",
+        "platform": "linux",
+        "arch": "x64",
+        "verifier": "358371454f03eb4fdfd3eda3cb1d18cb1dd8fe9445404bb3d3047267b3977eb9",
+        "variables": {}
+      },
+      "cost": null,
+      "stop_reason": null,
+      "ended_at": "2026-10-06T14:22:44.434Z"
     }
   ],
   "authorizations": [],

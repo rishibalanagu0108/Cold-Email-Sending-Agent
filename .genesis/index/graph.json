@@ -1,17 +1,3299 @@
 {
   "schemaVersion": 2,
   "project": "ai-job-outreach",
-  "revision": null,
-  "sourceHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "revision": "c525f007ebe30b4391753157bf1a29a7a60db94d",
+  "sourceHash": "236f230017513bb7b6b0cdb52c45ce93f586b5ec2b3d8a3184e2fa4b174e17bb",
   "provenance": {
     "tool": "genesis-graphizer",
     "method": "static-analysis",
     "confidenceScale": "0..1"
   },
-  "nodes": [],
-  "edges": [],
+  "nodes": [
+    {
+      "id": "file:migrations/env.py",
+      "type": "file",
+      "label": "migrations/env.py",
+      "path": "migrations/env.py",
+      "language": "python",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "a7ded9044d8b7b90263944186397521bb1d99ab4ab268d54dd7b24744a72b8a4"
+    },
+    {
+      "id": "file:migrations/versions/e3cb32e9cf04_initial_schema.py",
+      "type": "file",
+      "label": "migrations/versions/e3cb32e9cf04_initial_schema.py",
+      "path": "migrations/versions/e3cb32e9cf04_initial_schema.py",
+      "language": "python",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "a0699f1dcc2573cb078e546ef907d6414790f74287f0a1530c343eab7e7c2046"
+    },
+    {
+      "id": "file:src/outreach/__init__.py",
+      "type": "file",
+      "label": "src/outreach/__init__.py",
+      "path": "src/outreach/__init__.py",
+      "language": "python",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "8839232c5a04cc467329ac04fff96f8e80c31ae97a00c6e4a2f2a57d3b080b96"
+    },
+    {
+      "id": "file:src/outreach/__main__.py",
+      "type": "file",
+      "label": "src/outreach/__main__.py",
+      "path": "src/outreach/__main__.py",
+      "language": "python",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "20c57325d6df5d42414a15dc0bbee77f0fb331cb804626afe3ef52a41c2da5a8"
+    },
+    {
+      "id": "file:src/outreach/config.py",
+      "type": "file",
+      "label": "src/outreach/config.py",
+      "path": "src/outreach/config.py",
+      "language": "python",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "9783f2f1531fddba27c0eb05093dd2d03ad5abb1891213191e22eabd7ed6f111"
+    },
+    {
+      "id": "file:src/outreach/db.py",
+      "type": "file",
+      "label": "src/outreach/db.py",
+      "path": "src/outreach/db.py",
+      "language": "python",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "998d8f030e43f671b8a9450b67818dd171d88872311eefab68e065b6f0da242f"
+    },
+    {
+      "id": "file:src/outreach/foundation.py",
+      "type": "file",
+      "label": "src/outreach/foundation.py",
+      "path": "src/outreach/foundation.py",
+      "language": "python",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "b6b5771b72fe9fb7ed1e6987b0e364fbc6b4fef571774839ce586ec655e33b56"
+    },
+    {
+      "id": "file:src/outreach/identity.py",
+      "type": "file",
+      "label": "src/outreach/identity.py",
+      "path": "src/outreach/identity.py",
+      "language": "python",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "4a036b423b12387862680e9b39209905b91c9ce10d92967d81a4bd6168081ee1"
+    },
+    {
+      "id": "file:src/outreach/models.py",
+      "type": "file",
+      "label": "src/outreach/models.py",
+      "path": "src/outreach/models.py",
+      "language": "python",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "1c5eb8619797a97de77fabff22183232c201611c0e155cf7a6e4534eb8b5fcab"
+    },
+    {
+      "id": "file:src/outreach/resume.py",
+      "type": "file",
+      "label": "src/outreach/resume.py",
+      "path": "src/outreach/resume.py",
+      "language": "python",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "370d484898aece47a26a6d738804261e149731a974f058c2eb7543b32ad73b3f"
+    },
+    {
+      "id": "file:tests/conftest.py",
+      "type": "file",
+      "label": "tests/conftest.py",
+      "path": "tests/conftest.py",
+      "language": "python",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "924cb5f94fda5bc121a91e6f4f6bea6d69628000c14e02c1b1a78465d14045fa"
+    },
+    {
+      "id": "file:tests/test_dedup.py",
+      "type": "file",
+      "label": "tests/test_dedup.py",
+      "path": "tests/test_dedup.py",
+      "language": "python",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "2f9ef5253549e7126d550dadda7d41386fc90ac02ed6a9f8577b0197d8e1a529"
+    },
+    {
+      "id": "file:tests/test_profile.py",
+      "type": "file",
+      "label": "tests/test_profile.py",
+      "path": "tests/test_profile.py",
+      "language": "python",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "f3b4b4f4505ae08d61c04e089b5f0862729fc8c57a8a8409e10fca372d9c83c4"
+    },
+    {
+      "id": "file:tests/test_schema.py",
+      "type": "file",
+      "label": "tests/test_schema.py",
+      "path": "tests/test_schema.py",
+      "language": "python",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "6951cb7bc0ec2e742f51abf23c40722e929f3c7a8179ef8ad58505667037029c"
+    },
+    {
+      "id": "package:pypi:alembic",
+      "type": "package",
+      "label": "alembic",
+      "ecosystem": "pypi",
+      "confidence": 0.85,
+      "extractor": "import",
+      "contentHash": "224aa47b9ca94716084fef2ff1a3352d0ed7fa5ff8ff2f2a990a87921ca5c7d1"
+    },
+    {
+      "id": "package:pypi:outreach",
+      "type": "package",
+      "label": "outreach",
+      "ecosystem": "pypi",
+      "confidence": 0.85,
+      "extractor": "import",
+      "contentHash": "ce265cbb0e17f30ce8f64d0c3b4759e5037223254b55a5e5021a60cd8d0312e3"
+    },
+    {
+      "id": "package:pypi:outreach.config",
+      "type": "package",
+      "label": "outreach.config",
+      "ecosystem": "pypi",
+      "confidence": 0.85,
+      "extractor": "import",
+      "contentHash": "4e8006fb871d21afbd5f676d22d6a65fc165c0f99af9e106d4c2b8a3f03e4073"
+    },
+    {
+      "id": "package:pypi:outreach.db",
+      "type": "package",
+      "label": "outreach.db",
+      "ecosystem": "pypi",
+      "confidence": 0.85,
+      "extractor": "import",
+      "contentHash": "00223135d2febc45483d44af4d09646d82c2d556f6e7e347c34426f36dfa64c6"
+    },
+    {
+      "id": "package:pypi:outreach.foundation",
+      "type": "package",
+      "label": "outreach.foundation",
+      "ecosystem": "pypi",
+      "confidence": 0.85,
+      "extractor": "import",
+      "contentHash": "5aad631e71f2c45b5303ad2b32b88ac669bf15a37a290404db850906c5f382cf"
+    },
+    {
+      "id": "package:pypi:outreach.identity",
+      "type": "package",
+      "label": "outreach.identity",
+      "ecosystem": "pypi",
+      "confidence": 0.85,
+      "extractor": "import",
+      "contentHash": "21f21233c237fd1414b7216096bd431457a341aff4008d2adacffa278cebe23f"
+    },
+    {
+      "id": "package:pypi:outreach.models",
+      "type": "package",
+      "label": "outreach.models",
+      "ecosystem": "pypi",
+      "confidence": 0.85,
+      "extractor": "import",
+      "contentHash": "79c6faba232e513f1d7d5ad0d34159e6034b73a6bf1273aeb4f78619e850101c"
+    },
+    {
+      "id": "package:pypi:outreach.resume",
+      "type": "package",
+      "label": "outreach.resume",
+      "ecosystem": "pypi",
+      "confidence": 0.85,
+      "extractor": "import",
+      "contentHash": "f4f569c2b7f8b4a2112fba4f34e45efa6ebaa61d76f52ba64af2446c7e11f146"
+    },
+    {
+      "id": "package:pypi:pydantic",
+      "type": "package",
+      "label": "pydantic",
+      "ecosystem": "pypi",
+      "confidence": 0.85,
+      "extractor": "import",
+      "contentHash": "58f6ef9a056cb5510180431e9462eca17724b13cde8deb37795f576f0a9280c9"
+    },
+    {
+      "id": "package:pypi:pydantic_settings",
+      "type": "package",
+      "label": "pydantic_settings",
+      "ecosystem": "pypi",
+      "confidence": 0.85,
+      "extractor": "import",
+      "contentHash": "d6492ad37855bce9f5f9decebf3203483ba5cbbb3a92e41a188a5f0f20a84942"
+    },
+    {
+      "id": "package:pypi:pypdf",
+      "type": "package",
+      "label": "pypdf",
+      "ecosystem": "pypi",
+      "confidence": 0.85,
+      "extractor": "import",
+      "contentHash": "15d46b9159725cc4064e398fda5b0f3c26df10be9da86c490df3de4b6aedf391"
+    },
+    {
+      "id": "package:pypi:pytest",
+      "type": "package",
+      "label": "pytest",
+      "ecosystem": "pypi",
+      "confidence": 0.85,
+      "extractor": "import",
+      "contentHash": "1a0b1d112a34c7a6c0fcf7af5669a0085e5cd71ddafc3857e11b255445ae4210"
+    },
+    {
+      "id": "package:pypi:sqlalchemy",
+      "type": "package",
+      "label": "sqlalchemy",
+      "ecosystem": "pypi",
+      "confidence": 0.85,
+      "extractor": "import",
+      "contentHash": "abd9e09d6c81e3e47cf74c354cc9753eecc442fe684acc5799dd2fcb4ba97aca"
+    },
+    {
+      "id": "package:pypi:sqlalchemy.exc",
+      "type": "package",
+      "label": "sqlalchemy.exc",
+      "ecosystem": "pypi",
+      "confidence": 0.85,
+      "extractor": "import",
+      "contentHash": "536b1e9bca1fb76dbbfbfdc80aef7a75d573ee0eaf37ba8c02706afc712a9500"
+    },
+    {
+      "id": "package:pypi:sqlalchemy.orm",
+      "type": "package",
+      "label": "sqlalchemy.orm",
+      "ecosystem": "pypi",
+      "confidence": 0.85,
+      "extractor": "import",
+      "contentHash": "f18c0165f03f0ef0a4ad4c7e5c8e171e05b9ea3bd35042f4965d99a2065c6613"
+    },
+    {
+      "id": "runtime:python:__future__",
+      "type": "runtime",
+      "label": "__future__",
+      "language": "python",
+      "confidence": 0.85,
+      "extractor": "standard-library",
+      "contentHash": "72d67008c021530c3206aad5d8f2e0c138920d256ada03ce5ff156d790d85c74"
+    },
+    {
+      "id": "runtime:python:argparse",
+      "type": "runtime",
+      "label": "argparse",
+      "language": "python",
+      "confidence": 0.85,
+      "extractor": "standard-library",
+      "contentHash": "d2fa5186c8b054cafa49f3f491468bf28aeed4402b6552c06eee4ebb0020d629"
+    },
+    {
+      "id": "runtime:python:collections.abc",
+      "type": "runtime",
+      "label": "collections.abc",
+      "language": "python",
+      "confidence": 0.85,
+      "extractor": "standard-library",
+      "contentHash": "78bb5b1f1eb86cf107a38c2948452604e853dd3caaddc4ad8e85c9957ae76bdd"
+    },
+    {
+      "id": "runtime:python:dataclasses",
+      "type": "runtime",
+      "label": "dataclasses",
+      "language": "python",
+      "confidence": 0.85,
+      "extractor": "standard-library",
+      "contentHash": "dba34c681ae0a8a7d66bf683f06f4979b672461fb2404177dca8b4ab5d98ca7f"
+    },
+    {
+      "id": "runtime:python:datetime",
+      "type": "runtime",
+      "label": "datetime",
+      "language": "python",
+      "confidence": 0.85,
+      "extractor": "standard-library",
+      "contentHash": "4686554b9c3e1fb149a0e7e021505618c951f789cfec438f14e8947c05848d41"
+    },
+    {
+      "id": "runtime:python:functools",
+      "type": "runtime",
+      "label": "functools",
+      "language": "python",
+      "confidence": 0.85,
+      "extractor": "standard-library",
+      "contentHash": "199b020f9c056c76b7a0f3aa15a89360d7a70c38bba044f7bee5d3def7351869"
+    },
+    {
+      "id": "runtime:python:hashlib",
+      "type": "runtime",
+      "label": "hashlib",
+      "language": "python",
+      "confidence": 0.85,
+      "extractor": "standard-library",
+      "contentHash": "77c0573ae65199003c1e54971c9c5faaa5fb7b2bf90715c1741b45eca6560e6c"
+    },
+    {
+      "id": "runtime:python:logging.config",
+      "type": "runtime",
+      "label": "logging.config",
+      "language": "python",
+      "confidence": 0.85,
+      "extractor": "standard-library",
+      "contentHash": "9db10abe1ffd0853818b0ea9796bb24dc8c55b51508db40380cb94f79b003177"
+    },
+    {
+      "id": "runtime:python:pathlib",
+      "type": "runtime",
+      "label": "pathlib",
+      "language": "python",
+      "confidence": 0.85,
+      "extractor": "standard-library",
+      "contentHash": "f80e30cf02d84c10bc9ec466758fee39c984c5b41f4d5ab280e2be46cd1c3c2a"
+    },
+    {
+      "id": "runtime:python:re",
+      "type": "runtime",
+      "label": "re",
+      "language": "python",
+      "confidence": 0.85,
+      "extractor": "standard-library",
+      "contentHash": "7e94b3e53ed926a0862ab420950da1727eead16cbd6a34908b9d475846791a02"
+    },
+    {
+      "id": "runtime:python:shutil",
+      "type": "runtime",
+      "label": "shutil",
+      "language": "python",
+      "confidence": 0.85,
+      "extractor": "standard-library",
+      "contentHash": "1f9c5b117bbaaa778431662f82c57f794f31f93c6cfe9d39cb1352cb0312ed70"
+    },
+    {
+      "id": "runtime:python:urllib.parse",
+      "type": "runtime",
+      "label": "urllib.parse",
+      "language": "python",
+      "confidence": 0.85,
+      "extractor": "standard-library",
+      "contentHash": "1723d51a355f4e8cebe6794a19c3be8ef1b234daa4e498c9f77e1fc0ad8e4c91"
+    },
+    {
+      "id": "runtime:python:uuid",
+      "type": "runtime",
+      "label": "uuid",
+      "language": "python",
+      "confidence": 0.85,
+      "extractor": "standard-library",
+      "contentHash": "6669c9e7a67c8b11dbd583e6bafa963dd54a301236cadf75f7c404980ee01683"
+    },
+    {
+      "id": "symbol:migrations/env.py#function:run_migrations_offline",
+      "type": "symbol",
+      "kind": "function",
+      "name": "run_migrations_offline",
+      "label": "run_migrations_offline",
+      "path": "migrations/env.py",
+      "line": 32,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "81b8531436b8a56c55ac76e1ebb37a61c2ebd0b0ba09b0e4625b3354b5b114fc"
+    },
+    {
+      "id": "symbol:migrations/env.py#function:run_migrations_online",
+      "type": "symbol",
+      "kind": "function",
+      "name": "run_migrations_online",
+      "label": "run_migrations_online",
+      "path": "migrations/env.py",
+      "line": 56,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "6d522cab8c20728530d13aa4ffebb737eb917edd7762085cf232a7da403aa12d"
+    },
+    {
+      "id": "symbol:migrations/versions/e3cb32e9cf04_initial_schema.py#function:downgrade",
+      "type": "symbol",
+      "kind": "function",
+      "name": "downgrade",
+      "label": "downgrade",
+      "path": "migrations/versions/e3cb32e9cf04_initial_schema.py",
+      "line": 417,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "654bdca33406b3f783b9a916ae306ce981df71a5f6b1bae03bb51e2911858647"
+    },
+    {
+      "id": "symbol:migrations/versions/e3cb32e9cf04_initial_schema.py#function:upgrade",
+      "type": "symbol",
+      "kind": "function",
+      "name": "upgrade",
+      "label": "upgrade",
+      "path": "migrations/versions/e3cb32e9cf04_initial_schema.py",
+      "line": 21,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "6960d16e98fc736769437c638ab87145b40af60cb62149230eb3aacbca1850ac"
+    },
+    {
+      "id": "symbol:src/outreach/__main__.py#function:main",
+      "type": "symbol",
+      "kind": "function",
+      "name": "main",
+      "label": "main",
+      "path": "src/outreach/__main__.py",
+      "line": 9,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "f583c61a40c09d3bfca9b3e6ef3e28a4f4dfaced58f9b895d0d76c0d77a8dd4c"
+    },
+    {
+      "id": "symbol:src/outreach/config.py#class:Settings",
+      "type": "symbol",
+      "kind": "class",
+      "name": "Settings",
+      "label": "Settings",
+      "path": "src/outreach/config.py",
+      "line": 10,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "f16b5fc5b83f753b1981c37587281e71f71bdc726ceb9b575c5b985ebd24d909"
+    },
+    {
+      "id": "symbol:src/outreach/config.py#function:get_settings",
+      "type": "symbol",
+      "kind": "function",
+      "name": "get_settings",
+      "label": "get_settings",
+      "path": "src/outreach/config.py",
+      "line": 38,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "46a55078cf5778a5f5c835545a458f206fc76a10e582075cecf7f6b22cbe62bf"
+    },
+    {
+      "id": "symbol:src/outreach/config.py#function:Settings.local_host_only",
+      "type": "symbol",
+      "kind": "function",
+      "name": "Settings.local_host_only",
+      "label": "Settings.local_host_only",
+      "path": "src/outreach/config.py",
+      "line": 31,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "d066a8351e322402aa762a80e809a5817536c6a77b7e3f8f57322d8ee4c162c7"
+    },
+    {
+      "id": "symbol:src/outreach/config.py#function:Settings.use_psycopg_driver",
+      "type": "symbol",
+      "kind": "function",
+      "name": "Settings.use_psycopg_driver",
+      "label": "Settings.use_psycopg_driver",
+      "path": "src/outreach/config.py",
+      "line": 24,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "9ff72deefd277cba9c2f0c6826f5f61976a8d0e4126794f2791bc401c51fe2cf"
+    },
+    {
+      "id": "symbol:src/outreach/db.py#class:Base",
+      "type": "symbol",
+      "kind": "class",
+      "name": "Base",
+      "label": "Base",
+      "path": "src/outreach/db.py",
+      "line": 11,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "8be09a2d2c3ab21233206a32ca776ebe2b31ee47b93d99c3e7fefabb8ee4f5e1"
+    },
+    {
+      "id": "symbol:src/outreach/db.py#function:_enable_sqlite_foreign_keys",
+      "type": "symbol",
+      "kind": "function",
+      "name": "_enable_sqlite_foreign_keys",
+      "label": "_enable_sqlite_foreign_keys",
+      "path": "src/outreach/db.py",
+      "line": 23,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "1c0fa778b8b849522f16219a0e45f48c438837ed754b3ef716c710059c80e8c8"
+    },
+    {
+      "id": "symbol:src/outreach/db.py#function:create_database_engine",
+      "type": "symbol",
+      "kind": "function",
+      "name": "create_database_engine",
+      "label": "create_database_engine",
+      "path": "src/outreach/db.py",
+      "line": 15,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "f3c9e9a2383fecc6491f5e70c264e1a543735adf21ab1f0dbf0083a28aa42220"
+    },
+    {
+      "id": "symbol:src/outreach/db.py#function:session_dependency",
+      "type": "symbol",
+      "kind": "function",
+      "name": "session_dependency",
+      "label": "session_dependency",
+      "path": "src/outreach/db.py",
+      "line": 33,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "3f3ae6e3b624dd2356033158d342eeb578efc66625abe7a5b55802d7e02724fa"
+    },
+    {
+      "id": "symbol:src/outreach/db.py#function:session_factory",
+      "type": "symbol",
+      "kind": "function",
+      "name": "session_factory",
+      "label": "session_factory",
+      "path": "src/outreach/db.py",
+      "line": 29,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "c5c3fec7615139915a3697d17853a1e8c149ec8c9bf89f6c477935350ae81600"
+    },
+    {
+      "id": "symbol:src/outreach/foundation.py#class:Eligibility",
+      "type": "symbol",
+      "kind": "class",
+      "name": "Eligibility",
+      "label": "Eligibility",
+      "path": "src/outreach/foundation.py",
+      "line": 22,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "6eb060259f0ca569d5b1f5fe8b616cf05f6c4f2eb97370da12f8bc5b8284ce8c"
+    },
+    {
+      "id": "symbol:src/outreach/foundation.py#function:_aware",
+      "type": "symbol",
+      "kind": "function",
+      "name": "_aware",
+      "label": "_aware",
+      "path": "src/outreach/foundation.py",
+      "line": 170,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "971602a7cd306358ab1d324781bc30add4366c2e0c2e8ae6dc7e0e45028523e1"
+    },
+    {
+      "id": "symbol:src/outreach/foundation.py#function:add_company_alias",
+      "type": "symbol",
+      "kind": "function",
+      "name": "add_company_alias",
+      "label": "add_company_alias",
+      "path": "src/outreach/foundation.py",
+      "line": 43,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "99d4c1d1ca8a6aee4cc7721f708a52cd923449419dac1cfc444447d103d62939"
+    },
+    {
+      "id": "symbol:src/outreach/foundation.py#function:company_eligibility",
+      "type": "symbol",
+      "kind": "function",
+      "name": "company_eligibility",
+      "label": "company_eligibility",
+      "path": "src/outreach/foundation.py",
+      "line": 122,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "1b9fc68b95f1e9a3a4c6cee0a694da98c57758a26609ecf1b134784d9a1ca533"
+    },
+    {
+      "id": "symbol:src/outreach/foundation.py#function:get_or_create_company",
+      "type": "symbol",
+      "kind": "function",
+      "name": "get_or_create_company",
+      "label": "get_or_create_company",
+      "path": "src/outreach/foundation.py",
+      "line": 27,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "9f976a376b1a2cca1950f1e09468d06193360a8ca2008637366aa8848ea7fbf5"
+    },
+    {
+      "id": "symbol:src/outreach/foundation.py#function:get_or_create_job",
+      "type": "symbol",
+      "kind": "function",
+      "name": "get_or_create_job",
+      "label": "get_or_create_job",
+      "path": "src/outreach/foundation.py",
+      "line": 63,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "696b3d8de4de7d6c3632c14895236c05056e8dd07cbc2876dddc50a91d1ec7ba"
+    },
+    {
+      "id": "symbol:src/outreach/identity.py#function:canonicalize_url",
+      "type": "symbol",
+      "kind": "function",
+      "name": "canonicalize_url",
+      "label": "canonicalize_url",
+      "path": "src/outreach/identity.py",
+      "line": 21,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "f8c9cb904e323bedaa8d57d54139c8f2c459f6fb0d8d087241f981c25c12703b"
+    },
+    {
+      "id": "symbol:src/outreach/identity.py#function:job_fingerprint",
+      "type": "symbol",
+      "kind": "function",
+      "name": "job_fingerprint",
+      "label": "job_fingerprint",
+      "path": "src/outreach/identity.py",
+      "line": 42,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "945b751b22d60f2d66625244891a00f4c1a1f21154bb1ee3acd1d9a760e63016"
+    },
+    {
+      "id": "symbol:src/outreach/identity.py#function:normalize_domain",
+      "type": "symbol",
+      "kind": "function",
+      "name": "normalize_domain",
+      "label": "normalize_domain",
+      "path": "src/outreach/identity.py",
+      "line": 10,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "a6dd5e52048dce40b7210060e63485db9216af107a87ace23644289a385ba227"
+    },
+    {
+      "id": "symbol:src/outreach/identity.py#function:normalize_text",
+      "type": "symbol",
+      "kind": "function",
+      "name": "normalize_text",
+      "label": "normalize_text",
+      "path": "src/outreach/identity.py",
+      "line": 38,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "4518979205abdb442cff79374d80904a86557f776f23af46e0618443f64d5ae3"
+    },
+    {
+      "id": "symbol:src/outreach/models.py#class:Approval",
+      "type": "symbol",
+      "kind": "class",
+      "name": "Approval",
+      "label": "Approval",
+      "path": "src/outreach/models.py",
+      "line": 239,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "c89de62ec563aa8269e6d0ba6e6a37438a11681f531da2910f67aab7be4797f0"
+    },
+    {
+      "id": "symbol:src/outreach/models.py#class:AuditEvent",
+      "type": "symbol",
+      "kind": "class",
+      "name": "AuditEvent",
+      "label": "AuditEvent",
+      "path": "src/outreach/models.py",
+      "line": 308,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "d06b69ee6a0e9510ee8d7b9d0faf1d76e0d86ba7b8c05095cf61b35749c30252"
+    },
+    {
+      "id": "symbol:src/outreach/models.py#class:Company",
+      "type": "symbol",
+      "kind": "class",
+      "name": "Company",
+      "label": "Company",
+      "path": "src/outreach/models.py",
+      "line": 84,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "daea9f4dea852aae2e9165eaaa8eddde5b42b72eefe0f05bf490d9b3a0e95eca"
+    },
+    {
+      "id": "symbol:src/outreach/models.py#class:CompanyAlias",
+      "type": "symbol",
+      "kind": "class",
+      "name": "CompanyAlias",
+      "label": "CompanyAlias",
+      "path": "src/outreach/models.py",
+      "line": 98,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "946a498bb326841599c3a184f5d69b478f1f518a3ab803c5ec4cfcf724000166"
+    },
+    {
+      "id": "symbol:src/outreach/models.py#class:Contact",
+      "type": "symbol",
+      "kind": "class",
+      "name": "Contact",
+      "label": "Contact",
+      "path": "src/outreach/models.py",
+      "line": 188,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "1566fa0fe0b637d24b538a3d6ef6deb381c301a7a1858e09fdf337264cca20ac"
+    },
+    {
+      "id": "symbol:src/outreach/models.py#class:ContactVerification",
+      "type": "symbol",
+      "kind": "class",
+      "name": "ContactVerification",
+      "label": "ContactVerification",
+      "path": "src/outreach/models.py",
+      "line": 202,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "d45cf0b24d3dd1c7a4ce15b9331508a8cb5739512908d0d085f0f121524f6c52"
+    },
+    {
+      "id": "symbol:src/outreach/models.py#class:DiscoveryRun",
+      "type": "symbol",
+      "kind": "class",
+      "name": "DiscoveryRun",
+      "label": "DiscoveryRun",
+      "path": "src/outreach/models.py",
+      "line": 75,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "8d482cb1f42ba4506b1ce4f987c74fdc92aea3892ae1c8765525d506626085e4"
+    },
+    {
+      "id": "symbol:src/outreach/models.py#class:Draft",
+      "type": "symbol",
+      "kind": "class",
+      "name": "Draft",
+      "label": "Draft",
+      "path": "src/outreach/models.py",
+      "line": 214,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "5244d53bdd490612c0cf2787d61f13bffd9dd1c2dbfad1b96061f49aa3233efc"
+    },
+    {
+      "id": "symbol:src/outreach/models.py#class:DraftClaim",
+      "type": "symbol",
+      "kind": "class",
+      "name": "DraftClaim",
+      "label": "DraftClaim",
+      "path": "src/outreach/models.py",
+      "line": 227,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "3e5c826f9a10d49c156e61589e4d037b9022b2db5d74af360863b58afe5aa1f4"
+    },
+    {
+      "id": "symbol:src/outreach/models.py#class:Job",
+      "type": "symbol",
+      "kind": "class",
+      "name": "Job",
+      "label": "Job",
+      "path": "src/outreach/models.py",
+      "line": 109,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "85419a89f80f390c55cf84b49cf634bf80a08dccd8d84093358030b4f467dd2f"
+    },
+    {
+      "id": "symbol:src/outreach/models.py#class:JobMatch",
+      "type": "symbol",
+      "kind": "class",
+      "name": "JobMatch",
+      "label": "JobMatch",
+      "path": "src/outreach/models.py",
+      "line": 152,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "4710a37faf0327849f62b36e994c802a590c62c36521281354b3f4c6ab545504"
+    },
+    {
+      "id": "symbol:src/outreach/models.py#class:JobSource",
+      "type": "symbol",
+      "kind": "class",
+      "name": "JobSource",
+      "label": "JobSource",
+      "path": "src/outreach/models.py",
+      "line": 134,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "746d23572c710051358f12a4d8960765d25926d8e137dc4fea49fd7215c958fa"
+    },
+    {
+      "id": "symbol:src/outreach/models.py#class:MatchEvidence",
+      "type": "symbol",
+      "kind": "class",
+      "name": "MatchEvidence",
+      "label": "MatchEvidence",
+      "path": "src/outreach/models.py",
+      "line": 174,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "40f15675ceb895ba449e51c915bcd5d3212426df6ff152f5452217ccdf792221"
+    },
+    {
+      "id": "symbol:src/outreach/models.py#class:OutreachMessage",
+      "type": "symbol",
+      "kind": "class",
+      "name": "OutreachMessage",
+      "label": "OutreachMessage",
+      "path": "src/outreach/models.py",
+      "line": 257,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "6071dc0a83df4d90f03ac8636aa344e144dbb6307dd1a395c6fdc655fe9ca0d1"
+    },
+    {
+      "id": "symbol:src/outreach/models.py#class:ProfileFact",
+      "type": "symbol",
+      "kind": "class",
+      "name": "ProfileFact",
+      "label": "ProfileFact",
+      "path": "src/outreach/models.py",
+      "line": 55,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "28cc319e0ec6a5ebd9ce60108a8ac8b8b5400dda67cf13c7d500d2d4a24f4ab1"
+    },
+    {
+      "id": "symbol:src/outreach/models.py#class:Reply",
+      "type": "symbol",
+      "kind": "class",
+      "name": "Reply",
+      "label": "Reply",
+      "path": "src/outreach/models.py",
+      "line": 278,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "f1bc1cc82bf820c1d9199b39cd899109ef4dafd9f8e274f2cebc2524877c9fc0"
+    },
+    {
+      "id": "symbol:src/outreach/models.py#class:ResumeVersion",
+      "type": "symbol",
+      "kind": "class",
+      "name": "ResumeVersion",
+      "label": "ResumeVersion",
+      "path": "src/outreach/models.py",
+      "line": 40,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "9b3208252bcf1542e50f1f82ffcfc40bf127e55493664d63cd25b281fbe1542e"
+    },
+    {
+      "id": "symbol:src/outreach/models.py#class:SendBatch",
+      "type": "symbol",
+      "kind": "class",
+      "name": "SendBatch",
+      "label": "SendBatch",
+      "path": "src/outreach/models.py",
+      "line": 249,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "962bfbb8d9c5c5b62fcfb1596f7d727b1f053576956f908111687adf0b514b4b"
+    },
+    {
+      "id": "symbol:src/outreach/models.py#class:Suppression",
+      "type": "symbol",
+      "kind": "class",
+      "name": "Suppression",
+      "label": "Suppression",
+      "path": "src/outreach/models.py",
+      "line": 291,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "6f639eb68492b18f94784d707ba90d868b717a4330a50131885afedfc2a97465"
+    },
+    {
+      "id": "symbol:src/outreach/models.py#class:TimestampMixin",
+      "type": "symbol",
+      "kind": "class",
+      "name": "TimestampMixin",
+      "label": "TimestampMixin",
+      "path": "src/outreach/models.py",
+      "line": 31,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "3f441957a36a34a2ffb06ecfdfde364bc779fd2f2e1986054e7d23d44a9eb628"
+    },
+    {
+      "id": "symbol:src/outreach/models.py#function:new_id",
+      "type": "symbol",
+      "kind": "function",
+      "name": "new_id",
+      "label": "new_id",
+      "path": "src/outreach/models.py",
+      "line": 23,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "becf88d4648ed16583b647f1a1dcc07e2cea0ae428a740f160e6a239aa4490e2"
+    },
+    {
+      "id": "symbol:src/outreach/models.py#function:utc_now",
+      "type": "symbol",
+      "kind": "function",
+      "name": "utc_now",
+      "label": "utc_now",
+      "path": "src/outreach/models.py",
+      "line": 27,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "7570bd2018447a05d9bc8ec87588c842fc22df31fcb59bc425ba835a9021c86c"
+    },
+    {
+      "id": "symbol:src/outreach/resume.py#class:FactInput",
+      "type": "symbol",
+      "kind": "class",
+      "name": "FactInput",
+      "label": "FactInput",
+      "path": "src/outreach/resume.py",
+      "line": 16,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "aaa791fce92eb39b7ad2a795eb826c3b4e7a6e616159ea683f0b72e1758eda9b"
+    },
+    {
+      "id": "symbol:src/outreach/resume.py#function:confirm_profile",
+      "type": "symbol",
+      "kind": "function",
+      "name": "confirm_profile",
+      "label": "confirm_profile",
+      "path": "src/outreach/resume.py",
+      "line": 105,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "c6232f20377643201a89548693ccea5df53395924dafaa9aa4ec9f23bed9f30f"
+    },
+    {
+      "id": "symbol:src/outreach/resume.py#function:import_resume",
+      "type": "symbol",
+      "kind": "function",
+      "name": "import_resume",
+      "label": "import_resume",
+      "path": "src/outreach/resume.py",
+      "line": 24,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "d17b6e36ab73d360ad781f557ea051c83f707f795b09d2ca3999d46ee0a78b5a"
+    },
+    {
+      "id": "symbol:src/outreach/resume.py#function:replace_profile_facts",
+      "type": "symbol",
+      "kind": "function",
+      "name": "replace_profile_facts",
+      "label": "replace_profile_facts",
+      "path": "src/outreach/resume.py",
+      "line": 71,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "f33a0587990a2f4605a2c3f2f32a214ea8bb21831c435b9b719ec158bc3cd9ba"
+    },
+    {
+      "id": "symbol:tests/conftest.py#function:session",
+      "type": "symbol",
+      "kind": "function",
+      "name": "session",
+      "label": "session",
+      "path": "tests/conftest.py",
+      "line": 12,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "4e5576690aabf1e7d2bdb9ff12a028ca003bded16710e635e4ba0dfe0eec7ddb"
+    },
+    {
+      "id": "symbol:tests/test_dedup.py#function:_sent_outreach",
+      "type": "symbol",
+      "kind": "function",
+      "name": "_sent_outreach",
+      "label": "_sent_outreach",
+      "path": "tests/test_dedup.py",
+      "line": 69,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "aff3e4ae8dad2fedd8f58c85f2fddd958253b5cbbc7db4efa19962b40bbe3b1a"
+    },
+    {
+      "id": "symbol:tests/test_dedup.py#function:test_company_alias_and_job_sources_deduplicate",
+      "type": "symbol",
+      "kind": "function",
+      "name": "test_company_alias_and_job_sources_deduplicate",
+      "label": "test_company_alias_and_job_sources_deduplicate",
+      "path": "tests/test_dedup.py",
+      "line": 34,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "7d87ba37dcb5aa7cbca59ecdd387032b23a55fb2accb1b323e0d9b482028e18f"
+    },
+    {
+      "id": "symbol:tests/test_dedup.py#function:test_company_cooldown_and_distinct_role_rule",
+      "type": "symbol",
+      "kind": "function",
+      "name": "test_company_cooldown_and_distinct_role_rule",
+      "label": "test_company_cooldown_and_distinct_role_rule",
+      "path": "tests/test_dedup.py",
+      "line": 142,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "949325e3ec182aa295f41026c613b1f10c5072b61d61611c90f441b510441581"
+    },
+    {
+      "id": "symbol:tests/test_dedup.py#function:test_domain_and_url_canonicalization",
+      "type": "symbol",
+      "kind": "function",
+      "name": "test_domain_and_url_canonicalization",
+      "label": "test_domain_and_url_canonicalization",
+      "path": "tests/test_dedup.py",
+      "line": 27,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "edee779fbb17192fa1c0555086ac758557f258f908724b793c5f867e7ba3abfb"
+    },
+    {
+      "id": "symbol:tests/test_dedup.py#function:test_suppression_always_blocks_company",
+      "type": "symbol",
+      "kind": "function",
+      "name": "test_suppression_always_blocks_company",
+      "label": "test_suppression_always_blocks_company",
+      "path": "tests/test_dedup.py",
+      "line": 160,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "8bed239dc6e5c2b75d38eeccbb988971fa15bf7fef70af80fc2cd7fb1b28996c"
+    },
+    {
+      "id": "symbol:tests/test_profile.py#function:_blank_pdf",
+      "type": "symbol",
+      "kind": "function",
+      "name": "_blank_pdf",
+      "label": "_blank_pdf",
+      "path": "tests/test_profile.py",
+      "line": 14,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "4d8ff767dc7a096cf9afec58354fbc715d0ee13287f4dfa3e61e6a6d967afbc1"
+    },
+    {
+      "id": "symbol:tests/test_profile.py#function:test_non_pdf_is_rejected",
+      "type": "symbol",
+      "kind": "function",
+      "name": "test_non_pdf_is_rejected",
+      "label": "test_non_pdf_is_rejected",
+      "path": "tests/test_profile.py",
+      "line": 63,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "bad9f3329715e98150699261a26b316e3aa68f376ba81585d392afc2345d27f7"
+    },
+    {
+      "id": "symbol:tests/test_profile.py#function:test_profile_requires_evidence_before_confirmation",
+      "type": "symbol",
+      "kind": "function",
+      "name": "test_profile_requires_evidence_before_confirmation",
+      "label": "test_profile_requires_evidence_before_confirmation",
+      "path": "tests/test_profile.py",
+      "line": 36,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "b311cc50b3edf873c7eed7c362c71adea8d3a75281526440bcba942b7f249c51"
+    },
+    {
+      "id": "symbol:tests/test_profile.py#function:test_resume_is_versioned_locally_and_idempotently",
+      "type": "symbol",
+      "kind": "function",
+      "name": "test_resume_is_versioned_locally_and_idempotently",
+      "label": "test_resume_is_versioned_locally_and_idempotently",
+      "path": "tests/test_profile.py",
+      "line": 21,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "706ad1d6e669efb6c80339afacf5c555fbaebc33fad22d9bbf0a5d252e9b07ea"
+    },
+    {
+      "id": "symbol:tests/test_schema.py#function:test_all_required_foundation_tables_exist",
+      "type": "symbol",
+      "kind": "function",
+      "name": "test_all_required_foundation_tables_exist",
+      "label": "test_all_required_foundation_tables_exist",
+      "path": "tests/test_schema.py",
+      "line": 15,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "4517845023dbb109bfd32441e9386754bbb9047b8907c9582fbee7a5df2392ef"
+    },
+    {
+      "id": "symbol:tests/test_schema.py#function:test_configuration_normalizes_neon_driver_and_rejects_public_bind",
+      "type": "symbol",
+      "kind": "function",
+      "name": "test_configuration_normalizes_neon_driver_and_rejects_public_bind",
+      "label": "test_configuration_normalizes_neon_driver_and_rejects_public_bind",
+      "path": "tests/test_schema.py",
+      "line": 52,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "69ea3273540f3ada13a9a6236e896a45d24ed226807ca59995b425aef7eda30f"
+    },
+    {
+      "id": "symbol:tests/test_schema.py#function:test_database_enforces_unique_company_domain",
+      "type": "symbol",
+      "kind": "function",
+      "name": "test_database_enforces_unique_company_domain",
+      "label": "test_database_enforces_unique_company_domain",
+      "path": "tests/test_schema.py",
+      "line": 41,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "6b5b1d71f4c194225f14d7ab14d0d4a8a68da88bd0109142527cfa0875c1b0a0"
+    }
+  ],
+  "edges": [
+    {
+      "type": "calls",
+      "source": "symbol:src/outreach/__main__.py#function:main",
+      "target": "symbol:src/outreach/config.py#function:get_settings",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/config.py#function:get_settings"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:src/outreach/__main__.py#function:main",
+      "target": "symbol:src/outreach/db.py#function:create_database_engine",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/db.py#function:create_database_engine"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:src/outreach/config.py#function:get_settings",
+      "target": "symbol:src/outreach/config.py#class:Settings",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:src/outreach/db.py#function:create_database_engine",
+      "target": "symbol:src/outreach/config.py#function:get_settings",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/config.py#function:get_settings"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:src/outreach/db.py#function:session_dependency",
+      "target": "symbol:src/outreach/db.py#function:create_database_engine",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:src/outreach/foundation.py#function:add_company_alias",
+      "target": "symbol:src/outreach/identity.py#function:normalize_domain",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/identity.py#function:normalize_domain"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:src/outreach/foundation.py#function:add_company_alias",
+      "target": "symbol:src/outreach/models.py#class:CompanyAlias",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/models.py#class:CompanyAlias"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:src/outreach/foundation.py#function:company_eligibility",
+      "target": "symbol:src/outreach/foundation.py#class:Eligibility",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:src/outreach/foundation.py#function:company_eligibility",
+      "target": "symbol:src/outreach/foundation.py#function:_aware",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:src/outreach/foundation.py#function:get_or_create_company",
+      "target": "symbol:src/outreach/identity.py#function:normalize_domain",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/identity.py#function:normalize_domain"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:src/outreach/foundation.py#function:get_or_create_company",
+      "target": "symbol:src/outreach/models.py#class:Company",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/models.py#class:Company"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:src/outreach/foundation.py#function:get_or_create_job",
+      "target": "symbol:src/outreach/foundation.py#function:_aware",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:src/outreach/foundation.py#function:get_or_create_job",
+      "target": "symbol:src/outreach/identity.py#function:canonicalize_url",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/identity.py#function:canonicalize_url"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:src/outreach/foundation.py#function:get_or_create_job",
+      "target": "symbol:src/outreach/identity.py#function:job_fingerprint",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/identity.py#function:job_fingerprint"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:src/outreach/foundation.py#function:get_or_create_job",
+      "target": "symbol:src/outreach/identity.py#function:normalize_text",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/identity.py#function:normalize_text"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:src/outreach/foundation.py#function:get_or_create_job",
+      "target": "symbol:src/outreach/models.py#class:Job",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/models.py#class:Job"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:src/outreach/foundation.py#function:get_or_create_job",
+      "target": "symbol:src/outreach/models.py#class:JobSource",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/models.py#class:JobSource"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:src/outreach/identity.py#function:job_fingerprint",
+      "target": "symbol:src/outreach/identity.py#function:normalize_text",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:src/outreach/resume.py#function:confirm_profile",
+      "target": "symbol:src/outreach/models.py#class:AuditEvent",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/models.py#class:AuditEvent"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:src/outreach/resume.py#function:import_resume",
+      "target": "symbol:src/outreach/models.py#class:AuditEvent",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/models.py#class:AuditEvent"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:src/outreach/resume.py#function:import_resume",
+      "target": "symbol:src/outreach/models.py#class:ResumeVersion",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/models.py#class:ResumeVersion"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:src/outreach/resume.py#function:replace_profile_facts",
+      "target": "symbol:src/outreach/models.py#class:ProfileFact",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/models.py#class:ProfileFact"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/conftest.py#function:session",
+      "target": "symbol:src/outreach/db.py#function:create_database_engine",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/db.py#function:create_database_engine"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_dedup.py#function:_sent_outreach",
+      "target": "symbol:src/outreach/foundation.py#function:get_or_create_company",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/foundation.py#function:get_or_create_company"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_dedup.py#function:_sent_outreach",
+      "target": "symbol:src/outreach/foundation.py#function:get_or_create_job",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/foundation.py#function:get_or_create_job"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_dedup.py#function:_sent_outreach",
+      "target": "symbol:src/outreach/models.py#class:Approval",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/models.py#class:Approval"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_dedup.py#function:_sent_outreach",
+      "target": "symbol:src/outreach/models.py#class:Contact",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/models.py#class:Contact"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_dedup.py#function:_sent_outreach",
+      "target": "symbol:src/outreach/models.py#class:DiscoveryRun",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/models.py#class:DiscoveryRun"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_dedup.py#function:_sent_outreach",
+      "target": "symbol:src/outreach/models.py#class:Draft",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/models.py#class:Draft"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_dedup.py#function:_sent_outreach",
+      "target": "symbol:src/outreach/models.py#class:JobMatch",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/models.py#class:JobMatch"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_dedup.py#function:_sent_outreach",
+      "target": "symbol:src/outreach/models.py#class:OutreachMessage",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/models.py#class:OutreachMessage"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_dedup.py#function:_sent_outreach",
+      "target": "symbol:src/outreach/models.py#class:ResumeVersion",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/models.py#class:ResumeVersion"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_dedup.py#function:_sent_outreach",
+      "target": "symbol:src/outreach/models.py#class:SendBatch",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/models.py#class:SendBatch"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_dedup.py#function:test_company_alias_and_job_sources_deduplicate",
+      "target": "symbol:src/outreach/foundation.py#function:add_company_alias",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/foundation.py#function:add_company_alias"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_dedup.py#function:test_company_alias_and_job_sources_deduplicate",
+      "target": "symbol:src/outreach/foundation.py#function:get_or_create_company",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/foundation.py#function:get_or_create_company"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_dedup.py#function:test_company_alias_and_job_sources_deduplicate",
+      "target": "symbol:src/outreach/foundation.py#function:get_or_create_job",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/foundation.py#function:get_or_create_job"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_dedup.py#function:test_company_cooldown_and_distinct_role_rule",
+      "target": "symbol:src/outreach/foundation.py#function:company_eligibility",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/foundation.py#function:company_eligibility"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_dedup.py#function:test_company_cooldown_and_distinct_role_rule",
+      "target": "symbol:tests/test_dedup.py#function:_sent_outreach",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_dedup.py#function:test_domain_and_url_canonicalization",
+      "target": "symbol:src/outreach/identity.py#function:canonicalize_url",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/identity.py#function:canonicalize_url"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_dedup.py#function:test_domain_and_url_canonicalization",
+      "target": "symbol:src/outreach/identity.py#function:normalize_domain",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/identity.py#function:normalize_domain"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_dedup.py#function:test_suppression_always_blocks_company",
+      "target": "symbol:src/outreach/foundation.py#function:company_eligibility",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/foundation.py#function:company_eligibility"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_dedup.py#function:test_suppression_always_blocks_company",
+      "target": "symbol:src/outreach/foundation.py#function:get_or_create_company",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/foundation.py#function:get_or_create_company"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_dedup.py#function:test_suppression_always_blocks_company",
+      "target": "symbol:src/outreach/identity.py#function:job_fingerprint",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/identity.py#function:job_fingerprint"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_dedup.py#function:test_suppression_always_blocks_company",
+      "target": "symbol:src/outreach/models.py#class:Suppression",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/models.py#class:Suppression"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_profile.py#function:test_non_pdf_is_rejected",
+      "target": "symbol:src/outreach/resume.py#function:import_resume",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/resume.py#function:import_resume"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_profile.py#function:test_profile_requires_evidence_before_confirmation",
+      "target": "symbol:src/outreach/resume.py#class:FactInput",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/resume.py#class:FactInput"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_profile.py#function:test_profile_requires_evidence_before_confirmation",
+      "target": "symbol:src/outreach/resume.py#function:confirm_profile",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/resume.py#function:confirm_profile"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_profile.py#function:test_profile_requires_evidence_before_confirmation",
+      "target": "symbol:src/outreach/resume.py#function:import_resume",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/resume.py#function:import_resume"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_profile.py#function:test_profile_requires_evidence_before_confirmation",
+      "target": "symbol:src/outreach/resume.py#function:replace_profile_facts",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/resume.py#function:replace_profile_facts"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_profile.py#function:test_profile_requires_evidence_before_confirmation",
+      "target": "symbol:tests/test_profile.py#function:_blank_pdf",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_profile.py#function:test_resume_is_versioned_locally_and_idempotently",
+      "target": "symbol:src/outreach/resume.py#function:import_resume",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/resume.py#function:import_resume"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_profile.py#function:test_resume_is_versioned_locally_and_idempotently",
+      "target": "symbol:tests/test_profile.py#function:_blank_pdf",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_schema.py#function:test_all_required_foundation_tables_exist",
+      "target": "symbol:src/outreach/db.py#function:create_database_engine",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/db.py#function:create_database_engine"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_schema.py#function:test_configuration_normalizes_neon_driver_and_rejects_public_bind",
+      "target": "symbol:src/outreach/config.py#class:Settings",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/config.py#class:Settings"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_schema.py#function:test_database_enforces_unique_company_domain",
+      "target": "symbol:src/outreach/models.py#class:Company",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/models.py#class:Company"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "defines",
+      "source": "file:migrations/env.py",
+      "target": "symbol:migrations/env.py#function:run_migrations_offline",
+      "line": 32,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:migrations/env.py",
+      "target": "symbol:migrations/env.py#function:run_migrations_online",
+      "line": 56,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:migrations/versions/e3cb32e9cf04_initial_schema.py",
+      "target": "symbol:migrations/versions/e3cb32e9cf04_initial_schema.py#function:downgrade",
+      "line": 417,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:migrations/versions/e3cb32e9cf04_initial_schema.py",
+      "target": "symbol:migrations/versions/e3cb32e9cf04_initial_schema.py#function:upgrade",
+      "line": 21,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/outreach/__main__.py",
+      "target": "symbol:src/outreach/__main__.py#function:main",
+      "line": 9,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/outreach/config.py",
+      "target": "symbol:src/outreach/config.py#class:Settings",
+      "line": 10,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/outreach/config.py",
+      "target": "symbol:src/outreach/config.py#function:get_settings",
+      "line": 38,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/outreach/config.py",
+      "target": "symbol:src/outreach/config.py#function:Settings.local_host_only",
+      "line": 31,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/outreach/config.py",
+      "target": "symbol:src/outreach/config.py#function:Settings.use_psycopg_driver",
+      "line": 24,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/outreach/db.py",
+      "target": "symbol:src/outreach/db.py#class:Base",
+      "line": 11,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/outreach/db.py",
+      "target": "symbol:src/outreach/db.py#function:_enable_sqlite_foreign_keys",
+      "line": 23,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/outreach/db.py",
+      "target": "symbol:src/outreach/db.py#function:create_database_engine",
+      "line": 15,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/outreach/db.py",
+      "target": "symbol:src/outreach/db.py#function:session_dependency",
+      "line": 33,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/outreach/db.py",
+      "target": "symbol:src/outreach/db.py#function:session_factory",
+      "line": 29,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/outreach/foundation.py",
+      "target": "symbol:src/outreach/foundation.py#class:Eligibility",
+      "line": 22,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/outreach/foundation.py",
+      "target": "symbol:src/outreach/foundation.py#function:_aware",
+      "line": 170,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/outreach/foundation.py",
+      "target": "symbol:src/outreach/foundation.py#function:add_company_alias",
+      "line": 43,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/outreach/foundation.py",
+      "target": "symbol:src/outreach/foundation.py#function:company_eligibility",
+      "line": 122,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/outreach/foundation.py",
+      "target": "symbol:src/outreach/foundation.py#function:get_or_create_company",
+      "line": 27,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/outreach/foundation.py",
+      "target": "symbol:src/outreach/foundation.py#function:get_or_create_job",
+      "line": 63,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/outreach/identity.py",
+      "target": "symbol:src/outreach/identity.py#function:canonicalize_url",
+      "line": 21,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/outreach/identity.py",
+      "target": "symbol:src/outreach/identity.py#function:job_fingerprint",
+      "line": 42,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/outreach/identity.py",
+      "target": "symbol:src/outreach/identity.py#function:normalize_domain",
+      "line": 10,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/outreach/identity.py",
+      "target": "symbol:src/outreach/identity.py#function:normalize_text",
+      "line": 38,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/outreach/models.py",
+      "target": "symbol:src/outreach/models.py#class:Approval",
+      "line": 239,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/outreach/models.py",
+      "target": "symbol:src/outreach/models.py#class:AuditEvent",
+      "line": 308,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/outreach/models.py",
+      "target": "symbol:src/outreach/models.py#class:Company",
+      "line": 84,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/outreach/models.py",
+      "target": "symbol:src/outreach/models.py#class:CompanyAlias",
+      "line": 98,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/outreach/models.py",
+      "target": "symbol:src/outreach/models.py#class:Contact",
+      "line": 188,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/outreach/models.py",
+      "target": "symbol:src/outreach/models.py#class:ContactVerification",
+      "line": 202,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/outreach/models.py",
+      "target": "symbol:src/outreach/models.py#class:DiscoveryRun",
+      "line": 75,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/outreach/models.py",
+      "target": "symbol:src/outreach/models.py#class:Draft",
+      "line": 214,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/outreach/models.py",
+      "target": "symbol:src/outreach/models.py#class:DraftClaim",
+      "line": 227,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/outreach/models.py",
+      "target": "symbol:src/outreach/models.py#class:Job",
+      "line": 109,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/outreach/models.py",
+      "target": "symbol:src/outreach/models.py#class:JobMatch",
+      "line": 152,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/outreach/models.py",
+      "target": "symbol:src/outreach/models.py#class:JobSource",
+      "line": 134,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/outreach/models.py",
+      "target": "symbol:src/outreach/models.py#class:MatchEvidence",
+      "line": 174,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/outreach/models.py",
+      "target": "symbol:src/outreach/models.py#class:OutreachMessage",
+      "line": 257,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/outreach/models.py",
+      "target": "symbol:src/outreach/models.py#class:ProfileFact",
+      "line": 55,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/outreach/models.py",
+      "target": "symbol:src/outreach/models.py#class:Reply",
+      "line": 278,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/outreach/models.py",
+      "target": "symbol:src/outreach/models.py#class:ResumeVersion",
+      "line": 40,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/outreach/models.py",
+      "target": "symbol:src/outreach/models.py#class:SendBatch",
+      "line": 249,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/outreach/models.py",
+      "target": "symbol:src/outreach/models.py#class:Suppression",
+      "line": 291,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/outreach/models.py",
+      "target": "symbol:src/outreach/models.py#class:TimestampMixin",
+      "line": 31,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/outreach/models.py",
+      "target": "symbol:src/outreach/models.py#function:new_id",
+      "line": 23,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/outreach/models.py",
+      "target": "symbol:src/outreach/models.py#function:utc_now",
+      "line": 27,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/outreach/resume.py",
+      "target": "symbol:src/outreach/resume.py#class:FactInput",
+      "line": 16,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/outreach/resume.py",
+      "target": "symbol:src/outreach/resume.py#function:confirm_profile",
+      "line": 105,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/outreach/resume.py",
+      "target": "symbol:src/outreach/resume.py#function:import_resume",
+      "line": 24,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/outreach/resume.py",
+      "target": "symbol:src/outreach/resume.py#function:replace_profile_facts",
+      "line": 71,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:tests/conftest.py",
+      "target": "symbol:tests/conftest.py#function:session",
+      "line": 12,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:tests/test_dedup.py",
+      "target": "symbol:tests/test_dedup.py#function:_sent_outreach",
+      "line": 69,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:tests/test_dedup.py",
+      "target": "symbol:tests/test_dedup.py#function:test_company_alias_and_job_sources_deduplicate",
+      "line": 34,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:tests/test_dedup.py",
+      "target": "symbol:tests/test_dedup.py#function:test_company_cooldown_and_distinct_role_rule",
+      "line": 142,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:tests/test_dedup.py",
+      "target": "symbol:tests/test_dedup.py#function:test_domain_and_url_canonicalization",
+      "line": 27,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:tests/test_dedup.py",
+      "target": "symbol:tests/test_dedup.py#function:test_suppression_always_blocks_company",
+      "line": 160,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:tests/test_profile.py",
+      "target": "symbol:tests/test_profile.py#function:_blank_pdf",
+      "line": 14,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:tests/test_profile.py",
+      "target": "symbol:tests/test_profile.py#function:test_non_pdf_is_rejected",
+      "line": 63,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:tests/test_profile.py",
+      "target": "symbol:tests/test_profile.py#function:test_profile_requires_evidence_before_confirmation",
+      "line": 36,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:tests/test_profile.py",
+      "target": "symbol:tests/test_profile.py#function:test_resume_is_versioned_locally_and_idempotently",
+      "line": 21,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:tests/test_schema.py",
+      "target": "symbol:tests/test_schema.py#function:test_all_required_foundation_tables_exist",
+      "line": 15,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:tests/test_schema.py",
+      "target": "symbol:tests/test_schema.py#function:test_configuration_normalizes_neon_driver_and_rejects_public_bind",
+      "line": 52,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:tests/test_schema.py",
+      "target": "symbol:tests/test_schema.py#function:test_database_enforces_unique_company_domain",
+      "line": 41,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "imports",
+      "source": "file:migrations/env.py",
+      "target": "package:pypi:alembic",
+      "specifier": "alembic",
+      "line": 3,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:migrations/env.py",
+      "target": "package:pypi:outreach",
+      "specifier": "outreach",
+      "line": 6,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:migrations/env.py",
+      "target": "package:pypi:outreach.config",
+      "specifier": "outreach.config",
+      "line": 7,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:migrations/env.py",
+      "target": "package:pypi:outreach.db",
+      "specifier": "outreach.db",
+      "line": 8,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:migrations/env.py",
+      "target": "package:pypi:sqlalchemy",
+      "specifier": "sqlalchemy",
+      "line": 4,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:migrations/env.py",
+      "target": "runtime:python:logging.config",
+      "specifier": "logging.config",
+      "line": 1,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:migrations/versions/e3cb32e9cf04_initial_schema.py",
+      "target": "package:pypi:alembic",
+      "specifier": "alembic",
+      "line": 12,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:migrations/versions/e3cb32e9cf04_initial_schema.py",
+      "target": "package:pypi:sqlalchemy",
+      "specifier": "sqlalchemy",
+      "line": 11,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:migrations/versions/e3cb32e9cf04_initial_schema.py",
+      "target": "runtime:python:collections.abc",
+      "specifier": "collections.abc",
+      "line": 9,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/__main__.py",
+      "target": "package:pypi:outreach.config",
+      "specifier": "outreach.config",
+      "line": 5,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/__main__.py",
+      "target": "package:pypi:outreach.db",
+      "specifier": "outreach.db",
+      "line": 6,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/__main__.py",
+      "target": "runtime:python:__future__",
+      "specifier": "__future__",
+      "line": 1,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/__main__.py",
+      "target": "runtime:python:argparse",
+      "specifier": "argparse",
+      "line": 3,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/config.py",
+      "target": "package:pypi:pydantic_settings",
+      "specifier": "pydantic_settings",
+      "line": 7,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/config.py",
+      "target": "package:pypi:pydantic",
+      "specifier": "pydantic",
+      "line": 6,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/config.py",
+      "target": "runtime:python:__future__",
+      "specifier": "__future__",
+      "line": 1,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/config.py",
+      "target": "runtime:python:functools",
+      "specifier": "functools",
+      "line": 3,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/config.py",
+      "target": "runtime:python:pathlib",
+      "specifier": "pathlib",
+      "line": 4,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/db.py",
+      "target": "package:pypi:outreach.config",
+      "specifier": "outreach.config",
+      "line": 8,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/db.py",
+      "target": "package:pypi:sqlalchemy",
+      "specifier": "sqlalchemy",
+      "line": 5,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/db.py",
+      "target": "package:pypi:sqlalchemy.orm",
+      "specifier": "sqlalchemy.orm",
+      "line": 6,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/db.py",
+      "target": "runtime:python:__future__",
+      "specifier": "__future__",
+      "line": 1,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/db.py",
+      "target": "runtime:python:collections.abc",
+      "specifier": "collections.abc",
+      "line": 3,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/foundation.py",
+      "target": "package:pypi:outreach.identity",
+      "specifier": "outreach.identity",
+      "line": 9,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/foundation.py",
+      "target": "package:pypi:outreach.models",
+      "specifier": "outreach.models",
+      "line": 10,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/foundation.py",
+      "target": "package:pypi:sqlalchemy",
+      "specifier": "sqlalchemy",
+      "line": 6,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/foundation.py",
+      "target": "package:pypi:sqlalchemy.orm",
+      "specifier": "sqlalchemy.orm",
+      "line": 7,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/foundation.py",
+      "target": "runtime:python:__future__",
+      "specifier": "__future__",
+      "line": 1,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/foundation.py",
+      "target": "runtime:python:dataclasses",
+      "specifier": "dataclasses",
+      "line": 3,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/foundation.py",
+      "target": "runtime:python:datetime",
+      "specifier": "datetime",
+      "line": 4,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/identity.py",
+      "target": "runtime:python:__future__",
+      "specifier": "__future__",
+      "line": 1,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/identity.py",
+      "target": "runtime:python:hashlib",
+      "specifier": "hashlib",
+      "line": 3,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/identity.py",
+      "target": "runtime:python:re",
+      "specifier": "re",
+      "line": 4,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/identity.py",
+      "target": "runtime:python:urllib.parse",
+      "specifier": "urllib.parse",
+      "line": 5,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/models.py",
+      "target": "package:pypi:outreach.db",
+      "specifier": "outreach.db",
+      "line": 20,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/models.py",
+      "target": "package:pypi:sqlalchemy",
+      "specifier": "sqlalchemy",
+      "line": 6,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/models.py",
+      "target": "package:pypi:sqlalchemy.orm",
+      "specifier": "sqlalchemy.orm",
+      "line": 18,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/models.py",
+      "target": "runtime:python:__future__",
+      "specifier": "__future__",
+      "line": 1,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/models.py",
+      "target": "runtime:python:datetime",
+      "specifier": "datetime",
+      "line": 4,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/models.py",
+      "target": "runtime:python:uuid",
+      "specifier": "uuid",
+      "line": 3,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/resume.py",
+      "target": "package:pypi:outreach.models",
+      "specifier": "outreach.models",
+      "line": 12,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/resume.py",
+      "target": "package:pypi:pypdf",
+      "specifier": "pypdf",
+      "line": 8,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/resume.py",
+      "target": "package:pypi:sqlalchemy",
+      "specifier": "sqlalchemy",
+      "line": 9,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/resume.py",
+      "target": "package:pypi:sqlalchemy.orm",
+      "specifier": "sqlalchemy.orm",
+      "line": 10,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/resume.py",
+      "target": "runtime:python:__future__",
+      "specifier": "__future__",
+      "line": 1,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/resume.py",
+      "target": "runtime:python:dataclasses",
+      "specifier": "dataclasses",
+      "line": 5,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/resume.py",
+      "target": "runtime:python:hashlib",
+      "specifier": "hashlib",
+      "line": 3,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/resume.py",
+      "target": "runtime:python:pathlib",
+      "specifier": "pathlib",
+      "line": 6,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/resume.py",
+      "target": "runtime:python:shutil",
+      "specifier": "shutil",
+      "line": 4,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/conftest.py",
+      "target": "package:pypi:outreach.db",
+      "specifier": "outreach.db",
+      "line": 8,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/conftest.py",
+      "target": "package:pypi:pytest",
+      "specifier": "pytest",
+      "line": 5,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/conftest.py",
+      "target": "package:pypi:sqlalchemy.orm",
+      "specifier": "sqlalchemy.orm",
+      "line": 6,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/conftest.py",
+      "target": "runtime:python:__future__",
+      "specifier": "__future__",
+      "line": 1,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/conftest.py",
+      "target": "runtime:python:collections.abc",
+      "specifier": "collections.abc",
+      "line": 3,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/test_dedup.py",
+      "target": "package:pypi:outreach.foundation",
+      "specifier": "outreach.foundation",
+      "line": 7,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/test_dedup.py",
+      "target": "package:pypi:outreach.identity",
+      "specifier": "outreach.identity",
+      "line": 13,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/test_dedup.py",
+      "target": "package:pypi:outreach.models",
+      "specifier": "outreach.models",
+      "line": 14,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/test_dedup.py",
+      "target": "package:pypi:sqlalchemy.orm",
+      "specifier": "sqlalchemy.orm",
+      "line": 5,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/test_dedup.py",
+      "target": "runtime:python:__future__",
+      "specifier": "__future__",
+      "line": 1,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/test_dedup.py",
+      "target": "runtime:python:datetime",
+      "specifier": "datetime",
+      "line": 3,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/test_profile.py",
+      "target": "package:pypi:outreach.models",
+      "specifier": "outreach.models",
+      "line": 10,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/test_profile.py",
+      "target": "package:pypi:outreach.resume",
+      "specifier": "outreach.resume",
+      "line": 11,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/test_profile.py",
+      "target": "package:pypi:pypdf",
+      "specifier": "pypdf",
+      "line": 6,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/test_profile.py",
+      "target": "package:pypi:pytest",
+      "specifier": "pytest",
+      "line": 5,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/test_profile.py",
+      "target": "package:pypi:sqlalchemy",
+      "specifier": "sqlalchemy",
+      "line": 7,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/test_profile.py",
+      "target": "package:pypi:sqlalchemy.orm",
+      "specifier": "sqlalchemy.orm",
+      "line": 8,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/test_profile.py",
+      "target": "runtime:python:__future__",
+      "specifier": "__future__",
+      "line": 1,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/test_profile.py",
+      "target": "runtime:python:pathlib",
+      "specifier": "pathlib",
+      "line": 3,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/test_schema.py",
+      "target": "package:pypi:outreach.config",
+      "specifier": "outreach.config",
+      "line": 10,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/test_schema.py",
+      "target": "package:pypi:outreach.db",
+      "specifier": "outreach.db",
+      "line": 11,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/test_schema.py",
+      "target": "package:pypi:outreach.models",
+      "specifier": "outreach.models",
+      "line": 12,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/test_schema.py",
+      "target": "package:pypi:pytest",
+      "specifier": "pytest",
+      "line": 5,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/test_schema.py",
+      "target": "package:pypi:sqlalchemy",
+      "specifier": "sqlalchemy",
+      "line": 6,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/test_schema.py",
+      "target": "package:pypi:sqlalchemy.exc",
+      "specifier": "sqlalchemy.exc",
+      "line": 7,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/test_schema.py",
+      "target": "package:pypi:sqlalchemy.orm",
+      "specifier": "sqlalchemy.orm",
+      "line": 8,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/test_schema.py",
+      "target": "runtime:python:__future__",
+      "specifier": "__future__",
+      "line": 1,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/test_schema.py",
+      "target": "runtime:python:pathlib",
+      "specifier": "pathlib",
+      "line": 3,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "inherits",
+      "source": "symbol:src/outreach/models.py#class:Approval",
+      "target": "symbol:src/outreach/models.py#class:TimestampMixin",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "inherits",
+      "source": "symbol:src/outreach/models.py#class:Company",
+      "target": "symbol:src/outreach/models.py#class:TimestampMixin",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "inherits",
+      "source": "symbol:src/outreach/models.py#class:CompanyAlias",
+      "target": "symbol:src/outreach/models.py#class:TimestampMixin",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "inherits",
+      "source": "symbol:src/outreach/models.py#class:Contact",
+      "target": "symbol:src/outreach/models.py#class:TimestampMixin",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "inherits",
+      "source": "symbol:src/outreach/models.py#class:ContactVerification",
+      "target": "symbol:src/outreach/models.py#class:TimestampMixin",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "inherits",
+      "source": "symbol:src/outreach/models.py#class:DiscoveryRun",
+      "target": "symbol:src/outreach/models.py#class:TimestampMixin",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "inherits",
+      "source": "symbol:src/outreach/models.py#class:Draft",
+      "target": "symbol:src/outreach/models.py#class:TimestampMixin",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "inherits",
+      "source": "symbol:src/outreach/models.py#class:DraftClaim",
+      "target": "symbol:src/outreach/models.py#class:TimestampMixin",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "inherits",
+      "source": "symbol:src/outreach/models.py#class:Job",
+      "target": "symbol:src/outreach/models.py#class:TimestampMixin",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "inherits",
+      "source": "symbol:src/outreach/models.py#class:JobMatch",
+      "target": "symbol:src/outreach/models.py#class:TimestampMixin",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "inherits",
+      "source": "symbol:src/outreach/models.py#class:JobSource",
+      "target": "symbol:src/outreach/models.py#class:TimestampMixin",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "inherits",
+      "source": "symbol:src/outreach/models.py#class:MatchEvidence",
+      "target": "symbol:src/outreach/models.py#class:TimestampMixin",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "inherits",
+      "source": "symbol:src/outreach/models.py#class:OutreachMessage",
+      "target": "symbol:src/outreach/models.py#class:TimestampMixin",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "inherits",
+      "source": "symbol:src/outreach/models.py#class:ProfileFact",
+      "target": "symbol:src/outreach/models.py#class:TimestampMixin",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "inherits",
+      "source": "symbol:src/outreach/models.py#class:Reply",
+      "target": "symbol:src/outreach/models.py#class:TimestampMixin",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "inherits",
+      "source": "symbol:src/outreach/models.py#class:ResumeVersion",
+      "target": "symbol:src/outreach/models.py#class:TimestampMixin",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "inherits",
+      "source": "symbol:src/outreach/models.py#class:SendBatch",
+      "target": "symbol:src/outreach/models.py#class:TimestampMixin",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "inherits",
+      "source": "symbol:src/outreach/models.py#class:Suppression",
+      "target": "symbol:src/outreach/models.py#class:TimestampMixin",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast-calls"
+    }
+  ],
   "warnings": [],
   "stats": {
-    "unresolvedCalls": 0
+    "unresolvedCalls": 277
   }
 }
