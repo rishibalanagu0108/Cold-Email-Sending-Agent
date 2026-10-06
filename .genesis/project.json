@@ -9,7 +9,7 @@
     "non_goals": [],
     "trust_boundary": "local repository",
     "created_at": "2026-10-06T09:40:47.262Z",
-    "updated_at": "2026-10-06T15:26:37.866Z"
+    "updated_at": "2026-10-06T15:29:42.210Z"
   },
   "policy": {
     "ponytail": "full",
@@ -800,8 +800,14 @@
           "kind": "command",
           "command": "pytest -q tests/test_send_gate.py tests/test_mailer.py tests/test_replies.py tests/test_secrets.py",
           "mandatory": true,
-          "status": "pending",
-          "evidence": null
+          "status": "pass",
+          "evidence": {
+            "path": ".genesis/evidence/MVP-5-mail-tests-ec9368af-7363-4d9d-8113-0ea8126b6122.json",
+            "hash": "47be40308ab6d1a705cc157aeffd3feba5762967c60c5c1a44e646fff052b2be",
+            "source_hash": "6a80c558bc0a1b46cde487219b857a5c834c75b1b12686b6ebdd272234a79b69",
+            "config_hash": "a5701d55f800ade6abbaab5b570a0b9c8718c21d1ad157cde6679f251df91616",
+            "observed_at": "2026-10-06T15:29:42.180Z"
+          }
         },
         {
           "id": "independent-review",
@@ -1077,6 +1083,30 @@
       "cost": null,
       "stop_reason": null,
       "ended_at": "2026-10-06T15:16:22.118Z"
+    },
+    {
+      "id": "ec9368af-7363-4d9d-8113-0ea8126b6122",
+      "task": "MVP-5",
+      "kind": "gate",
+      "command": "pytest -q tests/test_send_gate.py tests/test_mailer.py tests/test_replies.py tests/test_secrets.py",
+      "timeout": 120000,
+      "authorization": null,
+      "pid": 130340,
+      "child_pid": 130417,
+      "started_at": "2026-10-06T15:29:39.526Z",
+      "status": "passed",
+      "before_hash": "6a80c558bc0a1b46cde487219b857a5c834c75b1b12686b6ebdd272234a79b69",
+      "config_hash": "a5701d55f800ade6abbaab5b570a0b9c8718c21d1ad157cde6679f251df91616",
+      "environment": {
+        "node": "v24.13.0",
+        "platform": "linux",
+        "arch": "x64",
+        "verifier": "358371454f03eb4fdfd3eda3cb1d18cb1dd8fe9445404bb3d3047267b3977eb9",
+        "variables": {}
+      },
+      "cost": null,
+      "stop_reason": null,
+      "ended_at": "2026-10-06T15:29:42.180Z"
     }
   ],
   "authorizations": [],

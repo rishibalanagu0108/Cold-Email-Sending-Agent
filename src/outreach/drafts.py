@@ -97,9 +97,18 @@ def approve_draft(session: Session, draft_id: str, *, at: datetime | None = None
         contact.normalized_email, draft.subject, draft.body, draft.resume_version_id
     )
     draft.revision_hash = expected_hash
-    approval = Approval(draft_id=draft.id, revision_hash=expected_hash, approved_at=now)
+    approval = session.scalar(
+        select(Approval).where(
+            Approval.draft_id == draft.id,
+            Approval.revision_hash == expected_hash,
+        )
+    )
+    if approval:
+        approval.approved_at = now
+    else:
+        approval = Approval(draft_id=draft.id, revision_hash=expected_hash, approved_at=now)
+        session.add(approval)
     draft.status = "approved"
-    session.add(approval)
     session.commit()
     return approval
 

@@ -3,6 +3,7 @@ from __future__ import annotations
 import shutil
 from collections.abc import Generator
 from pathlib import Path
+from uuid import uuid4
 
 from fastapi import Depends, FastAPI, File, Form, HTTPException, Request, UploadFile
 from fastapi.responses import HTMLResponse, RedirectResponse
@@ -14,6 +15,7 @@ from sqlalchemy.orm import Session
 from outreach.config import Settings, get_settings
 from outreach.db import create_database_engine
 from outreach.drafts import approve_draft, edit_draft, set_draft_status
+from outreach.mail import GmailSMTPTransport, send_approved_batch
 from outreach.models import (
     Company,
     Contact,
@@ -28,17 +30,29 @@ from outreach.models import (
     ResumeVersion,
     Suppression,
 )
+from outreach.replies import GmailIMAPReader, sync_replies
 from outreach.resume import FactInput, confirm_profile, import_resume
 
 PACKAGE_DIR = Path(__file__).parent
 templates = Jinja2Templates(directory=PACKAGE_DIR / "templates")
 
 
-def create_app(engine: Engine | None = None, settings: Settings | None = None) -> FastAPI:
+def create_app(
+    engine: Engine | None = None,
+    settings: Settings | None = None,
+    mail_transport_factory=None,
+    reply_reader_factory=None,
+) -> FastAPI:
     configured = settings or get_settings()
     app = FastAPI(title="AI Job Outreach", docs_url=None, redoc_url=None)
     app.state.engine = engine or create_database_engine(configured.database_url)
     app.state.settings = configured
+    app.state.mail_transport_factory = mail_transport_factory or (
+        lambda: GmailSMTPTransport.from_settings(configured)
+    )
+    app.state.reply_reader_factory = reply_reader_factory or (
+        lambda: GmailIMAPReader.from_settings(configured)
+    )
     app.mount("/static", StaticFiles(directory=PACKAGE_DIR / "static"), name="static")
 
     def database(request: Request) -> Generator[Session, None, None]:
@@ -265,6 +279,38 @@ def create_app(engine: Engine | None = None, settings: Settings | None = None) -
             select(OutreachMessage).order_by(OutreachMessage.created_at.desc())
         ).all()
         return templates.TemplateResponse(request, "history.html", {"messages": messages})
+
+    @app.post("/send")
+    def send_batch(
+        request: Request,
+        draft_ids: list[str] = Form(...),
+        session: Session = Depends(database),
+    ) -> RedirectResponse:
+        settings = request.app.state.settings
+        if not settings.gmail_address:
+            raise HTTPException(400, "Gmail is not configured")
+        try:
+            send_approved_batch(
+                session,
+                draft_ids,
+                sender=settings.gmail_address,
+                transport=request.app.state.mail_transport_factory(),
+                batch_key=f"dashboard-{uuid4()}",
+            )
+        except ValueError as exc:
+            raise HTTPException(400, str(exc)) from exc
+        return RedirectResponse("/history", status_code=303)
+
+    @app.post("/replies/sync")
+    def synchronize_replies(
+        request: Request, session: Session = Depends(database)
+    ) -> RedirectResponse:
+        try:
+            inbound = request.app.state.reply_reader_factory().fetch()
+            sync_replies(session, inbound)
+        except ValueError as exc:
+            raise HTTPException(400, str(exc)) from exc
+        return RedirectResponse("/history", status_code=303)
 
     @app.get("/suppressions", response_class=HTMLResponse)
     def suppressions(request: Request, session: Session = Depends(database)) -> HTMLResponse:

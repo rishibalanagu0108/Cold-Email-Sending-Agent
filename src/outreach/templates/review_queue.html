@@ -3,6 +3,7 @@
 {% block content %}
 <h1>Review queue</h1>
 <p>Every message requires your approval. Importing a Codex bundle never sends email.</p>
+<form action="/send" method="post">
 <div class="cards">
 {% for draft, match, job, company, contact in rows %}
   <article>
@@ -10,8 +11,10 @@
     <h2><a href="/review/{{ draft.id }}">{{ company.name }}</a></h2>
     <p>{{ job.title }} · {{ job.location }}</p>
     <p>To {{ contact.name }}, {{ contact.role }}</p>
+    {% if draft.status == "approved" %}<label><input type="checkbox" name="draft_ids" value="{{ draft.id }}"> Include in send batch</label>{% endif %}
   </article>
 {% else %}<p>No drafts are waiting for review.</p>{% endfor %}
 </div>
+<button type="submit">Send approved batch</button>
+</form>
 {% endblock %}
-
