@@ -4,11 +4,11 @@
 
 - objective: Specify a local approval-first cold-email outreach platform for matching AI roles to the user's resume, researching companies and verified professional contacts, generating evidence-grounded personalized drafts through Codex CLI, deduplicating outreach in Neon PostgreSQL, exporting jobs to CSV, and sending user-approved batches through Gmail.
 - phase/status: build/active
-- active task: MVP-3 — Implement stage-aware professional contact selection and fail-closed verification using public evidence and optional free providers.
+- active task: MVP-4 — Build the local dashboard for evidence-backed drafts, filtering, editing, approval invalidation, and accessible review workflows.
 - blocker: none
 - next action: Run the task pre-flight.
 - phase instruction: Implement only the active task and prove it against current sources. Check `genesis query . impact PATH` before editing shared code.
-- gates: contact-tests:pass, independent-review:pending
+- gates: dashboard-tests:pending, independent-review:pending
 - recent failures: none
 
 ## Resume
@@ -17,9 +17,9 @@ Load Genesis and official Ponytail full, then run `genesis brief .` for the curr
 Fetch full records with `genesis context . --id ID` only when needed. Do not load project.json or historical proof wholesale.
 Ask the index before reading code: `genesis query . search|scope|callers|callees|impact|path` (`--json` for parsing). Run `genesis query . impact PATH` before editing shared code. Answers are advisory static analysis; `ambiguous` means candidates were not ruled out, so confirm in source.
 Run `genesis serve .` for a live map of the repository when structure is unclear; it reindexes on save and is read-only. Run `genesis index .` if the index is stale and nothing is watching.
-Context fingerprint: fca4dff85447442b93e01ab6a929fe8e48dafd739c0e32ff3cd29cdeff894c66. Use --since only after receiving that full packet; kickoff is not the packet.
-- DECISION-18862c53: Verification and deduplication
-- DECISION-ee081748: Targeting and contact hierarchy
+Context fingerprint: 3b32f1151995a3d97cd6016d581cd05ad9038bae3a14b75b15636f78d4ac99ba. Use --since only after receiving that full packet; kickoff is not the packet.
+- DECISION-282d4901: Approval and sending boundary
+- DECISION-2cf39834: Storage and interface without CSV
 - ASSUMPTION-7dcf2616: The resume attachment is not visible in the workspace. Implementation must accept a user-supplied PD…
 Applicable invariants, active rules, authorization and proof references are in the packet. Truncated summaries are retrieval pointers, not the full evidence.
 Reuse fresh gates with --reuse. Reconcile interrupted attempts before replaying commands. Report state → evidence → blocker → next action; checkpoint before stopping.

@@ -9,7 +9,7 @@
     "non_goals": [],
     "trust_boundary": "local repository",
     "created_at": "2026-10-06T09:40:47.262Z",
-    "updated_at": "2026-10-06T14:37:15.845Z"
+    "updated_at": "2026-10-06T15:12:04.186Z"
   },
   "policy": {
     "ponytail": "full",
@@ -25,7 +25,7 @@
   "lifecycle": {
     "phase": "build",
     "status": "active",
-    "active_task": "MVP-3",
+    "active_task": "MVP-4",
     "blocker": null,
     "next_action": "Run the task pre-flight."
   },
@@ -561,7 +561,7 @@
     {
       "id": "MVP-3",
       "outcome": "Implement stage-aware professional contact selection and fail-closed verification using public evidence and optional free providers.",
-      "state": "active",
+      "state": "done",
       "risk": "medium",
       "owner": null,
       "scope": [],
@@ -599,8 +599,14 @@
           "kind": "review",
           "command": "",
           "mandatory": true,
-          "status": "pending",
-          "evidence": null
+          "status": "pass",
+          "evidence": {
+            "path": ".genesis/evidence/MVP-3-independent-review-cf6a9e3b-225e-4bbb-b7bb-bba559d52971.json",
+            "hash": "9e8a68100893767e84ccb66ecee201d208d3c66262f2d230fefdac6e2ad80cb6",
+            "source_hash": "bc567ad264d98540d97b79bce1d4d5008b3a29ab0788b0d2391f9da9080e81b9",
+            "config_hash": "e56816c1e96e592cea2f431a5dc88a9022cec50eebfae849880ba39292650f10",
+            "observed_at": "2026-10-06T15:12:03.640Z"
+          }
         }
       ],
       "next_action": "Run the task pre-flight.",
@@ -609,7 +615,7 @@
       "failures": [],
       "limitations": [],
       "created_at": "2026-10-06T13:39:21.902Z",
-      "updated_at": "2026-10-06T13:39:21.902Z",
+      "updated_at": "2026-10-06T15:12:04.168Z",
       "base_manifest": {
         ".env.example": "f0624d9726a09ea0eef08d8f3da5371a818f0732a252259f3f772786052649a5",
         ".gitignore": "c3b006eebc1b3c4fedbeeb04490d47e1d856c170be079520792e39683a27771c",
@@ -651,7 +657,7 @@
     {
       "id": "MVP-4",
       "outcome": "Build the local dashboard for evidence-backed drafts, filtering, editing, approval invalidation, and accessible review workflows.",
-      "state": "queued",
+      "state": "active",
       "risk": "medium",
       "owner": null,
       "scope": [],
@@ -704,7 +710,48 @@
       "failures": [],
       "limitations": [],
       "created_at": "2026-10-06T13:39:22.074Z",
-      "updated_at": "2026-10-06T13:39:22.075Z"
+      "updated_at": "2026-10-06T13:39:22.075Z",
+      "base_manifest": {
+        ".env.example": "f0624d9726a09ea0eef08d8f3da5371a818f0732a252259f3f772786052649a5",
+        ".gitignore": "c3b006eebc1b3c4fedbeeb04490d47e1d856c170be079520792e39683a27771c",
+        "AGENTS.md": "a67615d8ed1ed3dd1b0d2cbf874ceb8d4a285c3335cdfc2d785ec80a06daecc1",
+        "ARCHITECTURE.md": "0baca8b06de1feb15c0cb117f1e3508dab1d32f1b190ade571c8512b486f8ae4",
+        "CODEX_BUILD_PROMPT.md": "55c345db99219592516157b90e7952e8974d51d45acd49171de30a70a6084991",
+        "CODEX_RUNBOOK.md": "30f59a6e1b42f8a9f13bff87c737728eac6bc2932850bd6052a7e275580bcb6a",
+        "README.md": "66cd27df1ca782aecd30ba6b35a8c17cd1d43274c94dd942f612f589b06c4a2e",
+        "SPEC.md": "837dde97de07a64e3c2736837a93c07029bd1cedfa67f61825d651e1baef68f2",
+        "alembic.ini": "123c994d1446cdc3dcb2ad6d33c69901e0e3e21e74c4e9b155e1069332dbb15e",
+        "migrations/README": "fe59122c077f3461bae8462aae75c1a07513a96438e9034d4383925128e567b7",
+        "migrations/env.py": "bb9dffe28e1b8ff70609636258620e0c78137cc8062e910e41191bf9bbc139ee",
+        "migrations/script.py.mako": "4068908a2d04f8779209a1026b8f387741e399c42f1f8f1aecd51499e2855755",
+        "migrations/versions/e3cb32e9cf04_initial_schema.py": "90a2caaa54df35755e3445e97ee3b42b8fa08e293bb9ed8c51ea57f0f47f4226",
+        "pyproject.toml": "fe50fbac6e98ade8c1f617f6a024a08048a7a425ae37b2731f3a951b67a6160f",
+        "src/outreach/__init__.py": "9fc71feda32a4ff8a3eb0661191468e3c5f9c3085e1cf4629232ac8112142d9e",
+        "src/outreach/__main__.py": "dcf1bcac88c31b4572972e2f0b0b297c3878c1131c20b27dd92b979b2051f0de",
+        "src/outreach/bundles.py": "bf620d4ca940d6887e41dcd1d8c9515e17e567fe5baf9adb06fd2d384029d420",
+        "src/outreach/config.py": "72c982efa77fe9fa1ac92e455e3384dcc01aac54ea5694f22d7aa06ce8998384",
+        "src/outreach/contacts.py": "e13bc0df5dd55e3ffd480534e330bc135949985651ad34e87ff15c4e2a654243",
+        "src/outreach/context.py": "225ac86e9e045834097e41ed5aafb33931178783094704fc52333eaa121331a5",
+        "src/outreach/db.py": "4a4c4b91d83d563a2bd90958f7c171ceb495e62047892dfb6e98b10aaaccf019",
+        "src/outreach/foundation.py": "25c4062a013473176155bd093a0301cd6c7a004b745fa357b18637201b3b0d06",
+        "src/outreach/identity.py": "f58ddc75311b527da76a9c3becefe1461097f95f3461555abf048daae091dab5",
+        "src/outreach/matching.py": "722ae8ff762e243e19d167094e6aa2afba465c1d6d2fa08932f22c5bb6d64343",
+        "src/outreach/models.py": "961497473206a15905643a283f0fc22167da36135bbd483d4e922e91e3ff9d3b",
+        "src/outreach/resume.py": "9340c2489d3a91199f8ce9635ad0c538478b4fee2d1342b91ea005fb2213939e",
+        "src/outreach/verification.py": "bf93e71ecb533b90d529f8a5625c04105ce6cf044e680bd0ba3c5e9ab2041c7f",
+        "tests/__init__.py": "e7bf0f145c7611bfc34609314d421fd52ab70962b9c71dd09288b1a00a29f5b7",
+        "tests/conftest.py": "00bc43c0ae91d06b542bbc021cb95224b64fc37b88d9658953362b63d3b9525b",
+        "tests/factories.py": "fff950299a63a5657b36bfce1f9b1e5920a7d2f3881284e33dde2935deaadc68",
+        "tests/test_bundle.py": "61333aeda931d1071f8325c9120046af1cdb7b8e88835727ac615b19813b96d3",
+        "tests/test_codex_contract.py": "87520200eef3957d8a52d642be739b3db6b2c57faa9c74fbf424c7b569e77830",
+        "tests/test_contacts.py": "3bc40e6a38797c01eebe2f6c217cb5aa4aab0d77e9f9023c9369bb75b495b518",
+        "tests/test_dedup.py": "6dd1bc7548cbb2b8ac3f7b4cba26871ab1b2c03538d5edc87296622fe11497bf",
+        "tests/test_matching.py": "04d8377d3466529f9a1631d1b05bbb085bba895594332ded5b27a8a3c40017f3",
+        "tests/test_profile.py": "a2978174564e8d9f60804cfb2c024377b819f5c820fc0a57a67f657f9008f92c",
+        "tests/test_schema.py": "166ab6a1c7ab214fb6727669fb927be2b3f0f7c13e2fb364ff14ebabde570cc9",
+        "tests/test_verification.py": "84a17282ca9b241b4d4c3c0bdc24d39e9794a09cd12560c80f066d158a20d675",
+        "uv.lock": "487db982c46c7ed39e13c824a31d31ebeae9f00eca06254909d09c9574cabc9f"
+      }
     },
     {
       "id": "MVP-5",
@@ -822,6 +869,15 @@
       "task": "MVP-2",
       "human": "Project owner",
       "reason": "User reviewed and explicitly approved MVP-2.",
+      "revision": null
+    },
+    {
+      "id": "cf6a9e3b-225e-4bbb-b7bb-bba559d52971",
+      "at": "2026-10-06T15:12:03.640Z",
+      "action": "approve",
+      "task": "MVP-3",
+      "human": "Project owner",
+      "reason": "User reviewed and explicitly approved MVP-3.",
       "revision": null
     }
   ],

@@ -26,15 +26,15 @@
 
 ### MVP-3 — Implement stage-aware professional contact selection and fail-closed verification using public evidence and optional free providers.
 
-- state/risk: active / medium
+- state/risk: done / medium
 - requirements: FR-26, FR-27, FR-28, FR-29, FR-30, FR-31, AC-13, AC-14
 - scope: not bounded
-- gates: contact-tests: pytest -q tests/test_contacts.py tests/test_verification.py, independent-review: pending
+- gates: contact-tests: pytest -q tests/test_contacts.py tests/test_verification.py, independent-review: pass
 - next: Run the task pre-flight.
 
 ### MVP-4 — Build the local dashboard for evidence-backed drafts, filtering, editing, approval invalidation, and accessible review workflows.
 
-- state/risk: queued / medium
+- state/risk: active / medium
 - requirements: FR-32, FR-33, FR-34, FR-35, FR-36, FR-37, FR-38, FR-39, FR-40, FR-41, FR-42, FR-43, FR-44, FR-55, NFR-7, NFR-9, NFR-11, AC-15, AC-24
 - scope: not bounded
 - gates: dashboard-tests: pytest -q tests/test_drafts.py tests/test_approval.py tests/test_dashboard.py, independent-review: pending
