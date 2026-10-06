@@ -5,14 +5,17 @@ from datetime import UTC, datetime, timedelta
 from pathlib import Path
 from typing import Literal
 
-from pydantic import BaseModel, ConfigDict, Field, HttpUrl, model_validator
+from pydantic import BaseModel, ConfigDict, EmailStr, Field, HttpUrl, model_validator
 from sqlalchemy import select
 from sqlalchemy.orm import Session
 
+from outreach.contacts import ContactInput as ContactRecordInput
+from outreach.contacts import store_verified_contact
 from outreach.foundation import company_eligibility, get_or_create_company, get_or_create_job
 from outreach.identity import job_fingerprint, normalize_domain
 from outreach.matching import AI_ROLE_FAMILIES
 from outreach.models import DiscoveryRun, JobMatch, MatchEvidence, ResumeVersion
+from outreach.verification import VerificationEvidence
 
 
 class StrictModel(BaseModel):
@@ -48,6 +51,28 @@ class EvidenceInput(StrictModel):
         return self
 
 
+class VerificationInput(StrictModel):
+    status: Literal["verified", "unverified", "unknown", "risky", "invalid", "catch_all"]
+    method: Literal["official_public", "free_provider"]
+    verified_at: datetime
+    domain_accepts_mail: bool
+    catch_all: bool = False
+    evidence_url: HttpUrl | None = None
+    evidence_excerpt: str | None = None
+    provider: str | None = Field(default=None, max_length=100)
+    provider_result: str | None = Field(default=None, max_length=100)
+
+
+class ContactInput(StrictModel):
+    name: str = Field(min_length=1, max_length=255)
+    role: str = Field(min_length=1, max_length=255)
+    email: EmailStr
+    source_url: HttpUrl
+    professional: bool
+    public_professional: bool = False
+    verification: VerificationInput
+
+
 class CandidateInput(StrictModel):
     company_name: str = Field(min_length=1, max_length=255)
     company_domain: str = Field(min_length=3, max_length=255)
@@ -69,6 +94,7 @@ class CandidateInput(StrictModel):
     rejection_reason: str | None = Field(default=None, max_length=100)
     score: ScoreInput
     evidence: list[EvidenceInput] = Field(min_length=1)
+    contact: ContactInput | None = None
 
     @model_validator(mode="after")
     def eligibility_is_supported(self) -> CandidateInput:
@@ -92,6 +118,8 @@ class CandidateInput(StrictModel):
             problems.append("posted date is missing")
         if self.score.total < 70:
             problems.append("fit score is below 70")
+        if self.contact is None:
+            problems.append("verified contact is required")
         evidence_types = {item.evidence_type for item in self.evidence}
         if "job" not in evidence_types or "company" not in evidence_types:
             problems.append("job and company evidence are required")
@@ -205,6 +233,37 @@ def import_bundle(session: Session, bundle: PreparationBundle) -> ImportResult:
             )
             session.add(match)
             session.flush()
+            if status == "eligible" and candidate.contact:
+                verification = candidate.contact.verification
+                store_verified_contact(
+                    session,
+                    company,
+                    ContactRecordInput(
+                        name=candidate.contact.name,
+                        role=candidate.contact.role,
+                        email=str(candidate.contact.email),
+                        source_url=str(candidate.contact.source_url),
+                        verification=VerificationEvidence(
+                            email=str(candidate.contact.email),
+                            company_domain=company.canonical_domain,
+                            professional=candidate.contact.professional,
+                            public_professional=candidate.contact.public_professional,
+                            method=verification.method,
+                            status=verification.status,
+                            verified_at=verification.verified_at,
+                            domain_accepts_mail=verification.domain_accepts_mail,
+                            catch_all=verification.catch_all,
+                            evidence_url=(
+                                str(verification.evidence_url)
+                                if verification.evidence_url
+                                else None
+                            ),
+                            evidence_excerpt=verification.evidence_excerpt,
+                            provider=verification.provider,
+                            provider_result=verification.provider_result,
+                        ),
+                    ),
+                )
             for evidence in candidate.evidence:
                 session.add(
                     MatchEvidence(

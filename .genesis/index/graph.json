@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
   "project": "ai-job-outreach",
-  "revision": "c525f007ebe30b4391753157bf1a29a7a60db94d",
-  "sourceHash": "236f230017513bb7b6b0cdb52c45ce93f586b5ec2b3d8a3184e2fa4b174e17bb",
+  "revision": "1f0030d7df49cf59e98ce18374f1be1311ac98c7",
+  "sourceHash": "2b9fccfa1ee5c85210f6cc05d0ae6caa8bf9c5a31df3ec966337c44d169375da",
   "provenance": {
     "tool": "genesis-graphizer",
     "method": "static-analysis",
@@ -47,7 +47,17 @@
       "language": "python",
       "confidence": 1,
       "extractor": "filesystem",
-      "contentHash": "20c57325d6df5d42414a15dc0bbee77f0fb331cb804626afe3ef52a41c2da5a8"
+      "contentHash": "c699962961b39dacbef0f17f8a35af285a27cf31157d5203da73d9308cb4a60b"
+    },
+    {
+      "id": "file:src/outreach/bundles.py",
+      "type": "file",
+      "label": "src/outreach/bundles.py",
+      "path": "src/outreach/bundles.py",
+      "language": "python",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "9e0200f41f2fb751e19a33a49b2c37a7b44d43975f53e1ec26c7608e91875039"
     },
     {
       "id": "file:src/outreach/config.py",
@@ -58,6 +68,16 @@
       "confidence": 1,
       "extractor": "filesystem",
       "contentHash": "9783f2f1531fddba27c0eb05093dd2d03ad5abb1891213191e22eabd7ed6f111"
+    },
+    {
+      "id": "file:src/outreach/context.py",
+      "type": "file",
+      "label": "src/outreach/context.py",
+      "path": "src/outreach/context.py",
+      "language": "python",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "cf3f04882d84ee09c2bfffe2d0247c5e8b9e4e5bf8072bba1651bcaffee05a04"
     },
     {
       "id": "file:src/outreach/db.py",
@@ -90,6 +110,16 @@
       "contentHash": "4a036b423b12387862680e9b39209905b91c9ce10d92967d81a4bd6168081ee1"
     },
     {
+      "id": "file:src/outreach/matching.py",
+      "type": "file",
+      "label": "src/outreach/matching.py",
+      "path": "src/outreach/matching.py",
+      "language": "python",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "9a5a5e21d94790acad73811951c950b105ac3090c577ed3bb5d60329346393ee"
+    },
+    {
       "id": "file:src/outreach/models.py",
       "type": "file",
       "label": "src/outreach/models.py",
@@ -110,6 +140,16 @@
       "contentHash": "370d484898aece47a26a6d738804261e149731a974f058c2eb7543b32ad73b3f"
     },
     {
+      "id": "file:tests/__init__.py",
+      "type": "file",
+      "label": "tests/__init__.py",
+      "path": "tests/__init__.py",
+      "language": "python",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "a2d2adc778deafbd3f910cfcfc7a0511d080a17a3aa9aab17e38c8169ddbbfde"
+    },
+    {
       "id": "file:tests/conftest.py",
       "type": "file",
       "label": "tests/conftest.py",
@@ -120,6 +160,36 @@
       "contentHash": "924cb5f94fda5bc121a91e6f4f6bea6d69628000c14e02c1b1a78465d14045fa"
     },
     {
+      "id": "file:tests/factories.py",
+      "type": "file",
+      "label": "tests/factories.py",
+      "path": "tests/factories.py",
+      "language": "python",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "f189d8195a19ac1951207ed18c83d27e4683b2936b505ff3b8a7d1bfdf87fcff"
+    },
+    {
+      "id": "file:tests/test_bundle.py",
+      "type": "file",
+      "label": "tests/test_bundle.py",
+      "path": "tests/test_bundle.py",
+      "language": "python",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "e6cddfaaa8eb48eadea4b0655f6fc81b1228bee08ecab93dd643b5e5362e227e"
+    },
+    {
+      "id": "file:tests/test_codex_contract.py",
+      "type": "file",
+      "label": "tests/test_codex_contract.py",
+      "path": "tests/test_codex_contract.py",
+      "language": "python",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "5000ced3c0d1753ab1406cc3e7e57500036b205c6452944d3d84e57c5eb5042d"
+    },
+    {
       "id": "file:tests/test_dedup.py",
       "type": "file",
       "label": "tests/test_dedup.py",
@@ -128,6 +198,16 @@
       "confidence": 1,
       "extractor": "filesystem",
       "contentHash": "2f9ef5253549e7126d550dadda7d41386fc90ac02ed6a9f8577b0197d8e1a529"
+    },
+    {
+      "id": "file:tests/test_matching.py",
+      "type": "file",
+      "label": "tests/test_matching.py",
+      "path": "tests/test_matching.py",
+      "language": "python",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "83d65492cb4ac0a612dfab390c3374b9d90393de5b2886b9361aa5c8738bc47f"
     },
     {
       "id": "file:tests/test_profile.py",
@@ -168,6 +248,15 @@
       "contentHash": "ce265cbb0e17f30ce8f64d0c3b4759e5037223254b55a5e5021a60cd8d0312e3"
     },
     {
+      "id": "package:pypi:outreach.bundles",
+      "type": "package",
+      "label": "outreach.bundles",
+      "ecosystem": "pypi",
+      "confidence": 0.85,
+      "extractor": "import",
+      "contentHash": "97eae3c043c1c19f31744ee32f949703555734b04250fbeb8bf919429bd0e365"
+    },
+    {
       "id": "package:pypi:outreach.config",
       "type": "package",
       "label": "outreach.config",
@@ -175,6 +264,15 @@
       "confidence": 0.85,
       "extractor": "import",
       "contentHash": "4e8006fb871d21afbd5f676d22d6a65fc165c0f99af9e106d4c2b8a3f03e4073"
+    },
+    {
+      "id": "package:pypi:outreach.context",
+      "type": "package",
+      "label": "outreach.context",
+      "ecosystem": "pypi",
+      "confidence": 0.85,
+      "extractor": "import",
+      "contentHash": "00d9080885af9e854a18048ff85220a4daa0ffccc360e8ee3962ab673856e3df"
     },
     {
       "id": "package:pypi:outreach.db",
@@ -202,6 +300,15 @@
       "confidence": 0.85,
       "extractor": "import",
       "contentHash": "21f21233c237fd1414b7216096bd431457a341aff4008d2adacffa278cebe23f"
+    },
+    {
+      "id": "package:pypi:outreach.matching",
+      "type": "package",
+      "label": "outreach.matching",
+      "ecosystem": "pypi",
+      "confidence": 0.85,
+      "extractor": "import",
+      "contentHash": "f4c6ea2dfd6884d9be76e47d950306e715aaeb53f9e7542258d5d84c7cdf7ac3"
     },
     {
       "id": "package:pypi:outreach.models",
@@ -348,6 +455,15 @@
       "contentHash": "77c0573ae65199003c1e54971c9c5faaa5fb7b2bf90715c1741b45eca6560e6c"
     },
     {
+      "id": "runtime:python:json",
+      "type": "runtime",
+      "label": "json",
+      "language": "python",
+      "confidence": 0.85,
+      "extractor": "standard-library",
+      "contentHash": "6f37f6a05e2fd9821d46f9c71a4ae5642cc4a8392959110f34947e4fecc47d62"
+    },
+    {
       "id": "runtime:python:logging.config",
       "type": "runtime",
       "label": "logging.config",
@@ -382,6 +498,15 @@
       "confidence": 0.85,
       "extractor": "standard-library",
       "contentHash": "1f9c5b117bbaaa778431662f82c57f794f31f93c6cfe9d39cb1352cb0312ed70"
+    },
+    {
+      "id": "runtime:python:typing",
+      "type": "runtime",
+      "label": "typing",
+      "language": "python",
+      "confidence": 0.85,
+      "extractor": "standard-library",
+      "contentHash": "476430c5e63eac951b3a752d292e03a660994a175e508c80f8615d9413eb18ea"
     },
     {
       "id": "runtime:python:urllib.parse",
@@ -450,16 +575,184 @@
       "contentHash": "6960d16e98fc736769437c638ab87145b40af60cb62149230eb3aacbca1850ac"
     },
     {
+      "id": "symbol:src/outreach/__main__.py#function:build_parser",
+      "type": "symbol",
+      "kind": "function",
+      "name": "build_parser",
+      "label": "build_parser",
+      "path": "src/outreach/__main__.py",
+      "line": 16,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "25997e54b5517b60c920a4217b61fe55ebc4636930f07a3e80ba211277c8f136"
+    },
+    {
       "id": "symbol:src/outreach/__main__.py#function:main",
       "type": "symbol",
       "kind": "function",
       "name": "main",
       "label": "main",
       "path": "src/outreach/__main__.py",
-      "line": 9,
+      "line": 38,
       "confidence": 1,
       "extractor": "python-stdlib-ast",
       "contentHash": "f583c61a40c09d3bfca9b3e6ef3e28a4f4dfaced58f9b895d0d76c0d77a8dd4c"
+    },
+    {
+      "id": "symbol:src/outreach/bundles.py#class:CandidateInput",
+      "type": "symbol",
+      "kind": "class",
+      "name": "CandidateInput",
+      "label": "CandidateInput",
+      "path": "src/outreach/bundles.py",
+      "line": 51,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "e06eb67bce9251ef10679c438b243e512efa9c7f4085861a3ba19c2ca8ae4b41"
+    },
+    {
+      "id": "symbol:src/outreach/bundles.py#class:EvidenceInput",
+      "type": "symbol",
+      "kind": "class",
+      "name": "EvidenceInput",
+      "label": "EvidenceInput",
+      "path": "src/outreach/bundles.py",
+      "line": 34,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "08f68e61109ac932c28e36ea225980f82dd6229bde5ba313a4ab82ca55c311f5"
+    },
+    {
+      "id": "symbol:src/outreach/bundles.py#class:ImportResult",
+      "type": "symbol",
+      "kind": "class",
+      "name": "ImportResult",
+      "label": "ImportResult",
+      "path": "src/outreach/bundles.py",
+      "line": 131,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "90d5c24e5a68e784797bc16a5fe094c8c0a007d278a790f6253423e3f6780acc"
+    },
+    {
+      "id": "symbol:src/outreach/bundles.py#class:PreparationBundle",
+      "type": "symbol",
+      "kind": "class",
+      "name": "PreparationBundle",
+      "label": "PreparationBundle",
+      "path": "src/outreach/bundles.py",
+      "line": 106,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "d5211f7357629a3b7b46b5aeaa42d13a7f4a4ec813f69a8dc5acdb601630efdc"
+    },
+    {
+      "id": "symbol:src/outreach/bundles.py#class:ScoreInput",
+      "type": "symbol",
+      "kind": "class",
+      "name": "ScoreInput",
+      "label": "ScoreInput",
+      "path": "src/outreach/bundles.py",
+      "line": 22,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "94e41cefc28d25d74070346903e26e322f1cbbdddaeb09d53f13a5d3c51e3424"
+    },
+    {
+      "id": "symbol:src/outreach/bundles.py#class:StrictModel",
+      "type": "symbol",
+      "kind": "class",
+      "name": "StrictModel",
+      "label": "StrictModel",
+      "path": "src/outreach/bundles.py",
+      "line": 18,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "a00ba5f034e2c91deba94ea4505280d649e53154bc25ff7eb850860e322c8cd2"
+    },
+    {
+      "id": "symbol:src/outreach/bundles.py#function:_aware",
+      "type": "symbol",
+      "kind": "function",
+      "name": "_aware",
+      "label": "_aware",
+      "path": "src/outreach/bundles.py",
+      "line": 228,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "971602a7cd306358ab1d324781bc30add4366c2e0c2e8ae6dc7e0e45028523e1"
+    },
+    {
+      "id": "symbol:src/outreach/bundles.py#function:CandidateInput.eligibility_is_supported",
+      "type": "symbol",
+      "kind": "function",
+      "name": "CandidateInput.eligibility_is_supported",
+      "label": "CandidateInput.eligibility_is_supported",
+      "path": "src/outreach/bundles.py",
+      "line": 74,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "0bea57abba1e1f3ef1872607d33e75e2d76b86c884a4f8d2591fb7016972af0f"
+    },
+    {
+      "id": "symbol:src/outreach/bundles.py#function:EvidenceInput.external_evidence_has_source",
+      "type": "symbol",
+      "kind": "function",
+      "name": "EvidenceInput.external_evidence_has_source",
+      "label": "EvidenceInput.external_evidence_has_source",
+      "path": "src/outreach/bundles.py",
+      "line": 43,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "3eaa6e4a9767cfede1c4a294165552c91215484a9fe772a14b97c7094d31d352"
+    },
+    {
+      "id": "symbol:src/outreach/bundles.py#function:import_bundle",
+      "type": "symbol",
+      "kind": "function",
+      "name": "import_bundle",
+      "label": "import_bundle",
+      "path": "src/outreach/bundles.py",
+      "line": 147,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "167eba515c7c78603379dd7e353a0bb723e44164eda9b649bec5dd213b4a17bd"
+    },
+    {
+      "id": "symbol:src/outreach/bundles.py#function:load_bundle",
+      "type": "symbol",
+      "kind": "function",
+      "name": "load_bundle",
+      "label": "load_bundle",
+      "path": "src/outreach/bundles.py",
+      "line": 139,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "18b4e91d99e5f2c0fbd030f5092a087b7289588b2b3759d8b88ea910f9aab869"
+    },
+    {
+      "id": "symbol:src/outreach/bundles.py#function:PreparationBundle.validate_batch",
+      "type": "symbol",
+      "kind": "function",
+      "name": "PreparationBundle.validate_batch",
+      "label": "PreparationBundle.validate_batch",
+      "path": "src/outreach/bundles.py",
+      "line": 114,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "fbfb2bf2305a65dd2e1ed772d105f62b2159a8a213a3d9c379e515f3c3afb8eb"
+    },
+    {
+      "id": "symbol:src/outreach/bundles.py#function:ScoreInput.total",
+      "type": "symbol",
+      "kind": "function",
+      "name": "ScoreInput.total",
+      "label": "ScoreInput.total",
+      "path": "src/outreach/bundles.py",
+      "line": 30,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "16caa2dbd7d7fa12967e2da61fb03fd625883745bbadfdb857589c83ef88a8ba"
     },
     {
       "id": "symbol:src/outreach/config.py#class:Settings",
@@ -508,6 +801,18 @@
       "confidence": 1,
       "extractor": "python-stdlib-ast",
       "contentHash": "9ff72deefd277cba9c2f0c6826f5f61976a8d0e4126794f2791bc401c51fe2cf"
+    },
+    {
+      "id": "symbol:src/outreach/context.py#function:build_preparation_context",
+      "type": "symbol",
+      "kind": "function",
+      "name": "build_preparation_context",
+      "label": "build_preparation_context",
+      "path": "src/outreach/context.py",
+      "line": 18,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "9aedc61d983420c70b5aa32ca20ae8db9a8bb589efb60ad5d9c8dce53029ad73"
     },
     {
       "id": "symbol:src/outreach/db.py#class:Base",
@@ -688,6 +993,54 @@
       "confidence": 1,
       "extractor": "python-stdlib-ast",
       "contentHash": "4518979205abdb442cff79374d80904a86557f776f23af46e0618443f64d5ae3"
+    },
+    {
+      "id": "symbol:src/outreach/matching.py#class:ScoreBreakdown",
+      "type": "symbol",
+      "kind": "class",
+      "name": "ScoreBreakdown",
+      "label": "ScoreBreakdown",
+      "path": "src/outreach/matching.py",
+      "line": 8,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "250557f6ddd1a7b403a24a2c60b162c781a63013ac6198ea34fca8e9a230f752"
+    },
+    {
+      "id": "symbol:src/outreach/matching.py#function:ScoreBreakdown.as_dict",
+      "type": "symbol",
+      "kind": "function",
+      "name": "ScoreBreakdown.as_dict",
+      "label": "ScoreBreakdown.as_dict",
+      "path": "src/outreach/matching.py",
+      "line": 34,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "a979ee673a4cb41bd3cfa0ecd283ffa78178b25bbbfd8b78fd73ccf66545b7c5"
+    },
+    {
+      "id": "symbol:src/outreach/matching.py#function:ScoreBreakdown.total",
+      "type": "symbol",
+      "kind": "function",
+      "name": "ScoreBreakdown.total",
+      "label": "ScoreBreakdown.total",
+      "path": "src/outreach/matching.py",
+      "line": 30,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "1bd1b6c3c790b2ef67a370f7309bdd370cc6d9465a310c16250ce4bcd058efcf"
+    },
+    {
+      "id": "symbol:src/outreach/matching.py#function:ScoreBreakdown.validate",
+      "type": "symbol",
+      "kind": "function",
+      "name": "ScoreBreakdown.validate",
+      "label": "ScoreBreakdown.validate",
+      "path": "src/outreach/matching.py",
+      "line": 23,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "5eb0574736c2e00bf7549ef22af535bfcac8d4ce27efaef66982321209445de6"
     },
     {
       "id": "symbol:src/outreach/models.py#class:Approval",
@@ -1014,6 +1367,150 @@
       "contentHash": "4e5576690aabf1e7d2bdb9ff12a028ca003bded16710e635e4ba0dfe0eec7ddb"
     },
     {
+      "id": "symbol:tests/factories.py#function:bundle_payload",
+      "type": "symbol",
+      "kind": "function",
+      "name": "bundle_payload",
+      "label": "bundle_payload",
+      "path": "tests/factories.py",
+      "line": 72,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "0670ee746b7f5b14f2a410bfbcc8b1a40bf0e18b08a5b162cf2d99ab3bb146b8"
+    },
+    {
+      "id": "symbol:tests/factories.py#function:candidate_payload",
+      "type": "symbol",
+      "kind": "function",
+      "name": "candidate_payload",
+      "label": "candidate_payload",
+      "path": "tests/factories.py",
+      "line": 8,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "a6b6886b17cce1ee19dd77f0bbf4709732bcbabb28fb815b092228df3a8e4434"
+    },
+    {
+      "id": "symbol:tests/factories.py#function:make_bundle",
+      "type": "symbol",
+      "kind": "function",
+      "name": "make_bundle",
+      "label": "make_bundle",
+      "path": "tests/factories.py",
+      "line": 82,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "82e7c61bcff62c66e09c537dfb8da6a1a00f9baff934ca184f94d7a0cbcc6748"
+    },
+    {
+      "id": "symbol:tests/test_bundle.py#function:_confirmed_resume",
+      "type": "symbol",
+      "kind": "function",
+      "name": "_confirmed_resume",
+      "label": "_confirmed_resume",
+      "path": "tests/test_bundle.py",
+      "line": 13,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "dbfe4fb3e434eb58bf90a719f249b6a3eed581d46e7fd43441fde6c11baedc76"
+    },
+    {
+      "id": "symbol:tests/test_bundle.py#function:test_bundle_rejects_duplicate_company_domains",
+      "type": "symbol",
+      "kind": "function",
+      "name": "test_bundle_rejects_duplicate_company_domains",
+      "label": "test_bundle_rejects_duplicate_company_domains",
+      "path": "tests/test_bundle.py",
+      "line": 34,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "8f115317378a707194ce70f9c5da1b19e031d7f3a4594e3d9311d186392927d9"
+    },
+    {
+      "id": "symbol:tests/test_bundle.py#function:test_bundle_rejects_more_than_twenty_eligible_companies",
+      "type": "symbol",
+      "kind": "function",
+      "name": "test_bundle_rejects_more_than_twenty_eligible_companies",
+      "label": "test_bundle_rejects_more_than_twenty_eligible_companies",
+      "path": "tests/test_bundle.py",
+      "line": 25,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "6b311b2bca8a51dc822146309b63471e0750a7946fa249ebf4842828e9ebf593"
+    },
+    {
+      "id": "symbol:tests/test_bundle.py#function:test_import_is_atomic_and_idempotent",
+      "type": "symbol",
+      "kind": "function",
+      "name": "test_import_is_atomic_and_idempotent",
+      "label": "test_import_is_atomic_and_idempotent",
+      "path": "tests/test_bundle.py",
+      "line": 43,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "55c3fea1b9886eefa778cf5eff2941993b3ed8f6958af89e41ab39b861b0a6ec"
+    },
+    {
+      "id": "symbol:tests/test_bundle.py#function:test_rejected_candidate_is_stored_with_reason",
+      "type": "symbol",
+      "kind": "function",
+      "name": "test_rejected_candidate_is_stored_with_reason",
+      "label": "test_rejected_candidate_is_stored_with_reason",
+      "path": "tests/test_bundle.py",
+      "line": 59,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "45ab077de1bc08bcd16863aeae41818b9edfbfb600e4288f00fefef22499ee14"
+    },
+    {
+      "id": "symbol:tests/test_bundle.py#function:test_unknown_resume_rolls_back_everything",
+      "type": "symbol",
+      "kind": "function",
+      "name": "test_unknown_resume_rolls_back_everything",
+      "label": "test_unknown_resume_rolls_back_everything",
+      "path": "tests/test_bundle.py",
+      "line": 74,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "9ed7b9089f0d8ffb2a66c48a97b821d16e395d990d56e5a402c0b8443d89b674"
+    },
+    {
+      "id": "symbol:tests/test_codex_contract.py#function:test_bundle_round_trip_uses_strict_versioned_schema",
+      "type": "symbol",
+      "kind": "function",
+      "name": "test_bundle_round_trip_uses_strict_versioned_schema",
+      "label": "test_bundle_round_trip_uses_strict_versioned_schema",
+      "path": "tests/test_codex_contract.py",
+      "line": 14,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "6f697a32bf0146d2cf36bd040e7cbfe80cd0c61dbd9419cd5df9347b801f5c3a"
+    },
+    {
+      "id": "symbol:tests/test_codex_contract.py#function:test_context_contains_prior_state_but_no_secrets",
+      "type": "symbol",
+      "kind": "function",
+      "name": "test_context_contains_prior_state_but_no_secrets",
+      "label": "test_context_contains_prior_state_but_no_secrets",
+      "path": "tests/test_codex_contract.py",
+      "line": 25,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "2b13c3b2ac56d9cddf97b6e3e5afde73f873a16b991a970321c6c33906b410ec"
+    },
+    {
+      "id": "symbol:tests/test_codex_contract.py#function:test_runbook_preserves_manual_approval_boundary",
+      "type": "symbol",
+      "kind": "function",
+      "name": "test_runbook_preserves_manual_approval_boundary",
+      "label": "test_runbook_preserves_manual_approval_boundary",
+      "path": "tests/test_codex_contract.py",
+      "line": 56,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "fb254b1f2b9e3d03ccd5c1d83092a4206c087123cb2c3a1e97803d9c9c6d4a1e"
+    },
+    {
       "id": "symbol:tests/test_dedup.py#function:_sent_outreach",
       "type": "symbol",
       "kind": "function",
@@ -1072,6 +1569,54 @@
       "confidence": 1,
       "extractor": "python-stdlib-ast",
       "contentHash": "8bed239dc6e5c2b75d38eeccbb988971fa15bf7fef70af80fc2cd7fb1b28996c"
+    },
+    {
+      "id": "symbol:tests/test_matching.py#function:test_eligible_candidate_requires_job_and_company_evidence",
+      "type": "symbol",
+      "kind": "function",
+      "name": "test_eligible_candidate_requires_job_and_company_evidence",
+      "label": "test_eligible_candidate_requires_job_and_company_evidence",
+      "path": "tests/test_matching.py",
+      "line": 50,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "1f0a2328aba7aaa1da7b8aa8a731d2590233f33b4ec14e8f68862fd8ae996992"
+    },
+    {
+      "id": "symbol:tests/test_matching.py#function:test_ineligible_claim_cannot_be_marked_eligible",
+      "type": "symbol",
+      "kind": "function",
+      "name": "test_ineligible_claim_cannot_be_marked_eligible",
+      "label": "test_ineligible_claim_cannot_be_marked_eligible",
+      "path": "tests/test_matching.py",
+      "line": 32,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "bcd629a21b4670bf2ff265d8b7b3caea796bfb89fce13421b96f856e7fb05e01"
+    },
+    {
+      "id": "symbol:tests/test_matching.py#function:test_score_weights_are_bounded_and_totalled",
+      "type": "symbol",
+      "kind": "function",
+      "name": "test_score_weights_are_bounded_and_totalled",
+      "label": "test_score_weights_are_bounded_and_totalled",
+      "path": "tests/test_matching.py",
+      "line": 13,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "744f80deb7cb1e68dd80c02209212d4afcb77a09a153d74e897c14e664dc8199"
+    },
+    {
+      "id": "symbol:tests/test_matching.py#function:test_stale_job_and_low_score_are_rejected",
+      "type": "symbol",
+      "kind": "function",
+      "name": "test_stale_job_and_low_score_are_rejected",
+      "label": "test_stale_job_and_low_score_are_rejected",
+      "path": "tests/test_matching.py",
+      "line": 39,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "a228ed6af96e827e56300db2b87a4009c3c40a33702273defbe302fb3dfbd109"
     },
     {
       "id": "symbol:tests/test_profile.py#function:_blank_pdf",
@@ -1162,6 +1707,39 @@
     {
       "type": "calls",
       "source": "symbol:src/outreach/__main__.py#function:main",
+      "target": "symbol:src/outreach/__main__.py#function:build_parser",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:src/outreach/__main__.py#function:main",
+      "target": "symbol:src/outreach/bundles.py#function:import_bundle",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/bundles.py#function:import_bundle"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:src/outreach/__main__.py#function:main",
+      "target": "symbol:src/outreach/bundles.py#function:load_bundle",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/bundles.py#function:load_bundle"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:src/outreach/__main__.py#function:main",
       "target": "symbol:src/outreach/config.py#function:get_settings",
       "tier": "ambiguous",
       "candidates": [
@@ -1174,10 +1752,148 @@
     {
       "type": "calls",
       "source": "symbol:src/outreach/__main__.py#function:main",
+      "target": "symbol:src/outreach/context.py#function:build_preparation_context",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/context.py#function:build_preparation_context"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:src/outreach/__main__.py#function:main",
       "target": "symbol:src/outreach/db.py#function:create_database_engine",
       "tier": "ambiguous",
       "candidates": [
         "symbol:src/outreach/db.py#function:create_database_engine"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:src/outreach/__main__.py#function:main",
+      "target": "symbol:src/outreach/resume.py#function:import_resume",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/resume.py#function:import_resume"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:src/outreach/bundles.py#function:import_bundle",
+      "target": "symbol:src/outreach/bundles.py#class:ImportResult",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:src/outreach/bundles.py#function:import_bundle",
+      "target": "symbol:src/outreach/foundation.py#function:company_eligibility",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/foundation.py#function:company_eligibility"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:src/outreach/bundles.py#function:import_bundle",
+      "target": "symbol:src/outreach/foundation.py#function:get_or_create_company",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/foundation.py#function:get_or_create_company"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:src/outreach/bundles.py#function:import_bundle",
+      "target": "symbol:src/outreach/foundation.py#function:get_or_create_job",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/foundation.py#function:get_or_create_job"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:src/outreach/bundles.py#function:import_bundle",
+      "target": "symbol:src/outreach/identity.py#function:job_fingerprint",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/identity.py#function:job_fingerprint"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:src/outreach/bundles.py#function:import_bundle",
+      "target": "symbol:src/outreach/models.py#class:DiscoveryRun",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/models.py#class:DiscoveryRun"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:src/outreach/bundles.py#function:import_bundle",
+      "target": "symbol:src/outreach/models.py#class:JobMatch",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/models.py#class:JobMatch"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:src/outreach/bundles.py#function:import_bundle",
+      "target": "symbol:src/outreach/models.py#class:MatchEvidence",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/models.py#class:MatchEvidence"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:src/outreach/bundles.py#function:PreparationBundle.validate_batch",
+      "target": "symbol:src/outreach/bundles.py#function:_aware",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:src/outreach/bundles.py#function:PreparationBundle.validate_batch",
+      "target": "symbol:src/outreach/identity.py#function:normalize_domain",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/identity.py#function:normalize_domain"
       ],
       "resolved": false,
       "confidence": 0.3,
@@ -1359,6 +2075,24 @@
     },
     {
       "type": "calls",
+      "source": "symbol:src/outreach/matching.py#function:ScoreBreakdown.as_dict",
+      "target": "symbol:src/outreach/matching.py#function:ScoreBreakdown.validate",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:src/outreach/matching.py#function:ScoreBreakdown.total",
+      "target": "symbol:src/outreach/matching.py#function:ScoreBreakdown.validate",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
       "source": "symbol:src/outreach/resume.py#function:confirm_profile",
       "target": "symbol:src/outreach/models.py#class:AuditEvent",
       "tier": "ambiguous",
@@ -1412,6 +2146,219 @@
       "tier": "ambiguous",
       "candidates": [
         "symbol:src/outreach/db.py#function:create_database_engine"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/factories.py#function:bundle_payload",
+      "target": "symbol:tests/factories.py#function:candidate_payload",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/factories.py#function:make_bundle",
+      "target": "symbol:tests/factories.py#function:bundle_payload",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_bundle.py#function:_confirmed_resume",
+      "target": "symbol:src/outreach/models.py#class:ResumeVersion",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/models.py#class:ResumeVersion"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_bundle.py#function:test_bundle_rejects_duplicate_company_domains",
+      "target": "symbol:tests/factories.py#function:bundle_payload",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 0.7,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_bundle.py#function:test_bundle_rejects_duplicate_company_domains",
+      "target": "symbol:tests/factories.py#function:candidate_payload",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 0.7,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_bundle.py#function:test_bundle_rejects_more_than_twenty_eligible_companies",
+      "target": "symbol:tests/factories.py#function:bundle_payload",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 0.7,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_bundle.py#function:test_bundle_rejects_more_than_twenty_eligible_companies",
+      "target": "symbol:tests/factories.py#function:candidate_payload",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 0.7,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_bundle.py#function:test_import_is_atomic_and_idempotent",
+      "target": "symbol:src/outreach/bundles.py#function:import_bundle",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/bundles.py#function:import_bundle"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_bundle.py#function:test_import_is_atomic_and_idempotent",
+      "target": "symbol:tests/factories.py#function:make_bundle",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 0.7,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_bundle.py#function:test_import_is_atomic_and_idempotent",
+      "target": "symbol:tests/test_bundle.py#function:_confirmed_resume",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_bundle.py#function:test_rejected_candidate_is_stored_with_reason",
+      "target": "symbol:src/outreach/bundles.py#function:import_bundle",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/bundles.py#function:import_bundle"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_bundle.py#function:test_rejected_candidate_is_stored_with_reason",
+      "target": "symbol:tests/factories.py#function:candidate_payload",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 0.7,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_bundle.py#function:test_rejected_candidate_is_stored_with_reason",
+      "target": "symbol:tests/factories.py#function:make_bundle",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 0.7,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_bundle.py#function:test_rejected_candidate_is_stored_with_reason",
+      "target": "symbol:tests/test_bundle.py#function:_confirmed_resume",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_bundle.py#function:test_unknown_resume_rolls_back_everything",
+      "target": "symbol:src/outreach/bundles.py#function:import_bundle",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/bundles.py#function:import_bundle"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_bundle.py#function:test_unknown_resume_rolls_back_everything",
+      "target": "symbol:tests/factories.py#function:make_bundle",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 0.7,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_codex_contract.py#function:test_bundle_round_trip_uses_strict_versioned_schema",
+      "target": "symbol:src/outreach/bundles.py#function:load_bundle",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/bundles.py#function:load_bundle"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_codex_contract.py#function:test_bundle_round_trip_uses_strict_versioned_schema",
+      "target": "symbol:tests/factories.py#function:bundle_payload",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 0.7,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_codex_contract.py#function:test_context_contains_prior_state_but_no_secrets",
+      "target": "symbol:src/outreach/context.py#function:build_preparation_context",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/context.py#function:build_preparation_context"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_codex_contract.py#function:test_context_contains_prior_state_but_no_secrets",
+      "target": "symbol:src/outreach/models.py#class:ProfileFact",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/models.py#class:ProfileFact"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_codex_contract.py#function:test_context_contains_prior_state_but_no_secrets",
+      "target": "symbol:src/outreach/models.py#class:ResumeVersion",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/models.py#class:ResumeVersion"
       ],
       "resolved": false,
       "confidence": 0.3,
@@ -1668,6 +2615,96 @@
     },
     {
       "type": "calls",
+      "source": "symbol:tests/test_matching.py#function:test_eligible_candidate_requires_job_and_company_evidence",
+      "target": "symbol:tests/factories.py#function:bundle_payload",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 0.7,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_matching.py#function:test_eligible_candidate_requires_job_and_company_evidence",
+      "target": "symbol:tests/factories.py#function:candidate_payload",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 0.7,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_matching.py#function:test_ineligible_claim_cannot_be_marked_eligible",
+      "target": "symbol:tests/factories.py#function:bundle_payload",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 0.7,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_matching.py#function:test_ineligible_claim_cannot_be_marked_eligible",
+      "target": "symbol:tests/factories.py#function:candidate_payload",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 0.7,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_matching.py#function:test_score_weights_are_bounded_and_totalled",
+      "target": "symbol:src/outreach/matching.py#class:ScoreBreakdown",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/matching.py#class:ScoreBreakdown"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_matching.py#function:test_score_weights_are_bounded_and_totalled",
+      "target": "symbol:src/outreach/matching.py#function:ScoreBreakdown.as_dict",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/matching.py#function:ScoreBreakdown.as_dict"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_matching.py#function:test_score_weights_are_bounded_and_totalled",
+      "target": "symbol:src/outreach/matching.py#function:ScoreBreakdown.validate",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/matching.py#function:ScoreBreakdown.validate"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_matching.py#function:test_stale_job_and_low_score_are_rejected",
+      "target": "symbol:tests/factories.py#function:bundle_payload",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 0.7,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_matching.py#function:test_stale_job_and_low_score_are_rejected",
+      "target": "symbol:tests/factories.py#function:candidate_payload",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 0.7,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
       "source": "symbol:tests/test_profile.py#function:test_non_pdf_is_rejected",
       "target": "symbol:src/outreach/resume.py#function:import_resume",
       "tier": "ambiguous",
@@ -1831,8 +2868,134 @@
     {
       "type": "defines",
       "source": "file:src/outreach/__main__.py",
+      "target": "symbol:src/outreach/__main__.py#function:build_parser",
+      "line": 16,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/outreach/__main__.py",
       "target": "symbol:src/outreach/__main__.py#function:main",
-      "line": 9,
+      "line": 38,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/outreach/bundles.py",
+      "target": "symbol:src/outreach/bundles.py#class:CandidateInput",
+      "line": 51,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/outreach/bundles.py",
+      "target": "symbol:src/outreach/bundles.py#class:EvidenceInput",
+      "line": 34,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/outreach/bundles.py",
+      "target": "symbol:src/outreach/bundles.py#class:ImportResult",
+      "line": 131,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/outreach/bundles.py",
+      "target": "symbol:src/outreach/bundles.py#class:PreparationBundle",
+      "line": 106,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/outreach/bundles.py",
+      "target": "symbol:src/outreach/bundles.py#class:ScoreInput",
+      "line": 22,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/outreach/bundles.py",
+      "target": "symbol:src/outreach/bundles.py#class:StrictModel",
+      "line": 18,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/outreach/bundles.py",
+      "target": "symbol:src/outreach/bundles.py#function:_aware",
+      "line": 228,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/outreach/bundles.py",
+      "target": "symbol:src/outreach/bundles.py#function:CandidateInput.eligibility_is_supported",
+      "line": 74,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/outreach/bundles.py",
+      "target": "symbol:src/outreach/bundles.py#function:EvidenceInput.external_evidence_has_source",
+      "line": 43,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/outreach/bundles.py",
+      "target": "symbol:src/outreach/bundles.py#function:import_bundle",
+      "line": 147,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/outreach/bundles.py",
+      "target": "symbol:src/outreach/bundles.py#function:load_bundle",
+      "line": 139,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/outreach/bundles.py",
+      "target": "symbol:src/outreach/bundles.py#function:PreparationBundle.validate_batch",
+      "line": 114,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/outreach/bundles.py",
+      "target": "symbol:src/outreach/bundles.py#function:ScoreInput.total",
+      "line": 30,
       "resolved": true,
       "confidence": 1,
       "extractor": "python-stdlib-ast"
@@ -1869,6 +3032,15 @@
       "source": "file:src/outreach/config.py",
       "target": "symbol:src/outreach/config.py#function:Settings.use_psycopg_driver",
       "line": 24,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/outreach/context.py",
+      "target": "symbol:src/outreach/context.py#function:build_preparation_context",
+      "line": 18,
       "resolved": true,
       "confidence": 1,
       "extractor": "python-stdlib-ast"
@@ -2004,6 +3176,42 @@
       "source": "file:src/outreach/identity.py",
       "target": "symbol:src/outreach/identity.py#function:normalize_text",
       "line": 38,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/outreach/matching.py",
+      "target": "symbol:src/outreach/matching.py#class:ScoreBreakdown",
+      "line": 8,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/outreach/matching.py",
+      "target": "symbol:src/outreach/matching.py#function:ScoreBreakdown.as_dict",
+      "line": 34,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/outreach/matching.py",
+      "target": "symbol:src/outreach/matching.py#function:ScoreBreakdown.total",
+      "line": 30,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/outreach/matching.py",
+      "target": "symbol:src/outreach/matching.py#function:ScoreBreakdown.validate",
+      "line": 23,
       "resolved": true,
       "confidence": 1,
       "extractor": "python-stdlib-ast"
@@ -2253,6 +3461,114 @@
     },
     {
       "type": "defines",
+      "source": "file:tests/factories.py",
+      "target": "symbol:tests/factories.py#function:bundle_payload",
+      "line": 72,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:tests/factories.py",
+      "target": "symbol:tests/factories.py#function:candidate_payload",
+      "line": 8,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:tests/factories.py",
+      "target": "symbol:tests/factories.py#function:make_bundle",
+      "line": 82,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:tests/test_bundle.py",
+      "target": "symbol:tests/test_bundle.py#function:_confirmed_resume",
+      "line": 13,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:tests/test_bundle.py",
+      "target": "symbol:tests/test_bundle.py#function:test_bundle_rejects_duplicate_company_domains",
+      "line": 34,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:tests/test_bundle.py",
+      "target": "symbol:tests/test_bundle.py#function:test_bundle_rejects_more_than_twenty_eligible_companies",
+      "line": 25,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:tests/test_bundle.py",
+      "target": "symbol:tests/test_bundle.py#function:test_import_is_atomic_and_idempotent",
+      "line": 43,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:tests/test_bundle.py",
+      "target": "symbol:tests/test_bundle.py#function:test_rejected_candidate_is_stored_with_reason",
+      "line": 59,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:tests/test_bundle.py",
+      "target": "symbol:tests/test_bundle.py#function:test_unknown_resume_rolls_back_everything",
+      "line": 74,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:tests/test_codex_contract.py",
+      "target": "symbol:tests/test_codex_contract.py#function:test_bundle_round_trip_uses_strict_versioned_schema",
+      "line": 14,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:tests/test_codex_contract.py",
+      "target": "symbol:tests/test_codex_contract.py#function:test_context_contains_prior_state_but_no_secrets",
+      "line": 25,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:tests/test_codex_contract.py",
+      "target": "symbol:tests/test_codex_contract.py#function:test_runbook_preserves_manual_approval_boundary",
+      "line": 56,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
       "source": "file:tests/test_dedup.py",
       "target": "symbol:tests/test_dedup.py#function:_sent_outreach",
       "line": 69,
@@ -2292,6 +3608,42 @@
       "source": "file:tests/test_dedup.py",
       "target": "symbol:tests/test_dedup.py#function:test_suppression_always_blocks_company",
       "line": 160,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:tests/test_matching.py",
+      "target": "symbol:tests/test_matching.py#function:test_eligible_candidate_requires_job_and_company_evidence",
+      "line": 50,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:tests/test_matching.py",
+      "target": "symbol:tests/test_matching.py#function:test_ineligible_claim_cannot_be_marked_eligible",
+      "line": 32,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:tests/test_matching.py",
+      "target": "symbol:tests/test_matching.py#function:test_score_weights_are_bounded_and_totalled",
+      "line": 13,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:tests/test_matching.py",
+      "target": "symbol:tests/test_matching.py#function:test_stale_job_and_low_score_are_rejected",
+      "line": 39,
       "resolved": true,
       "confidence": 1,
       "extractor": "python-stdlib-ast"
@@ -2452,9 +3804,29 @@
     {
       "type": "imports",
       "source": "file:src/outreach/__main__.py",
+      "target": "package:pypi:outreach.bundles",
+      "specifier": "outreach.bundles",
+      "line": 9,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/__main__.py",
       "target": "package:pypi:outreach.config",
       "specifier": "outreach.config",
-      "line": 5,
+      "line": 10,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/__main__.py",
+      "target": "package:pypi:outreach.context",
+      "specifier": "outreach.context",
+      "line": 11,
       "resolved": false,
       "confidence": 0.5,
       "extractor": "python-imports"
@@ -2464,7 +3836,27 @@
       "source": "file:src/outreach/__main__.py",
       "target": "package:pypi:outreach.db",
       "specifier": "outreach.db",
-      "line": 6,
+      "line": 12,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/__main__.py",
+      "target": "package:pypi:outreach.resume",
+      "specifier": "outreach.resume",
+      "line": 13,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/__main__.py",
+      "target": "package:pypi:sqlalchemy.orm",
+      "specifier": "sqlalchemy.orm",
+      "line": 7,
       "resolved": false,
       "confidence": 0.5,
       "extractor": "python-imports"
@@ -2485,6 +3877,146 @@
       "target": "runtime:python:argparse",
       "specifier": "argparse",
       "line": 3,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/__main__.py",
+      "target": "runtime:python:json",
+      "specifier": "json",
+      "line": 4,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/__main__.py",
+      "target": "runtime:python:pathlib",
+      "specifier": "pathlib",
+      "line": 5,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/bundles.py",
+      "target": "package:pypi:outreach.foundation",
+      "specifier": "outreach.foundation",
+      "line": 12,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/bundles.py",
+      "target": "package:pypi:outreach.identity",
+      "specifier": "outreach.identity",
+      "line": 13,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/bundles.py",
+      "target": "package:pypi:outreach.matching",
+      "specifier": "outreach.matching",
+      "line": 14,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/bundles.py",
+      "target": "package:pypi:outreach.models",
+      "specifier": "outreach.models",
+      "line": 15,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/bundles.py",
+      "target": "package:pypi:pydantic",
+      "specifier": "pydantic",
+      "line": 8,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/bundles.py",
+      "target": "package:pypi:sqlalchemy",
+      "specifier": "sqlalchemy",
+      "line": 9,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/bundles.py",
+      "target": "package:pypi:sqlalchemy.orm",
+      "specifier": "sqlalchemy.orm",
+      "line": 10,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/bundles.py",
+      "target": "runtime:python:__future__",
+      "specifier": "__future__",
+      "line": 1,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/bundles.py",
+      "target": "runtime:python:datetime",
+      "specifier": "datetime",
+      "line": 4,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/bundles.py",
+      "target": "runtime:python:json",
+      "specifier": "json",
+      "line": 3,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/bundles.py",
+      "target": "runtime:python:pathlib",
+      "specifier": "pathlib",
+      "line": 5,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/bundles.py",
+      "target": "runtime:python:typing",
+      "specifier": "typing",
+      "line": 6,
       "resolved": true,
       "confidence": 0.85,
       "extractor": "python-imports"
@@ -2535,6 +4067,56 @@
       "target": "runtime:python:pathlib",
       "specifier": "pathlib",
       "line": 4,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/context.py",
+      "target": "package:pypi:outreach.models",
+      "specifier": "outreach.models",
+      "line": 8,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/context.py",
+      "target": "package:pypi:sqlalchemy",
+      "specifier": "sqlalchemy",
+      "line": 5,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/context.py",
+      "target": "package:pypi:sqlalchemy.orm",
+      "specifier": "sqlalchemy.orm",
+      "line": 6,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/context.py",
+      "target": "runtime:python:__future__",
+      "specifier": "__future__",
+      "line": 1,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/context.py",
+      "target": "runtime:python:datetime",
+      "specifier": "datetime",
+      "line": 3,
       "resolved": true,
       "confidence": 0.85,
       "extractor": "python-imports"
@@ -2695,6 +4277,36 @@
       "target": "runtime:python:urllib.parse",
       "specifier": "urllib.parse",
       "line": 5,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/matching.py",
+      "target": "runtime:python:__future__",
+      "specifier": "__future__",
+      "line": 1,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/matching.py",
+      "target": "runtime:python:dataclasses",
+      "specifier": "dataclasses",
+      "line": 3,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/matching.py",
+      "target": "runtime:python:typing",
+      "specifier": "typing",
+      "line": 4,
       "resolved": true,
       "confidence": 0.85,
       "extractor": "python-imports"
@@ -2901,6 +4513,196 @@
     },
     {
       "type": "imports",
+      "source": "file:tests/factories.py",
+      "target": "package:pypi:outreach.bundles",
+      "specifier": "outreach.bundles",
+      "line": 5,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/factories.py",
+      "target": "runtime:python:__future__",
+      "specifier": "__future__",
+      "line": 1,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/factories.py",
+      "target": "runtime:python:datetime",
+      "specifier": "datetime",
+      "line": 3,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/test_bundle.py",
+      "target": "file:tests/factories.py",
+      "specifier": "tests.factories",
+      "line": 10,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/test_bundle.py",
+      "target": "package:pypi:outreach.bundles",
+      "specifier": "outreach.bundles",
+      "line": 8,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/test_bundle.py",
+      "target": "package:pypi:outreach.models",
+      "specifier": "outreach.models",
+      "line": 9,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/test_bundle.py",
+      "target": "package:pypi:pydantic",
+      "specifier": "pydantic",
+      "line": 4,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/test_bundle.py",
+      "target": "package:pypi:pytest",
+      "specifier": "pytest",
+      "line": 3,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/test_bundle.py",
+      "target": "package:pypi:sqlalchemy",
+      "specifier": "sqlalchemy",
+      "line": 5,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/test_bundle.py",
+      "target": "package:pypi:sqlalchemy.orm",
+      "specifier": "sqlalchemy.orm",
+      "line": 6,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/test_bundle.py",
+      "target": "runtime:python:__future__",
+      "specifier": "__future__",
+      "line": 1,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/test_codex_contract.py",
+      "target": "file:tests/factories.py",
+      "specifier": "tests.factories",
+      "line": 11,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/test_codex_contract.py",
+      "target": "package:pypi:outreach.bundles",
+      "specifier": "outreach.bundles",
+      "line": 8,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/test_codex_contract.py",
+      "target": "package:pypi:outreach.context",
+      "specifier": "outreach.context",
+      "line": 9,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/test_codex_contract.py",
+      "target": "package:pypi:outreach.models",
+      "specifier": "outreach.models",
+      "line": 10,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/test_codex_contract.py",
+      "target": "package:pypi:sqlalchemy.orm",
+      "specifier": "sqlalchemy.orm",
+      "line": 6,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/test_codex_contract.py",
+      "target": "runtime:python:__future__",
+      "specifier": "__future__",
+      "line": 1,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/test_codex_contract.py",
+      "target": "runtime:python:json",
+      "specifier": "json",
+      "line": 3,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/test_codex_contract.py",
+      "target": "runtime:python:pathlib",
+      "specifier": "pathlib",
+      "line": 4,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
       "source": "file:tests/test_dedup.py",
       "target": "package:pypi:outreach.foundation",
       "specifier": "outreach.foundation",
@@ -2952,6 +4754,76 @@
     {
       "type": "imports",
       "source": "file:tests/test_dedup.py",
+      "target": "runtime:python:datetime",
+      "specifier": "datetime",
+      "line": 3,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/test_matching.py",
+      "target": "file:tests/factories.py",
+      "specifier": "tests.factories",
+      "line": 10,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/test_matching.py",
+      "target": "package:pypi:outreach.bundles",
+      "specifier": "outreach.bundles",
+      "line": 8,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/test_matching.py",
+      "target": "package:pypi:outreach.matching",
+      "specifier": "outreach.matching",
+      "line": 9,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/test_matching.py",
+      "target": "package:pypi:pydantic",
+      "specifier": "pydantic",
+      "line": 6,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/test_matching.py",
+      "target": "package:pypi:pytest",
+      "specifier": "pytest",
+      "line": 5,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/test_matching.py",
+      "target": "runtime:python:__future__",
+      "specifier": "__future__",
+      "line": 1,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/test_matching.py",
       "target": "runtime:python:datetime",
       "specifier": "datetime",
       "line": 3,
@@ -3131,6 +5003,51 @@
     },
     {
       "type": "inherits",
+      "source": "symbol:src/outreach/bundles.py#class:CandidateInput",
+      "target": "symbol:src/outreach/bundles.py#class:StrictModel",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "inherits",
+      "source": "symbol:src/outreach/bundles.py#class:EvidenceInput",
+      "target": "symbol:src/outreach/bundles.py#class:StrictModel",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "inherits",
+      "source": "symbol:src/outreach/bundles.py#class:ImportResult",
+      "target": "symbol:src/outreach/bundles.py#class:StrictModel",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "inherits",
+      "source": "symbol:src/outreach/bundles.py#class:PreparationBundle",
+      "target": "symbol:src/outreach/bundles.py#class:StrictModel",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "inherits",
+      "source": "symbol:src/outreach/bundles.py#class:ScoreInput",
+      "target": "symbol:src/outreach/bundles.py#class:StrictModel",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "inherits",
       "source": "symbol:src/outreach/models.py#class:Approval",
       "target": "symbol:src/outreach/models.py#class:TimestampMixin",
       "tier": "proven",
@@ -3294,6 +5211,6 @@
   ],
   "warnings": [],
   "stats": {
-    "unresolvedCalls": 277
+    "unresolvedCalls": 391
   }
 }

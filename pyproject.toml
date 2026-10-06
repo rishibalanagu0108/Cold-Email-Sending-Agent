@@ -9,6 +9,7 @@ description = "Approval-first local AI job outreach workflow"
 requires-python = ">=3.12"
 dependencies = [
   "alembic>=1.14,<2",
+  "email-validator>=2.2,<3",
   "fastapi>=0.115,<1",
   "jinja2>=3.1,<4",
   "psycopg[binary]>=3.2,<4",
@@ -38,4 +39,3 @@ testpaths = ["tests"]
 [tool.ruff]
 line-length = 100
 target-version = "py312"
-

@@ -66,6 +66,23 @@ def candidate_payload(
                 "source_text": "Python",
             },
         ],
+        "contact": {
+            "name": "Ada Founder",
+            "role": "Co-Founder",
+            "email": f"ada@{domain}",
+            "source_url": f"https://{domain}/team",
+            "professional": True,
+            "public_professional": False,
+            "verification": {
+                "status": "verified",
+                "method": "official_public",
+                "verified_at": now.isoformat(),
+                "domain_accepts_mail": True,
+                "catch_all": False,
+                "evidence_url": f"https://{domain}/team",
+                "evidence_excerpt": f"Contact Ada at ada@{domain}",
+            },
+        },
     }
 
 
