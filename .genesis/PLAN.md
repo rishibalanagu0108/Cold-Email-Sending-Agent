@@ -18,15 +18,15 @@
 
 ### MVP-2 — Implement the manual Codex preparation contract, eligibility scoring, company research evidence, bundle validation, and atomic import for at most 20 companies.
 
-- state/risk: active / medium
+- state/risk: done / medium
 - requirements: FR-5, FR-6, FR-7, FR-8, FR-9, FR-10, FR-11, FR-12, FR-13, FR-14, FR-15, FR-16, FR-17, FR-18, FR-21, FR-56, FR-57, FR-58, FR-59, FR-60, NFR-6, NFR-8, AC-2, AC-5, AC-9, AC-10, AC-11, AC-12, AC-26
 - scope: not bounded
-- gates: preparation-tests: pytest -q tests/test_bundle.py tests/test_matching.py tests/test_codex_contract.py, independent-review: pending
+- gates: preparation-tests: pytest -q tests/test_bundle.py tests/test_matching.py tests/test_codex_contract.py, independent-review: pass
 - next: Run the task pre-flight.
 
 ### MVP-3 — Implement stage-aware professional contact selection and fail-closed verification using public evidence and optional free providers.
 
-- state/risk: queued / medium
+- state/risk: active / medium
 - requirements: FR-26, FR-27, FR-28, FR-29, FR-30, FR-31, AC-13, AC-14
 - scope: not bounded
 - gates: contact-tests: pytest -q tests/test_contacts.py tests/test_verification.py, independent-review: pending

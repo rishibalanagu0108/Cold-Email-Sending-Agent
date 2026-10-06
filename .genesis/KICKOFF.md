@@ -4,11 +4,11 @@
 
 - objective: Specify a local approval-first cold-email outreach platform for matching AI roles to the user's resume, researching companies and verified professional contacts, generating evidence-grounded personalized drafts through Codex CLI, deduplicating outreach in Neon PostgreSQL, exporting jobs to CSV, and sending user-approved batches through Gmail.
 - phase/status: build/active
-- active task: MVP-2 — Implement the manual Codex preparation contract, eligibility scoring, company research evidence, bundle validation, and atomic import for at most 20 companies.
+- active task: MVP-3 — Implement stage-aware professional contact selection and fail-closed verification using public evidence and optional free providers.
 - blocker: none
 - next action: Run the task pre-flight.
 - phase instruction: Implement only the active task and prove it against current sources. Check `genesis query . impact PATH` before editing shared code.
-- gates: preparation-tests:pass, independent-review:pending
+- gates: contact-tests:pending, independent-review:pending
 - recent failures: none
 
 ## Resume
@@ -17,9 +17,9 @@ Load Genesis and official Ponytail full, then run `genesis brief .` for the curr
 Fetch full records with `genesis context . --id ID` only when needed. Do not load project.json or historical proof wholesale.
 Ask the index before reading code: `genesis query . search|scope|callers|callees|impact|path` (`--json` for parsing). Run `genesis query . impact PATH` before editing shared code. Answers are advisory static analysis; `ambiguous` means candidates were not ruled out, so confirm in source.
 Run `genesis serve .` for a live map of the repository when structure is unclear; it reindexes on save and is read-only. Run `genesis index .` if the index is stale and nothing is watching.
-Context fingerprint: 4cd7297659e373bbb512c553538cc296282c3c8d3718d280b68e5d6fcfba1769. Use --since only after receiving that full packet; kickoff is not the packet.
-- DECISION-3c040385: MVP operating model
+Context fingerprint: 07a68f18151a15cfb50276259da6f6aae8fd27d2529937bf83b5bb275194c95e. Use --since only after receiving that full packet; kickoff is not the packet.
 - DECISION-18862c53: Verification and deduplication
 - DECISION-ee081748: Targeting and contact hierarchy
+- ASSUMPTION-7dcf2616: The resume attachment is not visible in the workspace. Implementation must accept a user-supplied PD…
 Applicable invariants, active rules, authorization and proof references are in the packet. Truncated summaries are retrieval pointers, not the full evidence.
 Reuse fresh gates with --reuse. Reconcile interrupted attempts before replaying commands. Report state → evidence → blocker → next action; checkpoint before stopping.
