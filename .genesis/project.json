@@ -9,7 +9,7 @@
     "non_goals": [],
     "trust_boundary": "local repository",
     "created_at": "2026-10-06T09:40:47.262Z",
-    "updated_at": "2026-10-06T15:36:32.155Z"
+    "updated_at": "2026-10-06T16:04:44.622Z"
   },
   "policy": {
     "ponytail": "full",
@@ -23,11 +23,11 @@
     }
   },
   "lifecycle": {
-    "phase": "build",
-    "status": "active",
-    "active_task": "MVP-0",
+    "phase": "verify",
+    "status": "ready",
+    "active_task": null,
     "blocker": null,
-    "next_action": "Run the task pre-flight."
+    "next_action": "Review completed work and choose the next bounded outcome."
   },
   "commands": {},
   "workflow": {
@@ -890,7 +890,7 @@
     {
       "id": "MVP-0",
       "outcome": "Confirm the resume-aligned Python stack, bootstrap the local application, and enforce the boundary that resume files and secrets remain local while Neon stores only permitted structured data.",
-      "state": "active",
+      "state": "done",
       "risk": "medium",
       "owner": null,
       "scope": [],
@@ -922,8 +922,14 @@
           "kind": "review",
           "command": "",
           "mandatory": true,
-          "status": "pending",
-          "evidence": null
+          "status": "pass",
+          "evidence": {
+            "path": ".genesis/evidence/MVP-0-independent-review-ea873f85-21d9-4f0f-987e-75fc05210ed8.json",
+            "hash": "1f3fac4b51ecb308df2a959ec79c0fb3b0393e14e912ae81d1d28430295cd8c5",
+            "source_hash": "3f25ed3044dbe3167015f5e7579d65065913c86d8a5ee7c953c0c31e78e2936a",
+            "config_hash": "5abb3a0e03f931a0e722016146f857dd72d81e2bb2ed5cfa4105b6593615467e",
+            "observed_at": "2026-10-06T16:04:43.597Z"
+          }
         }
       ],
       "next_action": "Run the task pre-flight.",
@@ -932,7 +938,7 @@
       "failures": [],
       "limitations": [],
       "created_at": "2026-10-06T13:39:34.187Z",
-      "updated_at": "2026-10-06T13:39:34.187Z",
+      "updated_at": "2026-10-06T16:04:44.219Z",
       "base_manifest": {
         ".env.example": "f0624d9726a09ea0eef08d8f3da5371a818f0732a252259f3f772786052649a5",
         ".gitignore": "c3b006eebc1b3c4fedbeeb04490d47e1d856c170be079520792e39683a27771c",
@@ -1043,6 +1049,15 @@
       "task": "MVP-5",
       "human": "Project owner",
       "reason": "User reviewed and explicitly approved MVP-5.",
+      "revision": null
+    },
+    {
+      "id": "ea873f85-21d9-4f0f-987e-75fc05210ed8",
+      "at": "2026-10-06T16:04:43.597Z",
+      "action": "approve",
+      "task": "MVP-0",
+      "human": "Project owner",
+      "reason": "User reviewed and approved the final bootstrap slice.",
       "revision": null
     }
   ],
@@ -1293,14 +1308,14 @@
   "incidents": [],
   "discovery": null,
   "checkpoint": {
-    "at": "2026-10-06T13:43:37.176Z",
+    "at": "2026-10-06T16:04:44.585Z",
     "revision": {
-      "commit": null,
-      "dirty": null,
-      "source_hash": "88664d7167a84312dd3fc3200a3f2d4415711fdfdb407871cfd8bce9c98b697d"
+      "commit": "69b25321a4b17b58cbdd21bcea97d2bcfb76295d",
+      "dirty": true,
+      "source_hash": "3f25ed3044dbe3167015f5e7579d65065913c86d8a5ee7c953c0c31e78e2936a"
     },
-    "active_task": "MVP-1",
-    "next_action": "Run the task pre-flight."
+    "active_task": null,
+    "next_action": "Review completed work and choose the next bounded outcome."
   },
   "legacy": null
 }

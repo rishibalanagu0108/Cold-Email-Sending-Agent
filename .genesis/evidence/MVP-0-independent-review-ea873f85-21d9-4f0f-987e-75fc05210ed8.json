@@ -1,0 +1,13 @@
+{
+  "task": "MVP-0",
+  "gate": "independent-review",
+  "kind": "review",
+  "attempt": "ea873f85-21d9-4f0f-987e-75fc05210ed8",
+  "human": "Project owner",
+  "reason": "User reviewed and approved the final bootstrap slice.",
+  "observed_at": "2026-10-06T16:04:43.597Z",
+  "source_hash": "3f25ed3044dbe3167015f5e7579d65065913c86d8a5ee7c953c0c31e78e2936a",
+  "config_hash": "5abb3a0e03f931a0e722016146f857dd72d81e2bb2ed5cfa4105b6593615467e",
+  "reviewed_proofs": "8244fb9c78a77ff9dbb8d454bb0491e26d6a988334150e147aeab69ce616aef2",
+  "hash": "1f3fac4b51ecb308df2a959ec79c0fb3b0393e14e912ae81d1d28430295cd8c5"
+}

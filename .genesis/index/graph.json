@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
   "project": "ai-job-outreach",
-  "revision": "34c48942e90a04fb395e5cf86e3cea2fba20a6b1",
-  "sourceHash": "078bc6d2c87a5f35faf3535be5a302d8fbf86e7f11567dbb14c798b2b8e163b6",
+  "revision": "69b25321a4b17b58cbdd21bcea97d2bcfb76295d",
+  "sourceHash": "c9a832606bb530a56bb2421fdec0efdb588df6b817ba782afc7849ee5aa0a45c",
   "provenance": {
     "tool": "genesis-graphizer",
     "method": "static-analysis",
@@ -57,7 +57,7 @@
       "language": "python",
       "confidence": 1,
       "extractor": "filesystem",
-      "contentHash": "64e561f34c8664b91e4ac9570bc57b63350b9a2807f8b3ee2611025badadbe04"
+      "contentHash": "5ce16b0cdd0bfa7506db6ee80837c7ce5261b444a6953d4c02178ae79d2e1fb1"
     },
     {
       "id": "file:src/outreach/bundles.py",
@@ -77,7 +77,7 @@
       "language": "python",
       "confidence": 1,
       "extractor": "filesystem",
-      "contentHash": "9783f2f1531fddba27c0eb05093dd2d03ad5abb1891213191e22eabd7ed6f111"
+      "contentHash": "3890027459e467fcfef7804de0c405dfd196dc42409d97877c227bdd2345be64"
     },
     {
       "id": "file:src/outreach/contacts.py",
@@ -140,6 +140,16 @@
       "contentHash": "4a036b423b12387862680e9b39209905b91c9ce10d92967d81a4bd6168081ee1"
     },
     {
+      "id": "file:src/outreach/local_files.py",
+      "type": "file",
+      "label": "src/outreach/local_files.py",
+      "path": "src/outreach/local_files.py",
+      "language": "python",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "6ab457e875d8ccb1bd35ce107bf5b8142e74ddd1a5a6a330090c4c955aa5b4f3"
+    },
+    {
       "id": "file:src/outreach/mail.py",
       "type": "file",
       "label": "src/outreach/mail.py",
@@ -147,7 +157,7 @@
       "language": "python",
       "confidence": 1,
       "extractor": "filesystem",
-      "contentHash": "db122aa872fd0359de8d597789686cbd653c6b70a468b37c3e31e46c774e08b3"
+      "contentHash": "d8e39afa418ce036affb39e5b13042bf7855e1441e21388de7846689b39178fd"
     },
     {
       "id": "file:src/outreach/matching.py",
@@ -187,7 +197,7 @@
       "language": "python",
       "confidence": 1,
       "extractor": "filesystem",
-      "contentHash": "370d484898aece47a26a6d738804261e149731a974f058c2eb7543b32ad73b3f"
+      "contentHash": "047cb5a00fcc8fc52b713b8d769d6264ec445e871e5f7d98912d93985b8987fe"
     },
     {
       "id": "file:src/outreach/verification.py",
@@ -207,7 +217,7 @@
       "language": "python",
       "confidence": 1,
       "extractor": "filesystem",
-      "contentHash": "3740b4b78f16c69abdbd777ee202544545b4299bf0353e42ff12d6654d739711"
+      "contentHash": "8e65e894af4aaa4bcea5855ba4fb344e1fb44881849c10ce91fd86f7bede4167"
     },
     {
       "id": "file:tests/__init__.py",
@@ -280,6 +290,16 @@
       "contentHash": "5000ced3c0d1753ab1406cc3e7e57500036b205c6452944d3d84e57c5eb5042d"
     },
     {
+      "id": "file:tests/test_config.py",
+      "type": "file",
+      "label": "tests/test_config.py",
+      "path": "tests/test_config.py",
+      "language": "python",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "2f8c9d24b38e6d28469cdb4ed5c0d009fed54b426fd4a828a10cff9fdb2de0b9"
+    },
+    {
       "id": "file:tests/test_contacts.py",
       "type": "file",
       "label": "tests/test_contacts.py",
@@ -297,7 +317,7 @@
       "language": "python",
       "confidence": 1,
       "extractor": "filesystem",
-      "contentHash": "0fe5c4a1fa98b0582e68a2f8d3975ffbe8f4e89948550ebd5dd24270265b0317"
+      "contentHash": "ac21dfc381e778149850b712fdb8b8f7e7094c587e897e2eeef48a699b08448e"
     },
     {
       "id": "file:tests/test_dedup.py",
@@ -318,6 +338,16 @@
       "confidence": 1,
       "extractor": "filesystem",
       "contentHash": "c905013fb566c677d89d2ea6c1f71fc1edaf943c685ff6c057c40a4e9981e3fa"
+    },
+    {
+      "id": "file:tests/test_local_data_boundary.py",
+      "type": "file",
+      "label": "tests/test_local_data_boundary.py",
+      "path": "tests/test_local_data_boundary.py",
+      "language": "python",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "2b25d1df69f52059e37bc1687f0d4163556ffd7a61723df9303ba168046b19a8"
     },
     {
       "id": "file:tests/test_mailer.py",
@@ -367,7 +397,7 @@
       "language": "python",
       "confidence": 1,
       "extractor": "filesystem",
-      "contentHash": "6951cb7bc0ec2e742f51abf23c40722e929f3c7a8179ef8ad58505667037029c"
+      "contentHash": "1f8014534048a2352664bb9de107a16f9015a8f302ff83f25a2252d0f42872e5"
     },
     {
       "id": "file:tests/test_secrets.py",
@@ -377,7 +407,7 @@
       "language": "python",
       "confidence": 1,
       "extractor": "filesystem",
-      "contentHash": "157c6fa2b21c21ac7bc3299ff5a9065bbf26cf207c42d3c105dcaad13c5fe014"
+      "contentHash": "d2818628585c3211e2c71db9afc87969e22e53d0ed3ac18b055fbf18a81b8bd4"
     },
     {
       "id": "file:tests/test_send_gate.py",
@@ -533,6 +563,15 @@
       "confidence": 0.85,
       "extractor": "import",
       "contentHash": "21f21233c237fd1414b7216096bd431457a341aff4008d2adacffa278cebe23f"
+    },
+    {
+      "id": "package:pypi:outreach.local_files",
+      "type": "package",
+      "label": "outreach.local_files",
+      "ecosystem": "pypi",
+      "confidence": 0.85,
+      "extractor": "import",
+      "contentHash": "4819181e68020eb1cddd101d7bb273fa268608124301413368f78e524eac4d08"
     },
     {
       "id": "package:pypi:outreach.mail",
@@ -796,6 +835,15 @@
       "contentHash": "9db10abe1ffd0853818b0ea9796bb24dc8c55b51508db40380cb94f79b003177"
     },
     {
+      "id": "runtime:python:os",
+      "type": "runtime",
+      "label": "os",
+      "language": "python",
+      "confidence": 0.85,
+      "extractor": "standard-library",
+      "contentHash": "3806d26c0342f905b28f23c7de3c2705833ec1628f03e04e4b658f3914ba2b4c"
+    },
+    {
       "id": "runtime:python:pathlib",
       "type": "runtime",
       "label": "pathlib",
@@ -814,15 +862,6 @@
       "contentHash": "7e94b3e53ed926a0862ab420950da1727eead16cbd6a34908b9d475846791a02"
     },
     {
-      "id": "runtime:python:shutil",
-      "type": "runtime",
-      "label": "shutil",
-      "language": "python",
-      "confidence": 0.85,
-      "extractor": "standard-library",
-      "contentHash": "1f9c5b117bbaaa778431662f82c57f794f31f93c6cfe9d39cb1352cb0312ed70"
-    },
-    {
       "id": "runtime:python:smtplib",
       "type": "runtime",
       "label": "smtplib",
@@ -839,6 +878,24 @@
       "confidence": 0.85,
       "extractor": "standard-library",
       "contentHash": "be44643c3b2ec4836898e2a6d7d604f665a0a3efb7e27af39bfea4b46a033e5a"
+    },
+    {
+      "id": "runtime:python:stat",
+      "type": "runtime",
+      "label": "stat",
+      "language": "python",
+      "confidence": 0.85,
+      "extractor": "standard-library",
+      "contentHash": "6cc0a3a6025ead8d49bfff7db62415dcda535253e41e5e2d494bbd466c1c3614"
+    },
+    {
+      "id": "runtime:python:tempfile",
+      "type": "runtime",
+      "label": "tempfile",
+      "language": "python",
+      "confidence": 0.85,
+      "extractor": "standard-library",
+      "contentHash": "dd9fd267fbfe9cf999a4f0db8925cc25d637fb255b4430913b2a99b6abcddc09"
     },
     {
       "id": "runtime:python:time",
@@ -955,7 +1012,7 @@
       "name": "build_parser",
       "label": "build_parser",
       "path": "src/outreach/__main__.py",
-      "line": 18,
+      "line": 19,
       "confidence": 1,
       "extractor": "python-stdlib-ast",
       "contentHash": "25997e54b5517b60c920a4217b61fe55ebc4636930f07a3e80ba211277c8f136"
@@ -967,7 +1024,7 @@
       "name": "main",
       "label": "main",
       "path": "src/outreach/__main__.py",
-      "line": 41,
+      "line": 42,
       "confidence": 1,
       "extractor": "python-stdlib-ast",
       "contentHash": "f583c61a40c09d3bfca9b3e6ef3e28a4f4dfaced58f9b895d0d76c0d77a8dd4c"
@@ -1195,7 +1252,7 @@
       "name": "Settings",
       "label": "Settings",
       "path": "src/outreach/config.py",
-      "line": 10,
+      "line": 11,
       "confidence": 1,
       "extractor": "python-stdlib-ast",
       "contentHash": "f16b5fc5b83f753b1981c37587281e71f71bdc726ceb9b575c5b985ebd24d909"
@@ -1207,7 +1264,7 @@
       "name": "get_settings",
       "label": "get_settings",
       "path": "src/outreach/config.py",
-      "line": 38,
+      "line": 43,
       "confidence": 1,
       "extractor": "python-stdlib-ast",
       "contentHash": "46a55078cf5778a5f5c835545a458f206fc76a10e582075cecf7f6b22cbe62bf"
@@ -1219,7 +1276,7 @@
       "name": "Settings.local_host_only",
       "label": "Settings.local_host_only",
       "path": "src/outreach/config.py",
-      "line": 31,
+      "line": 36,
       "confidence": 1,
       "extractor": "python-stdlib-ast",
       "contentHash": "d066a8351e322402aa762a80e809a5817536c6a77b7e3f8f57322d8ee4c162c7"
@@ -1231,7 +1288,7 @@
       "name": "Settings.use_psycopg_driver",
       "label": "Settings.use_psycopg_driver",
       "path": "src/outreach/config.py",
-      "line": 24,
+      "line": 25,
       "confidence": 1,
       "extractor": "python-stdlib-ast",
       "contentHash": "9ff72deefd277cba9c2f0c6826f5f61976a8d0e4126794f2791bc401c51fe2cf"
@@ -1535,6 +1592,42 @@
       "confidence": 1,
       "extractor": "python-stdlib-ast",
       "contentHash": "4518979205abdb442cff79374d80904a86557f776f23af46e0618443f64d5ae3"
+    },
+    {
+      "id": "symbol:src/outreach/local_files.py#function:ensure_private_directory",
+      "type": "symbol",
+      "kind": "function",
+      "name": "ensure_private_directory",
+      "label": "ensure_private_directory",
+      "path": "src/outreach/local_files.py",
+      "line": 8,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "7f1f4409a32f10765ecf472ad4753b16a002f9a5ff2dba0eebe1a7e98145c4f5"
+    },
+    {
+      "id": "symbol:src/outreach/local_files.py#function:write_private_bytes",
+      "type": "symbol",
+      "kind": "function",
+      "name": "write_private_bytes",
+      "label": "write_private_bytes",
+      "path": "src/outreach/local_files.py",
+      "line": 15,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "2a05e49f4682c3e2e11478941375ca6a6e8558e90221541b0e3c739d59294f7e"
+    },
+    {
+      "id": "symbol:src/outreach/local_files.py#function:write_private_text",
+      "type": "symbol",
+      "kind": "function",
+      "name": "write_private_text",
+      "label": "write_private_text",
+      "path": "src/outreach/local_files.py",
+      "line": 34,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "aa2c973ff739de6afe2c98ad3d36aa3b34eca154ba542852f8c532797fcba2ae"
     },
     {
       "id": "symbol:src/outreach/mail.py#class:AmbiguousDeliveryError",
@@ -2155,7 +2248,7 @@
       "name": "confirm_profile",
       "label": "confirm_profile",
       "path": "src/outreach/resume.py",
-      "line": 105,
+      "line": 104,
       "confidence": 1,
       "extractor": "python-stdlib-ast",
       "contentHash": "c6232f20377643201a89548693ccea5df53395924dafaa9aa4ec9f23bed9f30f"
@@ -2179,7 +2272,7 @@
       "name": "replace_profile_facts",
       "label": "replace_profile_facts",
       "path": "src/outreach/resume.py",
-      "line": 71,
+      "line": 70,
       "confidence": 1,
       "extractor": "python-stdlib-ast",
       "contentHash": "f33a0587990a2f4605a2c3f2f32a214ea8bb21831c435b9b719ec158bc3cd9ba"
@@ -2251,7 +2344,7 @@
       "name": "create_app.add_fact",
       "label": "create_app.add_fact",
       "path": "src/outreach/web.py",
-      "line": 132,
+      "line": 133,
       "confidence": 1,
       "extractor": "python-stdlib-ast",
       "contentHash": "f69b28ff2e64361a2de9907827e3bd3ba310ac06a0df45d466eb91a156665843"
@@ -2263,7 +2356,7 @@
       "name": "create_app.approve",
       "label": "create_app.approve",
       "path": "src/outreach/web.py",
-      "line": 259,
+      "line": 260,
       "confidence": 1,
       "extractor": "python-stdlib-ast",
       "contentHash": "245dc666bc4f6e628ef31af508a4d51f2f2219c0c07fe43ead8ec4001f7b724f"
@@ -2275,7 +2368,7 @@
       "name": "create_app.change_status",
       "label": "create_app.change_status",
       "path": "src/outreach/web.py",
-      "line": 267,
+      "line": 268,
       "confidence": 1,
       "extractor": "python-stdlib-ast",
       "contentHash": "8dead82eef14b4611e2cd0798dee76349ddc0d1436cf9bad4d8aad7603bf56d8"
@@ -2287,7 +2380,7 @@
       "name": "create_app.confirm_resume",
       "label": "create_app.confirm_resume",
       "path": "src/outreach/web.py",
-      "line": 159,
+      "line": 160,
       "confidence": 1,
       "extractor": "python-stdlib-ast",
       "contentHash": "a5e7711392f6245e2c73ed3c95cd6eb9d989c5a49538ba0da44d78e13c72da1a"
@@ -2311,7 +2404,7 @@
       "name": "create_app.history",
       "label": "create_app.history",
       "path": "src/outreach/web.py",
-      "line": 277,
+      "line": 278,
       "confidence": 1,
       "extractor": "python-stdlib-ast",
       "contentHash": "80a1e46fb2e8b7b4d6223ee8a8e3bc159baeba8697a14c81d388e5eb60479201"
@@ -2335,7 +2428,7 @@
       "name": "create_app.opportunities",
       "label": "create_app.opportunities",
       "path": "src/outreach/web.py",
-      "line": 168,
+      "line": 169,
       "confidence": 1,
       "extractor": "python-stdlib-ast",
       "contentHash": "04b7062fe85aca31be9f5c93dc5e573e674e71542d348fecda1a201700ad6672"
@@ -2359,7 +2452,7 @@
       "name": "create_app.review_detail",
       "label": "create_app.review_detail",
       "path": "src/outreach/web.py",
-      "line": 206,
+      "line": 207,
       "confidence": 1,
       "extractor": "python-stdlib-ast",
       "contentHash": "833c9856be0fa63c00ac7e03bdc890e3eb65e25f36264d6fee33e75e04402966"
@@ -2371,7 +2464,7 @@
       "name": "create_app.review_queue",
       "label": "create_app.review_queue",
       "path": "src/outreach/web.py",
-      "line": 193,
+      "line": 194,
       "confidence": 1,
       "extractor": "python-stdlib-ast",
       "contentHash": "58fe44ddb2c3985b2eaddd3acbe06ab3f77c34e0e85a7e746ad9aee7ee609873"
@@ -2383,7 +2476,7 @@
       "name": "create_app.send_batch",
       "label": "create_app.send_batch",
       "path": "src/outreach/web.py",
-      "line": 284,
+      "line": 285,
       "confidence": 1,
       "extractor": "python-stdlib-ast",
       "contentHash": "e7acf70ac441752ebe7962292b2d9e87bf4520be1a196ba9c4423f52c5e03c44"
@@ -2419,7 +2512,7 @@
       "name": "create_app.suppressions",
       "label": "create_app.suppressions",
       "path": "src/outreach/web.py",
-      "line": 316,
+      "line": 317,
       "confidence": 1,
       "extractor": "python-stdlib-ast",
       "contentHash": "d5564bbb70eb16b1cfdfc18b5c58cfd198646028c6fa276fa3958f485b36645a"
@@ -2431,7 +2524,7 @@
       "name": "create_app.synchronize_replies",
       "label": "create_app.synchronize_replies",
       "path": "src/outreach/web.py",
-      "line": 305,
+      "line": 306,
       "confidence": 1,
       "extractor": "python-stdlib-ast",
       "contentHash": "06fb3c83ab24bcb742276ac5570bdf3f10e64bd4335430a9e97177e88d17f45f"
@@ -2443,7 +2536,7 @@
       "name": "create_app.update_draft",
       "label": "create_app.update_draft",
       "path": "src/outreach/web.py",
-      "line": 246,
+      "line": 247,
       "confidence": 1,
       "extractor": "python-stdlib-ast",
       "contentHash": "3e809524c40f16c3f7924d8731a5645424ef1ddcdc090ab5cfc523a3d081456a"
@@ -2701,6 +2794,54 @@
       "contentHash": "fb254b1f2b9e3d03ccd5c1d83092a4206c087123cb2c3a1e97803d9c9c6d4a1e"
     },
     {
+      "id": "symbol:tests/test_config.py#function:test_database_configuration_is_required",
+      "type": "symbol",
+      "kind": "function",
+      "name": "test_database_configuration_is_required",
+      "label": "test_database_configuration_is_required",
+      "path": "tests/test_config.py",
+      "line": 37,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "6765840f4c57ce89d8b711e16bf601bdbb3b74971a57b7334cef75b44ace80c9"
+    },
+    {
+      "id": "symbol:tests/test_config.py#function:test_gmail_secret_is_hidden_but_available_to_server_adapter",
+      "type": "symbol",
+      "kind": "function",
+      "name": "test_gmail_secret_is_hidden_but_available_to_server_adapter",
+      "label": "test_gmail_secret_is_hidden_but_available_to_server_adapter",
+      "path": "tests/test_config.py",
+      "line": 20,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "4ba4f7cd9b44617b86a1a0191ce70f249e8e5aec47f2f209578e2e0d209443ca"
+    },
+    {
+      "id": "symbol:tests/test_config.py#function:test_neon_url_requires_tls_and_uses_psycopg",
+      "type": "symbol",
+      "kind": "function",
+      "name": "test_neon_url_requires_tls_and_uses_psycopg",
+      "label": "test_neon_url_requires_tls_and_uses_psycopg",
+      "path": "tests/test_config.py",
+      "line": 10,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "8055f947c65a4063b20ebe248c6f9949ed1fca21b3f939b136cf60fd618b596f"
+    },
+    {
+      "id": "symbol:tests/test_config.py#function:test_public_dashboard_bind_is_rejected",
+      "type": "symbol",
+      "kind": "function",
+      "name": "test_public_dashboard_bind_is_rejected",
+      "label": "test_public_dashboard_bind_is_rejected",
+      "path": "tests/test_config.py",
+      "line": 32,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "12333e0fcb70b5e5460bc951e878ed56eedfb6bf20dce423f440ef7d5ee71048"
+    },
+    {
       "id": "symbol:tests/test_contacts.py#function:test_bundle_import_persists_only_verified_contact",
       "type": "symbol",
       "kind": "function",
@@ -2767,7 +2908,7 @@
       "name": "test_dashboard_approval_and_edit_invalidation",
       "label": "test_dashboard_approval_and_edit_invalidation",
       "path": "tests/test_dashboard.py",
-      "line": 55,
+      "line": 61,
       "confidence": 1,
       "extractor": "python-stdlib-ast",
       "contentHash": "dd9ea49c4134a1ebaf7a3c27f555ff0183ead3d16857360a54d1a59ec76c6a9c"
@@ -2779,7 +2920,7 @@
       "name": "test_dashboard_lists_and_opens_review_item",
       "label": "test_dashboard_lists_and_opens_review_item",
       "path": "tests/test_dashboard.py",
-      "line": 42,
+      "line": 48,
       "confidence": 1,
       "extractor": "python-stdlib-ast",
       "contentHash": "da95dbb8e4d98419d06b4601797d996069b1bdb0442d668cfb5498a7d5fb2c1a"
@@ -2791,7 +2932,7 @@
       "name": "test_dashboard_rejects_cross_origin_post",
       "label": "test_dashboard_rejects_cross_origin_post",
       "path": "tests/test_dashboard.py",
-      "line": 73,
+      "line": 79,
       "confidence": 1,
       "extractor": "python-stdlib-ast",
       "contentHash": "834b7a12bf247ac15a73f50c643f61400484ac442c67403a929c377b2e6472a3"
@@ -2803,7 +2944,7 @@
       "name": "test_dashboard_status_keeps_credentials_server_side",
       "label": "test_dashboard_status_keeps_credentials_server_side",
       "path": "tests/test_dashboard.py",
-      "line": 81,
+      "line": 87,
       "confidence": 1,
       "extractor": "python-stdlib-ast",
       "contentHash": "f8b48c8fc0a2585fbe5f06ee8cb050d36958620ef33da86d466ff0e19e0fcb29"
@@ -2915,6 +3056,54 @@
       "confidence": 1,
       "extractor": "python-stdlib-ast",
       "contentHash": "1f3f1923f01f9b8008653df3130409556bb150531e11fa8400e093fce2805cc4"
+    },
+    {
+      "id": "symbol:tests/test_local_data_boundary.py#function:_pdf",
+      "type": "symbol",
+      "kind": "function",
+      "name": "_pdf",
+      "label": "_pdf",
+      "path": "tests/test_local_data_boundary.py",
+      "line": 17,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "1b979c4cf21b7c3404833f1884c245e74566655f8fb92768d2a13a7e390a69a6"
+    },
+    {
+      "id": "symbol:tests/test_local_data_boundary.py#function:test_codex_context_is_private_and_excludes_local_path",
+      "type": "symbol",
+      "kind": "function",
+      "name": "test_codex_context_is_private_and_excludes_local_path",
+      "label": "test_codex_context_is_private_and_excludes_local_path",
+      "path": "tests/test_local_data_boundary.py",
+      "line": 39,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "f138e110cd07d14bdf7f9a51e5abd07663e511c38bc1945706a5addfbb2e166f"
+    },
+    {
+      "id": "symbol:tests/test_local_data_boundary.py#function:test_repository_ignores_runtime_secrets_and_resume_files",
+      "type": "symbol",
+      "kind": "function",
+      "name": "test_repository_ignores_runtime_secrets_and_resume_files",
+      "label": "test_repository_ignores_runtime_secrets_and_resume_files",
+      "path": "tests/test_local_data_boundary.py",
+      "line": 67,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "2c8746dc7aed3c5b929f02d18f847b17cb75a4e742bdd9fc7264d58f55d5f19c"
+    },
+    {
+      "id": "symbol:tests/test_local_data_boundary.py#function:test_resume_binary_stays_in_private_local_storage",
+      "type": "symbol",
+      "kind": "function",
+      "name": "test_resume_binary_stays_in_private_local_storage",
+      "label": "test_resume_binary_stays_in_private_local_storage",
+      "path": "tests/test_local_data_boundary.py",
+      "line": 24,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast",
+      "contentHash": "add1036017e560fdedafddc1b55c7572fa5c741e50d48bf968363f1b6bd19d99"
     },
     {
       "id": "symbol:tests/test_mailer.py#class:FakeSMTP",
@@ -3446,6 +3635,18 @@
     {
       "type": "calls",
       "source": "symbol:src/outreach/__main__.py#function:main",
+      "target": "symbol:src/outreach/local_files.py#function:write_private_text",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/local_files.py#function:write_private_text"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:src/outreach/__main__.py#function:main",
       "target": "symbol:src/outreach/resume.py#function:import_resume",
       "tier": "ambiguous",
       "candidates": [
@@ -3955,6 +4156,24 @@
     },
     {
       "type": "calls",
+      "source": "symbol:src/outreach/local_files.py#function:write_private_bytes",
+      "target": "symbol:src/outreach/local_files.py#function:ensure_private_directory",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:src/outreach/local_files.py#function:write_private_text",
+      "target": "symbol:src/outreach/local_files.py#function:write_private_bytes",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
       "source": "symbol:src/outreach/mail.py#function:_sendable",
       "target": "symbol:src/outreach/foundation.py#function:company_eligibility",
       "tier": "ambiguous",
@@ -4229,6 +4448,30 @@
     {
       "type": "calls",
       "source": "symbol:src/outreach/resume.py#function:import_resume",
+      "target": "symbol:src/outreach/local_files.py#function:ensure_private_directory",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/local_files.py#function:ensure_private_directory"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:src/outreach/resume.py#function:import_resume",
+      "target": "symbol:src/outreach/local_files.py#function:write_private_bytes",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/local_files.py#function:write_private_bytes"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:src/outreach/resume.py#function:import_resume",
       "target": "symbol:src/outreach/models.py#class:AuditEvent",
       "tier": "ambiguous",
       "candidates": [
@@ -4307,11 +4550,11 @@
     {
       "type": "calls",
       "source": "symbol:src/outreach/web.py#function:create_app",
-      "target": "symbol:src/outreach/mail.py#function:GmailSMTPTransport.from_settings",
+      "target": "symbol:src/outreach/replies.py#function:GmailIMAPReader.from_settings",
       "tier": "ambiguous",
       "candidates": [
-        "symbol:src/outreach/mail.py#function:GmailSMTPTransport.from_settings",
-        "symbol:src/outreach/replies.py#function:GmailIMAPReader.from_settings"
+        "symbol:src/outreach/replies.py#function:GmailIMAPReader.from_settings",
+        "symbol:src/outreach/mail.py#function:GmailSMTPTransport.from_settings"
       ],
       "resolved": false,
       "confidence": 0.3,
@@ -4420,6 +4663,18 @@
       "tier": "ambiguous",
       "candidates": [
         "symbol:src/outreach/drafts.py#function:edit_draft"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:src/outreach/web.py#function:create_app.upload_resume",
+      "target": "symbol:src/outreach/local_files.py#function:write_private_bytes",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/local_files.py#function:write_private_bytes"
       ],
       "resolved": false,
       "confidence": 0.3,
@@ -4861,6 +5116,67 @@
       "tier": "ambiguous",
       "candidates": [
         "symbol:src/outreach/models.py#class:ResumeVersion"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_config.py#function:test_database_configuration_is_required",
+      "target": "symbol:src/outreach/config.py#class:Settings",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/config.py#class:Settings"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_config.py#function:test_gmail_secret_is_hidden_but_available_to_server_adapter",
+      "target": "symbol:src/outreach/config.py#class:Settings",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/config.py#class:Settings"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_config.py#function:test_gmail_secret_is_hidden_but_available_to_server_adapter",
+      "target": "symbol:src/outreach/replies.py#function:GmailIMAPReader.from_settings",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/replies.py#function:GmailIMAPReader.from_settings",
+        "symbol:src/outreach/mail.py#function:GmailSMTPTransport.from_settings"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_config.py#function:test_neon_url_requires_tls_and_uses_psycopg",
+      "target": "symbol:src/outreach/config.py#class:Settings",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/config.py#class:Settings"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_config.py#function:test_public_dashboard_bind_is_rejected",
+      "target": "symbol:src/outreach/config.py#class:Settings",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/config.py#class:Settings"
       ],
       "resolved": false,
       "confidence": 0.3,
@@ -5424,6 +5740,75 @@
     },
     {
       "type": "calls",
+      "source": "symbol:tests/test_local_data_boundary.py#function:test_codex_context_is_private_and_excludes_local_path",
+      "target": "symbol:src/outreach/context.py#function:build_preparation_context",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/context.py#function:build_preparation_context"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_local_data_boundary.py#function:test_codex_context_is_private_and_excludes_local_path",
+      "target": "symbol:src/outreach/local_files.py#function:write_private_text",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/local_files.py#function:write_private_text"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_local_data_boundary.py#function:test_codex_context_is_private_and_excludes_local_path",
+      "target": "symbol:src/outreach/models.py#class:ProfileFact",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/models.py#class:ProfileFact"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_local_data_boundary.py#function:test_codex_context_is_private_and_excludes_local_path",
+      "target": "symbol:src/outreach/models.py#class:ResumeVersion",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/models.py#class:ResumeVersion"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_local_data_boundary.py#function:test_resume_binary_stays_in_private_local_storage",
+      "target": "symbol:src/outreach/resume.py#function:import_resume",
+      "tier": "ambiguous",
+      "candidates": [
+        "symbol:src/outreach/resume.py#function:import_resume"
+      ],
+      "resolved": false,
+      "confidence": 0.3,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
+      "source": "symbol:tests/test_local_data_boundary.py#function:test_resume_binary_stays_in_private_local_storage",
+      "target": "symbol:tests/test_local_data_boundary.py#function:_pdf",
+      "tier": "proven",
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast-calls"
+    },
+    {
+      "type": "calls",
       "source": "symbol:tests/test_mailer.py#function:test_gmail_transport_builds_plain_text_message_with_pdf",
       "target": "symbol:src/outreach/mail.py#class:GmailSMTPTransport",
       "tier": "ambiguous",
@@ -5449,13 +5834,13 @@
     {
       "type": "calls",
       "source": "symbol:tests/test_mailer.py#function:test_gmail_transport_builds_plain_text_message_with_pdf",
-      "target": "symbol:src/outreach/mail.py#function:MailTransport.send",
+      "target": "symbol:tests/test_replies.py#function:SuccessfulTransport.send",
       "tier": "ambiguous",
       "candidates": [
-        "symbol:src/outreach/mail.py#function:MailTransport.send",
-        "symbol:src/outreach/mail.py#function:GmailSMTPTransport.send",
         "symbol:tests/test_replies.py#function:SuccessfulTransport.send",
-        "symbol:tests/test_send_gate.py#function:FakeTransport.send"
+        "symbol:tests/test_send_gate.py#function:FakeTransport.send",
+        "symbol:src/outreach/mail.py#function:MailTransport.send",
+        "symbol:src/outreach/mail.py#function:GmailSMTPTransport.send"
       ],
       "resolved": false,
       "confidence": 0.3,
@@ -5488,13 +5873,13 @@
     {
       "type": "calls",
       "source": "symbol:tests/test_mailer.py#function:test_recipient_refusal_is_definite",
-      "target": "symbol:src/outreach/mail.py#function:MailTransport.send",
+      "target": "symbol:tests/test_replies.py#function:SuccessfulTransport.send",
       "tier": "ambiguous",
       "candidates": [
-        "symbol:src/outreach/mail.py#function:MailTransport.send",
-        "symbol:src/outreach/mail.py#function:GmailSMTPTransport.send",
         "symbol:tests/test_replies.py#function:SuccessfulTransport.send",
-        "symbol:tests/test_send_gate.py#function:FakeTransport.send"
+        "symbol:tests/test_send_gate.py#function:FakeTransport.send",
+        "symbol:src/outreach/mail.py#function:MailTransport.send",
+        "symbol:src/outreach/mail.py#function:GmailSMTPTransport.send"
       ],
       "resolved": false,
       "confidence": 0.3,
@@ -6137,7 +6522,7 @@
       "type": "defines",
       "source": "file:src/outreach/__main__.py",
       "target": "symbol:src/outreach/__main__.py#function:build_parser",
-      "line": 18,
+      "line": 19,
       "resolved": true,
       "confidence": 1,
       "extractor": "python-stdlib-ast"
@@ -6146,7 +6531,7 @@
       "type": "defines",
       "source": "file:src/outreach/__main__.py",
       "target": "symbol:src/outreach/__main__.py#function:main",
-      "line": 41,
+      "line": 42,
       "resolved": true,
       "confidence": 1,
       "extractor": "python-stdlib-ast"
@@ -6317,7 +6702,7 @@
       "type": "defines",
       "source": "file:src/outreach/config.py",
       "target": "symbol:src/outreach/config.py#class:Settings",
-      "line": 10,
+      "line": 11,
       "resolved": true,
       "confidence": 1,
       "extractor": "python-stdlib-ast"
@@ -6326,7 +6711,7 @@
       "type": "defines",
       "source": "file:src/outreach/config.py",
       "target": "symbol:src/outreach/config.py#function:get_settings",
-      "line": 38,
+      "line": 43,
       "resolved": true,
       "confidence": 1,
       "extractor": "python-stdlib-ast"
@@ -6335,7 +6720,7 @@
       "type": "defines",
       "source": "file:src/outreach/config.py",
       "target": "symbol:src/outreach/config.py#function:Settings.local_host_only",
-      "line": 31,
+      "line": 36,
       "resolved": true,
       "confidence": 1,
       "extractor": "python-stdlib-ast"
@@ -6344,7 +6729,7 @@
       "type": "defines",
       "source": "file:src/outreach/config.py",
       "target": "symbol:src/outreach/config.py#function:Settings.use_psycopg_driver",
-      "line": 24,
+      "line": 25,
       "resolved": true,
       "confidence": 1,
       "extractor": "python-stdlib-ast"
@@ -6570,6 +6955,33 @@
       "source": "file:src/outreach/identity.py",
       "target": "symbol:src/outreach/identity.py#function:normalize_text",
       "line": 38,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/outreach/local_files.py",
+      "target": "symbol:src/outreach/local_files.py#function:ensure_private_directory",
+      "line": 8,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/outreach/local_files.py",
+      "target": "symbol:src/outreach/local_files.py#function:write_private_bytes",
+      "line": 15,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:src/outreach/local_files.py",
+      "target": "symbol:src/outreach/local_files.py#function:write_private_text",
+      "line": 34,
       "resolved": true,
       "confidence": 1,
       "extractor": "python-stdlib-ast"
@@ -7037,7 +7449,7 @@
       "type": "defines",
       "source": "file:src/outreach/resume.py",
       "target": "symbol:src/outreach/resume.py#function:confirm_profile",
-      "line": 105,
+      "line": 104,
       "resolved": true,
       "confidence": 1,
       "extractor": "python-stdlib-ast"
@@ -7055,7 +7467,7 @@
       "type": "defines",
       "source": "file:src/outreach/resume.py",
       "target": "symbol:src/outreach/resume.py#function:replace_profile_facts",
-      "line": 71,
+      "line": 70,
       "resolved": true,
       "confidence": 1,
       "extractor": "python-stdlib-ast"
@@ -7109,7 +7521,7 @@
       "type": "defines",
       "source": "file:src/outreach/web.py",
       "target": "symbol:src/outreach/web.py#function:create_app.add_fact",
-      "line": 132,
+      "line": 133,
       "resolved": true,
       "confidence": 1,
       "extractor": "python-stdlib-ast"
@@ -7118,7 +7530,7 @@
       "type": "defines",
       "source": "file:src/outreach/web.py",
       "target": "symbol:src/outreach/web.py#function:create_app.approve",
-      "line": 259,
+      "line": 260,
       "resolved": true,
       "confidence": 1,
       "extractor": "python-stdlib-ast"
@@ -7127,7 +7539,7 @@
       "type": "defines",
       "source": "file:src/outreach/web.py",
       "target": "symbol:src/outreach/web.py#function:create_app.change_status",
-      "line": 267,
+      "line": 268,
       "resolved": true,
       "confidence": 1,
       "extractor": "python-stdlib-ast"
@@ -7136,7 +7548,7 @@
       "type": "defines",
       "source": "file:src/outreach/web.py",
       "target": "symbol:src/outreach/web.py#function:create_app.confirm_resume",
-      "line": 159,
+      "line": 160,
       "resolved": true,
       "confidence": 1,
       "extractor": "python-stdlib-ast"
@@ -7154,7 +7566,7 @@
       "type": "defines",
       "source": "file:src/outreach/web.py",
       "target": "symbol:src/outreach/web.py#function:create_app.history",
-      "line": 277,
+      "line": 278,
       "resolved": true,
       "confidence": 1,
       "extractor": "python-stdlib-ast"
@@ -7172,7 +7584,7 @@
       "type": "defines",
       "source": "file:src/outreach/web.py",
       "target": "symbol:src/outreach/web.py#function:create_app.opportunities",
-      "line": 168,
+      "line": 169,
       "resolved": true,
       "confidence": 1,
       "extractor": "python-stdlib-ast"
@@ -7190,7 +7602,7 @@
       "type": "defines",
       "source": "file:src/outreach/web.py",
       "target": "symbol:src/outreach/web.py#function:create_app.review_detail",
-      "line": 206,
+      "line": 207,
       "resolved": true,
       "confidence": 1,
       "extractor": "python-stdlib-ast"
@@ -7199,7 +7611,7 @@
       "type": "defines",
       "source": "file:src/outreach/web.py",
       "target": "symbol:src/outreach/web.py#function:create_app.review_queue",
-      "line": 193,
+      "line": 194,
       "resolved": true,
       "confidence": 1,
       "extractor": "python-stdlib-ast"
@@ -7208,7 +7620,7 @@
       "type": "defines",
       "source": "file:src/outreach/web.py",
       "target": "symbol:src/outreach/web.py#function:create_app.send_batch",
-      "line": 284,
+      "line": 285,
       "resolved": true,
       "confidence": 1,
       "extractor": "python-stdlib-ast"
@@ -7235,7 +7647,7 @@
       "type": "defines",
       "source": "file:src/outreach/web.py",
       "target": "symbol:src/outreach/web.py#function:create_app.suppressions",
-      "line": 316,
+      "line": 317,
       "resolved": true,
       "confidence": 1,
       "extractor": "python-stdlib-ast"
@@ -7244,7 +7656,7 @@
       "type": "defines",
       "source": "file:src/outreach/web.py",
       "target": "symbol:src/outreach/web.py#function:create_app.synchronize_replies",
-      "line": 305,
+      "line": 306,
       "resolved": true,
       "confidence": 1,
       "extractor": "python-stdlib-ast"
@@ -7253,7 +7665,7 @@
       "type": "defines",
       "source": "file:src/outreach/web.py",
       "target": "symbol:src/outreach/web.py#function:create_app.update_draft",
-      "line": 246,
+      "line": 247,
       "resolved": true,
       "confidence": 1,
       "extractor": "python-stdlib-ast"
@@ -7449,6 +7861,42 @@
     },
     {
       "type": "defines",
+      "source": "file:tests/test_config.py",
+      "target": "symbol:tests/test_config.py#function:test_database_configuration_is_required",
+      "line": 37,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:tests/test_config.py",
+      "target": "symbol:tests/test_config.py#function:test_gmail_secret_is_hidden_but_available_to_server_adapter",
+      "line": 20,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:tests/test_config.py",
+      "target": "symbol:tests/test_config.py#function:test_neon_url_requires_tls_and_uses_psycopg",
+      "line": 10,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:tests/test_config.py",
+      "target": "symbol:tests/test_config.py#function:test_public_dashboard_bind_is_rejected",
+      "line": 32,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
       "source": "file:tests/test_contacts.py",
       "target": "symbol:tests/test_contacts.py#function:test_bundle_import_persists_only_verified_contact",
       "line": 65,
@@ -7496,7 +7944,7 @@
       "type": "defines",
       "source": "file:tests/test_dashboard.py",
       "target": "symbol:tests/test_dashboard.py#function:test_dashboard_approval_and_edit_invalidation",
-      "line": 55,
+      "line": 61,
       "resolved": true,
       "confidence": 1,
       "extractor": "python-stdlib-ast"
@@ -7505,7 +7953,7 @@
       "type": "defines",
       "source": "file:tests/test_dashboard.py",
       "target": "symbol:tests/test_dashboard.py#function:test_dashboard_lists_and_opens_review_item",
-      "line": 42,
+      "line": 48,
       "resolved": true,
       "confidence": 1,
       "extractor": "python-stdlib-ast"
@@ -7514,7 +7962,7 @@
       "type": "defines",
       "source": "file:tests/test_dashboard.py",
       "target": "symbol:tests/test_dashboard.py#function:test_dashboard_rejects_cross_origin_post",
-      "line": 73,
+      "line": 79,
       "resolved": true,
       "confidence": 1,
       "extractor": "python-stdlib-ast"
@@ -7523,7 +7971,7 @@
       "type": "defines",
       "source": "file:tests/test_dashboard.py",
       "target": "symbol:tests/test_dashboard.py#function:test_dashboard_status_keeps_credentials_server_side",
-      "line": 81,
+      "line": 87,
       "resolved": true,
       "confidence": 1,
       "extractor": "python-stdlib-ast"
@@ -7605,6 +8053,42 @@
       "source": "file:tests/test_drafts.py",
       "target": "symbol:tests/test_drafts.py#function:test_draft_length_is_enforced",
       "line": 50,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:tests/test_local_data_boundary.py",
+      "target": "symbol:tests/test_local_data_boundary.py#function:_pdf",
+      "line": 17,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:tests/test_local_data_boundary.py",
+      "target": "symbol:tests/test_local_data_boundary.py#function:test_codex_context_is_private_and_excludes_local_path",
+      "line": 39,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:tests/test_local_data_boundary.py",
+      "target": "symbol:tests/test_local_data_boundary.py#function:test_repository_ignores_runtime_secrets_and_resume_files",
+      "line": 67,
+      "resolved": true,
+      "confidence": 1,
+      "extractor": "python-stdlib-ast"
+    },
+    {
+      "type": "defines",
+      "source": "file:tests/test_local_data_boundary.py",
+      "target": "symbol:tests/test_local_data_boundary.py#function:test_resume_binary_stays_in_private_local_storage",
+      "line": 24,
       "resolved": true,
       "confidence": 1,
       "extractor": "python-stdlib-ast"
@@ -8114,9 +8598,19 @@
     {
       "type": "imports",
       "source": "file:src/outreach/__main__.py",
+      "target": "package:pypi:outreach.local_files",
+      "specifier": "outreach.local_files",
+      "line": 14,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/__main__.py",
       "target": "package:pypi:outreach.resume",
       "specifier": "outreach.resume",
-      "line": 14,
+      "line": 15,
       "resolved": false,
       "confidence": 0.5,
       "extractor": "python-imports"
@@ -8126,7 +8620,7 @@
       "source": "file:src/outreach/__main__.py",
       "target": "package:pypi:outreach.web",
       "specifier": "outreach.web",
-      "line": 15,
+      "line": 16,
       "resolved": false,
       "confidence": 0.5,
       "extractor": "python-imports"
@@ -8346,7 +8840,7 @@
       "source": "file:src/outreach/config.py",
       "target": "package:pypi:pydantic_settings",
       "specifier": "pydantic_settings",
-      "line": 7,
+      "line": 8,
       "resolved": false,
       "confidence": 0.5,
       "extractor": "python-imports"
@@ -8356,7 +8850,7 @@
       "source": "file:src/outreach/config.py",
       "target": "package:pypi:pydantic",
       "specifier": "pydantic",
-      "line": 6,
+      "line": 7,
       "resolved": false,
       "confidence": 0.5,
       "extractor": "python-imports"
@@ -8387,6 +8881,16 @@
       "target": "runtime:python:pathlib",
       "specifier": "pathlib",
       "line": 4,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/config.py",
+      "target": "runtime:python:urllib.parse",
+      "specifier": "urllib.parse",
+      "line": 5,
       "resolved": true,
       "confidence": 0.85,
       "extractor": "python-imports"
@@ -8747,6 +9251,46 @@
       "target": "runtime:python:urllib.parse",
       "specifier": "urllib.parse",
       "line": 5,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/local_files.py",
+      "target": "runtime:python:__future__",
+      "specifier": "__future__",
+      "line": 1,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/local_files.py",
+      "target": "runtime:python:os",
+      "specifier": "os",
+      "line": 3,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/local_files.py",
+      "target": "runtime:python:pathlib",
+      "specifier": "pathlib",
+      "line": 5,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/local_files.py",
+      "target": "runtime:python:tempfile",
+      "specifier": "tempfile",
+      "line": 4,
       "resolved": true,
       "confidence": 0.85,
       "extractor": "python-imports"
@@ -9134,6 +9678,16 @@
     {
       "type": "imports",
       "source": "file:src/outreach/resume.py",
+      "target": "package:pypi:outreach.local_files",
+      "specifier": "outreach.local_files",
+      "line": 11,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/resume.py",
       "target": "package:pypi:outreach.models",
       "specifier": "outreach.models",
       "line": 12,
@@ -9146,7 +9700,7 @@
       "source": "file:src/outreach/resume.py",
       "target": "package:pypi:pypdf",
       "specifier": "pypdf",
-      "line": 8,
+      "line": 7,
       "resolved": false,
       "confidence": 0.5,
       "extractor": "python-imports"
@@ -9156,7 +9710,7 @@
       "source": "file:src/outreach/resume.py",
       "target": "package:pypi:sqlalchemy",
       "specifier": "sqlalchemy",
-      "line": 9,
+      "line": 8,
       "resolved": false,
       "confidence": 0.5,
       "extractor": "python-imports"
@@ -9166,7 +9720,7 @@
       "source": "file:src/outreach/resume.py",
       "target": "package:pypi:sqlalchemy.orm",
       "specifier": "sqlalchemy.orm",
-      "line": 10,
+      "line": 9,
       "resolved": false,
       "confidence": 0.5,
       "extractor": "python-imports"
@@ -9186,7 +9740,7 @@
       "source": "file:src/outreach/resume.py",
       "target": "runtime:python:dataclasses",
       "specifier": "dataclasses",
-      "line": 5,
+      "line": 4,
       "resolved": true,
       "confidence": 0.85,
       "extractor": "python-imports"
@@ -9206,17 +9760,7 @@
       "source": "file:src/outreach/resume.py",
       "target": "runtime:python:pathlib",
       "specifier": "pathlib",
-      "line": 6,
-      "resolved": true,
-      "confidence": 0.85,
-      "extractor": "python-imports"
-    },
-    {
-      "type": "imports",
-      "source": "file:src/outreach/resume.py",
-      "target": "runtime:python:shutil",
-      "specifier": "shutil",
-      "line": 4,
+      "line": 5,
       "resolved": true,
       "confidence": 0.85,
       "extractor": "python-imports"
@@ -9256,7 +9800,7 @@
       "source": "file:src/outreach/web.py",
       "target": "package:pypi:fastapi",
       "specifier": "fastapi",
-      "line": 8,
+      "line": 7,
       "resolved": false,
       "confidence": 0.5,
       "extractor": "python-imports"
@@ -9266,7 +9810,7 @@
       "source": "file:src/outreach/web.py",
       "target": "package:pypi:fastapi.responses",
       "specifier": "fastapi.responses",
-      "line": 9,
+      "line": 8,
       "resolved": false,
       "confidence": 0.5,
       "extractor": "python-imports"
@@ -9276,7 +9820,7 @@
       "source": "file:src/outreach/web.py",
       "target": "package:pypi:fastapi.staticfiles",
       "specifier": "fastapi.staticfiles",
-      "line": 10,
+      "line": 9,
       "resolved": false,
       "confidence": 0.5,
       "extractor": "python-imports"
@@ -9286,7 +9830,7 @@
       "source": "file:src/outreach/web.py",
       "target": "package:pypi:fastapi.templating",
       "specifier": "fastapi.templating",
-      "line": 11,
+      "line": 10,
       "resolved": false,
       "confidence": 0.5,
       "extractor": "python-imports"
@@ -9296,7 +9840,7 @@
       "source": "file:src/outreach/web.py",
       "target": "package:pypi:outreach.config",
       "specifier": "outreach.config",
-      "line": 15,
+      "line": 14,
       "resolved": false,
       "confidence": 0.5,
       "extractor": "python-imports"
@@ -9306,7 +9850,7 @@
       "source": "file:src/outreach/web.py",
       "target": "package:pypi:outreach.db",
       "specifier": "outreach.db",
-      "line": 16,
+      "line": 15,
       "resolved": false,
       "confidence": 0.5,
       "extractor": "python-imports"
@@ -9316,6 +9860,16 @@
       "source": "file:src/outreach/web.py",
       "target": "package:pypi:outreach.drafts",
       "specifier": "outreach.drafts",
+      "line": 16,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:src/outreach/web.py",
+      "target": "package:pypi:outreach.local_files",
+      "specifier": "outreach.local_files",
       "line": 17,
       "resolved": false,
       "confidence": 0.5,
@@ -9366,7 +9920,7 @@
       "source": "file:src/outreach/web.py",
       "target": "package:pypi:sqlalchemy",
       "specifier": "sqlalchemy",
-      "line": 12,
+      "line": 11,
       "resolved": false,
       "confidence": 0.5,
       "extractor": "python-imports"
@@ -9376,7 +9930,7 @@
       "source": "file:src/outreach/web.py",
       "target": "package:pypi:sqlalchemy.orm",
       "specifier": "sqlalchemy.orm",
-      "line": 13,
+      "line": 12,
       "resolved": false,
       "confidence": 0.5,
       "extractor": "python-imports"
@@ -9396,7 +9950,7 @@
       "source": "file:src/outreach/web.py",
       "target": "runtime:python:collections.abc",
       "specifier": "collections.abc",
-      "line": 4,
+      "line": 3,
       "resolved": true,
       "confidence": 0.85,
       "extractor": "python-imports"
@@ -9406,17 +9960,7 @@
       "source": "file:src/outreach/web.py",
       "target": "runtime:python:pathlib",
       "specifier": "pathlib",
-      "line": 5,
-      "resolved": true,
-      "confidence": 0.85,
-      "extractor": "python-imports"
-    },
-    {
-      "type": "imports",
-      "source": "file:src/outreach/web.py",
-      "target": "runtime:python:shutil",
-      "specifier": "shutil",
-      "line": 3,
+      "line": 4,
       "resolved": true,
       "confidence": 0.85,
       "extractor": "python-imports"
@@ -9426,7 +9970,7 @@
       "source": "file:src/outreach/web.py",
       "target": "runtime:python:uuid",
       "specifier": "uuid",
-      "line": 6,
+      "line": 5,
       "resolved": true,
       "confidence": 0.85,
       "extractor": "python-imports"
@@ -9853,6 +10397,56 @@
     },
     {
       "type": "imports",
+      "source": "file:tests/test_config.py",
+      "target": "package:pypi:outreach.config",
+      "specifier": "outreach.config",
+      "line": 6,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/test_config.py",
+      "target": "package:pypi:outreach.mail",
+      "specifier": "outreach.mail",
+      "line": 7,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/test_config.py",
+      "target": "package:pypi:pydantic",
+      "specifier": "pydantic",
+      "line": 4,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/test_config.py",
+      "target": "package:pypi:pytest",
+      "specifier": "pytest",
+      "line": 3,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/test_config.py",
+      "target": "runtime:python:__future__",
+      "specifier": "__future__",
+      "line": 1,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
       "source": "file:tests/test_contacts.py",
       "target": "file:tests/factories.py",
       "specifier": "tests.factories",
@@ -10227,6 +10821,116 @@
       "target": "runtime:python:pathlib",
       "specifier": "pathlib",
       "line": 3,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/test_local_data_boundary.py",
+      "target": "package:pypi:outreach.context",
+      "specifier": "outreach.context",
+      "line": 11,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/test_local_data_boundary.py",
+      "target": "package:pypi:outreach.local_files",
+      "specifier": "outreach.local_files",
+      "line": 12,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/test_local_data_boundary.py",
+      "target": "package:pypi:outreach.models",
+      "specifier": "outreach.models",
+      "line": 13,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/test_local_data_boundary.py",
+      "target": "package:pypi:outreach.resume",
+      "specifier": "outreach.resume",
+      "line": 14,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/test_local_data_boundary.py",
+      "target": "package:pypi:pypdf",
+      "specifier": "pypdf",
+      "line": 7,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/test_local_data_boundary.py",
+      "target": "package:pypi:sqlalchemy",
+      "specifier": "sqlalchemy",
+      "line": 8,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/test_local_data_boundary.py",
+      "target": "package:pypi:sqlalchemy.orm",
+      "specifier": "sqlalchemy.orm",
+      "line": 9,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/test_local_data_boundary.py",
+      "target": "runtime:python:__future__",
+      "specifier": "__future__",
+      "line": 1,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/test_local_data_boundary.py",
+      "target": "runtime:python:json",
+      "specifier": "json",
+      "line": 3,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/test_local_data_boundary.py",
+      "target": "runtime:python:pathlib",
+      "specifier": "pathlib",
+      "line": 5,
+      "resolved": true,
+      "confidence": 0.85,
+      "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:tests/test_local_data_boundary.py",
+      "target": "runtime:python:stat",
+      "specifier": "stat",
+      "line": 4,
       "resolved": true,
       "confidence": 0.85,
       "extractor": "python-imports"
@@ -11035,6 +11739,6 @@
   ],
   "warnings": [],
   "stats": {
-    "unresolvedCalls": 828
+    "unresolvedCalls": 874
   }
 }
