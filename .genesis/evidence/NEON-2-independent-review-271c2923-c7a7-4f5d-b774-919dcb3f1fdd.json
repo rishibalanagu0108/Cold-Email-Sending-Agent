@@ -1,0 +1,13 @@
+{
+  "task": "NEON-2",
+  "gate": "independent-review",
+  "kind": "review",
+  "attempt": "271c2923-c7a7-4f5d-b774-919dcb3f1fdd",
+  "human": "Project owner",
+  "reason": "User stated: I reviewed and approve NEON-2.",
+  "observed_at": "2026-10-10T07:00:12.022Z",
+  "source_hash": "ac15e48a42b3f89a4d1d3e1e0e3d0b5041492ced9001769b62f1096c4872fb08",
+  "config_hash": "c2112b7389d296f5dfb58745a0117b0ff5a398536cad072d15c9d5fc78383b42",
+  "reviewed_proofs": "ea46306fd10a1ded6f246bd0b49e2b58effd3010e96e945b070367f3398f578f",
+  "hash": "a1618fc12df96b009ef600476ac1bdf64d971c7a5906cff8e576c500a966b10c"
+}

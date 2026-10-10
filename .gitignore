@@ -11,3 +11,6 @@ dist/
 build/
 *.egg-info/
 
+.neon
+.env.local
+node_modules/

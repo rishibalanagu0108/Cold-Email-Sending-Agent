@@ -4,6 +4,7 @@ digraph genesis {
   "file:migrations/env.py" [label="migrations/env.py",class="file"];
   "file:migrations/versions/7c34ca2d998d_add_evidence_keys.py" [label="migrations/versions/7c34ca2d998d_add_evidence_keys.py",class="file"];
   "file:migrations/versions/e3cb32e9cf04_initial_schema.py" [label="migrations/versions/e3cb32e9cf04_initial_schema.py",class="file"];
+  "file:neon.ts" [label="neon.ts",class="file"];
   "file:src/outreach/__init__.py" [label="src/outreach/__init__.py",class="file"];
   "file:src/outreach/__main__.py" [label="src/outreach/__main__.py",class="file"];
   "file:src/outreach/bundles.py" [label="src/outreach/bundles.py",class="file"];
@@ -43,6 +44,7 @@ digraph genesis {
   "file:tests/test_secrets.py" [label="tests/test_secrets.py",class="file"];
   "file:tests/test_send_gate.py" [label="tests/test_send_gate.py",class="file"];
   "file:tests/test_verification.py" [label="tests/test_verification.py",class="file"];
+  "package:npm:@neon/config" [label="@neon/config",class="package"];
   "package:pypi:alembic" [label="alembic",class="package"];
   "package:pypi:fastapi" [label="fastapi",class="package"];
   "package:pypi:fastapi.responses" [label="fastapi.responses",class="package"];
@@ -409,7 +411,7 @@ digraph genesis {
   "symbol:src/outreach/verification.py#function:verify_evidence" -> "symbol:src/outreach/verification.py#function:normalize_email" [label="calls"];
   "symbol:src/outreach/web.py#function:create_app" -> "symbol:src/outreach/config.py#function:get_settings" [label="calls"];
   "symbol:src/outreach/web.py#function:create_app" -> "symbol:src/outreach/db.py#function:create_database_engine" [label="calls"];
-  "symbol:src/outreach/web.py#function:create_app" -> "symbol:src/outreach/replies.py#function:GmailIMAPReader.from_settings" [label="calls"];
+  "symbol:src/outreach/web.py#function:create_app" -> "symbol:src/outreach/mail.py#function:GmailSMTPTransport.from_settings" [label="calls"];
   "symbol:src/outreach/web.py#function:create_app.add_fact" -> "symbol:src/outreach/models.py#class:ProfileFact" [label="calls"];
   "symbol:src/outreach/web.py#function:create_app.add_fact" -> "symbol:src/outreach/resume.py#class:FactInput" [label="calls"];
   "symbol:src/outreach/web.py#function:create_app.approve" -> "symbol:src/outreach/drafts.py#function:approve_draft" [label="calls"];
@@ -464,7 +466,7 @@ digraph genesis {
   "symbol:tests/test_codex_contract.py#function:test_context_contains_prior_state_but_no_secrets" -> "symbol:src/outreach/models.py#class:ResumeVersion" [label="calls"];
   "symbol:tests/test_config.py#function:test_database_configuration_is_required" -> "symbol:src/outreach/config.py#class:Settings" [label="calls"];
   "symbol:tests/test_config.py#function:test_gmail_secret_is_hidden_but_available_to_server_adapter" -> "symbol:src/outreach/config.py#class:Settings" [label="calls"];
-  "symbol:tests/test_config.py#function:test_gmail_secret_is_hidden_but_available_to_server_adapter" -> "symbol:src/outreach/replies.py#function:GmailIMAPReader.from_settings" [label="calls"];
+  "symbol:tests/test_config.py#function:test_gmail_secret_is_hidden_but_available_to_server_adapter" -> "symbol:src/outreach/mail.py#function:GmailSMTPTransport.from_settings" [label="calls"];
   "symbol:tests/test_config.py#function:test_neon_url_requires_tls_and_uses_psycopg" -> "symbol:src/outreach/config.py#class:Settings" [label="calls"];
   "symbol:tests/test_config.py#function:test_public_dashboard_bind_is_rejected" -> "symbol:src/outreach/config.py#class:Settings" [label="calls"];
   "symbol:tests/test_contacts.py#function:test_bundle_import_persists_only_verified_contact" -> "symbol:src/outreach/bundles.py#function:import_bundle" [label="calls"];
@@ -525,10 +527,10 @@ digraph genesis {
   "symbol:tests/test_local_data_boundary.py#function:test_resume_binary_stays_in_private_local_storage" -> "symbol:tests/test_local_data_boundary.py#function:_pdf" [label="calls"];
   "symbol:tests/test_mailer.py#function:test_gmail_transport_builds_plain_text_message_with_pdf" -> "symbol:src/outreach/mail.py#class:GmailSMTPTransport" [label="calls"];
   "symbol:tests/test_mailer.py#function:test_gmail_transport_builds_plain_text_message_with_pdf" -> "symbol:src/outreach/mail.py#class:OutgoingEmail" [label="calls"];
-  "symbol:tests/test_mailer.py#function:test_gmail_transport_builds_plain_text_message_with_pdf" -> "symbol:tests/test_replies.py#function:SuccessfulTransport.send" [label="calls"];
+  "symbol:tests/test_mailer.py#function:test_gmail_transport_builds_plain_text_message_with_pdf" -> "symbol:src/outreach/mail.py#function:MailTransport.send" [label="calls"];
   "symbol:tests/test_mailer.py#function:test_recipient_refusal_is_definite" -> "symbol:src/outreach/mail.py#class:GmailSMTPTransport" [label="calls"];
   "symbol:tests/test_mailer.py#function:test_recipient_refusal_is_definite" -> "symbol:src/outreach/mail.py#class:OutgoingEmail" [label="calls"];
-  "symbol:tests/test_mailer.py#function:test_recipient_refusal_is_definite" -> "symbol:tests/test_replies.py#function:SuccessfulTransport.send" [label="calls"];
+  "symbol:tests/test_mailer.py#function:test_recipient_refusal_is_definite" -> "symbol:src/outreach/mail.py#function:MailTransport.send" [label="calls"];
   "symbol:tests/test_matching.py#function:test_eligible_candidate_requires_job_and_company_evidence" -> "symbol:tests/factories.py#function:bundle_payload" [label="calls"];
   "symbol:tests/test_matching.py#function:test_eligible_candidate_requires_job_and_company_evidence" -> "symbol:tests/factories.py#function:candidate_payload" [label="calls"];
   "symbol:tests/test_matching.py#function:test_ineligible_claim_cannot_be_marked_eligible" -> "symbol:tests/factories.py#function:bundle_payload" [label="calls"];
@@ -814,6 +816,7 @@ digraph genesis {
   "file:migrations/versions/e3cb32e9cf04_initial_schema.py" -> "package:pypi:alembic" [label="imports"];
   "file:migrations/versions/e3cb32e9cf04_initial_schema.py" -> "package:pypi:sqlalchemy" [label="imports"];
   "file:migrations/versions/e3cb32e9cf04_initial_schema.py" -> "runtime:python:collections.abc" [label="imports"];
+  "file:neon.ts" -> "package:npm:@neon/config" [label="imports"];
   "file:src/outreach/__main__.py" -> "package:pypi:outreach.bundles" [label="imports"];
   "file:src/outreach/__main__.py" -> "package:pypi:outreach.config" [label="imports"];
   "file:src/outreach/__main__.py" -> "package:pypi:outreach.context" [label="imports"];

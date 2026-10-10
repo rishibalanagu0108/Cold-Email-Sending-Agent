@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
   "project": "ai-job-outreach",
-  "revision": "69b25321a4b17b58cbdd21bcea97d2bcfb76295d",
-  "sourceHash": "c9a832606bb530a56bb2421fdec0efdb588df6b817ba782afc7849ee5aa0a45c",
+  "revision": "c620847d1303dd01c3ed4c8e1a5bf4836b6bcefb",
+  "sourceHash": "fb4a426e8b683ebb38e956ea2c672bb12201d53b3247e072b4f5cb345fb68a8f",
   "provenance": {
     "tool": "genesis-graphizer",
     "method": "static-analysis",
@@ -38,6 +38,16 @@
       "confidence": 1,
       "extractor": "filesystem",
       "contentHash": "a0699f1dcc2573cb078e546ef907d6414790f74287f0a1530c343eab7e7c2046"
+    },
+    {
+      "id": "file:neon.ts",
+      "type": "file",
+      "label": "neon.ts",
+      "path": "neon.ts",
+      "language": "javascript",
+      "confidence": 1,
+      "extractor": "filesystem",
+      "contentHash": "b29073c3989d3679f25ff92eba39d5aa3cd6b164657d8853e028d2648dc7573e"
     },
     {
       "id": "file:src/outreach/__init__.py",
@@ -428,6 +438,15 @@
       "confidence": 1,
       "extractor": "filesystem",
       "contentHash": "38c51c14930026086b5728fc1011c6eb38fff0735c9228bd6d6bd75fcd690b2f"
+    },
+    {
+      "id": "package:npm:@neon/config",
+      "type": "package",
+      "label": "@neon/config",
+      "ecosystem": "npm",
+      "confidence": 0.85,
+      "extractor": "import",
+      "contentHash": "38e0651a888ccd5f29988dafe70181d8fb53e0976e38b04b35ad366d9f2b2966"
     },
     {
       "id": "package:pypi:alembic",
@@ -4550,11 +4569,11 @@
     {
       "type": "calls",
       "source": "symbol:src/outreach/web.py#function:create_app",
-      "target": "symbol:src/outreach/replies.py#function:GmailIMAPReader.from_settings",
+      "target": "symbol:src/outreach/mail.py#function:GmailSMTPTransport.from_settings",
       "tier": "ambiguous",
       "candidates": [
-        "symbol:src/outreach/replies.py#function:GmailIMAPReader.from_settings",
-        "symbol:src/outreach/mail.py#function:GmailSMTPTransport.from_settings"
+        "symbol:src/outreach/mail.py#function:GmailSMTPTransport.from_settings",
+        "symbol:src/outreach/replies.py#function:GmailIMAPReader.from_settings"
       ],
       "resolved": false,
       "confidence": 0.3,
@@ -5148,11 +5167,11 @@
     {
       "type": "calls",
       "source": "symbol:tests/test_config.py#function:test_gmail_secret_is_hidden_but_available_to_server_adapter",
-      "target": "symbol:src/outreach/replies.py#function:GmailIMAPReader.from_settings",
+      "target": "symbol:src/outreach/mail.py#function:GmailSMTPTransport.from_settings",
       "tier": "ambiguous",
       "candidates": [
-        "symbol:src/outreach/replies.py#function:GmailIMAPReader.from_settings",
-        "symbol:src/outreach/mail.py#function:GmailSMTPTransport.from_settings"
+        "symbol:src/outreach/mail.py#function:GmailSMTPTransport.from_settings",
+        "symbol:src/outreach/replies.py#function:GmailIMAPReader.from_settings"
       ],
       "resolved": false,
       "confidence": 0.3,
@@ -5834,13 +5853,13 @@
     {
       "type": "calls",
       "source": "symbol:tests/test_mailer.py#function:test_gmail_transport_builds_plain_text_message_with_pdf",
-      "target": "symbol:tests/test_replies.py#function:SuccessfulTransport.send",
+      "target": "symbol:src/outreach/mail.py#function:MailTransport.send",
       "tier": "ambiguous",
       "candidates": [
-        "symbol:tests/test_replies.py#function:SuccessfulTransport.send",
-        "symbol:tests/test_send_gate.py#function:FakeTransport.send",
         "symbol:src/outreach/mail.py#function:MailTransport.send",
-        "symbol:src/outreach/mail.py#function:GmailSMTPTransport.send"
+        "symbol:src/outreach/mail.py#function:GmailSMTPTransport.send",
+        "symbol:tests/test_replies.py#function:SuccessfulTransport.send",
+        "symbol:tests/test_send_gate.py#function:FakeTransport.send"
       ],
       "resolved": false,
       "confidence": 0.3,
@@ -5873,13 +5892,13 @@
     {
       "type": "calls",
       "source": "symbol:tests/test_mailer.py#function:test_recipient_refusal_is_definite",
-      "target": "symbol:tests/test_replies.py#function:SuccessfulTransport.send",
+      "target": "symbol:src/outreach/mail.py#function:MailTransport.send",
       "tier": "ambiguous",
       "candidates": [
-        "symbol:tests/test_replies.py#function:SuccessfulTransport.send",
-        "symbol:tests/test_send_gate.py#function:FakeTransport.send",
         "symbol:src/outreach/mail.py#function:MailTransport.send",
-        "symbol:src/outreach/mail.py#function:GmailSMTPTransport.send"
+        "symbol:src/outreach/mail.py#function:GmailSMTPTransport.send",
+        "symbol:tests/test_replies.py#function:SuccessfulTransport.send",
+        "symbol:tests/test_send_gate.py#function:FakeTransport.send"
       ],
       "resolved": false,
       "confidence": 0.3,
@@ -8554,6 +8573,16 @@
       "resolved": true,
       "confidence": 0.85,
       "extractor": "python-imports"
+    },
+    {
+      "type": "imports",
+      "source": "file:neon.ts",
+      "target": "package:npm:@neon/config",
+      "specifier": "@neon/config/v1",
+      "line": 1,
+      "resolved": false,
+      "confidence": 0.5,
+      "extractor": "javascript-imports"
     },
     {
       "type": "imports",

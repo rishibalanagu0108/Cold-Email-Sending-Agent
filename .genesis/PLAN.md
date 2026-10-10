@@ -4,7 +4,7 @@
 
 - workflow: new-product
 - phase: verify
-- plan approval: Project owner at 2026-10-06T13:43:37.027Z
+- plan approval: Project owner at 2026-10-10T06:39:03.235Z
 
 ## Tasks
 
@@ -54,5 +54,21 @@
 - requirements: FR-52, NFR-12
 - scope: not bounded
 - gates: bootstrap-tests: pytest -q tests/test_config.py tests/test_local_data_boundary.py, independent-review: pass
+- next: Run the task pre-flight.
+
+### NEON-1 — Link the repository to Neon project cool-frost-36188641 production branch, install Neon skills and MCP integration, initialize the minimal Neon config, and deploy it.
+
+- state/risk: done / high
+- requirements: FR-51
+- scope: not bounded
+- gates: neon-config: test -f neon.ts, independent-review: pass
+- next: Run the task pre-flight.
+
+### NEON-2 — Configure the local application with the linked Neon production environment, apply the repository's existing Alembic migrations through the direct connection, and verify production is at the migration head.
+
+- state/risk: done / high
+- requirements: FR-51
+- scope: not bounded
+- gates: production-schema: env DATABASE_URL="$(uv run python -c "from dotenv import dotenv_values; print(dotenv_values(\".env\")[\"DATABASE_URL_UNPOOLED\"])")" uv run alembic current --check-heads, independent-review: pass
 - next: Run the task pre-flight.
 

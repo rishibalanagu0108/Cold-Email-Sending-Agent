@@ -1,0 +1,30 @@
+{
+  "task": "NEON-2",
+  "gate": "production-schema",
+  "kind": "command",
+  "attempt": "52ef56c2-b01c-4c02-a93d-9225671d436d",
+  "command": "env DATABASE_URL=\"$(uv run python -c \"from dotenv import dotenv_values; print(dotenv_values(\\\".env\\\")[\\\"DATABASE_URL_UNPOOLED\\\"])\")\" uv run alembic current --check-heads",
+  "started_at": "2026-10-10T06:41:52.442Z",
+  "observed_at": "2026-10-10T06:42:01.670Z",
+  "exit_code": 0,
+  "signal": null,
+  "stdout": "7c34ca2d998d (head)\n",
+  "stderr": "INFO  [alembic.runtime.migration] Context impl PostgresqlImpl.\nINFO  [alembic.runtime.migration] Will assume transactional DDL.\n",
+  "failure": null,
+  "receipt": null,
+  "revision": {
+    "commit": "c620847d1303dd01c3ed4c8e1a5bf4836b6bcefb",
+    "dirty": true
+  },
+  "source_hash": "ac15e48a42b3f89a4d1d3e1e0e3d0b5041492ced9001769b62f1096c4872fb08",
+  "before_hash": "ac15e48a42b3f89a4d1d3e1e0e3d0b5041492ced9001769b62f1096c4872fb08",
+  "config_hash": "c2112b7389d296f5dfb58745a0117b0ff5a398536cad072d15c9d5fc78383b42",
+  "environment": {
+    "node": "v24.13.0",
+    "platform": "linux",
+    "arch": "x64",
+    "verifier": "358371454f03eb4fdfd3eda3cb1d18cb1dd8fe9445404bb3d3047267b3977eb9",
+    "variables": {}
+  },
+  "hash": "d129cd3d441ec01a292dbf924cc04e876fd9674c276e46a98da2cca3b49774b7"
+}

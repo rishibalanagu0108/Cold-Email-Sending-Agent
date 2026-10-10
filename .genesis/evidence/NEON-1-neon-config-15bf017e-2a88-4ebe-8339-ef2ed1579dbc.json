@@ -1,0 +1,30 @@
+{
+  "task": "NEON-1",
+  "gate": "neon-config",
+  "kind": "command",
+  "attempt": "15bf017e-2a88-4ebe-8339-ef2ed1579dbc",
+  "command": "test -f neon.ts",
+  "started_at": "2026-10-10T05:41:57.924Z",
+  "observed_at": "2026-10-10T05:41:58.689Z",
+  "exit_code": 0,
+  "signal": null,
+  "stdout": "",
+  "stderr": "",
+  "failure": null,
+  "receipt": null,
+  "revision": {
+    "commit": "c620847d1303dd01c3ed4c8e1a5bf4836b6bcefb",
+    "dirty": true
+  },
+  "source_hash": "ac15e48a42b3f89a4d1d3e1e0e3d0b5041492ced9001769b62f1096c4872fb08",
+  "before_hash": "ac15e48a42b3f89a4d1d3e1e0e3d0b5041492ced9001769b62f1096c4872fb08",
+  "config_hash": "30825a7585300423e420b64f0d9f2764e8964d4e38d8a3da705e61c0b6c75320",
+  "environment": {
+    "node": "v24.13.0",
+    "platform": "linux",
+    "arch": "x64",
+    "verifier": "358371454f03eb4fdfd3eda3cb1d18cb1dd8fe9445404bb3d3047267b3977eb9",
+    "variables": {}
+  },
+  "hash": "b2b1fedf0f5c102c5af606955c84879e7cacfd07dcf97f92e38a28257e8ac7e5"
+}
