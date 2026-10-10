@@ -1,0 +1,30 @@
+{
+  "task": "RUN-1",
+  "gate": "resume-imported",
+  "kind": "command",
+  "attempt": "e340fb0e-aea9-48fa-9fdd-d0698c91d643",
+  "command": "uv run python -c \"from sqlalchemy import select; from sqlalchemy.orm import Session; from outreach.config import get_settings; from outreach.db import create_database_engine; from outreach.models import ResumeVersion; s=Session(create_database_engine(get_settings().database_url)); assert s.scalar(select(ResumeVersion.id).limit(1)); s.close()\"",
+  "started_at": "2026-10-10T07:18:54.802Z",
+  "observed_at": "2026-10-10T07:19:03.899Z",
+  "exit_code": 0,
+  "signal": null,
+  "stdout": "",
+  "stderr": "",
+  "failure": null,
+  "receipt": null,
+  "revision": {
+    "commit": "a223d2b6ead3457ae069fb0fa5688a8eadfe1a71",
+    "dirty": true
+  },
+  "source_hash": "ac15e48a42b3f89a4d1d3e1e0e3d0b5041492ced9001769b62f1096c4872fb08",
+  "before_hash": "ac15e48a42b3f89a4d1d3e1e0e3d0b5041492ced9001769b62f1096c4872fb08",
+  "config_hash": "8a032fff84fc1ab818e02539fb8fdf11ae5f91cdaa41d1fe3e23f900fd6b7ebd",
+  "environment": {
+    "node": "v24.13.0",
+    "platform": "linux",
+    "arch": "x64",
+    "verifier": "358371454f03eb4fdfd3eda3cb1d18cb1dd8fe9445404bb3d3047267b3977eb9",
+    "variables": {}
+  },
+  "hash": "6d41ef38b00b53369206cb82e36a466b4b2ccf59876dcfee245957df71d53366"
+}

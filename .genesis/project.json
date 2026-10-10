@@ -9,7 +9,7 @@
     "non_goals": [],
     "trust_boundary": "local repository",
     "created_at": "2026-10-06T09:40:47.262Z",
-    "updated_at": "2026-10-10T07:01:07.267Z"
+    "updated_at": "2026-10-10T08:21:40.633Z"
   },
   "policy": {
     "ponytail": "full",
@@ -23,11 +23,11 @@
     }
   },
   "lifecycle": {
-    "phase": "verify",
-    "status": "ready",
-    "active_task": null,
+    "phase": "build",
+    "status": "active",
+    "active_task": "RUN-1",
     "blocker": null,
-    "next_action": "Review completed work and choose the next bounded outcome."
+    "next_action": "Run the task pre-flight."
   },
   "commands": {},
   "workflow": {
@@ -135,14 +135,14 @@
       ]
     },
     "plan_check": {
-      "at": "2026-10-10T06:39:02.809Z",
-      "source_hash": "7bd4387d51582bbce1c6dc1920d4dc31e2496ae475116800672fe3105d86a755"
+      "at": "2026-10-10T07:18:05.842Z",
+      "source_hash": "35e2788fbb075db695c9c7d9dd1ed0d769831abd8395ae9007cc7c1ded7459e7"
     },
     "plan_approval": {
       "human": "Project owner",
-      "reason": "User said Let's Start after being told the next step was configuring .env and applying the Neon production schema.",
-      "at": "2026-10-10T06:39:03.235Z",
-      "source_hash": "7bd4387d51582bbce1c6dc1920d4dc31e2496ae475116800672fe3105d86a755"
+      "reason": "User explicitly instructed us to proceed after configuring the required local environment values.",
+      "at": "2026-10-10T07:18:06.502Z",
+      "source_hash": "35e2788fbb075db695c9c7d9dd1ed0d769831abd8395ae9007cc7c1ded7459e7"
     }
   },
   "artifacts": [
@@ -1267,6 +1267,164 @@
         "tests/test_verification.py": "84a17282ca9b241b4d4c3c0bdc24d39e9794a09cd12560c80f066d158a20d675",
         "uv.lock": "487db982c46c7ed39e13c824a31d31ebeae9f00eca06254909d09c9574cabc9f"
       }
+    },
+    {
+      "id": "RUN-1",
+      "outcome": "Import the configured resume into the production-backed application and launch the local dashboard so the user can review and confirm the extracted profile.",
+      "state": "active",
+      "risk": "medium",
+      "owner": null,
+      "scope": [],
+      "dependencies": [],
+      "requirements": [
+        "FR-1",
+        "FR-2"
+      ],
+      "inputs": [],
+      "environment": [],
+      "scenarios": [],
+      "gates": [
+        {
+          "id": "resume-imported",
+          "kind": "command",
+          "command": "uv run python -c \"from sqlalchemy import select; from sqlalchemy.orm import Session; from outreach.config import get_settings; from outreach.db import create_database_engine; from outreach.models import ResumeVersion; s=Session(create_database_engine(get_settings().database_url)); assert s.scalar(select(ResumeVersion.id).limit(1)); s.close()\"",
+          "mandatory": true,
+          "status": "pass",
+          "evidence": {
+            "path": ".genesis/evidence/RUN-1-resume-imported-e340fb0e-aea9-48fa-9fdd-d0698c91d643.json",
+            "hash": "6d41ef38b00b53369206cb82e36a466b4b2ccf59876dcfee245957df71d53366",
+            "source_hash": "ac15e48a42b3f89a4d1d3e1e0e3d0b5041492ced9001769b62f1096c4872fb08",
+            "config_hash": "8a032fff84fc1ab818e02539fb8fdf11ae5f91cdaa41d1fe3e23f900fd6b7ebd",
+            "observed_at": "2026-10-10T07:19:03.899Z"
+          }
+        },
+        {
+          "id": "dashboard-health",
+          "kind": "command",
+          "command": "curl --fail --silent --show-error http://127.0.0.1:8000/setup >/dev/null",
+          "mandatory": true,
+          "status": "pass",
+          "evidence": {
+            "path": ".genesis/evidence/RUN-1-dashboard-health-74e2056c-4e4a-4eb5-85a2-6c36345f27af.json",
+            "hash": "e565e0870139d44a3c5b0545e193ecd29f3ef4026666268f5f179d6666cd58db",
+            "source_hash": "ac15e48a42b3f89a4d1d3e1e0e3d0b5041492ced9001769b62f1096c4872fb08",
+            "config_hash": "8a032fff84fc1ab818e02539fb8fdf11ae5f91cdaa41d1fe3e23f900fd6b7ebd",
+            "observed_at": "2026-10-10T07:19:16.780Z"
+          }
+        },
+        {
+          "id": "independent-review",
+          "kind": "review",
+          "command": "",
+          "mandatory": true,
+          "status": "pending",
+          "evidence": null
+        }
+      ],
+      "next_action": "Run the task pre-flight.",
+      "blocker": null,
+      "notes": [],
+      "failures": [],
+      "limitations": [],
+      "created_at": "2026-10-10T07:18:05.164Z",
+      "updated_at": "2026-10-10T07:18:07.042Z",
+      "base_manifest": {
+        ".agents/skills/neon-ai-gateway/SKILL.md": "b925004617b74089cfa04e828279ae53bed804acfef3e5e9f449d40c0e83097c",
+        ".agents/skills/neon-auth/SKILL.md": "9f127e4d3c3e54a7145484cb4ea0fd124c038ceb13f97791daec8150ba2c5755",
+        ".agents/skills/neon-auth/references/managed-auth.md": "78bf148403f36c73e815a0c0c43200c8849aea3ef84ece5d734a61dd7bc5c86d",
+        ".agents/skills/neon-auth/references/self-managed.md": "bc7ce15804577fc7cb55bd875ae6c338b55e98e4929f6ded84d51e6107970de3",
+        ".agents/skills/neon-functions/SKILL.md": "4c0bd16fd58d238d46a2be5a24e0a10ae19dca8870428455551b961c25cb8ac5",
+        ".agents/skills/neon-functions/references/ai-sdk.md": "5d030094a0c44565665869367b0887293e9c0057af33d16c23388b4be49d9c95",
+        ".agents/skills/neon-functions/references/function-triggers.md": "f310fdc9deeced7d9b69d716155fbc857080f695d94e29d9128afd6c387bcc20",
+        ".agents/skills/neon-functions/references/mastra-studio.md": "de09ece0cabc4dc81e6c6b1c4644180101a1ace224b81d04af1aced52847e317",
+        ".agents/skills/neon-functions/references/mcp.md": "30bb0ccbe976bf51ba502413a984e15a58e82dce6872585b34338c22ae5d38cd",
+        ".agents/skills/neon-functions/references/native-binaries.md": "ed8d4c421626aefd24dc7eeffd83d69c3ad3b135cbc73c67d5e6d16f49148fe1",
+        ".agents/skills/neon-functions/references/production-hardening.md": "77ace0afff09f46631455b7124340a7217732291377282bd8a655b3ec6449d2e",
+        ".agents/skills/neon-functions/references/sentry.md": "dcff94ef33ab7ba1f36720ff35b58dbe36b20c6072773ebb4550f1adf8bbbe80",
+        ".agents/skills/neon-functions/references/sse.md": "be846639e04497915ab7e3aa6edd2cd0695a1f7f679c0cab9a8990c215b65a7b",
+        ".agents/skills/neon-object-storage/SKILL.md": "4d30f2a383acfaa0e8b2d6025b37e3442a3d6110cac332b46a01b631899555a9",
+        ".agents/skills/neon-postgres-branches/SKILL.md": "8b7b783b47a150bfeefb37fc46744a91942f6b829f71bd97fca0f8e0b4dda2c9",
+        ".agents/skills/neon-postgres-egress-optimizer/SKILL.md": "33197789d727a01e2851edc45f3990b8b13fbdaa13b3473dbce58e5a3a4ca949",
+        ".agents/skills/neon-postgres/SKILL.md": "0d9f0cbeeb6d268f011f8d85656d7a5e82c10f714b3bccfb6a274be2597b35e7",
+        ".agents/skills/neon-postgres/references/full-text-search.md": "1e7e3aae174457055e1d2ae31510af3c496b3ffc9b80b7072e5b6c6a3013f13e",
+        ".agents/skills/neon-postgres/references/hybrid-search.md": "99fb74afef03b19c2689604d9934a071b23727a1d78f397ea608d0c068509c48",
+        ".agents/skills/neon-postgres/references/lakebase-search-drizzle.md": "f70ccd38a524db6b900d6867e3980ea723ee3a7663c228aa277ab1cbb658daca",
+        ".agents/skills/neon-postgres/references/vector-search.md": "9e22859386b61758a965bb06d77a0aded4ff3de7b3dfe32db3f94fb064c2b4fa",
+        ".agents/skills/neon/SKILL.md": "097af35ab562c05c97eeeeb596e08cf393b2d30ec3d6e9f67c326a367fd51697",
+        ".agents/skills/neon/references/auth.md": "29522ebf30a0d878d7b77313264b06de7e6de9c9f07477437b8f5fddc7d0ae78",
+        ".agents/skills/neon/references/claimable-neon.md": "0a2dc384269f79185420592fbc6396759f0dbb40f8c1bd1e4d4bec9518072871",
+        ".agents/skills/neon/references/function-triggers.md": "a939acdf72708289cd192e90e6125717bf5820a5b922d163e3f71ea1830b4837",
+        ".agents/skills/neon/references/logs-loki.md": "09cd96331b631ad75569295184adf6de9a385450afb3121f26b7540bb7c73e2a",
+        ".agents/skills/neon/references/parse-env.md": "1f1108fdc043684883a0e3a84925d2d28e962b5831a0bdb2f023c1be222405f8",
+        ".agents/skills/neon/references/sdk.md": "97fb2365b6c438391f5006152bce65ca33b222e3c76bc5b401059cad11068886",
+        ".env.example": "f0624d9726a09ea0eef08d8f3da5371a818f0732a252259f3f772786052649a5",
+        ".gitignore": "4ee563357e01f0d993cab1dfa37a317e79f90d24d24014c96cfcc1ad28f1df00",
+        "AGENTS.md": "a67615d8ed1ed3dd1b0d2cbf874ceb8d4a285c3335cdfc2d785ec80a06daecc1",
+        "ARCHITECTURE.md": "0baca8b06de1feb15c0cb117f1e3508dab1d32f1b190ade571c8512b486f8ae4",
+        "CODEX_BUILD_PROMPT.md": "55c345db99219592516157b90e7952e8974d51d45acd49171de30a70a6084991",
+        "CODEX_RUNBOOK.md": "30f59a6e1b42f8a9f13bff87c737728eac6bc2932850bd6052a7e275580bcb6a",
+        "README.md": "5ef838a20aa0fc0f6438a5bf9cee06df94b69646d69d99b5868f3ff1f9e9c103",
+        "SPEC.md": "837dde97de07a64e3c2736837a93c07029bd1cedfa67f61825d651e1baef68f2",
+        "alembic.ini": "123c994d1446cdc3dcb2ad6d33c69901e0e3e21e74c4e9b155e1069332dbb15e",
+        "migrations/README": "fe59122c077f3461bae8462aae75c1a07513a96438e9034d4383925128e567b7",
+        "migrations/env.py": "bb9dffe28e1b8ff70609636258620e0c78137cc8062e910e41191bf9bbc139ee",
+        "migrations/script.py.mako": "4068908a2d04f8779209a1026b8f387741e399c42f1f8f1aecd51499e2855755",
+        "migrations/versions/7c34ca2d998d_add_evidence_keys.py": "ecb8bbcf01663e106329ef90bac16cf4785c9af17fb70d33ed89f56ffa009c54",
+        "migrations/versions/e3cb32e9cf04_initial_schema.py": "90a2caaa54df35755e3445e97ee3b42b8fa08e293bb9ed8c51ea57f0f47f4226",
+        "neon.ts": "bd85dcb292be0e58516fcd9c1dbb8180078658e4da36fc66452f2360aa0ab849",
+        "package-lock.json": "a7b0508d17a372ee57a118ef229d1a69d77bbd82e07deeb63be5c346f3eb01c7",
+        "package.json": "f03df8236acc25a131f8cb35e397252d1f03b70e543e40b607a8f35c01997891",
+        "pyproject.toml": "7e213faee48d132a807929168d92a295011efe47e877effdccd02bdf5efb3462",
+        "skills-lock.json": "55e3fe20cd4a427758a3cf1faae652c717ba6cf24bd9d23e27e5db3532372458",
+        "src/outreach/__init__.py": "9fc71feda32a4ff8a3eb0661191468e3c5f9c3085e1cf4629232ac8112142d9e",
+        "src/outreach/__main__.py": "eb7ce4488a32dfc32ce4166b34234ae464606fcae44bd64f434fe97cea81cec0",
+        "src/outreach/bundles.py": "52cfef83326fe098b416c972b0835f0e9b75f3179218ed78000a38c2b4c38f60",
+        "src/outreach/config.py": "91e03a4ded10ce3140b1fc67f76f59340fe3404ac872506b71a70f5ad4270b3d",
+        "src/outreach/contacts.py": "e13bc0df5dd55e3ffd480534e330bc135949985651ad34e87ff15c4e2a654243",
+        "src/outreach/context.py": "225ac86e9e045834097e41ed5aafb33931178783094704fc52333eaa121331a5",
+        "src/outreach/db.py": "4a4c4b91d83d563a2bd90958f7c171ceb495e62047892dfb6e98b10aaaccf019",
+        "src/outreach/drafts.py": "b204f115a5d6ac1fb848a2ffe99c772bd347048beb4c9ea9337066a43f48dd7d",
+        "src/outreach/foundation.py": "25c4062a013473176155bd093a0301cd6c7a004b745fa357b18637201b3b0d06",
+        "src/outreach/identity.py": "f58ddc75311b527da76a9c3becefe1461097f95f3461555abf048daae091dab5",
+        "src/outreach/local_files.py": "39cced526762b28ea500df0408eeb193d2d11bc637b23c3b30e589bfb82e4a76",
+        "src/outreach/mail.py": "7c9d2c4f884729649dee5020c0039d2d8d48764c56bc94ed735fc738727b58b7",
+        "src/outreach/matching.py": "722ae8ff762e243e19d167094e6aa2afba465c1d6d2fa08932f22c5bb6d64343",
+        "src/outreach/models.py": "ddecd35975df5b218c8819671eaec0b906dbdfe27c2f99971b593877a29af383",
+        "src/outreach/replies.py": "e67587b57bbdca877008b6f1b150b7bfc4d713618c979293bbf098a672a76b5e",
+        "src/outreach/resume.py": "f9a861696004119b7ad26a0ace8d4fc8c7b703ba8551cebad76ff8b10355507e",
+        "src/outreach/static/app.css": "67c64b629a7d3564dc350c2e1f2456072888624c237309340ef4854930e0ba49",
+        "src/outreach/templates/base.html": "bf55fdc48cd8a22534c8f266b6dfe8613cb67a380ef0e3b20c97df7ae4489763",
+        "src/outreach/templates/history.html": "36a96c13446fd4a1b4add4c0f51c4ace78d31440e35bc38991fd55e80a44d446",
+        "src/outreach/templates/opportunities.html": "c02ab56dec459e63ac9ed0ab6269a5cb4882a44dea359fc435c35669c9334f40",
+        "src/outreach/templates/review_detail.html": "648960e6a1ea752a6f57fa9b388df5308a1485cbe7857ba6339f01e461399c6c",
+        "src/outreach/templates/review_queue.html": "ddd8d726c29e7e6f9e432b758166b961d2b08413c4d6db0db44ce877364085bf",
+        "src/outreach/templates/setup.html": "e9224e978a4584a60b88f496f977d1539c388c648acde7f53240afbbd83656cf",
+        "src/outreach/templates/suppressions.html": "2d8eba050c10389daa4364fcc470c12b6e434e1e8a52cf30c0c76504a0319643",
+        "src/outreach/verification.py": "bf93e71ecb533b90d529f8a5625c04105ce6cf044e680bd0ba3c5e9ab2041c7f",
+        "src/outreach/web.py": "0f1b9bb1efb51dee2be47839480c3e10821cdddf76d6ded60f3f731f7c2918f4",
+        "tests/__init__.py": "e7bf0f145c7611bfc34609314d421fd52ab70962b9c71dd09288b1a00a29f5b7",
+        "tests/conftest.py": "00bc43c0ae91d06b542bbc021cb95224b64fc37b88d9658953362b63d3b9525b",
+        "tests/factories.py": "97fabb3432197bb0cc73464c7603b84fd4bdb65ecd3d6f3b22bfa73747b386b5",
+        "tests/mail_fixtures.py": "5761aa29b5c90dbef921d9f0b88ca8d2f95c2e39130a8556c564928290e1ca75",
+        "tests/test_approval.py": "11b3859db8531f047de8c1bc3380487aa77e2c18b56ff174ce6c239224fe7fdf",
+        "tests/test_bundle.py": "61333aeda931d1071f8325c9120046af1cdb7b8e88835727ac615b19813b96d3",
+        "tests/test_codex_contract.py": "87520200eef3957d8a52d642be739b3db6b2c57faa9c74fbf424c7b569e77830",
+        "tests/test_config.py": "d11ab0a54bb948b8213d607c6aba36ab315e710148a9eb78c56e4c67902ef90d",
+        "tests/test_contacts.py": "3bc40e6a38797c01eebe2f6c217cb5aa4aab0d77e9f9023c9369bb75b495b518",
+        "tests/test_dashboard.py": "4ea642663c113eac9a119d33cf733cffb026b4e9519a833c987062e0b088a315",
+        "tests/test_dedup.py": "6dd1bc7548cbb2b8ac3f7b4cba26871ab1b2c03538d5edc87296622fe11497bf",
+        "tests/test_drafts.py": "e3c42a0fcc006a3cfc5dcba0d5ad65baf44b7d05a1e10e49245a2dbd6fea50de",
+        "tests/test_local_data_boundary.py": "5b3adf752e7b49507d18cf152b462de3d93ab7d325e2d52a98496eee430ed598",
+        "tests/test_mailer.py": "d392ee2f5210d6595f5511ebbb612623f15fe5dbc8c67e5c73cb37e1759adba4",
+        "tests/test_matching.py": "04d8377d3466529f9a1631d1b05bbb085bba895594332ded5b27a8a3c40017f3",
+        "tests/test_profile.py": "a2978174564e8d9f60804cfb2c024377b819f5c820fc0a57a67f657f9008f92c",
+        "tests/test_replies.py": "9a1f719a10154511f15d4c6c1f8c7dfc9fcca1167cb854b0d142a371ebc62b80",
+        "tests/test_schema.py": "ab505624e406ec22864af061f48a190ffed89dbdf2c3d1df0fab3a1591bc6870",
+        "tests/test_secrets.py": "1c705ee9556466580116e8b64e36b60fd3ea93b1765957eb2df656191aea1627",
+        "tests/test_send_gate.py": "b7cb11189a75adf88c972d9c02b055cd183c1f8c23f23e09ab37304d66734cb0",
+        "tests/test_verification.py": "84a17282ca9b241b4d4c3c0bdc24d39e9794a09cd12560c80f066d158a20d675",
+        "uv.lock": "487db982c46c7ed39e13c824a31d31ebeae9f00eca06254909d09c9574cabc9f"
+      }
     }
   ],
   "learning_proposals": [],
@@ -1633,6 +1791,54 @@
       "cost": null,
       "stop_reason": null,
       "ended_at": "2026-10-10T06:42:01.670Z"
+    },
+    {
+      "id": "e340fb0e-aea9-48fa-9fdd-d0698c91d643",
+      "task": "RUN-1",
+      "kind": "gate",
+      "command": "uv run python -c \"from sqlalchemy import select; from sqlalchemy.orm import Session; from outreach.config import get_settings; from outreach.db import create_database_engine; from outreach.models import ResumeVersion; s=Session(create_database_engine(get_settings().database_url)); assert s.scalar(select(ResumeVersion.id).limit(1)); s.close()\"",
+      "timeout": 120000,
+      "authorization": null,
+      "pid": 30559,
+      "child_pid": 30587,
+      "started_at": "2026-10-10T07:18:54.802Z",
+      "status": "passed",
+      "before_hash": "ac15e48a42b3f89a4d1d3e1e0e3d0b5041492ced9001769b62f1096c4872fb08",
+      "config_hash": "8a032fff84fc1ab818e02539fb8fdf11ae5f91cdaa41d1fe3e23f900fd6b7ebd",
+      "environment": {
+        "node": "v24.13.0",
+        "platform": "linux",
+        "arch": "x64",
+        "verifier": "358371454f03eb4fdfd3eda3cb1d18cb1dd8fe9445404bb3d3047267b3977eb9",
+        "variables": {}
+      },
+      "cost": null,
+      "stop_reason": null,
+      "ended_at": "2026-10-10T07:19:03.899Z"
+    },
+    {
+      "id": "74e2056c-4e4a-4eb5-85a2-6c36345f27af",
+      "task": "RUN-1",
+      "kind": "gate",
+      "command": "curl --fail --silent --show-error http://127.0.0.1:8000/setup >/dev/null",
+      "timeout": 120000,
+      "authorization": null,
+      "pid": 30559,
+      "child_pid": 30676,
+      "started_at": "2026-10-10T07:19:07.263Z",
+      "status": "passed",
+      "before_hash": "ac15e48a42b3f89a4d1d3e1e0e3d0b5041492ced9001769b62f1096c4872fb08",
+      "config_hash": "8a032fff84fc1ab818e02539fb8fdf11ae5f91cdaa41d1fe3e23f900fd6b7ebd",
+      "environment": {
+        "node": "v24.13.0",
+        "platform": "linux",
+        "arch": "x64",
+        "verifier": "358371454f03eb4fdfd3eda3cb1d18cb1dd8fe9445404bb3d3047267b3977eb9",
+        "variables": {}
+      },
+      "cost": null,
+      "stop_reason": null,
+      "ended_at": "2026-10-10T07:19:16.780Z"
     }
   ],
   "authorizations": [],
@@ -1640,14 +1846,14 @@
   "incidents": [],
   "discovery": null,
   "checkpoint": {
-    "at": "2026-10-10T07:01:07.227Z",
+    "at": "2026-10-10T08:21:40.525Z",
     "revision": {
-      "commit": "ecf35100a71a8fcae1f93e3478109f968f6487ef",
-      "dirty": false,
+      "commit": "a223d2b6ead3457ae069fb0fa5688a8eadfe1a71",
+      "dirty": true,
       "source_hash": "ac15e48a42b3f89a4d1d3e1e0e3d0b5041492ced9001769b62f1096c4872fb08"
     },
-    "active_task": null,
-    "next_action": "Review completed work and choose the next bounded outcome."
+    "active_task": "RUN-1",
+    "next_action": "Run the task pre-flight."
   },
   "legacy": null
 }
